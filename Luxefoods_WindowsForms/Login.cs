@@ -47,6 +47,7 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
+            EmailCheck.Text = "faak joe";
             if (EmailCheck.Text == "" || PasswordCheck.Text == "")
             {
                 MessageBox.Show("Vul alle velden in.");
