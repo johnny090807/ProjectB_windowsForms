@@ -72,5 +72,49 @@ namespace Luxefoods_WindowsForms
             form2.Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            if (System.Windows.Forms.Application.MessageLoop)
+            {
+                // WinForms app
+                System.Windows.Forms.Application.Exit();
+            }
+            else
+            {
+                // Console app
+                System.Environment.Exit(1);
+            }
+        }
+
+        private void label7_Hover_Enter(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.Red;
+        }
+
+        private void label7_Hover_Leave(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.Black;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void label6_Hover_Enter(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Red;
+        }
+
+        private void label6_Hover_Leave(object sender, EventArgs e)
+        {
+            label6.ForeColor = Color.Black;
+        }
     }
 }
