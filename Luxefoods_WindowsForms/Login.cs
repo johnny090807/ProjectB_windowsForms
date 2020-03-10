@@ -40,7 +40,7 @@ namespace Luxefoods_WindowsForms
         {
             if (EmailCheck.Text == "" || PasswordCheck.Text == "")
             {
-                MessageBox.Show("Vul alle velden in tester.");
+                MessageBox.Show("Vul alle velden in.");
             }
             else
             {
