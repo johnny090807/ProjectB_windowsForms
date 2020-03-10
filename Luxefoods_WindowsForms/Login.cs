@@ -76,7 +76,7 @@ namespace Luxefoods_WindowsForms
                     
                         if (CheckPassword(PasswordCheck.Text , password))
                         {
-                            MessageBox.Show("Je bent ingelogd.");
+                            MessageBox.Show("Je bent nu ingelogd.");
                         }
                         else
                         {
