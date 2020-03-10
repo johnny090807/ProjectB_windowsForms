@@ -10,3 +10,15 @@ D:\HR\PROJECTB\Luxefoods_WindowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods
 D:\HR\PROJECTB\Luxefoods_WindowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Login.resources
 D:\HR\PROJECTB\Luxefoods_WindowsForms\Luxefoods_WindowsForms\bin\Debug\MySql.Data.dll
 D:\HR\PROJECTB\Luxefoods_WindowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe.config
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.pdb
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\MySql.Data.dll
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csprojAssemblyReference.cache
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Register.resources
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Login.resources
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Properties.Resources.resources
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.GenerateResource.cache
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.exe
+D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.pdb

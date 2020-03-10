@@ -14,30 +14,21 @@ namespace Luxefoods_WindowsForms
 {
     public partial class Login : Form
     {
-        static Boolean CheckPassword(string text, string password)
-        {
-            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
-            {
-                UTF8Encoding utf8 = new UTF8Encoding();
-                byte[] data = md5.ComputeHash(utf8.GetBytes(password));
-                Convert.ToBase64String(data);
-                if(text == password)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
         public Login()
         {
             InitializeComponent();
             CenterToScreen();
             this.AcceptButton = LoginBtn;
         }
-
+        static string EncryptPassword(string text)
+        {
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                UTF8Encoding utf8 = new UTF8Encoding();
+                byte[] data = md5.ComputeHash(utf8.GetBytes(text));
+                return Convert.ToBase64String(data);
+            }
+        }
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
             Register form1 = new Register();
@@ -57,8 +48,9 @@ namespace Luxefoods_WindowsForms
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
-                    string q = $"SELECT DISTINCT * FROM [user] WHERE email={EmailCheck.Text}";
+                    string q = $"SELECT DISTINCT * FROM [user] WHERE email='{EmailCheck.Text}'";
                     string password = "";
+                    string typedPassword = EncryptPassword(PasswordCheck.Text);
                     try
                     {
                         SqlCommand cmd = new SqlCommand(q, con);
@@ -72,9 +64,7 @@ namespace Luxefoods_WindowsForms
                         {
                             password = dr["password"].ToString();
                         }
-
-                    
-                        if (CheckPassword(PasswordCheck.Text , password))
+                        if (typedPassword == password)
                         {
                             MessageBox.Show("Je bent ingelogd.");
                         }
