@@ -44,14 +44,16 @@ namespace Luxefoods_WindowsForms
             }
             else
             {
-                SqlConnection con = new SqlConnection("Data Source=LAPTOP-TMQHDKHS;Initial Catalog=LuxeFoods;Integrated Security=True");
-                con.Open();
-                if (con.State == System.Data.ConnectionState.Open)
+                string q = $"SELECT DISTINCT * FROM [user] WHERE email='{EmailCheck.Text}'";
+                string password = "";
+                string adminUsername = "test@test.nl";
+                string adminPassword = "geheim";
+                //string typedPassword = EncryptPassword(PasswordCheck.Text);
+                /*try
                 {
-                    string q = $"SELECT DISTINCT * FROM [user] WHERE email='{EmailCheck.Text}'";
-                    string password = "";
-                    string typedPassword = EncryptPassword(PasswordCheck.Text);
-                    try
+                    SqlConnection con = new SqlConnection("Data Source=LAPTOP-TMQHDKHS;Initial Catalog=LuxeFoods;Integrated Security=True");
+                    con.Open();
+                    if (con.State == System.Data.ConnectionState.Open)
                     {
                         SqlCommand cmd = new SqlCommand(q, con);
                         cmd.ExecuteNonQuery();
@@ -71,16 +73,24 @@ namespace Luxefoods_WindowsForms
                         else
                         {
                             MessageBox.Show("deze gebruiker bestaat niet, of het wachtwoord is verkeerd ingevuld.");
-                        }   
-                        
+                        }
                     }
-                    catch(Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                  
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }*/
+
+                if (adminPassword == PasswordCheck.Text && adminUsername == EmailCheck.Text)
+                {
+                    MessageBox.Show("Je bent ingelogd.");
+                }
+                else
+                {
+                    MessageBox.Show("deze gebruiker bestaat niet, of het wachtwoord is verkeerd ingevuld.");
                 }
             }
         }
     }
 }
+
