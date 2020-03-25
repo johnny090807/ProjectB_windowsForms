@@ -14,30 +14,21 @@ namespace Luxefoods_WindowsForms
 {
     public partial class Login : Form
     {
-        static Boolean CheckPassword(string text, string password)
-        {
-            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
-            {
-                UTF8Encoding utf8 = new UTF8Encoding();
-                byte[] data = md5.ComputeHash(utf8.GetBytes(password));
-                Convert.ToBase64String(data);
-                if(text == password)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
         public Login()
         {
             InitializeComponent();
             CenterToScreen();
             this.AcceptButton = LoginBtn;
         }
-
+        static string EncryptPassword(string text)
+        {
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                UTF8Encoding utf8 = new UTF8Encoding();
+                byte[] data = md5.ComputeHash(utf8.GetBytes(text));
+                return Convert.ToBase64String(data);
+            }
+        }
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
             Register form1 = new Register();
@@ -47,20 +38,22 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            EmailCheck.Text = "faak joe";
             if (EmailCheck.Text == "" || PasswordCheck.Text == "")
             {
                 MessageBox.Show("Vul alle velden in.");
             }
             else
             {
-                SqlConnection con = new SqlConnection("Data Source=LAPTOP-TMQHDKHS;Initial Catalog=LuxeFoods;Integrated Security=True");
-                con.Open();
-                if (con.State == System.Data.ConnectionState.Open)
+                string q = $"SELECT DISTINCT * FROM [user] WHERE email='{EmailCheck.Text}'";
+                string password = "";
+                string adminUsername = "test@test.nl";
+                string adminPassword = "geheim";
+                //string typedPassword = EncryptPassword(PasswordCheck.Text);
+                /*try
                 {
-                    string q = $"SELECT DISTINCT * FROM [user] WHERE email={EmailCheck.Text}";
-                    string password = "";
-                    try
+                    SqlConnection con = new SqlConnection("Data Source=LAPTOP-TMQHDKHS;Initial Catalog=LuxeFoods;Integrated Security=True");
+                    con.Open();
+                    if (con.State == System.Data.ConnectionState.Open)
                     {
                         SqlCommand cmd = new SqlCommand(q, con);
                         cmd.ExecuteNonQuery();
@@ -73,25 +66,31 @@ namespace Luxefoods_WindowsForms
                         {
                             password = dr["password"].ToString();
                         }
-
-                    
-                        if (CheckPassword(PasswordCheck.Text , password))
+                        if (typedPassword == password)
                         {
                             MessageBox.Show("Je bent ingelogd.");
                         }
                         else
                         {
                             MessageBox.Show("deze gebruiker bestaat niet, of het wachtwoord is verkeerd ingevuld.");
-                        }   
-                        
+                        }
                     }
-                    catch(Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                  
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }*/
+
+                if (adminPassword == PasswordCheck.Text && adminUsername == EmailCheck.Text)
+                {
+                    MessageBox.Show("Je bent ingelogd.");
+                }
+                else
+                {
+                    MessageBox.Show("deze gebruiker bestaat niet, of het wachtwoord is verkeerd ingevuld.");
                 }
             }
         }
     }
 }
+
