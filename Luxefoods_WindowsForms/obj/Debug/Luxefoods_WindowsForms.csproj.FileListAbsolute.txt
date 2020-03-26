@@ -10,6 +10,7 @@ D:\HR\PROJECTB\Luxefoods_WindowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods
 D:\HR\PROJECTB\Luxefoods_WindowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Login.resources
 D:\HR\PROJECTB\Luxefoods_WindowsForms\Luxefoods_WindowsForms\bin\Debug\MySql.Data.dll
 D:\HR\PROJECTB\Luxefoods_WindowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete
+<<<<<<< HEAD
 D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe.config
 D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe
 D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.pdb
@@ -22,3 +23,16 @@ D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_
 D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete
 D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.exe
 D:\HR\PROJECTB\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.pdb
+=======
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe.config
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.pdb
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csprojAssemblyReference.cache
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Register.resources
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Login.resources
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Properties.Resources.resources
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.GenerateResource.cache
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.exe
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.pdb
+>>>>>>> Reynethan
