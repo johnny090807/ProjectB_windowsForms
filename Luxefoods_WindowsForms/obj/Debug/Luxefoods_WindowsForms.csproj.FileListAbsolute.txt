@@ -36,3 +36,17 @@ C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\D
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.exe
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.pdb
 >>>>>>> Reynethan
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe.config
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.pdb
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csprojAssemblyReference.cache
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.reservation.resources
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Register.resources
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Login.resources
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Properties.Resources.resources
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.GenerateResource.cache
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.exe
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.pdb
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Menu.resources
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuSpecial.resources

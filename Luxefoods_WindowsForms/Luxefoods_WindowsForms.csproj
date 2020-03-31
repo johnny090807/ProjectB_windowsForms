@@ -65,6 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSpecial.Designer.cs">
+      <DependentUpon>MenuSpecial.cs</DependentUpon>
+    </Compile>
     <Compile Include="reservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSpecial.resx">
+      <DependentUpon>MenuSpecial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="reservation.resx">
       <DependentUpon>reservation.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +120,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -127,6 +146,45 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ballentine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eten_test.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-down-button-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whitearrowicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-204-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-28-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-28-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-92-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk-2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peanuts-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wijnfles-etiketten-botanical-romance-thankyou-d020031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vodka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plaatjes2-375x210.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
