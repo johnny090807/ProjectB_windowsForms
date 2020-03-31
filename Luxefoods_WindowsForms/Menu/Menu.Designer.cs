@@ -46,7 +46,6 @@
             this.HorsBTN = new System.Windows.Forms.Button();
             this.SpecialsBTN = new System.Windows.Forms.Button();
             this.ContainerPanel = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel1 = new System.Windows.Forms.Panel();
             this.faqANS4 = new System.Windows.Forms.Label();
             this.faqANS2 = new System.Windows.Forms.Label();
@@ -386,21 +385,12 @@
             // 
             this.ContainerPanel.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.ballentine;
             this.ContainerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ContainerPanel.Controls.Add(this.splitter1);
             this.ContainerPanel.Controls.Add(this.panel1);
             this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContainerPanel.Location = new System.Drawing.Point(230, 60);
             this.ContainerPanel.Name = "ContainerPanel";
             this.ContainerPanel.Size = new System.Drawing.Size(845, 607);
             this.ContainerPanel.TabIndex = 3;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 451);
-            this.splitter1.TabIndex = 10;
-            this.splitter1.TabStop = false;
             // 
             // panel1
             // 
@@ -628,6 +618,5 @@
         private System.Windows.Forms.Label faqANS4;
         private System.Windows.Forms.Label faqANS2;
         private System.Windows.Forms.Label faqANS3;
-        private System.Windows.Forms.Splitter splitter1;
     }
 }

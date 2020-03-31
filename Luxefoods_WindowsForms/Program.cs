@@ -16,7 +16,7 @@ namespace Luxefoods_WindowsForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuSpecial());
+            Application.Run(new Menu());
         }
     }
 }

@@ -50,3 +50,5 @@ C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms
 C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.pdb
 C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Menu.resources
 C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuSpecial.resources
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuHors.resources
+C:\Users\Dominique\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuSoups.resources

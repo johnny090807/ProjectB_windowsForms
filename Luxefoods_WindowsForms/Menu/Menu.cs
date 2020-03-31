@@ -21,6 +21,7 @@ namespace Luxefoods_WindowsForms
             faqANS2.Visible = false;
             faqANS3.Visible = false;
             faqANS4.Visible = false;
+            openChildForm(new MenuSpecial());
         }
        
         private void button1_Click(object sender, EventArgs e)
@@ -52,6 +53,7 @@ namespace Luxefoods_WindowsForms
 
         private void button3_Click(object sender, EventArgs e)
         {
+            openChildForm(new MenuSoups());
             MenuPanel.Height = SoupBTN.Height;
             MenuPanel.Top = SoupBTN.Top;
         }
@@ -64,12 +66,15 @@ namespace Luxefoods_WindowsForms
 
         private void SpecialsBTN_Click(object sender, EventArgs e)
         {
+            openChildForm(new MenuSpecial());
             MenuPanel.Height = SpecialsBTN.Height;
             MenuPanel.Top = SpecialsBTN.Top;
+            
         }
 
         private void HorsBTN_Click(object sender, EventArgs e)
         {
+            openChildForm(new MenuHors());
             MenuPanel.Height = HorsBTN.Height;
             MenuPanel.Top = HorsBTN.Top;
         }
@@ -137,6 +142,21 @@ namespace Luxefoods_WindowsForms
                 faqANS4.Visible = false;
             else
                 faqANS4.Visible = true;
+        }
+
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            ContainerPanel.Controls.Add(childForm);
+            ContainerPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
     }
 }

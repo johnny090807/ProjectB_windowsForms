@@ -65,16 +65,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu.cs">
+    <Compile Include="Menu\MenuSoups.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
+    <Compile Include="Menu\MenuSoups.Designer.cs">
+      <DependentUpon>MenuSoups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuSpecial.cs">
+    <Compile Include="Menu\MenuHors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuSpecial.Designer.cs">
+    <Compile Include="Menu\MenuHors.Designer.cs">
+      <DependentUpon>MenuHors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuSpecial.Designer.cs">
       <DependentUpon>MenuSpecial.cs</DependentUpon>
     </Compile>
     <Compile Include="reservation.cs">
@@ -97,10 +109,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Menu.resx">
+    <EmbeddedResource Include="Menu\MenuSoups.resx">
+      <DependentUpon>MenuSoups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuSpecial.resx">
+    <EmbeddedResource Include="Menu\MenuHors.resx">
+      <DependentUpon>MenuHors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuSpecial.resx">
       <DependentUpon>MenuSpecial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reservation.resx">
