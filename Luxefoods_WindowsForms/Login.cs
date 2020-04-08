@@ -19,6 +19,7 @@ namespace Luxefoods_WindowsForms
             InitializeComponent();
             CenterToScreen();
             this.AcceptButton = LoginBtn;
+            this.SetStyle(ControlStyles.UserPaint, true);
         }
         static string EncryptPassword(string text)
         {
@@ -46,12 +47,10 @@ namespace Luxefoods_WindowsForms
             {
                 string q = $"SELECT DISTINCT * FROM [user] WHERE email='{EmailCheck.Text}'";
                 string password = "";
-                string adminUsername = "test@test.nl";
-                string adminPassword = "geheim";
-                //string typedPassword = EncryptPassword(PasswordCheck.Text);
-                /*try
+                string typedPassword = EncryptPassword(PasswordCheck.Text);
+                try
                 {
-                    SqlConnection con = new SqlConnection("Data Source=LAPTOP-TMQHDKHS;Initial Catalog=LuxeFoods;Integrated Security=True");
+                    SqlConnection con = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
                     con.Open();
                     if (con.State == System.Data.ConnectionState.Open)
                     {
@@ -69,6 +68,10 @@ namespace Luxefoods_WindowsForms
                         if (typedPassword == password)
                         {
                             MessageBox.Show("Je bent nu ingelogd.");
+                            this.Hide();
+                            reservation registerForm = new reservation();
+                            registerForm.Show();
+                            this.Close();
                         }
                         else
                         {
@@ -79,15 +82,6 @@ namespace Luxefoods_WindowsForms
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }*/
-
-                if (adminPassword == PasswordCheck.Text && adminUsername == EmailCheck.Text)
-                {
-                    MessageBox.Show("Je bent ingelogd.");
-                }
-                else
-                {
-                    MessageBox.Show("deze gebruiker bestaat niet, of het wachtwoord is verkeerd ingevuld.");
                 }
             }
         }
