@@ -16,13 +16,27 @@ namespace Luxefoods_WindowsForms
         {
             InitializeComponent();
         }
+
+        private void AvailabilityTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     /*
      * ----- CHECK AVAILABILITY BUTTON -----
-     * People = Take amount of people from the how many people will dine form
-     * Date = calender form
-     * - Amount of people // TableSize(amount of chairs) = The amount of tables needed
+     * People = seats.value
+     * Date = dateTimePicker1.value
+     * TableSize = 4
+     * TablesNeeded = People // TableSize
+     * ShowAvailableTables(TablesNeeded)
+     * 
+     * 
+     * 
+     * ----- ShowShowAvailableTables(int amountOfTables) -----
+     * fetch data from the database
+     * look for amounrOfTables in the same zone for the same time
+     * 
      *
      * 
      * 
