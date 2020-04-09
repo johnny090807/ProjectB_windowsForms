@@ -17,4 +17,13 @@ namespace Luxefoods_WindowsForms
             InitializeComponent();
         }
     }
+
+    /*
+     * How many people will dine?
+     * - Take amount of people from the form
+     * - Amount of people // TableSize(amount of chairs) = The amount of tables needed
+     * 
+     * 
+     * 
+     */
 }
