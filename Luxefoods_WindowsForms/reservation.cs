@@ -19,10 +19,11 @@ namespace Luxefoods_WindowsForms
     }
 
     /*
-     * How many people will dine?
-     * - Take amount of people from the form
+     * ----- CHECK AVAILABILITY BUTTON -----
+     * People = Take amount of people from the how many people will dine form
+     * Date = calender form
      * - Amount of people // TableSize(amount of chairs) = The amount of tables needed
-     * 
+     *
      * 
      * 
      */
