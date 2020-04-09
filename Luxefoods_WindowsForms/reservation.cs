@@ -17,7 +17,6 @@ namespace Luxefoods_WindowsForms
             InitializeComponent();
         }
     }
-<<<<<<< HEAD
 
     /*
      * ----- CHECK AVAILABILITY BUTTON -----
@@ -28,6 +27,4 @@ namespace Luxefoods_WindowsForms
      * 
      * 
      */
-=======
->>>>>>> 5bbd99e0fdd6197d45ab49b22ff7fa22051a7325
 }
