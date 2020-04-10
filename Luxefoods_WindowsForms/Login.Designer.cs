@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.EmailCheck = new System.Windows.Forms.TextBox();
             this.PasswordCheck = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.LoginBtn = new System.Windows.Forms.Button();
@@ -80,6 +81,37 @@
             this.LoginBtn.Size = new System.Drawing.Size(245, 53);
             this.LoginBtn.TabIndex = 4;
             this.LoginBtn.Text = "LOGIN";
+            this.label2 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // EmailCheck
+            // 
+            this.EmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.EmailCheck.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.EmailCheck.Location = new System.Drawing.Point(78, 102);
+            this.EmailCheck.Name = "EmailCheck";
+            this.EmailCheck.Size = new System.Drawing.Size(477, 53);
+            this.EmailCheck.TabIndex = 0;
+            // 
+            // PasswordCheck
+            // 
+            this.PasswordCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.PasswordCheck.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.PasswordCheck.Location = new System.Drawing.Point(78, 214);
+            this.PasswordCheck.Name = "PasswordCheck";
+            this.PasswordCheck.PasswordChar = '*';
+            this.PasswordCheck.Size = new System.Drawing.Size(477, 53);
+            this.PasswordCheck.TabIndex = 1;
+            // 
+            // LoginBtn
+            // 
+            this.LoginBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBtn.Location = new System.Drawing.Point(180, 473);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(284, 69);
+            this.LoginBtn.TabIndex = 2;
+            this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
@@ -104,6 +136,15 @@
             this.RegisterBtn.Size = new System.Drawing.Size(245, 53);
             this.RegisterBtn.TabIndex = 5;
             this.RegisterBtn.Text = "REGISTER";
+            this.RegisterBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.RegisterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.RegisterBtn.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.RegisterBtn.Location = new System.Drawing.Point(12, 560);
+            this.RegisterBtn.Name = "RegisterBtn";
+            this.RegisterBtn.Size = new System.Drawing.Size(614, 38);
+            this.RegisterBtn.TabIndex = 3;
+            this.RegisterBtn.TabStop = false;
+            this.RegisterBtn.Text = "Not registered yet? Click here...";
             this.RegisterBtn.UseVisualStyleBackColor = false;
             this.RegisterBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
             // 
@@ -205,6 +246,27 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(650, 100);
             this.panel3.TabIndex = 7;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(78, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Email Adress";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(78, 186);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 25);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Password";
             // 
             // Login
             // 
@@ -215,6 +277,14 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(638, 610);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.RegisterBtn);
+            this.Controls.Add(this.LoginBtn);
+            this.Controls.Add(this.PasswordCheck);
+            this.Controls.Add(this.EmailCheck);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -232,6 +302,7 @@
 
         #endregion
 
+        private System.Windows.Forms.TextBox EmailCheck;
         private System.Windows.Forms.TextBox PasswordCheck;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button LoginBtn;
@@ -245,5 +316,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
     }
 }

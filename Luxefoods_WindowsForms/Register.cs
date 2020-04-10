@@ -23,7 +23,7 @@ namespace Luxefoods_WindowsForms
 
         static string EncryptPassword(string text)
         {
-            using(MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
             {
                 UTF8Encoding utf8 = new UTF8Encoding();
                 byte[] data = md5.ComputeHash(utf8.GetBytes(text));
@@ -32,13 +32,21 @@ namespace Luxefoods_WindowsForms
         }
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
-            if(VoornaamTxtBox.Text == "" || AchternaamTxtBox.Text== "" || TelefoonTxtBox.Text== "" || EmailTxtBox.Text== "" || PasswordTxtBox.Text == "")
+            if (VoornaamTxtBox.Text == "" || AchternaamTxtBox.Text == "" || TelefoonTxtBox.Text == "" || EmailTxtBox.Text == "" || PasswordTxtBox.Text == "" || VerifyPasswordTxtBox.Text == "")
             {
-                MessageBox.Show("Vul alle velden in.");
+                MessageBox.Show("Fill everything in.");
+            }
+            else if(PasswordTxtBox.TextLength < 8)
+            {
+                MessageBox.Show("Password needs to be longer");
+            }
+            else if(PasswordTxtBox.Text != VerifyPasswordTxtBox.Text)
+            {
+                label6.Text = "Password doesn't match";
             }
             else
             {
-                SqlConnection con = new SqlConnection("Data Source=LAPTOP-TMQHDKHS;Initial Catalog=LuxeFoods;Integrated Security=True");
+                SqlConnection con = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
@@ -52,10 +60,10 @@ namespace Luxefoods_WindowsForms
                         con.Close();
 
                         MessageBox.Show("Saved user");
-
+                        this.Hide();
                         Login form2 = new Login();
                         form2.Show();
-                        this.Hide();
+                        this.Close();
                     }
                     catch (Exception ex)
                     {

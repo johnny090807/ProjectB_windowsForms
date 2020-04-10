@@ -59,6 +59,24 @@
             this.AchternaamTxtBox.Location = new System.Drawing.Point(292, 288);
             this.AchternaamTxtBox.Name = "AchternaamTxtBox";
             this.AchternaamTxtBox.Size = new System.Drawing.Size(333, 53);
+            this.VerifyPasswordTxtBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // VoornaamTxtBox
+            // 
+            this.VoornaamTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.VoornaamTxtBox.Location = new System.Drawing.Point(80, 67);
+            this.VoornaamTxtBox.Name = "VoornaamTxtBox";
+            this.VoornaamTxtBox.Size = new System.Drawing.Size(363, 53);
+            this.VoornaamTxtBox.TabIndex = 0;
+            // 
+            // AchternaamTxtBox
+            // 
+            this.AchternaamTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.AchternaamTxtBox.Location = new System.Drawing.Point(80, 151);
+            this.AchternaamTxtBox.Name = "AchternaamTxtBox";
+            this.AchternaamTxtBox.Size = new System.Drawing.Size(363, 53);
             this.AchternaamTxtBox.TabIndex = 1;
             // 
             // EmailTxtBox
@@ -68,6 +86,10 @@
             this.EmailTxtBox.Location = new System.Drawing.Point(292, 394);
             this.EmailTxtBox.Name = "EmailTxtBox";
             this.EmailTxtBox.Size = new System.Drawing.Size(333, 53);
+            this.EmailTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.EmailTxtBox.Location = new System.Drawing.Point(80, 236);
+            this.EmailTxtBox.Name = "EmailTxtBox";
+            this.EmailTxtBox.Size = new System.Drawing.Size(363, 53);
             this.EmailTxtBox.TabIndex = 2;
             // 
             // RegisterBtn
@@ -82,6 +104,11 @@
             this.RegisterBtn.Name = "RegisterBtn";
             this.RegisterBtn.Size = new System.Drawing.Size(245, 53);
             this.RegisterBtn.TabIndex = 5;
+            this.RegisterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegisterBtn.Location = new System.Drawing.Point(144, 542);
+            this.RegisterBtn.Name = "RegisterBtn";
+            this.RegisterBtn.Size = new System.Drawing.Size(241, 74);
+            this.RegisterBtn.TabIndex = 6;
             this.RegisterBtn.Text = "Register";
             this.RegisterBtn.UseVisualStyleBackColor = false;
             this.RegisterBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
@@ -99,6 +126,14 @@
             this.LoginBtn.Size = new System.Drawing.Size(245, 52);
             this.LoginBtn.TabIndex = 6;
             this.LoginBtn.Text = "Login";
+            this.LoginBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.LoginBtn.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.LoginBtn.Location = new System.Drawing.Point(12, 622);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(506, 23);
+            this.LoginBtn.TabIndex = 7;
+            this.LoginBtn.Text = "Already have an account? Click here...";
             this.LoginBtn.UseVisualStyleBackColor = false;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
@@ -111,6 +146,11 @@
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(206, 47);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(85, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Voornaam";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -123,6 +163,11 @@
             this.label2.Location = new System.Drawing.Point(330, 238);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(243, 47);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.Location = new System.Drawing.Point(85, 123);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Achternaam";
             // 
@@ -134,6 +179,11 @@
             this.label3.Location = new System.Drawing.Point(398, 344);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 47);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label3.Location = new System.Drawing.Point(85, 208);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 25);
             this.label3.TabIndex = 7;
             this.label3.Text = "Email";
             // 
@@ -145,6 +195,11 @@
             this.label4.Location = new System.Drawing.Point(367, 556);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(194, 47);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label4.Location = new System.Drawing.Point(85, 373);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 25);
             this.label4.TabIndex = 8;
             this.label4.Text = "Password";
             // 
@@ -156,6 +211,11 @@
             this.PasswordTxtBox.Name = "PasswordTxtBox";
             this.PasswordTxtBox.PasswordChar = '*';
             this.PasswordTxtBox.Size = new System.Drawing.Size(333, 53);
+            this.PasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.PasswordTxtBox.Location = new System.Drawing.Point(80, 401);
+            this.PasswordTxtBox.Name = "PasswordTxtBox";
+            this.PasswordTxtBox.PasswordChar = '€';
+            this.PasswordTxtBox.Size = new System.Drawing.Size(363, 53);
             this.PasswordTxtBox.TabIndex = 4;
             // 
             // label5
@@ -166,6 +226,11 @@
             this.label5.Location = new System.Drawing.Point(284, 450);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(341, 47);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label5.Location = new System.Drawing.Point(85, 292);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(179, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Telefoon nummer";
             // 
@@ -233,6 +298,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(900, 129);
             this.panel2.TabIndex = 12;
+            this.TelefoonTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.TelefoonTxtBox.Location = new System.Drawing.Point(80, 317);
+            this.TelefoonTxtBox.Name = "TelefoonTxtBox";
+            this.TelefoonTxtBox.Size = new System.Drawing.Size(363, 53);
+            this.TelefoonTxtBox.TabIndex = 3;
+            // 
+            // VerifyPasswordTxtBox
+            // 
+            this.VerifyPasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.VerifyPasswordTxtBox.Location = new System.Drawing.Point(80, 483);
+            this.VerifyPasswordTxtBox.Name = "VerifyPasswordTxtBox";
+            this.VerifyPasswordTxtBox.PasswordChar = '€';
+            this.VerifyPasswordTxtBox.Size = new System.Drawing.Size(363, 53);
+            this.VerifyPasswordTxtBox.TabIndex = 5;
             // 
             // label6
             // 
@@ -281,6 +360,13 @@
             this.VoornaamTxtBox.Name = "VoornaamTxtBox";
             this.VoornaamTxtBox.Size = new System.Drawing.Size(333, 53);
             this.VoornaamTxtBox.TabIndex = 11;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label6.Location = new System.Drawing.Point(85, 455);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(165, 25);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Verify password";
             // 
             // Register
             // 
@@ -289,6 +375,22 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(153)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(900, 897);
             this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(530, 657);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.VerifyPasswordTxtBox);
+            this.Controls.Add(this.TelefoonTxtBox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.PasswordTxtBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LoginBtn);
+            this.Controls.Add(this.RegisterBtn);
+            this.Controls.Add(this.EmailTxtBox);
+            this.Controls.Add(this.AchternaamTxtBox);
+            this.Controls.Add(this.VoornaamTxtBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Register";
             this.Text = "Form1";
@@ -322,6 +424,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox VerifyPasswordTxtBox;
+        private System.Windows.Forms.Label label6;
     }
 }
 

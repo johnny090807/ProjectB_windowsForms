@@ -19,6 +19,7 @@ namespace Luxefoods_WindowsForms
             InitializeComponent();
             CenterToScreen();
             this.AcceptButton = LoginBtn;
+            this.SetStyle(ControlStyles.UserPaint, true);
         }
         static string EncryptPassword(string text)
         {
@@ -44,14 +45,14 @@ namespace Luxefoods_WindowsForms
             }
             else
             {
-                SqlConnection con = new SqlConnection("Data Source=LAPTOP-TMQHDKHS;Initial Catalog=LuxeFoods;Integrated Security=True");
-                con.Open();
-                if (con.State == System.Data.ConnectionState.Open)
+                string q = $"SELECT DISTINCT * FROM [user] WHERE email='{EmailCheck.Text}'";
+                string password = "";
+                string typedPassword = EncryptPassword(PasswordCheck.Text);
+                try
                 {
-                    string q = $"SELECT DISTINCT * FROM [user] WHERE email='{EmailCheck.Text}'";
-                    string password = "";
-                    string typedPassword = EncryptPassword(PasswordCheck.Text);
-                    try
+                    SqlConnection con = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                    con.Open();
+                    if (con.State == System.Data.ConnectionState.Open)
                     {
                         SqlCommand cmd = new SqlCommand(q, con);
                         cmd.ExecuteNonQuery();
@@ -66,19 +67,21 @@ namespace Luxefoods_WindowsForms
                         }
                         if (typedPassword == password)
                         {
-                            MessageBox.Show("Je bent ingelogd.");
+                            MessageBox.Show("Je bent nu ingelogd.");
+                            this.Hide();
+                            reservation registerForm = new reservation();
+                            registerForm.Show();
+                            this.Close();
                         }
                         else
                         {
                             MessageBox.Show("deze gebruiker bestaat niet, of het wachtwoord is verkeerd ingevuld.");
-                        }   
-                        
+                        }
                     }
-                    catch(Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                  
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
@@ -148,3 +151,4 @@ namespace Luxefoods_WindowsForms
         }
     }
 }
+
