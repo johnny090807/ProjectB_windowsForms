@@ -34,6 +34,8 @@
             this.RegisterBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.exitBtn = new System.Windows.Forms.Button();
+            this.minimizeBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // EmailCheck
@@ -105,12 +107,34 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
             // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.exitBtn.Location = new System.Drawing.Point(602, -1);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(37, 35);
+            this.exitBtn.TabIndex = 6;
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            // 
+            // minimizeBtn
+            // 
+            this.minimizeBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.minimizeBtn.Location = new System.Drawing.Point(566, -1);
+            this.minimizeBtn.Name = "minimizeBtn";
+            this.minimizeBtn.Size = new System.Drawing.Size(37, 35);
+            this.minimizeBtn.TabIndex = 8;
+            this.minimizeBtn.UseVisualStyleBackColor = false;
+            this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(638, 610);
+            this.Controls.Add(this.minimizeBtn);
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.RegisterBtn);
@@ -133,5 +157,7 @@
         private System.Windows.Forms.Button RegisterBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button exitBtn;
+        private System.Windows.Forms.Button minimizeBtn;
     }
 }

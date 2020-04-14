@@ -42,12 +42,14 @@
             this.TelefoonTxtBox = new System.Windows.Forms.TextBox();
             this.VerifyPasswordTxtBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.minimizeBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // VoornaamTxtBox
             // 
             this.VoornaamTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.VoornaamTxtBox.Location = new System.Drawing.Point(80, 67);
+            this.VoornaamTxtBox.Location = new System.Drawing.Point(81, 45);
             this.VoornaamTxtBox.Name = "VoornaamTxtBox";
             this.VoornaamTxtBox.Size = new System.Drawing.Size(363, 53);
             this.VoornaamTxtBox.TabIndex = 0;
@@ -55,7 +57,7 @@
             // AchternaamTxtBox
             // 
             this.AchternaamTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.AchternaamTxtBox.Location = new System.Drawing.Point(80, 151);
+            this.AchternaamTxtBox.Location = new System.Drawing.Point(81, 129);
             this.AchternaamTxtBox.Name = "AchternaamTxtBox";
             this.AchternaamTxtBox.Size = new System.Drawing.Size(363, 53);
             this.AchternaamTxtBox.TabIndex = 1;
@@ -63,7 +65,7 @@
             // EmailTxtBox
             // 
             this.EmailTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.EmailTxtBox.Location = new System.Drawing.Point(80, 236);
+            this.EmailTxtBox.Location = new System.Drawing.Point(81, 214);
             this.EmailTxtBox.Name = "EmailTxtBox";
             this.EmailTxtBox.Size = new System.Drawing.Size(363, 53);
             this.EmailTxtBox.TabIndex = 2;
@@ -97,7 +99,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(85, 39);
+            this.label1.Location = new System.Drawing.Point(86, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 25);
             this.label1.TabIndex = 5;
@@ -108,7 +110,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(85, 123);
+            this.label2.Location = new System.Drawing.Point(86, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 25);
             this.label2.TabIndex = 6;
@@ -119,7 +121,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(85, 208);
+            this.label3.Location = new System.Drawing.Point(86, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 25);
             this.label3.TabIndex = 7;
@@ -130,7 +132,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label4.Location = new System.Drawing.Point(85, 373);
+            this.label4.Location = new System.Drawing.Point(86, 351);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 25);
             this.label4.TabIndex = 8;
@@ -139,7 +141,7 @@
             // PasswordTxtBox
             // 
             this.PasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.PasswordTxtBox.Location = new System.Drawing.Point(80, 401);
+            this.PasswordTxtBox.Location = new System.Drawing.Point(81, 379);
             this.PasswordTxtBox.Name = "PasswordTxtBox";
             this.PasswordTxtBox.PasswordChar = '€';
             this.PasswordTxtBox.Size = new System.Drawing.Size(363, 53);
@@ -150,7 +152,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.Location = new System.Drawing.Point(85, 292);
+            this.label5.Location = new System.Drawing.Point(86, 270);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(179, 25);
             this.label5.TabIndex = 10;
@@ -159,7 +161,7 @@
             // TelefoonTxtBox
             // 
             this.TelefoonTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.TelefoonTxtBox.Location = new System.Drawing.Point(80, 317);
+            this.TelefoonTxtBox.Location = new System.Drawing.Point(81, 295);
             this.TelefoonTxtBox.Name = "TelefoonTxtBox";
             this.TelefoonTxtBox.Size = new System.Drawing.Size(363, 53);
             this.TelefoonTxtBox.TabIndex = 3;
@@ -167,7 +169,7 @@
             // VerifyPasswordTxtBox
             // 
             this.VerifyPasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.VerifyPasswordTxtBox.Location = new System.Drawing.Point(80, 483);
+            this.VerifyPasswordTxtBox.Location = new System.Drawing.Point(81, 461);
             this.VerifyPasswordTxtBox.Name = "VerifyPasswordTxtBox";
             this.VerifyPasswordTxtBox.PasswordChar = '€';
             this.VerifyPasswordTxtBox.Size = new System.Drawing.Size(363, 53);
@@ -178,11 +180,31 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.Location = new System.Drawing.Point(85, 455);
+            this.label6.Location = new System.Drawing.Point(86, 433);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(165, 25);
             this.label6.TabIndex = 12;
             this.label6.Text = "Verify password";
+            // 
+            // minimizeBtn
+            // 
+            this.minimizeBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.minimizeBtn.Location = new System.Drawing.Point(458, -1);
+            this.minimizeBtn.Name = "minimizeBtn";
+            this.minimizeBtn.Size = new System.Drawing.Size(37, 35);
+            this.minimizeBtn.TabIndex = 14;
+            this.minimizeBtn.UseVisualStyleBackColor = false;
+            this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.exitBtn.Location = new System.Drawing.Point(494, -1);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(37, 35);
+            this.exitBtn.TabIndex = 13;
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // Register
             // 
@@ -190,6 +212,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(530, 657);
+            this.Controls.Add(this.minimizeBtn);
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.VerifyPasswordTxtBox);
             this.Controls.Add(this.TelefoonTxtBox);
@@ -228,6 +252,8 @@
         private System.Windows.Forms.TextBox TelefoonTxtBox;
         private System.Windows.Forms.TextBox VerifyPasswordTxtBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button minimizeBtn;
+        private System.Windows.Forms.Button exitBtn;
     }
 }
 
