@@ -76,7 +76,8 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            Login form2 = new Login();
+            Template form2 = new Template();
+            //Login form2 = new Login();
             form2.Show();
             this.Hide();
         }

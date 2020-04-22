@@ -1,2 +1,7 @@
-.vs/
-Luxefoods_WindowsForms/Debug
+
+*.cache
+*.ide-wal
+*.ide-shm
+*.ide
+*.lock
+*.cache

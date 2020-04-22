@@ -18,127 +18,8 @@ namespace Luxefoods_WindowsForms
             CenterToScreen();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox36_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox19_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox24_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox29_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox37_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox35_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox30_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox25_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox15_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox20_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox11_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox21_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox26_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void reservation_Load(object sender, EventArgs e)
+<<<<<<< HEAD
+        private void AvailabilityTable_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -150,4 +31,64 @@ namespace Luxefoods_WindowsForms
             this.Hide();
         }
     }
+=======
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            if (System.Windows.Forms.Application.MessageLoop)
+            {
+                // WinForms app
+                System.Windows.Forms.Application.Exit();
+            }
+            else
+            {
+                // Console app
+                System.Environment.Exit(1);
+            }
+        }
+
+        private void ExitButton_Hover_Enter(object sender, EventArgs e)
+            {
+                ExitButton.ForeColor = Color.Red;
+            }
+
+        private void ExitButton_Hover_Leave(object sender, EventArgs e)
+            {
+                ExitButton.ForeColor = Color.Black;
+            }
+
+            private void MinimizeButton_Click(object sender, EventArgs e)
+            {
+                this.WindowState = FormWindowState.Minimized;
+            }
+
+            private void MinimizeButton_Hover_Enter(object sender, EventArgs e)
+            {
+                MinimizeButton.ForeColor = Color.Red;
+            }
+            private void MinimizeButton_Hover_Leave(object sender, EventArgs e)
+            {
+                MinimizeButton.ForeColor = Color.Black;
+            }
+            }
+
+>>>>>>> 49ebca64aa05286d51b4bfd46225fd20d1003680
+
+    /*
+     * ----- CHECK AVAILABILITY BUTTON -----
+     * People = seats.value
+     * Date = dateTimePicker1.value
+     * TableSize = 4
+     * TablesNeeded = People // TableSize
+     * ShowAvailableTables(TablesNeeded)
+     * 
+     * 
+     * 
+     * ----- ShowShowAvailableTables(int amountOfTables) -----
+     * fetch data from the database
+     * look for amounrOfTables in the same zone for the same time
+     * 
+     *
+     * 
+     * 
+     */
 }
