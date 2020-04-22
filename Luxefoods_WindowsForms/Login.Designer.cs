@@ -41,7 +41,7 @@
             // EmailCheck
             // 
             this.EmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.EmailCheck.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.EmailCheck.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.EmailCheck.Location = new System.Drawing.Point(78, 102);
             this.EmailCheck.Name = "EmailCheck";
             this.EmailCheck.Size = new System.Drawing.Size(477, 53);
@@ -50,7 +50,7 @@
             // PasswordCheck
             // 
             this.PasswordCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.PasswordCheck.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.PasswordCheck.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PasswordCheck.Location = new System.Drawing.Point(78, 214);
             this.PasswordCheck.Name = "PasswordCheck";
             this.PasswordCheck.PasswordChar = '*';

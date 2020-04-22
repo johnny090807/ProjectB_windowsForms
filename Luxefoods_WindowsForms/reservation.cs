@@ -15,6 +15,7 @@ namespace Luxefoods_WindowsForms
         public reservation()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -140,6 +141,13 @@ namespace Luxefoods_WindowsForms
         private void reservation_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void RegisterBtn_Click(object sender, EventArgs e)
+        {
+            Register form1 = new Register();
+            form1.Show();
+            this.Hide();
         }
     }
 }

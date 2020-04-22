@@ -16,6 +16,13 @@ namespace Luxefoods_WindowsForms
     {
         public Login()
         {
+            bool loggedIn = false;
+            if(loggedIn)
+            {
+                reservation form1 = new reservation();
+                form1.Show();
+                this.Hide();
+            }
             InitializeComponent();
             CenterToScreen();
             this.AcceptButton = LoginBtn;
