@@ -10,6 +10,10 @@ using System.Text;
 namespace Luxefoods_WindowsForms
 {
     // Class that stores data of takenSeats
+    public static class LoginInfo
+    {
+        public static string Email;
+    }
     public class TakenSeats
     {
         public DateTime takenTime { get; set; }
@@ -22,7 +26,7 @@ namespace Luxefoods_WindowsForms
             restaurantId = restaurantid;
         }
     }
-    class ReservationBackEnd
+   /* class ReservationBackEnd
     {
         //Connection string to connect with the database
         SqlConnection connection = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -1020,5 +1024,5 @@ namespace Luxefoods_WindowsForms
                 }
             }
         }
-    }
+    }*/
 }

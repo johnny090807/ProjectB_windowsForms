@@ -14,6 +14,7 @@ namespace Luxefoods_WindowsForms
     {
         public Template()
         {
+            
             InitializeComponent();
         }
 

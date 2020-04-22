@@ -14,11 +14,17 @@ namespace Luxefoods_WindowsForms
 {
     public partial class Register : Form
     {
+
+        public Login.User person = Login.person;
         public Register()
         {
             InitializeComponent();
             CenterToScreen();
             this.AcceptButton = RegisterBtn;
+            if (person != null)
+            {
+                label1.Text = person.firstName;
+            }
         }
 
         static string EncryptPassword(string text)
@@ -76,8 +82,8 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            Template form2 = new Template();
-            //Login form2 = new Login();
+            //Template form2 = new Template();
+            Login form2 = new Login();
             form2.Show();
             this.Hide();
         }
