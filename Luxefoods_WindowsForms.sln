@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luxefoods_WindowsForms", "Luxefoods_WindowsForms\Luxefoods_WindowsForms.csproj", "{7BDE5152-15B6-47E6-9380-296ED2D8A109}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReservationApp-BackEnd", "..\ReservationApp-BackEnd\ReservationApp-BackEnd\ReservationApp-BackEnd.csproj", "{382282BF-87B6-48B4-ACE3-0B804EA1195F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81CF8D01-F76B-4E6D-82FB-47E78EB251C5}"
 	ProjectSection(SolutionItems) = preProject
 		..\ReservationApp-BackEnd\.editorconfig = ..\ReservationApp-BackEnd\.editorconfig
@@ -22,10 +20,6 @@ Global
 		{7BDE5152-15B6-47E6-9380-296ED2D8A109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BDE5152-15B6-47E6-9380-296ED2D8A109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BDE5152-15B6-47E6-9380-296ED2D8A109}.Release|Any CPU.Build.0 = Release|Any CPU
-		{382282BF-87B6-48B4-ACE3-0B804EA1195F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{382282BF-87B6-48B4-ACE3-0B804EA1195F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{382282BF-87B6-48B4-ACE3-0B804EA1195F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{382282BF-87B6-48B4-ACE3-0B804EA1195F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
