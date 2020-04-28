@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Luxefoods_WindowsForms
 {
-    public partial class reservation : Form
+    public partial class Reservation : Form
     {
-        public reservation()
+        public Reservation()
         {
             InitializeComponent();
         }

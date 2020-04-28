@@ -1,6 +1,6 @@
 ﻿namespace Luxefoods_WindowsForms
 {
-    partial class reservation
+    partial class Reservation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reservation));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reservation));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Seats = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
