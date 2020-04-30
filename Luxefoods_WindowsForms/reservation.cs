@@ -59,6 +59,30 @@ namespace Luxefoods_WindowsForms
             {
                 MinimizeButton.ForeColor = Color.Black;
             }
+
+        private void aboutUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            aboutUs f1 = new aboutUs();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void reservationsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            checkReservation f2 = new checkReservation();
+            f2.ShowDialog();
+            this.Close();
+        }
+
+        private void contactUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            contactUs f1 = new contactUs();
+            f1.ShowDialog();
+            this.Close();
+        }
     }
 
     /*

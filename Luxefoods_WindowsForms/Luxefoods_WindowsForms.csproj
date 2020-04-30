@@ -65,17 +65,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Check reservation.cs">
+    <Compile Include="aboutUs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Check reservation.Designer.cs">
-      <DependentUpon>Check reservation.cs</DependentUpon>
+    <Compile Include="aboutUs.Designer.cs">
+      <DependentUpon>aboutUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modify reservation.cs">
+    <Compile Include="checkReservation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modify reservation.Designer.cs">
-      <DependentUpon>Modify reservation.cs</DependentUpon>
+    <Compile Include="checkReservation.Designer.cs">
+      <DependentUpon>checkReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contactUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contactUs.Designer.cs">
+      <DependentUpon>contactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifyReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifyReservation.Designer.cs">
+      <DependentUpon>modifyReservation.cs</DependentUpon>
     </Compile>
     <Compile Include="Reservation.cs">
       <SubType>Form</SubType>
@@ -103,11 +115,11 @@
     <Compile Include="Template.Designer.cs">
       <DependentUpon>Template.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Check reservation.resx">
-      <DependentUpon>Check reservation.cs</DependentUpon>
+    <EmbeddedResource Include="checkReservation.resx">
+      <DependentUpon>checkReservation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modify reservation.resx">
-      <DependentUpon>Modify reservation.cs</DependentUpon>
+    <EmbeddedResource Include="modifyReservation.resx">
+      <DependentUpon>modifyReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reservation.resx">
       <DependentUpon>Reservation.cs</DependentUpon>
