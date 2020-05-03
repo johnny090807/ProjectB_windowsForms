@@ -83,6 +83,11 @@
     <Compile Include="contactUs.Designer.cs">
       <DependentUpon>contactUs.cs</DependentUpon>
     </Compile>
+    <Compile Include="LuxeFoodsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LuxeFoodsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="modifyReservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +150,28 @@
     <None Include="..\..\ReservationApp-BackEnd\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
+    <None Include="LuxeFoodsDataSet.xsc">
+      <DependentUpon>LuxeFoodsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LuxeFoodsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LuxeFoodsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LuxeFoodsDataSet.xss">
+      <DependentUpon>LuxeFoodsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\aboutUs.datasource" />
+    <None Include="Properties\DataSources\checkReservation.datasource" />
+    <None Include="Properties\DataSources\contactUs.datasource" />
+    <None Include="Properties\DataSources\Login.datasource" />
+    <None Include="Properties\DataSources\Luxefoods_WindowsForms.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Luxefoods_WindowsForms.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Modify_reservation.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Register.datasource" />
+    <None Include="Properties\DataSources\Reservation.datasource" />
+    <None Include="Properties\DataSources\Template.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

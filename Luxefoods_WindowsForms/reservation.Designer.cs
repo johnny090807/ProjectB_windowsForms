@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reservation));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Seats = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.restaurantBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.luxeFoodsDataSet = new Luxefoods_WindowsForms.LuxeFoodsDataSet();
+            this.availabilityButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AvailabilityTable = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
@@ -47,7 +50,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ExitButton = new System.Windows.Forms.Label();
@@ -59,15 +61,26 @@
             this.menuButton = new System.Windows.Forms.LinkLabel();
             this.contactUsButton = new System.Windows.Forms.LinkLabel();
             this.loginButton = new System.Windows.Forms.LinkLabel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.restaurantSelection = new System.Windows.Forms.ComboBox();
+            this.restaurantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restaurantTableAdapter = new Luxefoods_WindowsForms.LuxeFoodsDataSetTableAdapters.restaurantTableAdapter();
+            this.reserveringBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reserveringTableAdapter = new Luxefoods_WindowsForms.LuxeFoodsDataSetTableAdapters.reserveringTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luxeFoodsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.AvailabilityTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reserveringBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dateTimePicker1.Location = new System.Drawing.Point(92, 481);
+            this.dateTimePicker1.Location = new System.Drawing.Point(23, 503);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(505, 53);
@@ -76,6 +89,7 @@
             // Seats
             // 
             this.Seats.BackColor = System.Drawing.Color.Black;
+            this.Seats.ForeColor = System.Drawing.Color.White;
             this.Seats.FormattingEnabled = true;
             this.Seats.Items.AddRange(new object[] {
             "1",
@@ -85,29 +99,48 @@
             "5",
             "6",
             "7",
-            "8"});
-            this.Seats.Location = new System.Drawing.Point(680, 349);
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"});
+            this.Seats.Location = new System.Drawing.Point(605, 403);
             this.Seats.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.Seats.Name = "Seats";
-            this.Seats.Size = new System.Drawing.Size(365, 54);
+            this.Seats.Size = new System.Drawing.Size(351, 54);
             this.Seats.TabIndex = 1;
             // 
-            // button1
+            // restaurantBindingSource1
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(680, 481);
-            this.button1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(351, 52);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Check Availability";
-            this.button1.UseVisualStyleBackColor = false;
+            this.restaurantBindingSource1.DataMember = "restaurant";
+            this.restaurantBindingSource1.DataSource = this.luxeFoodsDataSet;
+            // 
+            // luxeFoodsDataSet
+            // 
+            this.luxeFoodsDataSet.DataSetName = "LuxeFoodsDataSet";
+            this.luxeFoodsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // availabilityButton
+            // 
+            this.availabilityButton.BackColor = System.Drawing.Color.Black;
+            this.availabilityButton.ForeColor = System.Drawing.Color.White;
+            this.availabilityButton.Location = new System.Drawing.Point(605, 505);
+            this.availabilityButton.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.availabilityButton.Name = "availabilityButton";
+            this.availabilityButton.Size = new System.Drawing.Size(351, 52);
+            this.availabilityButton.TabIndex = 2;
+            this.availabilityButton.Text = "Check Availability";
+            this.availabilityButton.UseVisualStyleBackColor = false;
+            this.availabilityButton.Click += new System.EventHandler(this.availabilityButton_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1082, 159);
+            this.pictureBox1.Location = new System.Drawing.Point(1013, 151);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(758, 545);
             this.pictureBox1.TabIndex = 5;
@@ -140,7 +173,7 @@
             this.AvailabilityTable.Controls.Add(this.label11, 0, 6);
             this.AvailabilityTable.Cursor = System.Windows.Forms.Cursors.Default;
             this.AvailabilityTable.ForeColor = System.Drawing.Color.White;
-            this.AvailabilityTable.Location = new System.Drawing.Point(92, 723);
+            this.AvailabilityTable.Location = new System.Drawing.Point(23, 702);
             this.AvailabilityTable.Name = "AvailabilityTable";
             this.AvailabilityTable.RowCount = 7;
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -153,7 +186,6 @@
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.AvailabilityTable.Size = new System.Drawing.Size(1748, 394);
             this.AvailabilityTable.TabIndex = 6;
-            this.AvailabilityTable.Paint += new System.Windows.Forms.PaintEventHandler(this.AvailabilityTable_Paint);
             // 
             // label9
             // 
@@ -298,23 +330,12 @@
             this.label11.Text = "Area 6";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox32
-            // 
-            this.textBox32.BackColor = System.Drawing.Color.Black;
-            this.textBox32.ForeColor = System.Drawing.Color.White;
-            this.textBox32.Location = new System.Drawing.Point(92, 641);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(364, 53);
-            this.textBox32.TabIndex = 7;
-            this.textBox32.Text = "Available Tables";
-            this.textBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(94, 349);
+            this.label1.Location = new System.Drawing.Point(25, 406);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(515, 46);
             this.label1.TabIndex = 8;
@@ -333,7 +354,7 @@
             // 
             this.ExitButton.AutoSize = true;
             this.ExitButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(1852, 40);
+            this.ExitButton.Location = new System.Drawing.Point(1713, 40);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(48, 51);
@@ -347,7 +368,7 @@
             // 
             this.MinimizeButton.AutoSize = true;
             this.MinimizeButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MinimizeButton.Location = new System.Drawing.Point(1787, 40);
+            this.MinimizeButton.Location = new System.Drawing.Point(1658, 40);
             this.MinimizeButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MinimizeButton.Name = "MinimizeButton";
             this.MinimizeButton.Size = new System.Drawing.Size(34, 51);
@@ -361,7 +382,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1327, 1174);
+            this.button2.Location = new System.Drawing.Point(1316, 1102);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(427, 65);
             this.button2.TabIndex = 13;
@@ -387,7 +408,7 @@
             this.aboutUsButton.AutoSize = true;
             this.aboutUsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.aboutUsButton.LinkColor = System.Drawing.Color.White;
-            this.aboutUsButton.Location = new System.Drawing.Point(431, 45);
+            this.aboutUsButton.Location = new System.Drawing.Point(399, 45);
             this.aboutUsButton.Name = "aboutUsButton";
             this.aboutUsButton.Size = new System.Drawing.Size(178, 46);
             this.aboutUsButton.TabIndex = 15;
@@ -401,7 +422,7 @@
             this.reservationsButton.AutoSize = true;
             this.reservationsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.reservationsButton.LinkColor = System.Drawing.Color.White;
-            this.reservationsButton.Location = new System.Drawing.Point(686, 45);
+            this.reservationsButton.Location = new System.Drawing.Point(637, 45);
             this.reservationsButton.Name = "reservationsButton";
             this.reservationsButton.Size = new System.Drawing.Size(252, 46);
             this.reservationsButton.TabIndex = 16;
@@ -415,7 +436,7 @@
             this.menuButton.AutoSize = true;
             this.menuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.menuButton.LinkColor = System.Drawing.Color.White;
-            this.menuButton.Location = new System.Drawing.Point(1319, 48);
+            this.menuButton.Location = new System.Drawing.Point(1217, 48);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(119, 46);
             this.menuButton.TabIndex = 17;
@@ -428,7 +449,7 @@
             this.contactUsButton.AutoSize = true;
             this.contactUsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.contactUsButton.LinkColor = System.Drawing.Color.White;
-            this.contactUsButton.Location = new System.Drawing.Point(1015, 48);
+            this.contactUsButton.Location = new System.Drawing.Point(948, 45);
             this.contactUsButton.Name = "contactUsButton";
             this.contactUsButton.Size = new System.Drawing.Size(212, 46);
             this.contactUsButton.TabIndex = 18;
@@ -442,19 +463,73 @@
             this.loginButton.AutoSize = true;
             this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.loginButton.LinkColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(1532, 48);
+            this.loginButton.Location = new System.Drawing.Point(1414, 45);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(118, 46);
             this.loginButton.TabIndex = 19;
             this.loginButton.TabStop = true;
             this.loginButton.Text = "Login";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Black;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(25, 635);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(311, 46);
+            this.label16.TabIndex = 20;
+            this.label16.Text = "Available Tables";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Black;
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(25, 322);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(305, 46);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "Which location?";
+            // 
+            // restaurantSelection
+            // 
+            this.restaurantSelection.BackColor = System.Drawing.Color.Black;
+            this.restaurantSelection.DataSource = this.restaurantBindingSource;
+            this.restaurantSelection.DisplayMember = "naam";
+            this.restaurantSelection.ForeColor = System.Drawing.Color.White;
+            this.restaurantSelection.FormattingEnabled = true;
+            this.restaurantSelection.Location = new System.Drawing.Point(605, 319);
+            this.restaurantSelection.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.restaurantSelection.Name = "restaurantSelection";
+            this.restaurantSelection.Size = new System.Drawing.Size(351, 54);
+            this.restaurantSelection.TabIndex = 1;
+            // 
+            // restaurantBindingSource
+            // 
+            this.restaurantBindingSource.DataMember = "restaurant";
+            this.restaurantBindingSource.DataSource = this.luxeFoodsDataSet;
+            // 
+            // restaurantTableAdapter
+            // 
+            this.restaurantTableAdapter.ClearBeforeFill = true;
+            // 
+            // reserveringBindingSource
+            // 
+            this.reserveringBindingSource.DataMember = "reservering";
+            this.reserveringBindingSource.DataSource = this.luxeFoodsDataSet;
+            // 
+            // reserveringTableAdapter
+            // 
+            this.reserveringTableAdapter.ClearBeforeFill = true;
+            // 
             // Reservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1924, 1276);
+            this.ClientSize = new System.Drawing.Size(1800, 1200);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.contactUsButton);
             this.Controls.Add(this.menuButton);
@@ -464,11 +539,12 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.MinimizeButton);
             this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox32);
             this.Controls.Add(this.AvailabilityTable);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.availabilityButton);
+            this.Controls.Add(this.restaurantSelection);
             this.Controls.Add(this.Seats);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox2);
@@ -476,11 +552,18 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.Name = "Reservation";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Make a reservation";
+            this.Load += new System.EventHandler(this.Reservation_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luxeFoodsDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.AvailabilityTable.ResumeLayout(false);
             this.AvailabilityTable.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reserveringBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -490,10 +573,9 @@
 
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox Seats;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button availabilityButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel AvailabilityTable;
-        private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
@@ -518,5 +600,14 @@
         private System.Windows.Forms.LinkLabel menuButton;
         private System.Windows.Forms.LinkLabel contactUsButton;
         private System.Windows.Forms.LinkLabel loginButton;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox restaurantSelection;
+        private LuxeFoodsDataSet luxeFoodsDataSet;
+        private System.Windows.Forms.BindingSource restaurantBindingSource;
+        private LuxeFoodsDataSetTableAdapters.restaurantTableAdapter restaurantTableAdapter;
+        private System.Windows.Forms.BindingSource reserveringBindingSource;
+        private LuxeFoodsDataSetTableAdapters.reserveringTableAdapter reserveringTableAdapter;
+        private System.Windows.Forms.BindingSource restaurantBindingSource1;
     }
 }
