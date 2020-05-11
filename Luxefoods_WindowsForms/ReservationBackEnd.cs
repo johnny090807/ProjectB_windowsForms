@@ -12,6 +12,7 @@ namespace Luxefoods_WindowsForms
     // Class that stores data of takenSeats
     public class TakenSeats
     {
+        //20-04-2020 16:00:00
         public DateTime takenTime { get; set; }
         public int takenSeat { get; set; }
         public int restaurantId { get; set; }
@@ -69,13 +70,14 @@ namespace Luxefoods_WindowsForms
                                 userId = reader.GetInt32(0);
                             }
                         }
-
                         // Connectie met database beindigen
                         con.Close();
+
                         //Alle account met zelde email zoals gegeven in login in een dataset zetten
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable();
                         da.Fill(dt);
+
                         //Loopen door de dataset om te kijken of de wachtwoord over een komt met de geven wachtwoord
                         foreach (DataRow dr in dt.Rows)
                         {
@@ -327,7 +329,6 @@ namespace Luxefoods_WindowsForms
                     // Security check om te kijken of de uiteindelijke data zeker beschikbaar is
                     foreach (TakenSeats x in takenTimesWithTables)
                     {
-
                         // Als gereserveerde tijd zelfde is als gekozen tijd en tafel nummer zelfde is als gekozen tafel nummer en restaurant ids zijn ook zelfde dan is die plek als gereserveerd door iemand anders
                         if (x.takenTime == parsedDate && x.takenSeat == tableNumber && x.restaurantId == restaurantId)
                         {
@@ -336,18 +337,15 @@ namespace Luxefoods_WindowsForms
                             break;
                         }
                     }
-
                     // Als dit niet klopt dan sturen wij de data naar de database
                     connection.Open();
                     if (connection.State == System.Data.ConnectionState.Open && trueData)
                     {
-
                         // SQL Command om de RestaurantId, UserId, date en tableNumber in de database in de juiste plekken te zetten
                         string q = $"INSERT INTO [reservering] (restaurantId, klantId, datum, tafelNummer) VALUES  ('{restaurantId}', '{userId}', '{date}', '{tableNumber}')";
 
                         try
                         {
-
                             // de SQL command in een command zetten met de erbij toegevoegde connection string
                             SqlCommand cmd = new SqlCommand(q, connection);
 
@@ -364,12 +362,10 @@ namespace Luxefoods_WindowsForms
                             Console.WriteLine(ex.Message);
                         }
                     }
-
                     // Connectie met database beindigen
                     connection.Close();
-
-                    //Als 2 dan reservering annuleren
                 }
+                //Als 2 dan reservering annuleren
                 else if (answer32 == 2)
                 {
                     Console.WriteLine("Canceling Reservation....");
