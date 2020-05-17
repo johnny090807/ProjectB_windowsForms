@@ -149,8 +149,9 @@ namespace Luxefoods_WindowsForms
                 connection.Close();
             }
 
-            // RBL: Restaurant kiezen en naar string converten
+            // RBL: Restaurant kiezen en naar string converten// Functie maken om restaurantId van geselecteerd restaurant te selecteren
             string restaurantChoice = restaurantSelection.SelectedItem.ToString();
+            int restaurantId = restaurantSelection.SelectedIndex;
 
             // RBL: DateTime implementeren in class
             DateTime date = dateTimePicker1.Value;
@@ -187,9 +188,9 @@ namespace Luxefoods_WindowsForms
             using (SqlDataReader reader = readCommand.ExecuteReader())
             {
 
-                //(RBL: Weergeven in table vanuit list, of direct vanuit DB in table zetten?) 
-                //De ontvangen data in eigen TakenSeats class zetten om die dan in een list te zetten zodat het makkelijker terug te vinden is.
-                while (reader.Read())
+                //(RBL: Weergeven in table vanuit list, of direct vanuit DB in table zetten?)
+                //(RBL: Oplossing voor weergave: Maak een clickable box, filter deze op tijd (bijv. 16:00-17:00) en op tafelnummer bijv area 1 is 1-20 en geef deze weer in het eerste vakje, maak deze voor alle vakjes)
+                //De ontvangen data in eigen TakenSeats class zetten om die dan in een list te zetten zodat het makkelijker terug te vinden           while (reader.Read())
                 {
                     TakenSeats p1 = new TakenSeats(reader.GetDateTime(0), reader.GetInt32(1), reader.GetInt32(2));
                     takenTimesWithTables.Add(p1);
@@ -199,9 +200,7 @@ namespace Luxefoods_WindowsForms
                 connection.Close();
             }
 
-            Console.WriteLine("Succesfully finished getting all the available times");
-
-            //(RBL: aanpassen, restaurantID bestaat niet in deze versie)
+            //(RBL: aanpassen, restaurantID bestaat niet in deze versie)(RBL: Edit, restaurantId bestaat weer, testen of het nog werkt. mogelijke bug cause!) 
             // Kijken welke tafels al gereserveerd waren en die van de availableTimesWithTables verwijderen
             foreach (TakenSeats x in takenTimesWithTables)
             {
@@ -339,7 +338,5 @@ namespace Luxefoods_WindowsForms
                 }
             }
         }
-
-
     }
 }

@@ -37,19 +37,13 @@
             this.availabilityButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AvailabilityTable = new System.Windows.Forms.TableLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ExitButton = new System.Windows.Forms.Label();
@@ -68,6 +62,9 @@
             this.restaurantTableAdapter = new Luxefoods_WindowsForms.LuxeFoodsDataSetTableAdapters.restaurantTableAdapter();
             this.reserveringBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reserveringTableAdapter = new Luxefoods_WindowsForms.LuxeFoodsDataSetTableAdapters.reserveringTableAdapter();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Reservation_page_title = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.luxeFoodsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,7 +77,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dateTimePicker1.Location = new System.Drawing.Point(23, 503);
+            this.dateTimePicker1.Location = new System.Drawing.Point(23, 557);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(505, 53);
@@ -108,7 +105,7 @@
             "14",
             "15",
             "16"});
-            this.Seats.Location = new System.Drawing.Point(605, 403);
+            this.Seats.Location = new System.Drawing.Point(605, 388);
             this.Seats.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.Seats.Name = "Seats";
             this.Seats.Size = new System.Drawing.Size(351, 54);
@@ -128,7 +125,7 @@
             // 
             this.availabilityButton.BackColor = System.Drawing.Color.Black;
             this.availabilityButton.ForeColor = System.Drawing.Color.White;
-            this.availabilityButton.Location = new System.Drawing.Point(605, 505);
+            this.availabilityButton.Location = new System.Drawing.Point(605, 557);
             this.availabilityButton.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.availabilityButton.Name = "availabilityButton";
             this.availabilityButton.Size = new System.Drawing.Size(351, 52);
@@ -149,7 +146,7 @@
             // AvailabilityTable
             // 
             this.AvailabilityTable.BackColor = System.Drawing.Color.Black;
-            this.AvailabilityTable.ColumnCount = 8;
+            this.AvailabilityTable.ColumnCount = 7;
             this.AvailabilityTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.AvailabilityTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.AvailabilityTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -158,19 +155,13 @@
             this.AvailabilityTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.AvailabilityTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.AvailabilityTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.AvailabilityTable.Controls.Add(this.label9, 6, 0);
-            this.AvailabilityTable.Controls.Add(this.label7, 5, 0);
-            this.AvailabilityTable.Controls.Add(this.label3, 1, 0);
-            this.AvailabilityTable.Controls.Add(this.label4, 2, 0);
-            this.AvailabilityTable.Controls.Add(this.label5, 3, 0);
-            this.AvailabilityTable.Controls.Add(this.label6, 4, 0);
-            this.AvailabilityTable.Controls.Add(this.label8, 7, 0);
-            this.AvailabilityTable.Controls.Add(this.label10, 0, 1);
-            this.AvailabilityTable.Controls.Add(this.label12, 0, 2);
-            this.AvailabilityTable.Controls.Add(this.label13, 0, 3);
-            this.AvailabilityTable.Controls.Add(this.label14, 0, 4);
-            this.AvailabilityTable.Controls.Add(this.label15, 0, 5);
-            this.AvailabilityTable.Controls.Add(this.label11, 0, 6);
+            this.AvailabilityTable.Controls.Add(this.label3, 0, 0);
+            this.AvailabilityTable.Controls.Add(this.label4, 1, 0);
+            this.AvailabilityTable.Controls.Add(this.label5, 2, 0);
+            this.AvailabilityTable.Controls.Add(this.label6, 3, 0);
+            this.AvailabilityTable.Controls.Add(this.label7, 4, 0);
+            this.AvailabilityTable.Controls.Add(this.label9, 5, 0);
+            this.AvailabilityTable.Controls.Add(this.label8, 6, 0);
             this.AvailabilityTable.Cursor = System.Windows.Forms.Cursors.Default;
             this.AvailabilityTable.ForeColor = System.Drawing.Color.White;
             this.AvailabilityTable.Location = new System.Drawing.Point(23, 702);
@@ -187,33 +178,11 @@
             this.AvailabilityTable.Size = new System.Drawing.Size(1748, 394);
             this.AvailabilityTable.TabIndex = 6;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1311, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(209, 40);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "21:00-22:00";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1093, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(209, 40);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "20:00-21:00";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(221, 0);
+            this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(209, 40);
             this.label3.TabIndex = 0;
@@ -224,7 +193,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(439, 0);
+            this.label4.Location = new System.Drawing.Point(252, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(209, 40);
             this.label4.TabIndex = 1;
@@ -235,7 +204,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(657, 0);
+            this.label5.Location = new System.Drawing.Point(501, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(209, 40);
             this.label5.TabIndex = 2;
@@ -246,96 +215,52 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(875, 0);
+            this.label6.Location = new System.Drawing.Point(750, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(209, 40);
             this.label6.TabIndex = 3;
             this.label6.Text = "19:00-20:00";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(999, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(209, 40);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "20:00-21:00";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(1248, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(209, 40);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "21:00-22:00";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1529, 0);
+            this.label8.Location = new System.Drawing.Point(1497, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(209, 40);
             this.label8.TabIndex = 11;
             this.label8.Text = "22:00-23:00";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(3, 56);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(123, 40);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Area 1";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(3, 112);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(123, 40);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "Area 2";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(3, 168);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(123, 40);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "Area 3";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(3, 224);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(123, 40);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "Area 4";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(3, 280);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(123, 40);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "Area 5";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 336);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(123, 40);
-            this.label11.TabIndex = 14;
-            this.label11.Text = "Area 6";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(25, 406);
+            this.label1.Location = new System.Drawing.Point(25, 388);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(515, 46);
             this.label1.TabIndex = 8;
@@ -486,7 +411,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Black;
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(25, 322);
+            this.label17.Location = new System.Drawing.Point(25, 302);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(305, 46);
             this.label17.TabIndex = 8;
@@ -499,7 +424,7 @@
             this.restaurantSelection.DisplayMember = "naam";
             this.restaurantSelection.ForeColor = System.Drawing.Color.White;
             this.restaurantSelection.FormattingEnabled = true;
-            this.restaurantSelection.Location = new System.Drawing.Point(605, 319);
+            this.restaurantSelection.Location = new System.Drawing.Point(605, 302);
             this.restaurantSelection.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.restaurantSelection.Name = "restaurantSelection";
             this.restaurantSelection.Size = new System.Drawing.Size(351, 54);
@@ -523,12 +448,46 @@
             // 
             this.reserveringTableAdapter.ClearBeforeFill = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Black;
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(25, 476);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(490, 46);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Which area do you prefer?";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.Black;
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(605, 476);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(351, 54);
+            this.comboBox1.TabIndex = 21;
+            // 
+            // Reservation_page_title
+            // 
+            this.Reservation_page_title.BackColor = System.Drawing.Color.Black;
+            this.Reservation_page_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reservation_page_title.ForeColor = System.Drawing.Color.White;
+            this.Reservation_page_title.Location = new System.Drawing.Point(156, 165);
+            this.Reservation_page_title.Name = "Reservation_page_title";
+            this.Reservation_page_title.Size = new System.Drawing.Size(751, 91);
+            this.Reservation_page_title.TabIndex = 22;
+            this.Reservation_page_title.Text = "Place your reservation";
+            // 
             // Reservation
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1800, 1200);
+            this.Controls.Add(this.Reservation_page_title);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.contactUsButton);
@@ -540,6 +499,7 @@
             this.Controls.Add(this.MinimizeButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.label17);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AvailabilityTable);
             this.Controls.Add(this.pictureBox1);
@@ -584,12 +544,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label ExitButton;
         private System.Windows.Forms.Label MinimizeButton;
@@ -609,5 +563,8 @@
         private System.Windows.Forms.BindingSource reserveringBindingSource;
         private LuxeFoodsDataSetTableAdapters.reserveringTableAdapter reserveringTableAdapter;
         private System.Windows.Forms.BindingSource restaurantBindingSource1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label Reservation_page_title;
     }
 }
