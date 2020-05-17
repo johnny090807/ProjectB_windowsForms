@@ -66,13 +66,13 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Reservation_page_title = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.listBox6 = new System.Windows.Forms.ListBox();
-            this.listBox7 = new System.Windows.Forms.ListBox();
+            this.listBox1920 = new System.Windows.Forms.ListBox();
+            this.listBox1819 = new System.Windows.Forms.ListBox();
+            this.listBox1718 = new System.Windows.Forms.ListBox();
+            this.listBox2021 = new System.Windows.Forms.ListBox();
+            this.listBox2122 = new System.Windows.Forms.ListBox();
+            this.listBox2223 = new System.Windows.Forms.ListBox();
+            this.listBox1617 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.luxeFoodsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -155,6 +155,7 @@
             // AvailabilityTable
             // 
             this.AvailabilityTable.BackColor = System.Drawing.Color.Black;
+            this.AvailabilityTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.AvailabilityTable.ColumnCount = 7;
             this.AvailabilityTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.AvailabilityTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -184,14 +185,14 @@
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AvailabilityTable.Size = new System.Drawing.Size(1748, 50);
+            this.AvailabilityTable.Size = new System.Drawing.Size(1748, 43);
             this.AvailabilityTable.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Location = new System.Drawing.Point(4, 1);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(209, 40);
             this.label3.TabIndex = 0;
@@ -202,7 +203,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(252, 0);
+            this.label4.Location = new System.Drawing.Point(253, 1);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(209, 40);
             this.label4.TabIndex = 1;
@@ -213,7 +214,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(501, 0);
+            this.label5.Location = new System.Drawing.Point(502, 1);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(209, 40);
             this.label5.TabIndex = 2;
@@ -224,7 +225,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(750, 0);
+            this.label6.Location = new System.Drawing.Point(751, 1);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(209, 40);
             this.label6.TabIndex = 3;
@@ -235,7 +236,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(999, 0);
+            this.label7.Location = new System.Drawing.Point(1000, 1);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(209, 40);
             this.label7.TabIndex = 10;
@@ -246,7 +247,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1248, 0);
+            this.label9.Location = new System.Drawing.Point(1249, 1);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(209, 40);
             this.label9.TabIndex = 12;
@@ -257,7 +258,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1497, 0);
+            this.label8.Location = new System.Drawing.Point(1498, 1);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(209, 40);
             this.label8.TabIndex = 11;
@@ -501,13 +502,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Controls.Add(this.listBox1, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.listBox2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.listBox3, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.listBox5, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.listBox6, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.listBox7, 6, 0);
-            this.tableLayoutPanel1.Controls.Add(this.listBox4, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox1920, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox1819, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox1718, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox2021, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox2122, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox2223, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox1617, 0, 0);
             this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(23, 758);
@@ -524,89 +525,96 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1748, 338);
             this.tableLayoutPanel1.TabIndex = 23;
             // 
-            // listBox1
+            // listBox1920
             // 
-            this.listBox1.BackColor = System.Drawing.Color.Black;
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.ForeColor = System.Drawing.Color.White;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 46;
-            this.listBox1.Location = new System.Drawing.Point(750, 3);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(243, 322);
-            this.listBox1.TabIndex = 0;
+            this.listBox1920.BackColor = System.Drawing.Color.Black;
+            this.listBox1920.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1920.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1920.ForeColor = System.Drawing.Color.White;
+            this.listBox1920.FormattingEnabled = true;
+            this.listBox1920.ItemHeight = 32;
+            this.listBox1920.Location = new System.Drawing.Point(750, 3);
+            this.listBox1920.Name = "listBox1920";
+            this.listBox1920.Size = new System.Drawing.Size(243, 320);
+            this.listBox1920.TabIndex = 0;
             // 
-            // listBox2
+            // listBox1819
             // 
-            this.listBox2.BackColor = System.Drawing.Color.Black;
-            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox2.ForeColor = System.Drawing.Color.White;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 46;
-            this.listBox2.Location = new System.Drawing.Point(501, 3);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(243, 322);
-            this.listBox2.TabIndex = 0;
+            this.listBox1819.BackColor = System.Drawing.Color.Black;
+            this.listBox1819.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1819.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1819.ForeColor = System.Drawing.Color.White;
+            this.listBox1819.FormattingEnabled = true;
+            this.listBox1819.ItemHeight = 32;
+            this.listBox1819.Location = new System.Drawing.Point(501, 3);
+            this.listBox1819.Name = "listBox1819";
+            this.listBox1819.Size = new System.Drawing.Size(243, 320);
+            this.listBox1819.TabIndex = 0;
             // 
-            // listBox3
+            // listBox1718
             // 
-            this.listBox3.BackColor = System.Drawing.Color.Black;
-            this.listBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox3.ForeColor = System.Drawing.Color.White;
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 46;
-            this.listBox3.Location = new System.Drawing.Point(252, 3);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(243, 322);
-            this.listBox3.TabIndex = 0;
+            this.listBox1718.BackColor = System.Drawing.Color.Black;
+            this.listBox1718.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1718.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1718.ForeColor = System.Drawing.Color.White;
+            this.listBox1718.FormattingEnabled = true;
+            this.listBox1718.ItemHeight = 32;
+            this.listBox1718.Location = new System.Drawing.Point(252, 3);
+            this.listBox1718.Name = "listBox1718";
+            this.listBox1718.Size = new System.Drawing.Size(243, 320);
+            this.listBox1718.TabIndex = 0;
             // 
-            // listBox4
+            // listBox2021
             // 
-            this.listBox4.BackColor = System.Drawing.Color.Black;
-            this.listBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox4.ForeColor = System.Drawing.Color.White;
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 46;
-            this.listBox4.Location = new System.Drawing.Point(3, 3);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(243, 322);
-            this.listBox4.TabIndex = 0;
+            this.listBox2021.BackColor = System.Drawing.Color.Black;
+            this.listBox2021.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox2021.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2021.ForeColor = System.Drawing.Color.White;
+            this.listBox2021.FormattingEnabled = true;
+            this.listBox2021.ItemHeight = 32;
+            this.listBox2021.Location = new System.Drawing.Point(999, 3);
+            this.listBox2021.Name = "listBox2021";
+            this.listBox2021.Size = new System.Drawing.Size(243, 320);
+            this.listBox2021.TabIndex = 0;
             // 
-            // listBox5
+            // listBox2122
             // 
-            this.listBox5.BackColor = System.Drawing.Color.Black;
-            this.listBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox5.ForeColor = System.Drawing.Color.White;
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 46;
-            this.listBox5.Location = new System.Drawing.Point(999, 3);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(243, 322);
-            this.listBox5.TabIndex = 0;
+            this.listBox2122.BackColor = System.Drawing.Color.Black;
+            this.listBox2122.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox2122.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2122.ForeColor = System.Drawing.Color.White;
+            this.listBox2122.FormattingEnabled = true;
+            this.listBox2122.ItemHeight = 32;
+            this.listBox2122.Location = new System.Drawing.Point(1248, 3);
+            this.listBox2122.Name = "listBox2122";
+            this.listBox2122.Size = new System.Drawing.Size(243, 320);
+            this.listBox2122.TabIndex = 0;
             // 
-            // listBox6
+            // listBox2223
             // 
-            this.listBox6.BackColor = System.Drawing.Color.Black;
-            this.listBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox6.ForeColor = System.Drawing.Color.White;
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.ItemHeight = 46;
-            this.listBox6.Location = new System.Drawing.Point(1248, 3);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(243, 322);
-            this.listBox6.TabIndex = 0;
+            this.listBox2223.BackColor = System.Drawing.Color.Black;
+            this.listBox2223.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox2223.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2223.ForeColor = System.Drawing.Color.White;
+            this.listBox2223.FormattingEnabled = true;
+            this.listBox2223.ItemHeight = 32;
+            this.listBox2223.Location = new System.Drawing.Point(1497, 3);
+            this.listBox2223.Name = "listBox2223";
+            this.listBox2223.Size = new System.Drawing.Size(248, 320);
+            this.listBox2223.TabIndex = 0;
             // 
-            // listBox7
+            // listBox1617
             // 
-            this.listBox7.BackColor = System.Drawing.Color.Black;
-            this.listBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox7.ForeColor = System.Drawing.Color.White;
-            this.listBox7.FormattingEnabled = true;
-            this.listBox7.ItemHeight = 46;
-            this.listBox7.Location = new System.Drawing.Point(1497, 3);
-            this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(248, 322);
-            this.listBox7.TabIndex = 0;
+            this.listBox1617.BackColor = System.Drawing.Color.Black;
+            this.listBox1617.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1617.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1617.ForeColor = System.Drawing.Color.White;
+            this.listBox1617.FormattingEnabled = true;
+            this.listBox1617.ItemHeight = 32;
+            this.listBox1617.Location = new System.Drawing.Point(3, 3);
+            this.listBox1617.Name = "listBox1617";
+            this.listBox1617.Size = new System.Drawing.Size(243, 320);
+            this.listBox1617.TabIndex = 0;
             // 
             // Reservation
             // 
@@ -697,12 +705,12 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label Reservation_page_title;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox5;
-        private System.Windows.Forms.ListBox listBox6;
-        private System.Windows.Forms.ListBox listBox7;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox listBox1920;
+        private System.Windows.Forms.ListBox listBox1819;
+        private System.Windows.Forms.ListBox listBox1718;
+        private System.Windows.Forms.ListBox listBox2021;
+        private System.Windows.Forms.ListBox listBox2122;
+        private System.Windows.Forms.ListBox listBox2223;
+        private System.Windows.Forms.ListBox listBox1617;
     }
 }
