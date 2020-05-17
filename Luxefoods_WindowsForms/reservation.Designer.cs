@@ -65,6 +65,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Reservation_page_title = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.listBox5 = new System.Windows.Forms.ListBox();
+            this.listBox6 = new System.Windows.Forms.ListBox();
+            this.listBox7 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.luxeFoodsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,6 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reserveringBindingSource)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -164,9 +173,9 @@
             this.AvailabilityTable.Controls.Add(this.label8, 6, 0);
             this.AvailabilityTable.Cursor = System.Windows.Forms.Cursors.Default;
             this.AvailabilityTable.ForeColor = System.Drawing.Color.White;
-            this.AvailabilityTable.Location = new System.Drawing.Point(23, 702);
+            this.AvailabilityTable.Location = new System.Drawing.Point(23, 712);
             this.AvailabilityTable.Name = "AvailabilityTable";
-            this.AvailabilityTable.RowCount = 7;
+            this.AvailabilityTable.RowCount = 1;
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -175,7 +184,7 @@
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AvailabilityTable.Size = new System.Drawing.Size(1748, 394);
+            this.AvailabilityTable.Size = new System.Drawing.Size(1748, 50);
             this.AvailabilityTable.TabIndex = 6;
             // 
             // label3
@@ -480,12 +489,125 @@
             this.Reservation_page_title.TabIndex = 22;
             this.Reservation_page_title.Text = "Place your reservation";
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel1.ColumnCount = 7;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.Controls.Add(this.listBox1, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox2, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox3, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox5, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox6, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox7, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listBox4, 0, 0);
+            this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(23, 758);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1748, 338);
+            this.tableLayoutPanel1.TabIndex = 23;
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.Black;
+            this.listBox1.ForeColor = System.Drawing.Color.White;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 46;
+            this.listBox1.Location = new System.Drawing.Point(750, 3);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(243, 326);
+            this.listBox1.TabIndex = 0;
+            // 
+            // listBox2
+            // 
+            this.listBox2.BackColor = System.Drawing.Color.Black;
+            this.listBox2.ForeColor = System.Drawing.Color.White;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 46;
+            this.listBox2.Location = new System.Drawing.Point(501, 3);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(243, 326);
+            this.listBox2.TabIndex = 0;
+            // 
+            // listBox3
+            // 
+            this.listBox3.BackColor = System.Drawing.Color.Black;
+            this.listBox3.ForeColor = System.Drawing.Color.White;
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 46;
+            this.listBox3.Location = new System.Drawing.Point(252, 3);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(243, 326);
+            this.listBox3.TabIndex = 0;
+            // 
+            // listBox4
+            // 
+            this.listBox4.BackColor = System.Drawing.Color.Black;
+            this.listBox4.ForeColor = System.Drawing.Color.White;
+            this.listBox4.FormattingEnabled = true;
+            this.listBox4.ItemHeight = 46;
+            this.listBox4.Location = new System.Drawing.Point(3, 3);
+            this.listBox4.Name = "listBox4";
+            this.listBox4.Size = new System.Drawing.Size(243, 326);
+            this.listBox4.TabIndex = 0;
+            // 
+            // listBox5
+            // 
+            this.listBox5.BackColor = System.Drawing.Color.Black;
+            this.listBox5.ForeColor = System.Drawing.Color.White;
+            this.listBox5.FormattingEnabled = true;
+            this.listBox5.ItemHeight = 46;
+            this.listBox5.Location = new System.Drawing.Point(999, 3);
+            this.listBox5.Name = "listBox5";
+            this.listBox5.Size = new System.Drawing.Size(243, 326);
+            this.listBox5.TabIndex = 0;
+            // 
+            // listBox6
+            // 
+            this.listBox6.BackColor = System.Drawing.Color.Black;
+            this.listBox6.ForeColor = System.Drawing.Color.White;
+            this.listBox6.FormattingEnabled = true;
+            this.listBox6.ItemHeight = 46;
+            this.listBox6.Location = new System.Drawing.Point(1248, 3);
+            this.listBox6.Name = "listBox6";
+            this.listBox6.Size = new System.Drawing.Size(243, 326);
+            this.listBox6.TabIndex = 0;
+            // 
+            // listBox7
+            // 
+            this.listBox7.BackColor = System.Drawing.Color.Black;
+            this.listBox7.ForeColor = System.Drawing.Color.White;
+            this.listBox7.FormattingEnabled = true;
+            this.listBox7.ItemHeight = 46;
+            this.listBox7.Location = new System.Drawing.Point(1497, 3);
+            this.listBox7.Name = "listBox7";
+            this.listBox7.Size = new System.Drawing.Size(248, 326);
+            this.listBox7.TabIndex = 0;
+            // 
             // Reservation
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1800, 1200);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.Reservation_page_title);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label16);
@@ -524,6 +646,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reserveringBindingSource)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -566,5 +689,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label Reservation_page_title;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox listBox5;
+        private System.Windows.Forms.ListBox listBox6;
+        private System.Windows.Forms.ListBox listBox7;
+        private System.Windows.Forms.ListBox listBox4;
     }
 }

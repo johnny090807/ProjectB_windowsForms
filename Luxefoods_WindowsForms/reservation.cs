@@ -182,6 +182,9 @@ namespace Luxefoods_WindowsForms
                 }
             }
 
+            //RBL: Vragen aan Kacper:
+            // - Klopt het dat takenseats de list is waar de tafels in gedisplayed worden? Zie line 232
+            // - 
             // Request naar Databse sturen om alle gereserveerde tijden op de eerder gegeven datum te krijgen en in takenTimesWithTables List te zetten
             SqlCommand readCommand = new SqlCommand("select datum, tafelNummer, restaurantId from reservering where datum between '" + date.Month + "/" + date.Day + "/" + date.Year + "' and '" + date.Month + "/" + date.Day + "/" + date.Year + " 23:59:59'", connection);
             connection.Open();
