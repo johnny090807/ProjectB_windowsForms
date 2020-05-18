@@ -38,3 +38,5 @@ C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\D
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Reservation.resources
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Template.resources
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.checkReservation.resources
+C:\Users\Kacper\Desktop\Github\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.checkReservation.resources
+C:\Users\Kacper\Desktop\Github\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Modify_reservation.resources

@@ -26,6 +26,7 @@ namespace Luxefoods_WindowsForms
             List<int> listArea5 = new List<int> {44, 45, 46, 47, 48, 49};
             List<int> listArea6 = new List<int> {50, 51, 52, 53, 54, 55};
             GlobalListListBoxes = new List<List<int>> {listArea1, listArea2, listArea3, listArea4, listArea5, listArea6};
+            fillCalender();
         }
 
         public class TakenSeats
@@ -42,6 +43,41 @@ namespace Luxefoods_WindowsForms
             }
         }
         SqlConnection connection = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
+        private void fillCalender()
+        {
+            dateTimePicker1.MinDate = DateTime.Now;
+            if (dateTimePicker1.Value.Hour > 23)
+            {
+                dateTimePicker1.Value = new DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, (dateTimePicker1.Value.Day + 1), 16, 0, 0);
+            }
+            else if (dateTimePicker1.Value.Hour < 16)
+            {
+                dateTimePicker1.Value = new DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, (dateTimePicker1.Value.Day), 16, 0, 0);
+            }
+
+            DateTime maxDate;
+            if (DateTime.Now.Month == 11)
+            {
+                var maxMonth = 1;
+                var maxYear = DateTime.Now.Year + 1;
+                maxDate = new DateTime(maxYear, maxMonth, DateTime.Now.Day);
+                dateTimePicker1.MaxDate = maxDate;
+            }
+            else if (DateTime.Now.Month == 12)
+            {
+                var maxMonth = 2;
+                var maxYear = DateTime.Now.Year + 1;
+                maxDate = new DateTime(maxYear, maxMonth, DateTime.Now.Day);
+                dateTimePicker1.MaxDate = maxDate;
+            }
+            else
+            {
+                var maxMonth = DateTime.Now.Month + 2;
+                maxDate = new DateTime(DateTime.Now.Year, maxMonth, DateTime.Now.Day);
+                dateTimePicker1.MaxDate = maxDate;
+            }
+        }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
