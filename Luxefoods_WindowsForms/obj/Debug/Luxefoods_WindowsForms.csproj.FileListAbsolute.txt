@@ -15,3 +15,9 @@ C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj
 C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuHors.resources
 C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuSoups.resources
 C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuSpecial.resources
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.AdminOrderReviewDashboard.resources
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.reservation_template1.resources
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Dashboard.resources
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Form1.resources
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.Modify_reservation.resources
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.SearchPage.resources
