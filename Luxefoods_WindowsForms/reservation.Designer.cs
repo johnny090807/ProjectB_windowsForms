@@ -122,7 +122,6 @@
             this.AvailabilityTable.Controls.Add(this.label9, 6, 0);
             this.AvailabilityTable.Controls.Add(this.label7, 5, 0);
             this.AvailabilityTable.Controls.Add(this.label3, 1, 0);
-            this.AvailabilityTable.Controls.Add(this.label4, 2, 0);
             this.AvailabilityTable.Controls.Add(this.label5, 3, 0);
             this.AvailabilityTable.Controls.Add(this.label6, 4, 0);
             this.AvailabilityTable.Controls.Add(this.label8, 7, 0);
@@ -132,6 +131,7 @@
             this.AvailabilityTable.Controls.Add(this.label14, 0, 4);
             this.AvailabilityTable.Controls.Add(this.label15, 0, 5);
             this.AvailabilityTable.Controls.Add(this.label11, 0, 6);
+            this.AvailabilityTable.Controls.Add(this.label4, 2, 0);
             this.AvailabilityTable.Cursor = System.Windows.Forms.Cursors.Default;
             this.AvailabilityTable.ForeColor = System.Drawing.Color.White;
             this.AvailabilityTable.Location = new System.Drawing.Point(92, 723);
@@ -326,11 +326,12 @@
             // ExitButton
             // 
             this.ExitButton.AutoSize = true;
+            this.ExitButton.BackColor = System.Drawing.Color.Transparent;
             this.ExitButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitButton.Location = new System.Drawing.Point(1823, 30);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(48, 51);
+            this.ExitButton.Size = new System.Drawing.Size(34, 37);
             this.ExitButton.TabIndex = 11;
             this.ExitButton.Text = "X";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
@@ -344,7 +345,7 @@
             this.MinimizeButton.Location = new System.Drawing.Point(1757, 30);
             this.MinimizeButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(34, 51);
+            this.MinimizeButton.Size = new System.Drawing.Size(25, 37);
             this.MinimizeButton.TabIndex = 12;
             this.MinimizeButton.Text = "-";
             this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);

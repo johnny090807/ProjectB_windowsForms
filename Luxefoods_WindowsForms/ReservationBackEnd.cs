@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -28,7 +28,7 @@ namespace Luxefoods_WindowsForms
         //Connection string to connect with the database
         SqlConnection connection = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
-        static void Main(string[] args)
+        static void Start(string[] args)
         {
             string val;
             int a = 0;
@@ -1017,4 +1017,4 @@ namespace Luxefoods_WindowsForms
             }
         }
     }
-}
+} */
