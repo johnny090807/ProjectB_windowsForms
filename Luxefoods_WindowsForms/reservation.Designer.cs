@@ -97,6 +97,7 @@
             // SeatsComboBox
             // 
             this.SeatsComboBox.BackColor = System.Drawing.Color.Black;
+            this.SeatsComboBox.DisplayMember = "1";
             this.SeatsComboBox.ForeColor = System.Drawing.Color.White;
             this.SeatsComboBox.FormattingEnabled = true;
             this.SeatsComboBox.Items.AddRange(new object[] {
@@ -121,6 +122,7 @@
             this.SeatsComboBox.Name = "SeatsComboBox";
             this.SeatsComboBox.Size = new System.Drawing.Size(592, 54);
             this.SeatsComboBox.TabIndex = 1;
+            this.SeatsComboBox.Text = "Select amount of seats";
             // 
             // restaurantBindingSource1
             // 
@@ -456,6 +458,7 @@
             this.restaurantComboCox.Name = "restaurantComboCox";
             this.restaurantComboCox.Size = new System.Drawing.Size(592, 54);
             this.restaurantComboCox.TabIndex = 1;
+            this.restaurantComboCox.Text = "Select restaurant";
             // 
             // restaurantBindingSource
             // 
@@ -503,6 +506,7 @@
             this.AreaComboBox.Name = "AreaComboBox";
             this.AreaComboBox.Size = new System.Drawing.Size(592, 54);
             this.AreaComboBox.TabIndex = 21;
+            this.AreaComboBox.Text = "Select area";
             // 
             // Reservation_page_title
             // 

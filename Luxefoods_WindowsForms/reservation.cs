@@ -141,18 +141,72 @@ namespace Luxefoods_WindowsForms
             if (AreaComboBox.SelectedIndex == 0)
             {
                 listBox1617.DataSource = GlobalListListBoxes[0];
+                listBox1718.DataSource = GlobalListListBoxes[0];
+                listBox1819.DataSource = GlobalListListBoxes[0];
+                listBox1920.DataSource = GlobalListListBoxes[0];
+                listBox2021.DataSource = GlobalListListBoxes[0];
+                listBox2122.DataSource = GlobalListListBoxes[0];
+                listBox2223.DataSource = GlobalListListBoxes[0];
             }
             if (AreaComboBox.SelectedIndex == 1)
             {
                 listBox1617.DataSource = GlobalListListBoxes[1];
+                listBox1718.DataSource = GlobalListListBoxes[1];
+                listBox1819.DataSource = GlobalListListBoxes[1];
+                listBox1920.DataSource = GlobalListListBoxes[1];
+                listBox2021.DataSource = GlobalListListBoxes[1];
+                listBox2122.DataSource = GlobalListListBoxes[1];
+                listBox2223.DataSource = GlobalListListBoxes[1];
             }
             if (AreaComboBox.SelectedIndex == 2)
             {
                 listBox1617.DataSource = GlobalListListBoxes[2];
+                listBox1718.DataSource = GlobalListListBoxes[2];
+                listBox1819.DataSource = GlobalListListBoxes[2];
+                listBox1920.DataSource = GlobalListListBoxes[2];
+                listBox2021.DataSource = GlobalListListBoxes[2];
+                listBox2122.DataSource = GlobalListListBoxes[2];
+                listBox2223.DataSource = GlobalListListBoxes[2];
             }
             if (AreaComboBox.SelectedIndex == 3)
             {
                 listBox1617.DataSource = GlobalListListBoxes[3];
+                listBox1718.DataSource = GlobalListListBoxes[3];
+                listBox1819.DataSource = GlobalListListBoxes[3];
+                listBox1920.DataSource = GlobalListListBoxes[3];
+                listBox2021.DataSource = GlobalListListBoxes[3];
+                listBox2122.DataSource = GlobalListListBoxes[3];
+                listBox2223.DataSource = GlobalListListBoxes[3];
+            }
+            if (AreaComboBox.SelectedIndex == 4)
+            {
+                listBox1617.DataSource = GlobalListListBoxes[4];
+                listBox1718.DataSource = GlobalListListBoxes[4];
+                listBox1819.DataSource = GlobalListListBoxes[4];
+                listBox1920.DataSource = GlobalListListBoxes[4];
+                listBox2021.DataSource = GlobalListListBoxes[4];
+                listBox2122.DataSource = GlobalListListBoxes[4];
+                listBox2223.DataSource = GlobalListListBoxes[4];
+            }
+            if (AreaComboBox.SelectedIndex == 5)
+            {
+                listBox1617.DataSource = GlobalListListBoxes[5];
+                listBox1718.DataSource = GlobalListListBoxes[5];
+                listBox1819.DataSource = GlobalListListBoxes[5];
+                listBox1920.DataSource = GlobalListListBoxes[5];
+                listBox2021.DataSource = GlobalListListBoxes[5];
+                listBox2122.DataSource = GlobalListListBoxes[5];
+                listBox2223.DataSource = GlobalListListBoxes[5];
+            }
+            if (AreaComboBox.SelectedIndex == 6)
+            {
+                listBox1617.DataSource = GlobalListListBoxes[6];
+                listBox1718.DataSource = GlobalListListBoxes[6];
+                listBox1819.DataSource = GlobalListListBoxes[6];
+                listBox1920.DataSource = GlobalListListBoxes[6];
+                listBox2021.DataSource = GlobalListListBoxes[6];
+                listBox2122.DataSource = GlobalListListBoxes[6];
+                listBox2223.DataSource = GlobalListListBoxes[6];
             }
             //showAvailableTables(tablesNeeded);
         }
