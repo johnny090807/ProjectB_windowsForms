@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.Navbar = new System.Windows.Forms.Panel();
+            this.FullscreenBtn = new System.Windows.Forms.Button();
+            this.MinimizeBtn = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
             this.AboutBTN = new System.Windows.Forms.Button();
             this.ReservationsBTN = new System.Windows.Forms.Button();
             this.MenuBTN = new System.Windows.Forms.Button();
@@ -37,19 +40,11 @@
             this.HomeBTN = new System.Windows.Forms.Button();
             this.SideBar = new System.Windows.Forms.Panel();
             this.MenuPanel = new System.Windows.Forms.Panel();
-            this.WineBTN = new System.Windows.Forms.Button();
-            this.DessertBTN = new System.Windows.Forms.Button();
-            this.SaladeBTN = new System.Windows.Forms.Button();
-            this.MainBTN = new System.Windows.Forms.Button();
-            this.FishBTN = new System.Windows.Forms.Button();
-            this.SoupBTN = new System.Windows.Forms.Button();
-            this.HorsBTN = new System.Windows.Forms.Button();
-            this.SpecialsBTN = new System.Windows.Forms.Button();
             this.ContainerPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.FAQPanel = new System.Windows.Forms.Panel();
             this.faqANS4 = new System.Windows.Forms.Label();
-            this.faqANS2 = new System.Windows.Forms.Label();
             this.faqANS3 = new System.Windows.Forms.Label();
+            this.faqANS2 = new System.Windows.Forms.Label();
             this.faqANS1 = new System.Windows.Forms.Label();
             this.faqBTN4 = new System.Windows.Forms.Button();
             this.faqBTN3 = new System.Windows.Forms.Button();
@@ -59,13 +54,16 @@
             this.Navbar.SuspendLayout();
             this.SideBar.SuspendLayout();
             this.ContainerPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.FAQPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Navbar
             // 
             this.Navbar.BackColor = System.Drawing.Color.Black;
             this.Navbar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Navbar.Controls.Add(this.FullscreenBtn);
+            this.Navbar.Controls.Add(this.MinimizeBtn);
+            this.Navbar.Controls.Add(this.ExitBtn);
             this.Navbar.Controls.Add(this.AboutBTN);
             this.Navbar.Controls.Add(this.ReservationsBTN);
             this.Navbar.Controls.Add(this.MenuBTN);
@@ -77,8 +75,53 @@
             this.Navbar.Location = new System.Drawing.Point(0, 0);
             this.Navbar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Navbar.Name = "Navbar";
-            this.Navbar.Size = new System.Drawing.Size(1075, 60);
+            this.Navbar.Size = new System.Drawing.Size(1075, 89);
             this.Navbar.TabIndex = 0;
+            // 
+            // FullscreenBtn
+            // 
+            this.FullscreenBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FullscreenBtn.FlatAppearance.BorderSize = 0;
+            this.FullscreenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FullscreenBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FullscreenBtn.ForeColor = System.Drawing.Color.White;
+            this.FullscreenBtn.Location = new System.Drawing.Point(1019, -1);
+            this.FullscreenBtn.Name = "FullscreenBtn";
+            this.FullscreenBtn.Size = new System.Drawing.Size(28, 26);
+            this.FullscreenBtn.TabIndex = 11;
+            this.FullscreenBtn.Text = "◘";
+            this.FullscreenBtn.UseVisualStyleBackColor = true;
+            this.FullscreenBtn.Click += new System.EventHandler(this.FullscreenBtn_Click);
+            // 
+            // MinimizeBtn
+            // 
+            this.MinimizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimizeBtn.FlatAppearance.BorderSize = 0;
+            this.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MinimizeBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimizeBtn.ForeColor = System.Drawing.Color.White;
+            this.MinimizeBtn.Location = new System.Drawing.Point(992, -1);
+            this.MinimizeBtn.Name = "MinimizeBtn";
+            this.MinimizeBtn.Size = new System.Drawing.Size(28, 26);
+            this.MinimizeBtn.TabIndex = 10;
+            this.MinimizeBtn.Text = "-";
+            this.MinimizeBtn.UseVisualStyleBackColor = true;
+            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitBtn.FlatAppearance.BorderSize = 0;
+            this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.ForeColor = System.Drawing.Color.White;
+            this.ExitBtn.Location = new System.Drawing.Point(1046, -1);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(28, 26);
+            this.ExitBtn.TabIndex = 9;
+            this.ExitBtn.Text = "X";
+            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // AboutBTN
             // 
@@ -93,7 +136,7 @@
             this.AboutBTN.ForeColor = System.Drawing.Color.Transparent;
             this.AboutBTN.Location = new System.Drawing.Point(323, 0);
             this.AboutBTN.Name = "AboutBTN";
-            this.AboutBTN.Size = new System.Drawing.Size(150, 58);
+            this.AboutBTN.Size = new System.Drawing.Size(150, 87);
             this.AboutBTN.TabIndex = 5;
             this.AboutBTN.Text = "About us";
             this.AboutBTN.UseVisualStyleBackColor = false;
@@ -112,11 +155,11 @@
             this.ReservationsBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ReservationsBTN.Location = new System.Drawing.Point(473, 0);
             this.ReservationsBTN.Name = "ReservationsBTN";
-            this.ReservationsBTN.Size = new System.Drawing.Size(150, 58);
+            this.ReservationsBTN.Size = new System.Drawing.Size(150, 87);
             this.ReservationsBTN.TabIndex = 4;
             this.ReservationsBTN.Text = "Reservations";
             this.ReservationsBTN.UseVisualStyleBackColor = false;
-            this.ReservationsBTN.Click += new System.EventHandler(this.ContactBTN_Click);
+            this.ReservationsBTN.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // MenuBTN
             // 
@@ -131,7 +174,7 @@
             this.MenuBTN.ForeColor = System.Drawing.Color.Transparent;
             this.MenuBTN.Location = new System.Drawing.Point(623, 0);
             this.MenuBTN.Name = "MenuBTN";
-            this.MenuBTN.Size = new System.Drawing.Size(150, 58);
+            this.MenuBTN.Size = new System.Drawing.Size(150, 87);
             this.MenuBTN.TabIndex = 3;
             this.MenuBTN.Text = "Menu";
             this.MenuBTN.UseVisualStyleBackColor = false;
@@ -150,11 +193,10 @@
             this.ContactBTN.ForeColor = System.Drawing.Color.Transparent;
             this.ContactBTN.Location = new System.Drawing.Point(773, 0);
             this.ContactBTN.Name = "ContactBTN";
-            this.ContactBTN.Size = new System.Drawing.Size(150, 58);
+            this.ContactBTN.Size = new System.Drawing.Size(150, 87);
             this.ContactBTN.TabIndex = 2;
             this.ContactBTN.Text = "Contact";
             this.ContactBTN.UseVisualStyleBackColor = false;
-            this.ContactBTN.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // LoginBTN
             // 
@@ -169,7 +211,7 @@
             this.LoginBTN.ForeColor = System.Drawing.Color.Transparent;
             this.LoginBTN.Location = new System.Drawing.Point(923, 0);
             this.LoginBTN.Name = "LoginBTN";
-            this.LoginBTN.Size = new System.Drawing.Size(150, 58);
+            this.LoginBTN.Size = new System.Drawing.Size(150, 87);
             this.LoginBTN.TabIndex = 1;
             this.LoginBTN.Text = "Login";
             this.LoginBTN.UseVisualStyleBackColor = false;
@@ -189,7 +231,7 @@
             this.HomeBTN.Location = new System.Drawing.Point(0, 0);
             this.HomeBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomeBTN.Name = "HomeBTN";
-            this.HomeBTN.Size = new System.Drawing.Size(250, 58);
+            this.HomeBTN.Size = new System.Drawing.Size(250, 87);
             this.HomeBTN.TabIndex = 0;
             this.HomeBTN.Text = "LuxeFoods";
             this.HomeBTN.UseVisualStyleBackColor = false;
@@ -199,18 +241,10 @@
             this.SideBar.BackColor = System.Drawing.Color.Black;
             this.SideBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SideBar.Controls.Add(this.MenuPanel);
-            this.SideBar.Controls.Add(this.WineBTN);
-            this.SideBar.Controls.Add(this.DessertBTN);
-            this.SideBar.Controls.Add(this.SaladeBTN);
-            this.SideBar.Controls.Add(this.MainBTN);
-            this.SideBar.Controls.Add(this.FishBTN);
-            this.SideBar.Controls.Add(this.SoupBTN);
-            this.SideBar.Controls.Add(this.HorsBTN);
-            this.SideBar.Controls.Add(this.SpecialsBTN);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SideBar.Location = new System.Drawing.Point(0, 60);
+            this.SideBar.Location = new System.Drawing.Point(0, 89);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(230, 607);
+            this.SideBar.Size = new System.Drawing.Size(230, 578);
             this.SideBar.TabIndex = 1;
             // 
             // MenuPanel
@@ -221,194 +255,34 @@
             this.MenuPanel.Size = new System.Drawing.Size(7, 74);
             this.MenuPanel.TabIndex = 8;
             // 
-            // WineBTN
-            // 
-            this.WineBTN.BackColor = System.Drawing.Color.Black;
-            this.WineBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.WineBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.WineBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.WineBTN.FlatAppearance.BorderSize = 0;
-            this.WineBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.WineBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.WineBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.WineBTN.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WineBTN.ForeColor = System.Drawing.Color.White;
-            this.WineBTN.Location = new System.Drawing.Point(0, 525);
-            this.WineBTN.Name = "WineBTN";
-            this.WineBTN.Size = new System.Drawing.Size(228, 75);
-            this.WineBTN.TabIndex = 7;
-            this.WineBTN.Text = "Wine";
-            this.WineBTN.UseVisualStyleBackColor = false;
-            this.WineBTN.Click += new System.EventHandler(this.WineBTN_Click);
-            // 
-            // DessertBTN
-            // 
-            this.DessertBTN.BackColor = System.Drawing.Color.Black;
-            this.DessertBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.DessertBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.DessertBTN.FlatAppearance.BorderSize = 0;
-            this.DessertBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DessertBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DessertBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DessertBTN.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DessertBTN.ForeColor = System.Drawing.Color.White;
-            this.DessertBTN.Location = new System.Drawing.Point(0, 450);
-            this.DessertBTN.Name = "DessertBTN";
-            this.DessertBTN.Size = new System.Drawing.Size(228, 75);
-            this.DessertBTN.TabIndex = 6;
-            this.DessertBTN.Text = "Dessert";
-            this.DessertBTN.UseVisualStyleBackColor = false;
-            this.DessertBTN.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // SaladeBTN
-            // 
-            this.SaladeBTN.BackColor = System.Drawing.Color.Black;
-            this.SaladeBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.SaladeBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SaladeBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.SaladeBTN.FlatAppearance.BorderSize = 0;
-            this.SaladeBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SaladeBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SaladeBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaladeBTN.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaladeBTN.ForeColor = System.Drawing.Color.White;
-            this.SaladeBTN.Location = new System.Drawing.Point(0, 375);
-            this.SaladeBTN.Name = "SaladeBTN";
-            this.SaladeBTN.Size = new System.Drawing.Size(228, 75);
-            this.SaladeBTN.TabIndex = 5;
-            this.SaladeBTN.Text = "Salade";
-            this.SaladeBTN.UseVisualStyleBackColor = false;
-            this.SaladeBTN.Click += new System.EventHandler(this.SaladeBTN_Click);
-            // 
-            // MainBTN
-            // 
-            this.MainBTN.BackColor = System.Drawing.Color.Black;
-            this.MainBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.MainBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MainBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.MainBTN.FlatAppearance.BorderSize = 0;
-            this.MainBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.MainBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.MainBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MainBTN.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainBTN.ForeColor = System.Drawing.Color.White;
-            this.MainBTN.Location = new System.Drawing.Point(0, 300);
-            this.MainBTN.Name = "MainBTN";
-            this.MainBTN.Size = new System.Drawing.Size(228, 75);
-            this.MainBTN.TabIndex = 4;
-            this.MainBTN.Text = "Main";
-            this.MainBTN.UseVisualStyleBackColor = false;
-            this.MainBTN.Click += new System.EventHandler(this.MainBTN_Click);
-            // 
-            // FishBTN
-            // 
-            this.FishBTN.BackColor = System.Drawing.Color.Black;
-            this.FishBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.FishBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.FishBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.FishBTN.FlatAppearance.BorderSize = 0;
-            this.FishBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.FishBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.FishBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FishBTN.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FishBTN.ForeColor = System.Drawing.Color.White;
-            this.FishBTN.Location = new System.Drawing.Point(0, 225);
-            this.FishBTN.Name = "FishBTN";
-            this.FishBTN.Size = new System.Drawing.Size(228, 75);
-            this.FishBTN.TabIndex = 3;
-            this.FishBTN.Text = "Fish";
-            this.FishBTN.UseVisualStyleBackColor = false;
-            this.FishBTN.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // SoupBTN
-            // 
-            this.SoupBTN.BackColor = System.Drawing.Color.Black;
-            this.SoupBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.SoupBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SoupBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.SoupBTN.FlatAppearance.BorderSize = 0;
-            this.SoupBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SoupBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SoupBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SoupBTN.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SoupBTN.ForeColor = System.Drawing.Color.White;
-            this.SoupBTN.Location = new System.Drawing.Point(0, 150);
-            this.SoupBTN.Name = "SoupBTN";
-            this.SoupBTN.Size = new System.Drawing.Size(228, 75);
-            this.SoupBTN.TabIndex = 2;
-            this.SoupBTN.Text = "Soups";
-            this.SoupBTN.UseVisualStyleBackColor = false;
-            this.SoupBTN.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // HorsBTN
-            // 
-            this.HorsBTN.BackColor = System.Drawing.Color.Black;
-            this.HorsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.HorsBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.HorsBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.HorsBTN.FlatAppearance.BorderSize = 0;
-            this.HorsBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.HorsBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.HorsBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HorsBTN.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HorsBTN.ForeColor = System.Drawing.Color.White;
-            this.HorsBTN.Location = new System.Drawing.Point(0, 75);
-            this.HorsBTN.Name = "HorsBTN";
-            this.HorsBTN.Size = new System.Drawing.Size(228, 75);
-            this.HorsBTN.TabIndex = 1;
-            this.HorsBTN.Text = "Hors d\'oeuvres";
-            this.HorsBTN.UseVisualStyleBackColor = false;
-            this.HorsBTN.Click += new System.EventHandler(this.HorsBTN_Click);
-            // 
-            // SpecialsBTN
-            // 
-            this.SpecialsBTN.BackColor = System.Drawing.Color.Black;
-            this.SpecialsBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.SpecialsBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SpecialsBTN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.SpecialsBTN.FlatAppearance.BorderSize = 0;
-            this.SpecialsBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SpecialsBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SpecialsBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SpecialsBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SpecialsBTN.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SpecialsBTN.ForeColor = System.Drawing.Color.White;
-            this.SpecialsBTN.Location = new System.Drawing.Point(0, 0);
-            this.SpecialsBTN.Name = "SpecialsBTN";
-            this.SpecialsBTN.Size = new System.Drawing.Size(228, 75);
-            this.SpecialsBTN.TabIndex = 0;
-            this.SpecialsBTN.Text = "Today\'s Specials";
-            this.SpecialsBTN.UseVisualStyleBackColor = false;
-            this.SpecialsBTN.Click += new System.EventHandler(this.SpecialsBTN_Click);
-            // 
             // ContainerPanel
             // 
             this.ContainerPanel.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.ballentine;
             this.ContainerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ContainerPanel.Controls.Add(this.panel1);
+            this.ContainerPanel.Controls.Add(this.FAQPanel);
             this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContainerPanel.Location = new System.Drawing.Point(230, 60);
+            this.ContainerPanel.Location = new System.Drawing.Point(230, 89);
             this.ContainerPanel.Name = "ContainerPanel";
-            this.ContainerPanel.Size = new System.Drawing.Size(845, 607);
+            this.ContainerPanel.Size = new System.Drawing.Size(845, 578);
             this.ContainerPanel.TabIndex = 3;
             // 
-            // panel1
+            // FAQPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.faqANS4);
-            this.panel1.Controls.Add(this.faqANS2);
-            this.panel1.Controls.Add(this.faqANS3);
-            this.panel1.Controls.Add(this.faqANS1);
-            this.panel1.Controls.Add(this.faqBTN4);
-            this.panel1.Controls.Add(this.faqBTN3);
-            this.panel1.Controls.Add(this.faqBTN2);
-            this.panel1.Controls.Add(this.faqBTN1);
-            this.panel1.Controls.Add(this.faqLBL);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 451);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(845, 156);
-            this.panel1.TabIndex = 8;
+            this.FAQPanel.BackColor = System.Drawing.Color.Black;
+            this.FAQPanel.Controls.Add(this.faqANS4);
+            this.FAQPanel.Controls.Add(this.faqANS3);
+            this.FAQPanel.Controls.Add(this.faqANS2);
+            this.FAQPanel.Controls.Add(this.faqANS1);
+            this.FAQPanel.Controls.Add(this.faqBTN4);
+            this.FAQPanel.Controls.Add(this.faqBTN3);
+            this.FAQPanel.Controls.Add(this.faqBTN2);
+            this.FAQPanel.Controls.Add(this.faqBTN1);
+            this.FAQPanel.Controls.Add(this.faqLBL);
+            this.FAQPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.FAQPanel.Location = new System.Drawing.Point(0, 422);
+            this.FAQPanel.Name = "FAQPanel";
+            this.FAQPanel.Size = new System.Drawing.Size(845, 156);
+            this.FAQPanel.TabIndex = 8;
             // 
             // faqANS4
             // 
@@ -423,32 +297,31 @@
             this.faqANS4.Text = "Nee, helaas niet";
             this.faqANS4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // faqANS2
-            // 
-            this.faqANS2.BackColor = System.Drawing.Color.Transparent;
-            this.faqANS2.Font = new System.Drawing.Font("Bahnschrift Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.faqANS2.ForeColor = System.Drawing.Color.White;
-            this.faqANS2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.faqANS2.Location = new System.Drawing.Point(429, 61);
-            this.faqANS2.Name = "faqANS2";
-            this.faqANS2.Size = new System.Drawing.Size(337, 21);
-            this.faqANS2.TabIndex = 14;
-            this.faqANS2.Text = "Nee, helaas niet";
-            this.faqANS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.faqANS2.Click += new System.EventHandler(this.faqANS2_Click);
-            // 
             // faqANS3
             // 
             this.faqANS3.BackColor = System.Drawing.Color.Transparent;
             this.faqANS3.Font = new System.Drawing.Font("Bahnschrift Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.faqANS3.ForeColor = System.Drawing.Color.White;
             this.faqANS3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.faqANS3.Location = new System.Drawing.Point(57, 126);
+            this.faqANS3.Location = new System.Drawing.Point(429, 61);
             this.faqANS3.Name = "faqANS3";
             this.faqANS3.Size = new System.Drawing.Size(337, 21);
-            this.faqANS3.TabIndex = 13;
+            this.faqANS3.TabIndex = 14;
             this.faqANS3.Text = "Nee, helaas niet";
             this.faqANS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // faqANS2
+            // 
+            this.faqANS2.BackColor = System.Drawing.Color.Transparent;
+            this.faqANS2.Font = new System.Drawing.Font("Bahnschrift Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.faqANS2.ForeColor = System.Drawing.Color.White;
+            this.faqANS2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.faqANS2.Location = new System.Drawing.Point(57, 126);
+            this.faqANS2.Name = "faqANS2";
+            this.faqANS2.Size = new System.Drawing.Size(337, 21);
+            this.faqANS2.TabIndex = 13;
+            this.faqANS2.Text = "Nee, helaas niet";
+            this.faqANS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // faqANS1
             // 
@@ -547,9 +420,9 @@
             this.faqBTN1.Name = "faqBTN1";
             this.faqBTN1.Size = new System.Drawing.Size(314, 28);
             this.faqBTN1.TabIndex = 8;
-            this.faqBTN1.Text = "Ik heb  allergieën, kan ik hier eten?";
+            this.faqBTN1.Text = "Ik heb allergieën, kan ik hier eten?";
             this.faqBTN1.UseVisualStyleBackColor = false;
-            this.faqBTN1.Click += new System.EventHandler(this.button1_Click_2);
+            this.faqBTN1.Click += new System.EventHandler(this.faqBTN1_Click);
             // 
             // faqLBL
             // 
@@ -584,8 +457,8 @@
             this.Navbar.ResumeLayout(false);
             this.SideBar.ResumeLayout(false);
             this.ContainerPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.FAQPanel.ResumeLayout(false);
+            this.FAQPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -593,32 +466,27 @@
         #endregion
 
         private System.Windows.Forms.Panel Navbar;
-        private System.Windows.Forms.Button LoginBTN;
         private System.Windows.Forms.Button HomeBTN;
         private System.Windows.Forms.Panel SideBar;
         private System.Windows.Forms.Button AboutBTN;
         private System.Windows.Forms.Button ReservationsBTN;
         private System.Windows.Forms.Button MenuBTN;
         private System.Windows.Forms.Button ContactBTN;
-        private System.Windows.Forms.Button SpecialsBTN;
-        private System.Windows.Forms.Button FishBTN;
-        private System.Windows.Forms.Button SoupBTN;
-        private System.Windows.Forms.Button HorsBTN;
-        private System.Windows.Forms.Button SaladeBTN;
-        private System.Windows.Forms.Button MainBTN;
-        private System.Windows.Forms.Button DessertBTN;
         private System.Windows.Forms.Panel ContainerPanel;
-        private System.Windows.Forms.Button WineBTN;
         private System.Windows.Forms.Label faqLBL;
         private System.Windows.Forms.Panel MenuPanel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel FAQPanel;
         private System.Windows.Forms.Button faqBTN1;
         private System.Windows.Forms.Button faqBTN4;
         private System.Windows.Forms.Button faqBTN3;
         private System.Windows.Forms.Button faqBTN2;
         private System.Windows.Forms.Label faqANS1;
         private System.Windows.Forms.Label faqANS4;
-        private System.Windows.Forms.Label faqANS2;
         private System.Windows.Forms.Label faqANS3;
+        private System.Windows.Forms.Label faqANS2;
+        private System.Windows.Forms.Button MinimizeBtn;
+        private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Button FullscreenBtn;
+        private System.Windows.Forms.Button LoginBTN;
     }
 }

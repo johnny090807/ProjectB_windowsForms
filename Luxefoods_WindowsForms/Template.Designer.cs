@@ -31,6 +31,7 @@
             this.ExitButton = new System.Windows.Forms.Label();
             this.MinimizeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.LogoutBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ExitButton
@@ -69,16 +70,28 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             // 
+            // LogoutBtn
+            // 
+            this.LogoutBtn.Location = new System.Drawing.Point(344, 184);
+            this.LogoutBtn.Name = "LogoutBtn";
+            this.LogoutBtn.Size = new System.Drawing.Size(75, 23);
+            this.LogoutBtn.TabIndex = 5;
+            this.LogoutBtn.Text = "LOGOUT";
+            this.LogoutBtn.UseVisualStyleBackColor = true;
+            this.LogoutBtn.Click += new System.EventHandler(this.LogoutBtn_Click);
+            // 
             // Template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 415);
+            this.Controls.Add(this.LogoutBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MinimizeButton);
             this.Controls.Add(this.ExitButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Template";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Template";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -90,5 +103,6 @@
         private System.Windows.Forms.Label ExitButton;
         private System.Windows.Forms.Label MinimizeButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button LogoutBtn;
     }
 }

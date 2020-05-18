@@ -16,19 +16,17 @@ namespace Luxefoods_WindowsForms
         {
             
             InitializeComponent();
+            this.label1.Text = Login.person.voornaam;
+
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
             if (System.Windows.Forms.Application.MessageLoop)
             {
-                // WinForms app
-                System.Windows.Forms.Application.Exit();
-            }
-            else
-            {
-                // Console app
-                System.Environment.Exit(1);
+                this.Hide();
+                Menu form1 = new Menu();
+                form1.Show();
             }
         }
 
@@ -54,6 +52,14 @@ namespace Luxefoods_WindowsForms
         private void MinimizeButton_Hover_Leave(object sender, EventArgs e)
         {
             MinimizeButton.ForeColor = Color.Black;
+        }
+
+        private void LogoutBtn_Click(object sender, EventArgs e)
+        {
+            Login.person = null;
+            this.Hide();
+            Menu form1 = new Menu();
+            form1.Show();
         }
     }
 }

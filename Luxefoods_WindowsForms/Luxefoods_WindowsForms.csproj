@@ -66,7 +66,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Menu\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuHors.resx">
+      <DependentUpon>MenuHors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuSoups.resx">
+      <DependentUpon>MenuSoups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuSpecial.resx">
+      <DependentUpon>MenuSpecial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReservationBackEnd.cs" />
+    <Compile Include="Menu\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuHors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuHors.Designer.cs">
+      <DependentUpon>MenuHors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuSoups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuSoups.Designer.cs">
+      <DependentUpon>MenuSoups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuSpecial.Designer.cs">
+      <DependentUpon>MenuSpecial.cs</DependentUpon>
+    </Compile>
     <Compile Include="reservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +174,21 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ballentine.jpg" />
+    <Content Include="eten_test.jpg" />
+    <Content Include="Resources\arrow-204-16.png" />
+    <Content Include="Resources\arrow-28-16.png" />
+    <Content Include="Resources\arrow-28-48.png" />
+    <Content Include="Resources\arrow-92-32.png" />
+    <Content Include="Resources\icons8-down-button-32 %281%29.png" />
+    <Content Include="Resources\milk-2-32.png" />
+    <Content Include="Resources\peanuts-32.png" />
+    <Content Include="Resources\Plaatjes2-375x210.jpg" />
+    <Content Include="Resources\vodka.jpg" />
+    <Content Include="Resources\whitearrowicon.png" />
+    <Content Include="Resources\wijnfles-etiketten-botanical-romance-thankyou-d020031.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

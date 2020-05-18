@@ -69,7 +69,7 @@ namespace Luxefoods_WindowsForms
                         this.Hide();
                         Login form2 = new Login();
                         form2.Show();
-                        this.Close();
+                        this.Hide();
                     }
                     catch (Exception ex)
                     {
@@ -90,7 +90,7 @@ namespace Luxefoods_WindowsForms
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            this.Close();
         }
 
         private void minimizeBtn_Click(object sender, EventArgs e)

@@ -41,9 +41,9 @@ namespace Luxefoods_WindowsForms
             this.SetStyle(ControlStyles.UserPaint, true);
             if (person != null)
             {
-                Register form2 = new Register();
+                this.Hide();
+                Template form2 = new Template();
                 form2.Show();
-                this.Close();
             }
         }
         static string EncryptPassword(string text)
@@ -94,11 +94,22 @@ namespace Luxefoods_WindowsForms
                         if (typedPassword == password)
                         {
                             this.Hide();
-                            //Template registerForm = new Template();
-
-                            Register registerForm = new Register();
-                            registerForm.Show();
-                            this.Close();
+                            FormCollection fc = Application.OpenForms;
+                            foreach (Form frm in fc)
+                            {
+                                if (frm.Name == "MenuSpecial")
+                                {
+                                    Menu menuForm = new Menu();
+                                    menuForm.Show();
+                                    this.Hide();
+                                }
+                                else
+                                {
+                                    Register registerForm = new Register();
+                                    registerForm.Show();
+                                    this.Hide();
+                                }
+                            }
                         }
                         else
                         {
@@ -109,14 +120,16 @@ namespace Luxefoods_WindowsForms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    Console.WriteLine(ex.Message);
                 }
             }
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Menu menuForm = new Menu();
+            menuForm.Show();
+            this.Hide();
         }
         
         private void minimizeBtn_Click(object sender, EventArgs e)
