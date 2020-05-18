@@ -84,7 +84,8 @@
             // LoginBtn
             // 
             this.LoginBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.LoginBtn.FlatAppearance.BorderSize = 0;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBtn.ForeColor = System.Drawing.SystemColors.Highlight;
             this.LoginBtn.Location = new System.Drawing.Point(12, 622);
             this.LoginBtn.Name = "LoginBtn";
@@ -189,20 +190,30 @@
             // minimizeBtn
             // 
             this.minimizeBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.minimizeBtn.FlatAppearance.BorderSize = 0;
+            this.minimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimizeBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.minimizeBtn.Location = new System.Drawing.Point(458, -1);
             this.minimizeBtn.Name = "minimizeBtn";
             this.minimizeBtn.Size = new System.Drawing.Size(37, 35);
             this.minimizeBtn.TabIndex = 14;
+            this.minimizeBtn.Text = "-";
             this.minimizeBtn.UseVisualStyleBackColor = false;
             this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
             // 
             // exitBtn
             // 
             this.exitBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.exitBtn.FlatAppearance.BorderSize = 0;
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.exitBtn.Location = new System.Drawing.Point(494, -1);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(37, 35);
             this.exitBtn.TabIndex = 13;
+            this.exitBtn.Text = "x";
             this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 

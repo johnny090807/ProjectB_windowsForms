@@ -15,13 +15,8 @@ namespace Luxefoods_WindowsForms
         public reservation()
         {
             InitializeComponent();
+            CenterToScreen();
         }
-
-        private void AvailabilityTable_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void ExitButton_Click(object sender, EventArgs e)
         {
             if (System.Windows.Forms.Application.MessageLoop)
@@ -59,7 +54,7 @@ namespace Luxefoods_WindowsForms
         {
             MinimizeButton.ForeColor = Color.Black;
         }
-    }  
+    } 
 }
 
     /*
@@ -80,3 +75,4 @@ namespace Luxefoods_WindowsForms
      * 
      * 
      */
+

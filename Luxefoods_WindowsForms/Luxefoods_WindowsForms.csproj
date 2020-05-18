@@ -12,7 +12,6 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,6 +24,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -48,14 +48,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup />
   <ItemGroup>
     <Reference Include="MySql.Data">
       <HintPath>C:\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,19 +66,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminOrderReviewDashboard.cs">
+    <EmbeddedResource Include="Menu\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuHors.resx">
+      <DependentUpon>MenuHors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuSoups.resx">
+      <DependentUpon>MenuSoups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuSpecial.resx">
+      <DependentUpon>MenuSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationBackEnd.cs" />
+    <Compile Include="Menu\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminOrderReviewDashboard.Designer.cs">
-      <DependentUpon>AdminOrderReviewDashboard.cs</DependentUpon>
+    <Compile Include="Menu\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.cs">
+    <Compile Include="Menu\MenuHors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="Menu\MenuHors.Designer.cs">
+      <DependentUpon>MenuHors.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReservationBackEnd.cs" />
+    <Compile Include="Menu\MenuSoups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuSoups.Designer.cs">
+      <DependentUpon>MenuSoups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuSpecial.Designer.cs">
+      <DependentUpon>MenuSpecial.cs</DependentUpon>
+    </Compile>
     <Compile Include="reservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,24 +123,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SearchPage.Designer.cs">
-      <DependentUpon>SearchPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Template.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Template.Designer.cs">
       <DependentUpon>Template.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminOrderReviewDashboard.resx">
-      <DependentUpon>AdminOrderReviewDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="reservation.resx">
       <DependentUpon>reservation.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,11 +146,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SearchPage.resx">
-      <DependentUpon>SearchPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Template.resx">
       <DependentUpon>Template.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,7 +176,19 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pictureBox2.BackgroundImage.png" />
+    <Content Include="ballentine.jpg" />
+    <Content Include="eten_test.jpg" />
+    <Content Include="Resources\arrow-204-16.png" />
+    <Content Include="Resources\arrow-28-16.png" />
+    <Content Include="Resources\arrow-28-48.png" />
+    <Content Include="Resources\arrow-92-32.png" />
+    <Content Include="Resources\icons8-down-button-32 %281%29.png" />
+    <Content Include="Resources\milk-2-32.png" />
+    <Content Include="Resources\peanuts-32.png" />
+    <Content Include="Resources\Plaatjes2-375x210.jpg" />
+    <Content Include="Resources\vodka.jpg" />
+    <Content Include="Resources\whitearrowicon.png" />
+    <Content Include="Resources\wijnfles-etiketten-botanical-romance-thankyou-d020031.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
