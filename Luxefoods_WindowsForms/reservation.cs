@@ -9,14 +9,25 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace Luxefoods_WindowsForms
 {
+
     public partial class Reservation : Form
     {
+        List<List<int>> GlobalListListBoxes;
         public Reservation()
         {
             InitializeComponent();
+            var listArea1 = new List<int> {1, 2, 3, 4, 7, 8, 9, 10, 14, 15, 16, 17, 20, 21, 22};
+            List<int> listArea2 = new List<int> {5, 6, 11, 12, 18, 19, 31, 32, 33, 34, 35};
+            List<int> listArea3 = new List<int> {23, 24, 25, 26, 27, 28, 29, 30};
+            List<int> listArea4 = new List<int> {36, 37, 38, 39, 40, 41, 42, 43};
+            List<int> listArea5 = new List<int> {44, 45, 46, 47, 48, 49};
+            List<int> listArea6 = new List<int> {50, 51, 52, 53, 54, 55};
+            GlobalListListBoxes = new List<List<int>> {listArea1, listArea2, listArea3, listArea4, listArea5, listArea6};
         }
+
         public class TakenSeats
         {
             public DateTime takenTime { get; set; }
@@ -27,6 +38,7 @@ namespace Luxefoods_WindowsForms
                 takenTime = takentime;
                 takenSeat = takenseat;
                 restaurantId = restaurantid;
+                
             }
         }
         SqlConnection connection = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -44,7 +56,6 @@ namespace Luxefoods_WindowsForms
                 System.Environment.Exit(1);
             }
         }
-
 
         private void ExitButton_Hover_Enter(object sender, EventArgs e)
         {
@@ -123,10 +134,26 @@ namespace Luxefoods_WindowsForms
 
         private void availabilityButton_Click(object sender, EventArgs e)
         {
-            int people = Seats.SelectedIndex;
+            int people = SeatsComboBox.SelectedIndex;
             DateTime date = dateTimePicker1.Value;
             double tableSize = 4.0;
             var tablesNeeded = Math.Ceiling(people / tableSize);
+            if (AreaComboBox.SelectedIndex == 0)
+            {
+                listBox1617.DataSource = GlobalListListBoxes[0];
+            }
+            if (AreaComboBox.SelectedIndex == 1)
+            {
+                listBox1617.DataSource = GlobalListListBoxes[1];
+            }
+            if (AreaComboBox.SelectedIndex == 2)
+            {
+                listBox1617.DataSource = GlobalListListBoxes[2];
+            }
+            if (AreaComboBox.SelectedIndex == 3)
+            {
+                listBox1617.DataSource = GlobalListListBoxes[3];
+            }
             //showAvailableTables(tablesNeeded);
         }
 
@@ -150,8 +177,8 @@ namespace Luxefoods_WindowsForms
             }
 
             // RBL: Restaurant kiezen en naar string converten// Functie maken om restaurantId van geselecteerd restaurant te selecteren
-            string restaurantChoice = restaurantSelection.SelectedItem.ToString();
-            int restaurantId = restaurantSelection.SelectedIndex;
+            string restaurantChoice = restaurantComboCox.SelectedItem.ToString();
+            int restaurantId = restaurantComboCox.SelectedIndex;
 
             // RBL: DateTime implementeren in class
             DateTime date = dateTimePicker1.Value;
@@ -234,6 +261,16 @@ namespace Luxefoods_WindowsForms
 
             Console.WriteLine("Please choose at what hour you want to make reservation: ");
 
+            // list met alle lists (listbox1 tm 7)
+            // listbox1.items.add("50");
+
+            // BUTTON CLICK
+            /// <summary>
+
+            /// 
+            /// 
+            /// </summary>
+            /// 
             // Security check of de uren tussen de openings tijden zitten
             int hour = 0;
             while (hour < 16 || hour > 23)
@@ -246,10 +283,7 @@ namespace Luxefoods_WindowsForms
             // RBL: dateParse is aangepast naar date, hierdoor botst het met eerder vermelde date van kacper hier. variable naam correct aanpassen
             // De uur van int naar een TimeSpan converteren en aan de date string toevoegen (date blijft nog steeds een string)
             TimeSpan ts = new TimeSpan(hour, 0, 0);
-            date += " " + ts;
-
-            // Date opnieuw naar DateTime variabele omzetten voor makkelijkere code writing
-            date = DateTime.Parse(date);
+            date = new DateTime(date.Year, date.Month, date.Day, ts.Hours, ts.Minutes, ts.Seconds);
 
             int tableNumber = 0;
 
@@ -341,5 +375,91 @@ namespace Luxefoods_WindowsForms
                 }
             }
         }
+
+        private void listBox1617_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1718.SelectedItem = null;
+            listBox1819.SelectedItem = null;
+            listBox1920.SelectedItem = null;
+            listBox2021.SelectedItem = null;
+            listBox2122.SelectedItem = null;
+            listBox2223.SelectedItem = null;
+        }
+
+        private void listBox1718_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1617.SelectedItem = null;
+            listBox1819.SelectedItem = null;
+            listBox1920.SelectedItem = null;
+            listBox2021.SelectedItem = null;
+            listBox2122.SelectedItem = null;
+            listBox2223.SelectedItem = null;
+        }
+
+        private void listBox1819_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1718.SelectedItem = null;
+            listBox1617.SelectedItem = null;
+            listBox1920.SelectedItem = null;
+            listBox2021.SelectedItem = null;
+            listBox2122.SelectedItem = null;
+            listBox2223.SelectedItem = null;
+        }
+
+        private void listBox1920_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1718.SelectedItem = null;
+            listBox1819.SelectedItem = null;
+            listBox1617.SelectedItem = null;
+            listBox2021.SelectedItem = null;
+            listBox2122.SelectedItem = null;
+            listBox2223.SelectedItem = null;
+        }
+
+        private void listBox2021_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1718.SelectedItem = null;
+            listBox1819.SelectedItem = null;
+            listBox1920.SelectedItem = null;
+            listBox1617.SelectedItem = null;
+            listBox2122.SelectedItem = null;
+            listBox2223.SelectedItem = null;
+        }
+
+        private void listBox2122_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1718.SelectedItem = null;
+            listBox1819.SelectedItem = null;
+            listBox1920.SelectedItem = null;
+            listBox2021.SelectedItem = null;
+            listBox1617.SelectedItem = null;
+            listBox2223.SelectedItem = null;
+        }
+
+        private void listBox2223_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1718.SelectedItem = null;
+            listBox1819.SelectedItem = null;
+            listBox1920.SelectedItem = null;
+            listBox2021.SelectedItem = null;
+            listBox2122.SelectedItem = null;
+            listBox1617.SelectedItem = null;
+        }
+
+        private void PlaceReservationButton_Click(object sender, EventArgs e)
+        {
+            /// foreach (x in listBoxesList) {
+            ///     if (x.selectedItem != null) {
+            ///         if (int.TryParse(x.selectedItem)) {
+            ///             int.Parse(x.selectedItem)
+            ///         }
+            ///         
+            ///
+            ///     }
+            /// 
+            /// }
+        }
+
     }
+
 }
