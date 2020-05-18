@@ -21,10 +21,10 @@ namespace Luxefoods_WindowsForms
             InitializeComponent();
             CenterToScreen();
             this.AcceptButton = RegisterBtn;
-            if (person != null)
+            /*if (person != null)
             {
-                label1.Text = person.firstName;
-            }
+                label1.Text = person.admin.ToString();
+            }*/
         }
 
         static string EncryptPassword(string text)
@@ -56,7 +56,7 @@ namespace Luxefoods_WindowsForms
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
-                    string q = $"INSERT INTO [user] (voornaam, achternaam, email, telefoonnummer, password) VALUES  ('{VoornaamTxtBox.Text}', '{AchternaamTxtBox.Text}', '{EmailTxtBox.Text}', '{TelefoonTxtBox.Text}', '{EncryptPassword(PasswordTxtBox.Text)}')";
+                    string q = $"INSERT INTO [user] (voornaam, achternaam, email, telefoonnummer, password, admin) VALUES  ('{VoornaamTxtBox.Text}', '{AchternaamTxtBox.Text}', '{EmailTxtBox.Text}', '{TelefoonTxtBox.Text}', '{EncryptPassword(PasswordTxtBox.Text)}', '0')";
 
                     try
                     {

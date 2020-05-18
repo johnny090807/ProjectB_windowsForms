@@ -9,13 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.Data.SqlClient;
-using System.Web;
 
 namespace Luxefoods_WindowsForms
 {
     public partial class Login : Form
     {
-        public static User person;
+        public static User person = null;
         public class User
         {
             public string voornaam { get; set; }
@@ -90,7 +89,7 @@ namespace Luxefoods_WindowsForms
                         foreach (DataRow dr in dt.Rows)
                         {
                             password = dr["password"].ToString();
-                            person = new User(dr["voornaam"].ToString(), dr["achternaam"].ToString(), dr["email"].ToString(), dr["telefoonnummer"].ToString(), dr["password"].ToString());
+                            person = new User(dr["voornaam"].ToString(), dr["achternaam"].ToString(), dr["email"].ToString(), dr["telefoonnummer"].ToString(), dr["password"].ToString(), (bool)dr["admin"]);
                         }
                         if (typedPassword == password)
                         {

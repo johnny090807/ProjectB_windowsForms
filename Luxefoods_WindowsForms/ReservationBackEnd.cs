@@ -10,10 +10,6 @@ using System.Text;
 namespace Luxefoods_WindowsForms
 {
     // Class that stores data of takenSeats
-    public static class LoginInfo
-    {
-        public static string Email;
-    }
     public class TakenSeats
     {
         public DateTime takenTime { get; set; }
