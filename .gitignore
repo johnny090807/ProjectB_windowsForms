@@ -58,6 +58,8 @@ x64/
 *.log
 *.scc
 *.cache
+/bin/*
+/obj/*
 
 # OS generated files #
 .DS_Store*

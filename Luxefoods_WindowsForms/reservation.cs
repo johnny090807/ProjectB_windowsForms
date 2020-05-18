@@ -21,7 +21,7 @@ namespace Luxefoods_WindowsForms
         {
 
         }
-    }
+
         private void ExitButton_Click(object sender, EventArgs e)
         {
             if (System.Windows.Forms.Application.MessageLoop)
@@ -37,14 +37,14 @@ namespace Luxefoods_WindowsForms
         }
 
         private void ExitButton_Hover_Enter(object sender, EventArgs e)
-            {
-                ExitButton.ForeColor = Color.Red;
-            }
+        {
+            ExitButton.ForeColor = Color.Red;
+        }
 
         private void ExitButton_Hover_Leave(object sender, EventArgs e)
-            {
-                ExitButton.ForeColor = Color.Black;
-            }
+        {
+            ExitButton.ForeColor = Color.Black;
+        }
 
         private void MinimizeButton_Click(object sender, EventArgs e)
         {
@@ -59,6 +59,7 @@ namespace Luxefoods_WindowsForms
         {
             MinimizeButton.ForeColor = Color.Black;
         }
+    }
 }
 
     /*
