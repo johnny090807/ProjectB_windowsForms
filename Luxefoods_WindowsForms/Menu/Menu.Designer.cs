@@ -173,7 +173,7 @@
             this.LoginBTN.TabIndex = 1;
             this.LoginBTN.Text = "Login";
             this.LoginBTN.UseVisualStyleBackColor = false;
-            this.LoginBTN.Click += new System.EventHandler(this.button1_Click);
+            this.LoginBTN.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // HomeBTN
             // 
