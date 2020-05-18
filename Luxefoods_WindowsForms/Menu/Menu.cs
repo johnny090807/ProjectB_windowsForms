@@ -24,9 +24,10 @@ namespace Luxefoods_WindowsForms
             openChildForm(new MenuSpecial());
         }
        
-        private void button1_Click(object sender, EventArgs e)
+        private void LoginBtn_Click(object sender, EventArgs e)
         {
-
+            Login form2 = new Login();
+            form2.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
