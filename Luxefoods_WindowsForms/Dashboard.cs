@@ -31,6 +31,7 @@ namespace Luxefoods_WindowsForms
             fillReservationListBox(DateTime.Now);
             setupDashboardDesign();
             EditReservationButton.Hide();
+            WindowState = FormWindowState.Maximized;
         }
 
         private void Form1_MouseDown(object sender,

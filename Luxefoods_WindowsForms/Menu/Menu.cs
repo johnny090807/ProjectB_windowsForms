@@ -31,6 +31,7 @@ namespace Luxefoods_WindowsForms
                 this.LoginBTN.Text = person.voornaam + " " + person.achternaam;
             }
             this.addButtonsToPanel();
+            
         }
        
         private void LoginBtn_Click(object sender, EventArgs e)
@@ -153,11 +154,13 @@ namespace Luxefoods_WindowsForms
                     int i = 0;
                     foreach (DataRow dr in dt.Rows)
                     {
-                        Button extraButton = new Button();
-                        extraButton.ForeColor = System.Drawing.Color.White;
-                        extraButton.BackColor = System.Drawing.Color.Black;
-                        extraButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-                        extraButton.Dock = System.Windows.Forms.DockStyle.Top;
+                        Button extraButton = new Button
+                        {
+                            ForeColor = System.Drawing.Color.White,
+                            BackColor = System.Drawing.Color.Black,
+                            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center,
+                            Dock = System.Windows.Forms.DockStyle.Top
+                        };
                         extraButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
                         extraButton.FlatAppearance.BorderSize = 0;
                         extraButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
