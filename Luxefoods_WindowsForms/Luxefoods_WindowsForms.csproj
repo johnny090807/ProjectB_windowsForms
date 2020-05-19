@@ -67,26 +67,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="aboutUs.resx">
-      <DependentUpon>aboutUs.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdminOrderReviewDashboard.resx">
       <DependentUpon>AdminOrderReviewDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="checkReservation.resx">
-      <DependentUpon>checkReservation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="contactUs.resx">
-      <DependentUpon>contactUs.cs</DependentUpon>
+    <EmbeddedResource Include="Check reservation.resx">
+      <DependentUpon>Check reservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="homePage.resx">
-      <DependentUpon>homePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -100,8 +91,8 @@
     <EmbeddedResource Include="Menu\MenuSpecial.resx">
       <DependentUpon>MenuSpecial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="modifyReservation.resx">
-      <DependentUpon>modifyReservation.cs</DependentUpon>
+    <EmbeddedResource Include="Modify reservation.resx">
+      <DependentUpon>Modify reservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.AdminOrderReviewDashboard.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Dashboard.resources" />
@@ -117,29 +108,17 @@
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.SearchPage.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Template.resources" />
     <EmbeddedResource Include="ReservationBackEnd.cs" />
-    <Compile Include="aboutUs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="aboutUs.Designer.cs">
-      <DependentUpon>aboutUs.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdminOrderReviewDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminOrderReviewDashboard.Designer.cs">
       <DependentUpon>AdminOrderReviewDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="checkReservation.cs">
+    <Compile Include="Check reservation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="checkReservation.Designer.cs">
-      <DependentUpon>checkReservation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="contactUs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="contactUs.Designer.cs">
-      <DependentUpon>contactUs.cs</DependentUpon>
+    <Compile Include="Check reservation.Designer.cs">
+      <DependentUpon>Check reservation.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -152,17 +131,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="homePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="homePage.Designer.cs">
-      <DependentUpon>homePage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LuxeFoodsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LuxeFoodsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Menu\Menu.cs">
       <SubType>Form</SubType>
@@ -188,11 +156,11 @@
     <Compile Include="Menu\MenuSpecial.Designer.cs">
       <DependentUpon>MenuSpecial.cs</DependentUpon>
     </Compile>
-    <Compile Include="modifyReservation.cs">
+    <Compile Include="Modify reservation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="modifyReservation.Designer.cs">
-      <DependentUpon>modifyReservation.cs</DependentUpon>
+    <Compile Include="Modify reservation.Designer.cs">
+      <DependentUpon>Modify reservation.cs</DependentUpon>
     </Compile>
     <Compile Include="reservation.cs">
       <SubType>Form</SubType>
@@ -252,17 +220,6 @@
       <DependentUpon>Template.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\Luxefoods_WindowsForms.exe.config" />
-    <None Include="LuxeFoodsDataSet.xsc">
-      <DependentUpon>LuxeFoodsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LuxeFoodsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LuxeFoodsDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LuxeFoodsDataSet.xss">
-      <DependentUpon>LuxeFoodsDataSet.xsd</DependentUpon>
-    </None>
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete" />
