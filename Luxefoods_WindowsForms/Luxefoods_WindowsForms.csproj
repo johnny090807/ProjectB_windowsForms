@@ -12,7 +12,6 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,6 +24,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -48,13 +48,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup />
   <ItemGroup>
     <Reference Include="MySql.Data">
       <HintPath>C:\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -67,11 +67,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="aboutUs.resx">
+      <DependentUpon>aboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOrderReviewDashboard.resx">
+      <DependentUpon>AdminOrderReviewDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkReservation.resx">
+      <DependentUpon>checkReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contactUs.resx">
+      <DependentUpon>contactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuHors.resx">
+      <DependentUpon>MenuHors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuSoups.resx">
+      <DependentUpon>MenuSoups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuSpecial.resx">
+      <DependentUpon>MenuSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyReservation.resx">
+      <DependentUpon>modifyReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.AdminOrderReviewDashboard.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Dashboard.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Login.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Menu.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.MenuHors.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.MenuSoups.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.MenuSpecial.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Register.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.reservation.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.SearchPage.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Template.resources" />
+    <EmbeddedResource Include="ReservationBackEnd.cs" />
+    <Compile Include="aboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutUs.Designer.cs">
+      <DependentUpon>aboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminOrderReviewDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminOrderReviewDashboard.Designer.cs">
       <DependentUpon>AdminOrderReviewDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkReservation.Designer.cs">
+      <DependentUpon>checkReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contactUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contactUs.Designer.cs">
+      <DependentUpon>contactUs.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -79,7 +147,53 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReservationBackEnd.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePage.Designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuxeFoodsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LuxeFoodsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuHors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuHors.Designer.cs">
+      <DependentUpon>MenuHors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuSoups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuSoups.Designer.cs">
+      <DependentUpon>MenuSoups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuSpecial.Designer.cs">
+      <DependentUpon>MenuSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifyReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifyReservation.Designer.cs">
+      <DependentUpon>modifyReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="reservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,12 +226,6 @@
     <Compile Include="Template.Designer.cs">
       <DependentUpon>Template.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminOrderReviewDashboard.resx">
-      <DependentUpon>AdminOrderReviewDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="reservation.resx">
       <DependentUpon>reservation.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +251,23 @@
     <EmbeddedResource Include="Template.resx">
       <DependentUpon>Template.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\Luxefoods_WindowsForms.exe.config" />
+    <None Include="LuxeFoodsDataSet.xsc">
+      <DependentUpon>LuxeFoodsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LuxeFoodsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LuxeFoodsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LuxeFoodsDataSet.xss">
+      <DependentUpon>LuxeFoodsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete" />
+    <None Include="obj\Debug\Luxefoods_WindowsForms.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Luxefoods_WindowsForms.csprojAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -169,7 +294,29 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pictureBox2.BackgroundImage.png" />
+    <Content Include="ballentine.jpg" />
+    <Content Include="bin\Debug\Luxefoods_WindowsForms.exe" />
+    <Content Include="bin\Debug\Luxefoods_WindowsForms.pdb" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\Debug\System.Web.DataVisualization.dll" />
+    <Content Include="eten_test.jpg" />
+    <Content Include="obj\Debug\Luxefoods_WindowsForms.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Luxefoods_WindowsForms.exe" />
+    <Content Include="obj\Debug\Luxefoods_WindowsForms.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="Resources\arrow-204-16.png" />
+    <Content Include="Resources\arrow-28-16.png" />
+    <Content Include="Resources\arrow-28-48.png" />
+    <Content Include="Resources\arrow-92-32.png" />
+    <Content Include="Resources\icons8-down-button-32 %281%29.png" />
+    <Content Include="Resources\milk-2-32.png" />
+    <Content Include="Resources\peanuts-32.png" />
+    <Content Include="Resources\pictureBox2_BackgroundImage.png" />
+    <Content Include="Resources\Plaatjes2-375x210.jpg" />
+    <Content Include="Resources\vodka.jpg" />
+    <Content Include="Resources\whitearrowicon.png" />
+    <Content Include="Resources\wijnfles-etiketten-botanical-romance-thankyou-d020031.jpg" />
+    <Content Include="restaurant-floorplan-example.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

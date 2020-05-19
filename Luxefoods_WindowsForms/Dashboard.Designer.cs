@@ -160,7 +160,7 @@
             this.EditReservationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditReservationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditReservationButton.ForeColor = System.Drawing.Color.White;
-            this.EditReservationButton.Location = new System.Drawing.Point(1558, 1155);
+            this.EditReservationButton.Location = new System.Drawing.Point(1562, 686);
             this.EditReservationButton.Name = "EditReservationButton";
             this.EditReservationButton.Size = new System.Drawing.Size(319, 75);
             this.EditReservationButton.TabIndex = 10;
@@ -271,7 +271,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1925, 1282);
+            this.ClientSize = new System.Drawing.Size(1925, 1220);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.MinimizeButton);

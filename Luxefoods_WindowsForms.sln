@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luxefoods_WindowsForms", "Luxefoods_WindowsForms\Luxefoods_WindowsForms.csproj", "{7BDE5152-15B6-47E6-9380-296ED2D8A109}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81CF8D01-F76B-4E6D-82FB-47E78EB251C5}"
+	ProjectSection(SolutionItems) = preProject
+		..\ReservationApp-BackEnd\.editorconfig = ..\ReservationApp-BackEnd\.editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +25,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FAACE320-9168-445F-8E13-804007C7B63E}
+		SolutionGuid = {54B1C932-56B4-46A3-A22E-C08CDD9699F9}
 	EndGlobalSection
 EndGlobal

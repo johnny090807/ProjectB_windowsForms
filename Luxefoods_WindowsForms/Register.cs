@@ -14,11 +14,17 @@ namespace Luxefoods_WindowsForms
 {
     public partial class Register : Form
     {
+
+        public Login.User person = Login.person;
         public Register()
         {
             InitializeComponent();
             CenterToScreen();
             this.AcceptButton = RegisterBtn;
+            /*if (person != null)
+            {
+                label1.Text = person.admin.ToString();
+            }*/
         }
 
         static string EncryptPassword(string text)
@@ -50,7 +56,7 @@ namespace Luxefoods_WindowsForms
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
-                    string q = $"INSERT INTO [user] (voornaam, achternaam, email, telefoonnummer, password) VALUES  ('{VoornaamTxtBox.Text}', '{AchternaamTxtBox.Text}', '{EmailTxtBox.Text}', '{TelefoonTxtBox.Text}', '{EncryptPassword(PasswordTxtBox.Text)}')";
+                    string q = $"INSERT INTO [user] (voornaam, achternaam, email, telefoonnummer, password, admin) VALUES  ('{VoornaamTxtBox.Text}', '{AchternaamTxtBox.Text}', '{EmailTxtBox.Text}', '{TelefoonTxtBox.Text}', '{EncryptPassword(PasswordTxtBox.Text)}', '0')";
 
                     try
                     {
@@ -63,7 +69,7 @@ namespace Luxefoods_WindowsForms
                         this.Hide();
                         Login form2 = new Login();
                         form2.Show();
-                        this.Close();
+                        this.Hide();
                     }
                     catch (Exception ex)
                     {
@@ -76,15 +82,15 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
+            //Template form2 = new Template();
             Login form2 = new Login();
-            //Login form2 = new Login();
             form2.Show();
             this.Hide();
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            this.Close();
         }
 
         private void minimizeBtn_Click(object sender, EventArgs e)
