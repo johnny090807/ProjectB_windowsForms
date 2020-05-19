@@ -74,6 +74,7 @@
             this.listBox1819 = new System.Windows.Forms.ListBox();
             this.listBox1920 = new System.Windows.Forms.ListBox();
             this.reservationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.restaurantBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.luxeFoodsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutPicture)).BeginInit();
@@ -88,10 +89,10 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dateTimePicker1.Location = new System.Drawing.Point(327, 536);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dateTimePicker1.Location = new System.Drawing.Point(490, 804);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(380, 38);
+            this.dateTimePicker1.Size = new System.Drawing.Size(666, 53);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // SeatsComboBox
@@ -117,10 +118,10 @@
             "14",
             "15",
             "16"});
-            this.SeatsComboBox.Location = new System.Drawing.Point(687, 364);
-            this.SeatsComboBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.SeatsComboBox.Location = new System.Drawing.Point(1030, 546);
+            this.SeatsComboBox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.SeatsComboBox.Name = "SeatsComboBox";
-            this.SeatsComboBox.Size = new System.Drawing.Size(396, 39);
+            this.SeatsComboBox.Size = new System.Drawing.Size(592, 54);
             this.SeatsComboBox.TabIndex = 1;
             this.SeatsComboBox.Text = "Select amount of seats";
             // 
@@ -139,10 +140,10 @@
             this.availabilityButton.BackColor = System.Drawing.Color.Black;
             this.availabilityButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.availabilityButton.ForeColor = System.Drawing.Color.White;
-            this.availabilityButton.Location = new System.Drawing.Point(696, 615);
-            this.availabilityButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.availabilityButton.Location = new System.Drawing.Point(1044, 922);
+            this.availabilityButton.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.availabilityButton.Name = "availabilityButton";
-            this.availabilityButton.Size = new System.Drawing.Size(387, 58);
+            this.availabilityButton.Size = new System.Drawing.Size(580, 87);
             this.availabilityButton.TabIndex = 2;
             this.availabilityButton.Text = "Check Availability";
             this.availabilityButton.UseVisualStyleBackColor = false;
@@ -151,10 +152,9 @@
             // layoutPicture
             // 
             this.layoutPicture.Image = ((System.Drawing.Image)(resources.GetObject("layoutPicture.Image")));
-            this.layoutPicture.Location = new System.Drawing.Point(1129, 184);
-            this.layoutPicture.Margin = new System.Windows.Forms.Padding(2);
+            this.layoutPicture.Location = new System.Drawing.Point(1694, 276);
             this.layoutPicture.Name = "layoutPicture";
-            this.layoutPicture.Size = new System.Drawing.Size(759, 472);
+            this.layoutPicture.Size = new System.Drawing.Size(1138, 708);
             this.layoutPicture.TabIndex = 5;
             this.layoutPicture.TabStop = false;
             // 
@@ -180,8 +180,7 @@
             this.AvailabilityTable.Controls.Add(this.label8, 6, 0);
             this.AvailabilityTable.Cursor = System.Windows.Forms.Cursors.Default;
             this.AvailabilityTable.ForeColor = System.Drawing.Color.White;
-            this.AvailabilityTable.Location = new System.Drawing.Point(24, 695);
-            this.AvailabilityTable.Margin = new System.Windows.Forms.Padding(2);
+            this.AvailabilityTable.Location = new System.Drawing.Point(36, 1042);
             this.AvailabilityTable.Name = "AvailabilityTable";
             this.AvailabilityTable.RowCount = 1;
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -191,18 +190,17 @@
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.AvailabilityTable.Size = new System.Drawing.Size(1867, 40);
+            this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.AvailabilityTable.Size = new System.Drawing.Size(2800, 60);
             this.AvailabilityTable.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 1);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(4, 1);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(185, 37);
+            this.label3.Size = new System.Drawing.Size(282, 55);
             this.label3.TabIndex = 0;
             this.label3.Text = "16:00-17:00";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,10 +209,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(269, 1);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(403, 1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 37);
+            this.label4.Size = new System.Drawing.Size(282, 55);
             this.label4.TabIndex = 1;
             this.label4.Text = "17:00-18:00";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -223,10 +220,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(535, 1);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(802, 1);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 37);
+            this.label5.Size = new System.Drawing.Size(282, 55);
             this.label5.TabIndex = 2;
             this.label5.Text = "18:00-19:00";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -235,10 +231,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(801, 1);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(1201, 1);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(187, 37);
+            this.label6.Size = new System.Drawing.Size(282, 55);
             this.label6.TabIndex = 3;
             this.label6.Text = "19:00-20:00";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -247,10 +242,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1067, 1);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(1600, 1);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 37);
+            this.label7.Size = new System.Drawing.Size(282, 55);
             this.label7.TabIndex = 10;
             this.label7.Text = "20:00-21:00";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -259,10 +253,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1333, 1);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(1999, 1);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(187, 37);
+            this.label9.Size = new System.Drawing.Size(282, 55);
             this.label9.TabIndex = 12;
             this.label9.Text = "21:00-22:00";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -271,10 +264,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1599, 1);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(2398, 1);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(189, 37);
+            this.label8.Size = new System.Drawing.Size(282, 55);
             this.label8.TabIndex = 11;
             this.label8.Text = "22:00-23:00";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -285,20 +277,18 @@
             this.PeopleLabel.BackColor = System.Drawing.Color.Black;
             this.PeopleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PeopleLabel.ForeColor = System.Drawing.Color.White;
-            this.PeopleLabel.Location = new System.Drawing.Point(16, 364);
-            this.PeopleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PeopleLabel.Location = new System.Drawing.Point(24, 546);
             this.PeopleLabel.Name = "PeopleLabel";
-            this.PeopleLabel.Size = new System.Drawing.Size(480, 42);
+            this.PeopleLabel.Size = new System.Drawing.Size(720, 64);
             this.PeopleLabel.TabIndex = 8;
             this.PeopleLabel.Text = "How many people will dine?";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(-2, -2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(2560, 1440);
+            this.pictureBox2.Size = new System.Drawing.Size(3840, 2160);
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
@@ -306,9 +296,10 @@
             // 
             this.ExitButton.AutoSize = true;
             this.ExitButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(1857, 32);
+            this.ExitButton.Location = new System.Drawing.Point(2786, 48);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(34, 37);
+            this.ExitButton.Size = new System.Drawing.Size(48, 51);
             this.ExitButton.TabIndex = 11;
             this.ExitButton.Text = "X";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
@@ -319,9 +310,10 @@
             // 
             this.MinimizeButton.AutoSize = true;
             this.MinimizeButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MinimizeButton.Location = new System.Drawing.Point(1812, 32);
+            this.MinimizeButton.Location = new System.Drawing.Point(2718, 48);
+            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(25, 37);
+            this.MinimizeButton.Size = new System.Drawing.Size(34, 51);
             this.MinimizeButton.TabIndex = 12;
             this.MinimizeButton.Text = "-";
             this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
@@ -332,10 +324,9 @@
             // 
             this.PlaceReservationButton.BackColor = System.Drawing.Color.Black;
             this.PlaceReservationButton.ForeColor = System.Drawing.Color.White;
-            this.PlaceReservationButton.Location = new System.Drawing.Point(1583, 1119);
-            this.PlaceReservationButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PlaceReservationButton.Location = new System.Drawing.Point(2374, 1678);
             this.PlaceReservationButton.Name = "PlaceReservationButton";
-            this.PlaceReservationButton.Size = new System.Drawing.Size(307, 51);
+            this.PlaceReservationButton.Size = new System.Drawing.Size(460, 76);
             this.PlaceReservationButton.TabIndex = 13;
             this.PlaceReservationButton.Text = "Place Reservation";
             this.PlaceReservationButton.UseVisualStyleBackColor = false;
@@ -348,10 +339,9 @@
             this.LuxeFoodsLogoLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LuxeFoodsLogoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LuxeFoodsLogoLabel.ForeColor = System.Drawing.Color.White;
-            this.LuxeFoodsLogoLabel.Location = new System.Drawing.Point(8, 20);
-            this.LuxeFoodsLogoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LuxeFoodsLogoLabel.Location = new System.Drawing.Point(12, 30);
             this.LuxeFoodsLogoLabel.Name = "LuxeFoodsLogoLabel";
-            this.LuxeFoodsLogoLabel.Size = new System.Drawing.Size(351, 73);
+            this.LuxeFoodsLogoLabel.Size = new System.Drawing.Size(518, 108);
             this.LuxeFoodsLogoLabel.TabIndex = 14;
             this.LuxeFoodsLogoLabel.Text = "LuxeFoods";
             // 
@@ -362,10 +352,9 @@
             this.aboutUsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.aboutUsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aboutUsButton.LinkColor = System.Drawing.Color.White;
-            this.aboutUsButton.Location = new System.Drawing.Point(551, 35);
-            this.aboutUsButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.aboutUsButton.Location = new System.Drawing.Point(1809, 55);
             this.aboutUsButton.Name = "aboutUsButton";
-            this.aboutUsButton.Size = new System.Drawing.Size(153, 39);
+            this.aboutUsButton.Size = new System.Drawing.Size(234, 61);
             this.aboutUsButton.TabIndex = 15;
             this.aboutUsButton.TabStop = true;
             this.aboutUsButton.Text = "About us";
@@ -379,13 +368,12 @@
             this.reservationsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.reservationsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reservationsButton.LinkColor = System.Drawing.Color.White;
-            this.reservationsButton.Location = new System.Drawing.Point(775, 34);
-            this.reservationsButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.reservationsButton.Location = new System.Drawing.Point(1279, 55);
             this.reservationsButton.Name = "reservationsButton";
-            this.reservationsButton.Size = new System.Drawing.Size(221, 39);
+            this.reservationsButton.Size = new System.Drawing.Size(480, 61);
             this.reservationsButton.TabIndex = 16;
             this.reservationsButton.TabStop = true;
-            this.reservationsButton.Text = "Reservations";
+            this.reservationsButton.Text = "Place a reservation";
             this.reservationsButton.VisitedLinkColor = System.Drawing.Color.White;
             this.reservationsButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.reservationsButton_LinkClicked);
             // 
@@ -396,10 +384,9 @@
             this.menuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.menuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.LinkColor = System.Drawing.Color.White;
-            this.menuButton.Location = new System.Drawing.Point(1340, 35);
-            this.menuButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.menuButton.Location = new System.Drawing.Point(616, 55);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(103, 39);
+            this.menuButton.Size = new System.Drawing.Size(158, 61);
             this.menuButton.TabIndex = 17;
             this.menuButton.TabStop = true;
             this.menuButton.Text = "Menu";
@@ -412,10 +399,9 @@
             this.contactUsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.contactUsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactUsButton.LinkColor = System.Drawing.Color.White;
-            this.contactUsButton.Location = new System.Drawing.Point(1074, 35);
-            this.contactUsButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.contactUsButton.Location = new System.Drawing.Point(2091, 55);
             this.contactUsButton.Name = "contactUsButton";
-            this.contactUsButton.Size = new System.Drawing.Size(183, 39);
+            this.contactUsButton.Size = new System.Drawing.Size(279, 61);
             this.contactUsButton.TabIndex = 18;
             this.contactUsButton.TabStop = true;
             this.contactUsButton.Text = "Contact us";
@@ -429,10 +415,9 @@
             this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.LinkColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(1518, 31);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.loginButton.Location = new System.Drawing.Point(2414, 52);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(110, 42);
+            this.loginButton.Size = new System.Drawing.Size(165, 64);
             this.loginButton.TabIndex = 19;
             this.loginButton.TabStop = true;
             this.loginButton.Text = "Login";
@@ -444,10 +429,9 @@
             this.AvailableLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.AvailableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AvailableLabel.ForeColor = System.Drawing.Color.White;
-            this.AvailableLabel.Location = new System.Drawing.Point(24, 628);
-            this.AvailableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AvailableLabel.Location = new System.Drawing.Point(36, 942);
             this.AvailableLabel.Name = "AvailableLabel";
-            this.AvailableLabel.Size = new System.Drawing.Size(268, 42);
+            this.AvailableLabel.Size = new System.Drawing.Size(402, 63);
             this.AvailableLabel.TabIndex = 20;
             this.AvailableLabel.Text = "Available Tables";
             // 
@@ -457,10 +441,9 @@
             this.LocationLabel.BackColor = System.Drawing.Color.Black;
             this.LocationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LocationLabel.ForeColor = System.Drawing.Color.White;
-            this.LocationLabel.Location = new System.Drawing.Point(17, 293);
-            this.LocationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LocationLabel.Location = new System.Drawing.Point(26, 440);
             this.LocationLabel.Name = "LocationLabel";
-            this.LocationLabel.Size = new System.Drawing.Size(282, 42);
+            this.LocationLabel.Size = new System.Drawing.Size(424, 64);
             this.LocationLabel.TabIndex = 8;
             this.LocationLabel.Text = "Which location?";
             // 
@@ -471,10 +454,10 @@
             this.restaurantComboCox.DisplayMember = "naam";
             this.restaurantComboCox.ForeColor = System.Drawing.Color.White;
             this.restaurantComboCox.FormattingEnabled = true;
-            this.restaurantComboCox.Location = new System.Drawing.Point(687, 293);
-            this.restaurantComboCox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.restaurantComboCox.Location = new System.Drawing.Point(1030, 440);
+            this.restaurantComboCox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.restaurantComboCox.Name = "restaurantComboCox";
-            this.restaurantComboCox.Size = new System.Drawing.Size(396, 39);
+            this.restaurantComboCox.Size = new System.Drawing.Size(592, 54);
             this.restaurantComboCox.TabIndex = 1;
             // 
             // restaurantBindingSource
@@ -501,10 +484,9 @@
             this.AreaLabel.BackColor = System.Drawing.Color.Black;
             this.AreaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AreaLabel.ForeColor = System.Drawing.Color.White;
-            this.AreaLabel.Location = new System.Drawing.Point(17, 439);
-            this.AreaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AreaLabel.Location = new System.Drawing.Point(26, 658);
             this.AreaLabel.Name = "AreaLabel";
-            this.AreaLabel.Size = new System.Drawing.Size(458, 42);
+            this.AreaLabel.Size = new System.Drawing.Size(686, 64);
             this.AreaLabel.TabIndex = 8;
             this.AreaLabel.Text = "Which area do you prefer?";
             // 
@@ -520,10 +502,9 @@
             "Area 4",
             "Area 5",
             "Area 6"});
-            this.AreaComboBox.Location = new System.Drawing.Point(687, 439);
-            this.AreaComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.AreaComboBox.Location = new System.Drawing.Point(1030, 658);
             this.AreaComboBox.Name = "AreaComboBox";
-            this.AreaComboBox.Size = new System.Drawing.Size(396, 39);
+            this.AreaComboBox.Size = new System.Drawing.Size(592, 54);
             this.AreaComboBox.TabIndex = 21;
             this.AreaComboBox.Text = "Select area";
             // 
@@ -532,10 +513,9 @@
             this.Reservation_page_title.BackColor = System.Drawing.Color.Black;
             this.Reservation_page_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reservation_page_title.ForeColor = System.Drawing.Color.White;
-            this.Reservation_page_title.Location = new System.Drawing.Point(259, 154);
-            this.Reservation_page_title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Reservation_page_title.Location = new System.Drawing.Point(388, 231);
             this.Reservation_page_title.Name = "Reservation_page_title";
-            this.Reservation_page_title.Size = new System.Drawing.Size(671, 82);
+            this.Reservation_page_title.Size = new System.Drawing.Size(1006, 123);
             this.Reservation_page_title.TabIndex = 22;
             this.Reservation_page_title.Text = "Place your reservation";
             // 
@@ -560,8 +540,7 @@
             this.tableLayoutPanel1.Controls.Add(this.listBox1920, 3, 0);
             this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(24, 739);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(36, 1108);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -571,8 +550,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 225F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1867, 352);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 338F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(2800, 528);
             this.tableLayoutPanel1.TabIndex = 23;
             // 
             // listBox2223
@@ -585,11 +564,11 @@
             this.listBox2223.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2223.ForeColor = System.Drawing.Color.White;
             this.listBox2223.FormattingEnabled = true;
-            this.listBox2223.ItemHeight = 20;
-            this.listBox2223.Location = new System.Drawing.Point(1598, 2);
-            this.listBox2223.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
+            this.listBox2223.ItemHeight = 30;
+            this.listBox2223.Location = new System.Drawing.Point(2403, 3);
+            this.listBox2223.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.listBox2223.Name = "listBox2223";
-            this.listBox2223.Size = new System.Drawing.Size(267, 340);
+            this.listBox2223.Size = new System.Drawing.Size(394, 510);
             this.listBox2223.TabIndex = 0;
             this.listBox2223.SelectedIndexChanged += new System.EventHandler(this.listBox2223_SelectedIndexChanged);
             // 
@@ -603,11 +582,11 @@
             this.listBox1617.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1617.ForeColor = System.Drawing.Color.White;
             this.listBox1617.FormattingEnabled = true;
-            this.listBox1617.ItemHeight = 20;
-            this.listBox1617.Location = new System.Drawing.Point(2, 2);
-            this.listBox1617.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
+            this.listBox1617.ItemHeight = 30;
+            this.listBox1617.Location = new System.Drawing.Point(3, 3);
+            this.listBox1617.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.listBox1617.Name = "listBox1617";
-            this.listBox1617.Size = new System.Drawing.Size(262, 340);
+            this.listBox1617.Size = new System.Drawing.Size(394, 510);
             this.listBox1617.TabIndex = 0;
             this.listBox1617.SelectedIndexChanged += new System.EventHandler(this.listBox1617_SelectedIndexChanged);
             // 
@@ -621,11 +600,11 @@
             this.listBox2122.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2122.ForeColor = System.Drawing.Color.White;
             this.listBox2122.FormattingEnabled = true;
-            this.listBox2122.ItemHeight = 20;
-            this.listBox2122.Location = new System.Drawing.Point(1332, 2);
-            this.listBox2122.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
+            this.listBox2122.ItemHeight = 30;
+            this.listBox2122.Location = new System.Drawing.Point(2003, 3);
+            this.listBox2122.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.listBox2122.Name = "listBox2122";
-            this.listBox2122.Size = new System.Drawing.Size(262, 340);
+            this.listBox2122.Size = new System.Drawing.Size(394, 510);
             this.listBox2122.TabIndex = 0;
             this.listBox2122.SelectedIndexChanged += new System.EventHandler(this.listBox2122_SelectedIndexChanged);
             // 
@@ -639,11 +618,11 @@
             this.listBox1718.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1718.ForeColor = System.Drawing.Color.White;
             this.listBox1718.FormattingEnabled = true;
-            this.listBox1718.ItemHeight = 20;
-            this.listBox1718.Location = new System.Drawing.Point(268, 2);
-            this.listBox1718.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
+            this.listBox1718.ItemHeight = 30;
+            this.listBox1718.Location = new System.Drawing.Point(403, 3);
+            this.listBox1718.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.listBox1718.Name = "listBox1718";
-            this.listBox1718.Size = new System.Drawing.Size(262, 340);
+            this.listBox1718.Size = new System.Drawing.Size(394, 510);
             this.listBox1718.TabIndex = 0;
             this.listBox1718.SelectedIndexChanged += new System.EventHandler(this.listBox1718_SelectedIndexChanged);
             // 
@@ -657,11 +636,11 @@
             this.listBox2021.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2021.ForeColor = System.Drawing.Color.White;
             this.listBox2021.FormattingEnabled = true;
-            this.listBox2021.ItemHeight = 20;
-            this.listBox2021.Location = new System.Drawing.Point(1066, 2);
-            this.listBox2021.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
+            this.listBox2021.ItemHeight = 30;
+            this.listBox2021.Location = new System.Drawing.Point(1603, 3);
+            this.listBox2021.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.listBox2021.Name = "listBox2021";
-            this.listBox2021.Size = new System.Drawing.Size(262, 340);
+            this.listBox2021.Size = new System.Drawing.Size(394, 510);
             this.listBox2021.TabIndex = 0;
             this.listBox2021.SelectedIndexChanged += new System.EventHandler(this.listBox2021_SelectedIndexChanged);
             // 
@@ -675,11 +654,11 @@
             this.listBox1819.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1819.ForeColor = System.Drawing.Color.White;
             this.listBox1819.FormattingEnabled = true;
-            this.listBox1819.ItemHeight = 20;
-            this.listBox1819.Location = new System.Drawing.Point(534, 2);
-            this.listBox1819.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
+            this.listBox1819.ItemHeight = 30;
+            this.listBox1819.Location = new System.Drawing.Point(803, 3);
+            this.listBox1819.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.listBox1819.Name = "listBox1819";
-            this.listBox1819.Size = new System.Drawing.Size(262, 340);
+            this.listBox1819.Size = new System.Drawing.Size(394, 510);
             this.listBox1819.TabIndex = 0;
             this.listBox1819.SelectedIndexChanged += new System.EventHandler(this.listBox1819_SelectedIndexChanged);
             // 
@@ -693,11 +672,11 @@
             this.listBox1920.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1920.ForeColor = System.Drawing.Color.White;
             this.listBox1920.FormattingEnabled = true;
-            this.listBox1920.ItemHeight = 20;
-            this.listBox1920.Location = new System.Drawing.Point(800, 2);
-            this.listBox1920.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
+            this.listBox1920.ItemHeight = 30;
+            this.listBox1920.Location = new System.Drawing.Point(1203, 3);
+            this.listBox1920.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.listBox1920.Name = "listBox1920";
-            this.listBox1920.Size = new System.Drawing.Size(262, 340);
+            this.listBox1920.Size = new System.Drawing.Size(394, 510);
             this.listBox1920.TabIndex = 0;
             this.listBox1920.SelectedIndexChanged += new System.EventHandler(this.listBox1920_SelectedIndexChanged);
             // 
@@ -705,20 +684,36 @@
             // 
             this.reservationBindingSource.DataSource = typeof(Luxefoods_WindowsForms.Reservation);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DarkGray;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(828, 55);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(402, 61);
+            this.linkLabel1.TabIndex = 17;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "My reservations";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
+            // 
             // Reservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1923, 947);
+            this.ClientSize = new System.Drawing.Size(2884, 1420);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.Reservation_page_title);
             this.Controls.Add(this.AreaComboBox);
             this.Controls.Add(this.AvailableLabel);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.contactUsButton);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.reservationsButton);
             this.Controls.Add(this.aboutUsButton);
@@ -738,7 +733,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.Name = "Reservation";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -805,5 +800,6 @@
         private System.Windows.Forms.ListBox listBox2223;
         private System.Windows.Forms.ListBox listBox1617;
         private System.Windows.Forms.BindingSource reservationBindingSource;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

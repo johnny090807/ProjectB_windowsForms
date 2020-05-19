@@ -83,6 +83,12 @@
     <Compile Include="contactUs.Designer.cs">
       <DependentUpon>contactUs.cs</DependentUpon>
     </Compile>
+    <Compile Include="homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePage.Designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="LuxeFoodsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -120,8 +126,17 @@
     <Compile Include="Template.Designer.cs">
       <DependentUpon>Template.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="aboutUs.resx">
+      <DependentUpon>aboutUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="checkReservation.resx">
       <DependentUpon>checkReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contactUs.resx">
+      <DependentUpon>contactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modifyReservation.resx">
       <DependentUpon>modifyReservation.cs</DependentUpon>
