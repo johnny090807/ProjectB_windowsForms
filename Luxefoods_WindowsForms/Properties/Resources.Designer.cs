@@ -173,6 +173,16 @@ namespace Luxefoods_WindowsForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap restaurant_floorplan_example {
+            get {
+                object obj = ResourceManager.GetObject("restaurant_floorplan_example", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vodka {
             get {
                 object obj = ResourceManager.GetObject("vodka", resourceCulture);

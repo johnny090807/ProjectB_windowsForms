@@ -23,15 +23,34 @@ namespace Luxefoods_WindowsForms
                          int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-        public Dashboard()
+        private int globalAdminID;
+        public Dashboard(int adminID)
         {
+            globalAdminID = adminID;
             InitializeComponent();
             fillChart(DateTime.Now);
             fillListBox();
             fillReservationListBox(DateTime.Now);
-            setupDashboardDesign();
+            fillAdminInfo(adminID);
             EditReservationButton.Hide();
             WindowState = FormWindowState.Maximized;
+        }
+
+        private void fillAdminInfo(int adminID)
+        {
+            SqlConnection con = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            DataSet ds2 = new DataSet();
+            con.Open();
+            SqlCommand customerInfo = new SqlCommand($"SELECT * from [user] WHERE id='{adminID}'", con);
+            SqlDataAdapter da = new SqlDataAdapter(customerInfo);
+            da.FillSchema(ds2, SchemaType.Source, "Customer");
+            da.Fill(ds2, "Customer");
+            con.Close();
+            DataTable tblCustomerInfo = ds2.Tables["Customer"];
+            foreach (DataRow i in tblCustomerInfo.Rows)
+            {
+                label1.Text = "Welcome " + i["voornaam"].ToString() + "!";
+            }
         }
 
         private void Form1_MouseDown(object sender,
@@ -42,11 +61,6 @@ namespace Luxefoods_WindowsForms
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
-        }
-
-        private void setupDashboardDesign()
-        {
-            
         }
 
         private void fillChart(DateTime date, int restaurantId = 1)
@@ -224,7 +238,7 @@ namespace Luxefoods_WindowsForms
                     int intId = Int32.Parse(ID);
 
                     this.Hide();
-                    AdminOrderReviewDashboard adminOrderReviewDashboard = new AdminOrderReviewDashboard(intId, "dashboard");
+                    AdminOrderReviewDashboard adminOrderReviewDashboard = new AdminOrderReviewDashboard(intId, globalAdminID, "dashboard");
                     adminOrderReviewDashboard.Show();
                 }
             }
@@ -254,7 +268,7 @@ namespace Luxefoods_WindowsForms
                 } else
                 {
                     this.Hide();
-                    SearchPage searchPage = new SearchPage(SearchComboBox.SelectedItem.ToString(), inputField.Text, "dashboard");
+                    SearchPage searchPage = new SearchPage(SearchComboBox.SelectedItem.ToString(), globalAdminID, inputField.Text, "dashboard");
                     searchPage.Show();
                 }
             } else

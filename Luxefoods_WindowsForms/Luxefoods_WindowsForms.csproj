@@ -103,17 +103,23 @@
     <EmbeddedResource Include="modifyReservation.resx">
       <DependentUpon>modifyReservation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.aboutUs.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.AdminOrderReviewDashboard.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.checkReservation.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.contactUs.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Dashboard.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.homePage.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Login.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Menu.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.MenuHors.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.MenuSoups.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.MenuSpecial.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Modify_reservation.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Properties.Resources.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Register.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.reservation.resources" />
+    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.reservation_template1.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.SearchPage.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Template.resources" />
     <EmbeddedResource Include="ReservationBackEnd.cs" />
@@ -260,6 +266,18 @@
     <None Include="obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete" />
     <None Include="obj\Debug\Luxefoods_WindowsForms.csproj.GenerateResource.cache" />
     <None Include="obj\Debug\Luxefoods_WindowsForms.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\build.force" />
+    <None Include="Properties\DataSources\aboutUs.datasource" />
+    <None Include="Properties\DataSources\checkReservation.datasource" />
+    <None Include="Properties\DataSources\contactUs.datasource" />
+    <None Include="Properties\DataSources\Login.datasource" />
+    <None Include="Properties\DataSources\Luxefoods_WindowsForms.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Luxefoods_WindowsForms.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Modify_reservation.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Register.datasource" />
+    <None Include="Properties\DataSources\Reservation.datasource" />
+    <None Include="Properties\DataSources\Template.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -295,6 +313,7 @@
     <Content Include="obj\Debug\Luxefoods_WindowsForms.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Luxefoods_WindowsForms.exe" />
     <Content Include="obj\Debug\Luxefoods_WindowsForms.pdb" />
+    <Content Include="obj\Debug\TempPE\LuxeFoodsDataSet.Designer.cs.dll" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <Content Include="Resources\arrow-204-16.png" />
     <Content Include="Resources\arrow-28-16.png" />
@@ -309,6 +328,9 @@
     <Content Include="Resources\whitearrowicon.png" />
     <Content Include="Resources\wijnfles-etiketten-botanical-romance-thankyou-d020031.jpg" />
     <Content Include="restaurant-floorplan-example.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

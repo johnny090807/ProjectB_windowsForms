@@ -20,15 +20,16 @@ namespace Luxefoods_WindowsForms
         {
             InitializeComponent();
             CenterToScreen();
-        }
+            var listArea1 = new List<int> { 1, 2, 3, 4, 7, 8, 9, 10, 14, 15, 16, 17, 20, 21, 22 };
+            List<int> listArea2 = new List<int> { 5, 6, 11, 12, 18, 19, 31, 32, 33, 34, 35 };
+            List<int> listArea3 = new List<int> { 23, 24, 25, 26, 27, 28, 29, 30 };
+            List<int> listArea4 = new List<int> { 36, 37, 38, 39, 40, 41, 42, 43 };
+            List<int> listArea5 = new List<int> { 44, 45, 46, 47, 48, 49 };
+            List<int> listArea6 = new List<int> { 50, 51, 52, 53, 54, 55 };
+            GlobalListListBoxes = new List<List<int>> { listArea1, listArea2, listArea3, listArea4, listArea5, listArea6 };
             fillCalender();
-            var listArea1 = new List<int> {1, 2, 3, 4, 7, 8, 9, 10, 14, 15, 16, 17, 20, 21, 22};
-            List<int> listArea2 = new List<int> {5, 6, 11, 12, 18, 19, 31, 32, 33, 34, 35};
-            List<int> listArea3 = new List<int> {23, 24, 25, 26, 27, 28, 29, 30};
-            List<int> listArea4 = new List<int> {36, 37, 38, 39, 40, 41, 42, 43};
-            List<int> listArea5 = new List<int> {44, 45, 46, 47, 48, 49};
-            List<int> listArea6 = new List<int> {50, 51, 52, 53, 54, 55};
-            GlobalListListBoxes = new List<List<int>> {listArea1, listArea2, listArea3, listArea4, listArea5, listArea6};
+        }
+            
 
         public class TakenSeats
         {
@@ -136,26 +137,6 @@ namespace Luxefoods_WindowsForms
      * 
      * 
      */
-
-
-        private void ExitButton_Hover_Leave(object sender, EventArgs e)
-        {
-            ExitButton.ForeColor = Color.Black;
-        }
-
-        private void MinimizeButton_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void MinimizeButton_Hover_Enter(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Red;
-        }
-        private void MinimizeButton_Hover_Leave(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Black;
-        }
 
         private void aboutUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

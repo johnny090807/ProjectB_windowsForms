@@ -40,7 +40,8 @@ namespace Luxefoods_WindowsForms
         private string globalPrevious;
         private string globalOption;
         private string globalKeywords;
-        public AdminOrderReviewDashboard(int ID, string previous = "", string option = "", string keywords = "")
+        private int globalAdminID;
+        public AdminOrderReviewDashboard(int ID, int adminID, string previous = "", string option = "", string keywords = "")
         {
             /*  TODO
              * Edit Details of the order (FINISHED)
@@ -54,6 +55,7 @@ namespace Luxefoods_WindowsForms
             globalPrevious = previous;
             globalOption = option;
             globalKeywords = keywords;
+            globalAdminID = adminID;
             InitializeComponent();
             fillDashboard(ID);
             fillComboBox(ID);
@@ -172,7 +174,7 @@ namespace Luxefoods_WindowsForms
             }
 
             dateTimePicker1.MinDate = DateTime.Now;
-            if (dateTimePicker1.Value.Hour > 23)
+            if (dateTimePicker1.Value.Hour > 22)
             {
                 dateTimePicker1.Value = new DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, (dateTimePicker1.Value.Day+1), 16, 0, 0);
             } else if (dateTimePicker1.Value.Hour < 16)
@@ -286,12 +288,22 @@ namespace Luxefoods_WindowsForms
                         AcceptChangeButton.Hide();
                     }
                 }
+            } 
+            else if (names.Length >= 1)
+            {
+                foreach (DataRow x in tblCustomerInfo.Rows)
+                {
+
+                    if ((string)x["voornaam"] != names[0] || (string)x["achternaam"] != names[0] || (string)x["email"] != customerEmailTextBox.Text || (string)x["telefoonnummer"] != customerPhoneTextBox.Text)
+                    {
+                        AcceptChangeButton.Show();
+                    }
+                    else
+                    {
+                        AcceptChangeButton.Hide();
+                    }
+                }
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void RestaurantPicker_SelectedIndexChanged(object sender, EventArgs e)
@@ -304,6 +316,16 @@ namespace Luxefoods_WindowsForms
         {
             checkDataChanged(globalId);
             updateAvailableSeats();
+
+            if (dateTimePicker1.Value.Hour > 22)
+            {
+                dateTimePicker1.Value = new DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, (dateTimePicker1.Value.Day + 1), 16, 0, 0);
+            }
+            else if (dateTimePicker1.Value.Hour < 16)
+            {
+                dateTimePicker1.Value = new DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, (dateTimePicker1.Value.Day), 16, 0, 0);
+            }
+
         }
 
         private void EditButton_Click(object sender, EventArgs e)
@@ -561,14 +583,6 @@ namespace Luxefoods_WindowsForms
             }
         }
 
-        private void DateTimePickerKeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (dateTimePicker1.Value.Hour > 23 || dateTimePicker1.Value.Hour < 16)
-            {
-                e.Handled = true;
-            }
-        }
-
         private void availableSeatsListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             checkDataChanged(globalId);
@@ -579,12 +593,12 @@ namespace Luxefoods_WindowsForms
             if (globalPrevious == "dashboard")
             {
                 this.Hide();
-                Dashboard dashboard = new Dashboard();
+                Dashboard dashboard = new Dashboard(globalAdminID);
                 dashboard.Show();
             } else if (globalPrevious == "search")
             {
                 this.Hide();
-                SearchPage search = new SearchPage(globalOption, globalKeywords, "dashboard");
+                SearchPage search = new SearchPage(globalOption, globalAdminID, globalKeywords, "dashboard");
                 search.Show();
             }
         }
@@ -615,6 +629,27 @@ namespace Luxefoods_WindowsForms
                 // Connectie met database beindigen
                 connection.Close();
                 MessageBox.Show("The Order Has Been Successfully Deleted");
+                panel2.Visible = false;
+
+                goBackButton.Enabled = !goBackButton.Enabled;
+                RestaurantPicker.Enabled = !RestaurantPicker.Enabled;
+                dateTimePicker1.Enabled = !dateTimePicker1.Enabled;
+                EditCustomerInfoButton.Enabled = !EditCustomerInfoButton.Enabled;
+                EditButton.Enabled = !EditButton.Enabled;
+                DeleteButton.Enabled = !DeleteButton.Enabled;
+
+                if (globalPrevious == "dashboard")
+                {
+                    this.Hide();
+                    Dashboard dashboard = new Dashboard(globalAdminID);
+                    dashboard.Show();
+                }
+                else if (globalPrevious == "search")
+                {
+                    this.Hide();
+                    SearchPage search = new SearchPage(globalOption, globalAdminID, globalKeywords, "dashboard");
+                    search.Show();
+                }
             } catch (Exception err)
             {
                 MessageBox.Show(err.Message);

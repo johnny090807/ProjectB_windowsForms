@@ -39,11 +39,13 @@ namespace Luxefoods_WindowsForms
         private string globalPrevious;
         private string globalOption;
         private string globalKeywords;
-        public SearchPage(string option, string keywords, string previous = "")
+        private int globalAdminID;
+        public SearchPage(string option, int adminID, string keywords, string previous = "")
         {
             globalOption = option;
             globalKeywords = keywords;
             globalPrevious = previous;
+            globalAdminID = adminID;
             InitializeComponent();
             label2.Text = "Looking for: " + keywords + " by: " +option;
             if (option == "Name") {
@@ -428,7 +430,7 @@ namespace Luxefoods_WindowsForms
                     int intId = Int32.Parse(ID);
 
                     this.Hide();
-                    AdminOrderReviewDashboard adminOrderReviewDashboard = new AdminOrderReviewDashboard(intId, "search", globalOption, globalKeywords);
+                    AdminOrderReviewDashboard adminOrderReviewDashboard = new AdminOrderReviewDashboard(intId, globalAdminID, "search", globalOption, globalKeywords);
                     adminOrderReviewDashboard.Show();
                 }
             }
@@ -513,7 +515,7 @@ namespace Luxefoods_WindowsForms
             if (globalPrevious == "dashboard")
             {
                 this.Hide();
-                Dashboard dashboard = new Dashboard();
+                Dashboard dashboard = new Dashboard(globalAdminID);
                 dashboard.Show();
             }
         }

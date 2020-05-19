@@ -74,7 +74,6 @@
             this.OrderId.Size = new System.Drawing.Size(143, 42);
             this.OrderId.TabIndex = 0;
             this.OrderId.Text = "OrderId";
-            this.OrderId.Click += new System.EventHandler(this.label1_Click);
             // 
             // RestaurantPicker
             // 
@@ -102,7 +101,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(459, 38);
             this.dateTimePicker1.TabIndex = 2;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            this.dateTimePicker1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DateTimePickerKeyPress);
             // 
             // CustomerId
             // 

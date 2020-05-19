@@ -17,20 +17,22 @@ namespace Luxefoods_WindowsForms
         public static User person = null;
         public class User
         {
+            public int id { get; set; }
             public string voornaam { get; set; }
             public string achternaam { get; set; }
             public string email { get; set; }
             public string telefoonnummer { get; set; }
             public string password { get; set; }
             public bool admin{ get; set; }
-            public User(string first, string last, string e, string t, string pass, bool admin = false)
+            public User(int ID, string first, string last, string e, string t, string pass, bool Admin = false)
             {
+                id = ID;
                 voornaam = first;
                 achternaam = last;
                 email = e;
                 telefoonnummer = t;
                 password = pass;
-                admin = false;
+                admin = Admin;
             }
         }
         public Login()
@@ -89,25 +91,32 @@ namespace Luxefoods_WindowsForms
                         foreach (DataRow dr in dt.Rows)
                         {
                             password = dr["password"].ToString();
-                            person = new User(dr["voornaam"].ToString(), dr["achternaam"].ToString(), dr["email"].ToString(), dr["telefoonnummer"].ToString(), dr["password"].ToString(), (bool)dr["admin"]);
+                            person = new User((int) dr["id"] ,dr["voornaam"].ToString(), dr["achternaam"].ToString(), dr["email"].ToString(), dr["telefoonnummer"].ToString(), dr["password"].ToString(), (bool)dr["admin"]);
                         }
                         if (typedPassword == password)
                         {
                             this.Hide();
-                            FormCollection fc = Application.OpenForms;
-                            foreach (Form frm in fc)
+                            if (person.admin)
                             {
-                                if (frm.Name == "MenuSpecial")
+                                Dashboard dashboardForm = new Dashboard(person.id);
+                                dashboardForm.Show();
+                            } else
+                            {
+                                FormCollection fc = Application.OpenForms;
+                                foreach (Form frm in fc)
                                 {
-                                    Menu menuForm = new Menu();
-                                    menuForm.Show();
-                                    this.Hide();
-                                }
-                                else
-                                {
-                                    Register registerForm = new Register();
-                                    registerForm.Show();
-                                    this.Hide();
+                                    if (frm.Name == "MenuSpecial")
+                                    {
+                                        Menu menuForm = new Menu();
+                                        menuForm.Show();
+                                        this.Hide();
+                                    }
+                                    else
+                                    {
+                                        Register registerForm = new Register();
+                                        registerForm.Show();
+                                        this.Hide();
+                                    }
                                 }
                             }
                         }
