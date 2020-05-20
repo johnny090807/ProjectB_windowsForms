@@ -17,7 +17,7 @@ namespace Luxefoods_WindowsForms
             InitializeComponent();
             if (Login.person != null)
             {
-                this.loginButton.Text = Login.person.voornaam + " " + Login.person.achternaam;
+                this.linkLabel2.Text = Login.person.voornaam + " " + Login.person.achternaam;
             }
         }
 
@@ -63,27 +63,15 @@ namespace Luxefoods_WindowsForms
             {
                 MinimizeButton.ForeColor = Color.Black;
             }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LuxeFoodsLogoLabel_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            homePage homeForm = new homePage();
-            homeForm.Show();
-        }
-
-        private void menuButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             Menu menuForm = new Menu();
             menuForm.Show();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             checkReservation reservationForm = new checkReservation();
@@ -91,26 +79,49 @@ namespace Luxefoods_WindowsForms
 
         }
 
-        private void reservationsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             Reservation reservationForm = new Reservation();
             reservationForm.Show();
         }
 
-        private void aboutUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            homePage homeForm = new homePage();
+            homeForm.Show();
+        }
+
+        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             aboutUs aboutForm = new aboutUs();
             aboutForm.Show();
         }
 
-        private void loginButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Login.previousPage = "ContactUs";
             this.Hide();
-            Login loginForm = new Login();
-            loginForm.Show();
+            contactUs contactForm = new contactUs();
+            contactForm.Show();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login.previousPage = "AboutUs";
+            if (Login.person != null)
+            {
+                this.Hide();
+                Template form1 = new Template();
+                form1.Show();
+            }
+            else
+            {
+                this.Hide();
+                Login form2 = new Login();
+                form2.Show();
+            }
         }
     }
 
