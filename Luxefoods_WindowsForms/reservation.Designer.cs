@@ -705,7 +705,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(2884, 1420);
+            this.ClientSize = new System.Drawing.Size(2884, 1181);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.Reservation_page_title);
             this.Controls.Add(this.AreaComboBox);

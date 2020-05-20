@@ -62,7 +62,7 @@
             this.ExitButton.Location = new System.Drawing.Point(1823, 30);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(48, 51);
+            this.ExitButton.Size = new System.Drawing.Size(34, 37);
             this.ExitButton.TabIndex = 11;
             this.ExitButton.Text = "X";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
@@ -76,7 +76,7 @@
             this.MinimizeButton.Location = new System.Drawing.Point(1757, 30);
             this.MinimizeButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(34, 51);
+            this.MinimizeButton.Size = new System.Drawing.Size(25, 37);
             this.MinimizeButton.TabIndex = 12;
             this.MinimizeButton.Text = "-";
             this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
@@ -92,11 +92,12 @@
             this.loginButton.LinkColor = System.Drawing.Color.White;
             this.loginButton.Location = new System.Drawing.Point(1612, 42);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(105, 40);
+            this.loginButton.Size = new System.Drawing.Size(73, 29);
             this.loginButton.TabIndex = 25;
             this.loginButton.TabStop = true;
             this.loginButton.Text = "Login";
             this.loginButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.loginButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginButton_LinkClicked);
             // 
             // contactUsButton
             // 
@@ -107,11 +108,12 @@
             this.contactUsButton.LinkColor = System.Drawing.Color.White;
             this.contactUsButton.Location = new System.Drawing.Point(1400, 42);
             this.contactUsButton.Name = "contactUsButton";
-            this.contactUsButton.Size = new System.Drawing.Size(189, 40);
+            this.contactUsButton.Size = new System.Drawing.Size(125, 29);
             this.contactUsButton.TabIndex = 24;
             this.contactUsButton.TabStop = true;
             this.contactUsButton.Text = "Contact us";
             this.contactUsButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.contactUsButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.contactUsButton_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -122,11 +124,12 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(541, 41);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(271, 40);
+            this.linkLabel1.Size = new System.Drawing.Size(181, 29);
             this.linkLabel1.TabIndex = 22;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "My reservations";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // menuButton
             // 
@@ -137,11 +140,12 @@
             this.menuButton.LinkColor = System.Drawing.Color.White;
             this.menuButton.Location = new System.Drawing.Point(397, 39);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(107, 40);
+            this.menuButton.Size = new System.Drawing.Size(73, 29);
             this.menuButton.TabIndex = 23;
             this.menuButton.TabStop = true;
             this.menuButton.Text = "Menu";
             this.menuButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.menuButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.menuButton_LinkClicked);
             // 
             // reservationsButton
             // 
@@ -152,11 +156,12 @@
             this.reservationsButton.LinkColor = System.Drawing.Color.White;
             this.reservationsButton.Location = new System.Drawing.Point(846, 42);
             this.reservationsButton.Name = "reservationsButton";
-            this.reservationsButton.Size = new System.Drawing.Size(325, 40);
+            this.reservationsButton.Size = new System.Drawing.Size(218, 29);
             this.reservationsButton.TabIndex = 21;
             this.reservationsButton.TabStop = true;
             this.reservationsButton.Text = "Place a reservation";
             this.reservationsButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.reservationsButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.reservationsButton_LinkClicked);
             // 
             // aboutUsButton
             // 
@@ -167,7 +172,7 @@
             this.aboutUsButton.LinkColor = System.Drawing.Color.White;
             this.aboutUsButton.Location = new System.Drawing.Point(1207, 41);
             this.aboutUsButton.Name = "aboutUsButton";
-            this.aboutUsButton.Size = new System.Drawing.Size(159, 40);
+            this.aboutUsButton.Size = new System.Drawing.Size(106, 29);
             this.aboutUsButton.TabIndex = 20;
             this.aboutUsButton.TabStop = true;
             this.aboutUsButton.Text = "About us";
@@ -182,9 +187,10 @@
             this.LuxeFoodsLogoLabel.ForeColor = System.Drawing.Color.White;
             this.LuxeFoodsLogoLabel.Location = new System.Drawing.Point(36, 30);
             this.LuxeFoodsLogoLabel.Name = "LuxeFoodsLogoLabel";
-            this.LuxeFoodsLogoLabel.Size = new System.Drawing.Size(283, 59);
+            this.LuxeFoodsLogoLabel.Size = new System.Drawing.Size(188, 39);
             this.LuxeFoodsLogoLabel.TabIndex = 26;
             this.LuxeFoodsLogoLabel.Text = "LuxeFoods";
+            this.LuxeFoodsLogoLabel.Click += new System.EventHandler(this.LuxeFoodsLogoLabel_Click);
             // 
             // HeaderLabel
             // 
@@ -194,7 +200,7 @@
             this.HeaderLabel.ForeColor = System.Drawing.Color.White;
             this.HeaderLabel.Location = new System.Drawing.Point(789, 175);
             this.HeaderLabel.Name = "HeaderLabel";
-            this.HeaderLabel.Size = new System.Drawing.Size(318, 82);
+            this.HeaderLabel.Size = new System.Drawing.Size(214, 55);
             this.HeaderLabel.TabIndex = 35;
             this.HeaderLabel.Text = "About us";
             // 
@@ -205,7 +211,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(269, 392);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1421, 184);
+            this.label1.Size = new System.Drawing.Size(965, 124);
             this.label1.TabIndex = 36;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -220,10 +226,10 @@
             // 
             // aboutUs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1924, 1276);
+            this.ClientSize = new System.Drawing.Size(1924, 1181);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.HeaderLabel);

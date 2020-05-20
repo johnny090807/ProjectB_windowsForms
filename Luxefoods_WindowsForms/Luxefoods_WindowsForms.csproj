@@ -119,7 +119,6 @@
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Properties.Resources.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Register.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.reservation.resources" />
-    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.reservation_template1.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.SearchPage.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Template.resources" />
     <EmbeddedResource Include="ReservationBackEnd.cs" />

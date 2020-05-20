@@ -83,6 +83,23 @@ namespace Luxefoods_WindowsForms
             f1.ShowDialog();
             this.Close();
         }
+
+        private void loginButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login.previousPage = "ModifyReservation";
+            if (Login.person != null)
+            {
+                this.Hide();
+                Template form1 = new Template();
+                form1.Show();
+            }
+            else
+            {
+                this.Hide();
+                Login form2 = new Login();
+                form2.Show();
+            }
+        }
     }
 
     /*

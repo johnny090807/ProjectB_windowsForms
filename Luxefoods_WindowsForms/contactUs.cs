@@ -64,6 +64,50 @@ namespace Luxefoods_WindowsForms
         {
 
         }
+
+        private void LuxeFoodsLogoLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            homePage homeForm = new homePage();
+            homeForm.Show();
+        }
+
+        private void menuButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Menu menuForm = new Menu();
+            menuForm.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            checkReservation reservationForm = new checkReservation();
+            reservationForm.Show();
+
+        }
+
+        private void reservationsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Reservation reservationForm = new Reservation();
+            reservationForm.Show();
+        }
+
+        private void aboutUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            aboutUs aboutForm = new aboutUs();
+            aboutForm.Show();
+        }
+
+        private void loginButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login.previousPage = "ContactUs";
+            this.Hide();
+            Login loginForm = new Login();
+            loginForm.Show();
+        }
     }
 
     /*

@@ -14,6 +14,7 @@ namespace Luxefoods_WindowsForms
 {
     public partial class Login : Form
     {
+        public static string previousPage = null;
         public static User person = null;
         public class User
         {

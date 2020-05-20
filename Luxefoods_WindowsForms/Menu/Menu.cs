@@ -36,6 +36,7 @@ namespace Luxefoods_WindowsForms
        
         private void LoginBtn_Click(object sender, EventArgs e)
         {
+            Login.previousPage = "Menu";
             if(Login.person != null)
             {
                 this.Hide();
@@ -48,26 +49,6 @@ namespace Luxefoods_WindowsForms
                 Login form2 = new Login();
                 form2.Show();
             }
-        }
-        private void ContactBTN_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void ReservationsBTN_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void HomeBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void AboutBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void MenuBTN_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void getMenuItems(object sender, EventArgs e)
@@ -190,6 +171,34 @@ namespace Luxefoods_WindowsForms
             {
                 
             }
+        }
+
+        private void AboutBTN_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            aboutUs aboutForm = new aboutUs();
+            aboutForm.Show();
+        }
+
+        private void ContactBTN_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            contactUs contactForm = new contactUs();
+            contactForm.Show();
+        }
+
+        private void ReservationsBTN_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Reservation reservationForm = new Reservation();
+            reservationForm.Show();
+        }
+
+        private void HomeBTN_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            homePage homeForm = new homePage();
+            homeForm.Show();
         }
     }
 }

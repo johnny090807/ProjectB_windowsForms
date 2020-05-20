@@ -62,7 +62,7 @@ namespace Luxefoods_WindowsForms
             this.ExitButton.Location = new System.Drawing.Point(1823, 30);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(48, 51);
+            this.ExitButton.Size = new System.Drawing.Size(34, 37);
             this.ExitButton.TabIndex = 11;
             this.ExitButton.Text = "X";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
@@ -76,7 +76,7 @@ namespace Luxefoods_WindowsForms
             this.MinimizeButton.Location = new System.Drawing.Point(1757, 30);
             this.MinimizeButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(34, 51);
+            this.MinimizeButton.Size = new System.Drawing.Size(25, 37);
             this.MinimizeButton.TabIndex = 12;
             this.MinimizeButton.Text = "-";
             this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
@@ -110,10 +110,10 @@ namespace Luxefoods_WindowsForms
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 46;
+            this.listBox1.ItemHeight = 31;
             this.listBox1.Location = new System.Drawing.Point(186, 319);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1551, 694);
+            this.listBox1.Size = new System.Drawing.Size(1551, 686);
             this.listBox1.TabIndex = 19;
             // 
             // loginButton
@@ -124,10 +124,11 @@ namespace Luxefoods_WindowsForms
             this.loginButton.LinkColor = System.Drawing.Color.White;
             this.loginButton.Location = new System.Drawing.Point(1532, 48);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(118, 46);
+            this.loginButton.Size = new System.Drawing.Size(80, 31);
             this.loginButton.TabIndex = 31;
             this.loginButton.TabStop = true;
             this.loginButton.Text = "Login";
+            this.loginButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginButton_LinkClicked);
             // 
             // contactUsButton
             // 
@@ -137,7 +138,7 @@ namespace Luxefoods_WindowsForms
             this.contactUsButton.LinkColor = System.Drawing.Color.White;
             this.contactUsButton.Location = new System.Drawing.Point(1015, 48);
             this.contactUsButton.Name = "contactUsButton";
-            this.contactUsButton.Size = new System.Drawing.Size(212, 46);
+            this.contactUsButton.Size = new System.Drawing.Size(145, 31);
             this.contactUsButton.TabIndex = 30;
             this.contactUsButton.TabStop = true;
             this.contactUsButton.Text = "Contact us";
@@ -151,10 +152,11 @@ namespace Luxefoods_WindowsForms
             this.menuButton.LinkColor = System.Drawing.Color.White;
             this.menuButton.Location = new System.Drawing.Point(1319, 48);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(119, 46);
+            this.menuButton.Size = new System.Drawing.Size(81, 31);
             this.menuButton.TabIndex = 29;
             this.menuButton.TabStop = true;
             this.menuButton.Text = "Menu";
+            this.menuButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.menuButton_LinkClicked);
             // 
             // reservationsButton
             // 
@@ -164,7 +166,7 @@ namespace Luxefoods_WindowsForms
             this.reservationsButton.LinkColor = System.Drawing.Color.White;
             this.reservationsButton.Location = new System.Drawing.Point(686, 45);
             this.reservationsButton.Name = "reservationsButton";
-            this.reservationsButton.Size = new System.Drawing.Size(252, 46);
+            this.reservationsButton.Size = new System.Drawing.Size(174, 31);
             this.reservationsButton.TabIndex = 28;
             this.reservationsButton.TabStop = true;
             this.reservationsButton.Text = "Reservations";
@@ -178,10 +180,11 @@ namespace Luxefoods_WindowsForms
             this.aboutUsButton.LinkColor = System.Drawing.Color.White;
             this.aboutUsButton.Location = new System.Drawing.Point(431, 45);
             this.aboutUsButton.Name = "aboutUsButton";
-            this.aboutUsButton.Size = new System.Drawing.Size(178, 46);
+            this.aboutUsButton.Size = new System.Drawing.Size(121, 31);
             this.aboutUsButton.TabIndex = 27;
             this.aboutUsButton.TabStop = true;
             this.aboutUsButton.Text = "About us";
+            this.aboutUsButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.aboutUsButton_LinkClicked_1);
             // 
             // label2
             // 
@@ -192,16 +195,17 @@ namespace Luxefoods_WindowsForms
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(304, 64);
+            this.label2.Size = new System.Drawing.Size(207, 44);
             this.label2.TabIndex = 26;
             this.label2.Text = "LuxeFoods";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // checkReservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1924, 1276);
+            this.ClientSize = new System.Drawing.Size(1924, 1181);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.contactUsButton);
             this.Controls.Add(this.menuButton);

@@ -140,6 +140,7 @@
             this.AboutBTN.TabIndex = 5;
             this.AboutBTN.Text = "About us";
             this.AboutBTN.UseVisualStyleBackColor = false;
+            this.AboutBTN.Click += new System.EventHandler(this.AboutBTN_Click);
             // 
             // ReservationsBTN
             // 
@@ -159,7 +160,7 @@
             this.ReservationsBTN.TabIndex = 4;
             this.ReservationsBTN.Text = "Reservations";
             this.ReservationsBTN.UseVisualStyleBackColor = false;
-            this.ReservationsBTN.Click += new System.EventHandler(this.HomeBtn_Click);
+            this.ReservationsBTN.Click += new System.EventHandler(this.ReservationsBTN_Click);
             // 
             // MenuBTN
             // 
@@ -178,7 +179,6 @@
             this.MenuBTN.TabIndex = 3;
             this.MenuBTN.Text = "Menu";
             this.MenuBTN.UseVisualStyleBackColor = false;
-            this.MenuBTN.Click += new System.EventHandler(this.MenuBTN_Click);
             // 
             // ContactBTN
             // 
@@ -197,6 +197,7 @@
             this.ContactBTN.TabIndex = 2;
             this.ContactBTN.Text = "Contact";
             this.ContactBTN.UseVisualStyleBackColor = false;
+            this.ContactBTN.Click += new System.EventHandler(this.ContactBTN_Click);
             // 
             // LoginBTN
             // 
@@ -235,6 +236,7 @@
             this.HomeBTN.TabIndex = 0;
             this.HomeBTN.Text = "LuxeFoods";
             this.HomeBTN.UseVisualStyleBackColor = false;
+            this.HomeBTN.Click += new System.EventHandler(this.HomeBTN_Click);
             // 
             // SideBar
             // 
