@@ -15,6 +15,10 @@ namespace Luxefoods_WindowsForms
         public contactUs()
         {
             InitializeComponent();
+            if (Login.person != null)
+            {
+                this.loginButton.Text = Login.person.voornaam + " " + Login.person.achternaam;
+            }
         }
 
         private void AvailabilityTable_Paint(object sender, PaintEventArgs e)

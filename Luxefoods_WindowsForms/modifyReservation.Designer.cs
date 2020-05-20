@@ -166,6 +166,7 @@
             this.menuButton.TabIndex = 23;
             this.menuButton.TabStop = true;
             this.menuButton.Text = "Menu";
+            this.menuButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.menuButton_LinkClicked);
             // 
             // reservationsButton
             // 

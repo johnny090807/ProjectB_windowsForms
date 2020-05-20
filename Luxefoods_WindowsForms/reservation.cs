@@ -28,6 +28,10 @@ namespace Luxefoods_WindowsForms
             List<int> listArea6 = new List<int> { 50, 51, 52, 53, 54, 55 };
             GlobalListListBoxes = new List<List<int>> { listArea1, listArea2, listArea3, listArea4, listArea5, listArea6 };
             fillCalender();
+            if (Login.person != null)
+            {
+                this.loginButton.Text = Login.person.voornaam + " " + Login.person.achternaam;
+            }
         }
             
 
@@ -571,5 +575,35 @@ namespace Luxefoods_WindowsForms
             /// }
         }
 
+        private void menuButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Menu menuForm = new Menu();
+            menuForm.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            checkReservation reservationForm = new checkReservation();
+            reservationForm.Show();
+        }
+
+        private void loginButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login.previousPage = "Reservation";
+            if (Login.person != null)
+            {
+                this.Hide();
+                Template form1 = new Template();
+                form1.Show();
+            }
+            else
+            {
+                this.Hide();
+                Login form2 = new Login();
+                form2.Show();
+            }
+        }
     }
 }

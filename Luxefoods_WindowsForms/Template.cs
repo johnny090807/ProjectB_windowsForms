@@ -22,12 +22,8 @@ namespace Luxefoods_WindowsForms
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-            if (System.Windows.Forms.Application.MessageLoop)
-            {
-                this.Hide();
-                Menu form1 = new Menu();
-                form1.Show();
-            }
+            CheckWhichFormWasOpened();
+            
         }
 
         private void ExitButton_Hover_Enter(object sender, EventArgs e)
@@ -60,6 +56,53 @@ namespace Luxefoods_WindowsForms
             this.Hide();
             Menu form1 = new Menu();
             form1.Show();
+        }
+        public void CheckWhichFormWasOpened()
+        {
+            string previousPage = Login.previousPage;
+            if (previousPage == "Menu")
+            {
+                Menu menuForm = new Menu();
+                menuForm.Show();
+                this.Hide();
+            }
+            else if (previousPage == "Reservation")
+            {
+                this.Hide();
+                Reservation reservationForm = new Reservation();
+                reservationForm.Show();
+            }
+            else if (previousPage == "checkReservations")
+            {
+                this.Hide();
+                checkReservation checkReservationForm = new checkReservation();
+                checkReservationForm.Show();
+            }
+            else if (previousPage == "ContactUs")
+            {
+                this.Hide();
+                contactUs contactForm = new contactUs();
+                contactForm.Show();
+            }
+            else if (previousPage == "AboutUs")
+            {
+                this.Hide();
+                aboutUs aboutForm = new aboutUs();
+                aboutForm.Show();
+            }
+            else if (previousPage == "Home")
+            {
+                this.Hide();
+                homePage homeForm = new homePage();
+                homeForm.Show();
+            }
+            else
+            {
+                this.Hide();
+                Register registerForm = new Register();
+                registerForm.Show();
+            }
+
         }
     }
 }

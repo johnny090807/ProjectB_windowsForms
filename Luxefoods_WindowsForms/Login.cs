@@ -103,22 +103,7 @@ namespace Luxefoods_WindowsForms
                                 dashboardForm.Show();
                             } else
                             {
-                                FormCollection fc = Application.OpenForms;
-                                foreach (Form frm in fc)
-                                {
-                                    if (frm.Name == "MenuSpecial")
-                                    {
-                                        Menu menuForm = new Menu();
-                                        menuForm.Show();
-                                        this.Hide();
-                                    }
-                                    else
-                                    {
-                                        Register registerForm = new Register();
-                                        registerForm.Show();
-                                        this.Hide();
-                                    }
-                                }
+                                CheckWhichFormWasOpened();
                             }
                         }
                         else
@@ -137,14 +122,58 @@ namespace Luxefoods_WindowsForms
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Menu menuForm = new Menu();
-            menuForm.Show();
-            this.Hide();
+            this.CheckWhichFormWasOpened();
         }
         
         private void minimizeBtn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+
+        }
+        public void CheckWhichFormWasOpened()
+        {
+            if(previousPage == "Menu")
+            {
+                Menu menuForm = new Menu();
+                menuForm.Show();
+                this.Hide();
+            }
+            else if (previousPage == "Reservation")
+            {
+                this.Hide();
+                Reservation reservationForm = new Reservation();
+                reservationForm.Show();
+            }
+            else if (previousPage == "checkReservations")
+            {
+                this.Hide();
+                checkReservation checkReservationForm = new checkReservation();
+                checkReservationForm.Show();
+            }
+            else if (previousPage == "ContactUs")
+            {
+                this.Hide();
+                contactUs contactForm = new contactUs();
+                contactForm.Show();
+            }
+            else if (previousPage == "AboutUs")
+            {
+                this.Hide();
+                aboutUs aboutForm = new aboutUs();
+                aboutForm.Show();
+            }
+            else if (previousPage == "Home")
+            {
+                this.Hide();
+                homePage homeForm = new homePage();
+                homeForm.Show();
+            }
+            else
+            {
+                this.Hide();
+                Register registerForm = new Register();
+                registerForm.Show();
+            }
 
         }
     }

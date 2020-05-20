@@ -390,6 +390,7 @@
             this.menuButton.TabStop = true;
             this.menuButton.Text = "Menu";
             this.menuButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.menuButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.menuButton_LinkClicked);
             // 
             // contactUsButton
             // 
@@ -421,6 +422,7 @@
             this.loginButton.TabStop = true;
             this.loginButton.Text = "Login";
             this.loginButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.loginButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginButton_LinkClicked);
             // 
             // AvailableLabel
             // 
@@ -697,6 +699,7 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "My reservations";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Reservation
             // 

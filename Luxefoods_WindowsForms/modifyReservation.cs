@@ -15,6 +15,10 @@ namespace Luxefoods_WindowsForms
         public Modify_reservation()
         {
             InitializeComponent();
+            if (Login.person != null)
+            {
+                this.loginButton.Text = Login.person.voornaam + " " + Login.person.achternaam;
+            }
         }
 
         private void AvailabilityTable_Paint(object sender, PaintEventArgs e)
@@ -99,6 +103,13 @@ namespace Luxefoods_WindowsForms
                 Login form2 = new Login();
                 form2.Show();
             }
+        }
+
+        private void menuButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Menu menuForm = new Menu();
+            menuForm.Show();
         }
     }
 
