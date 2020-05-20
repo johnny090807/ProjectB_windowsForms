@@ -315,11 +315,22 @@
     <Content Include="obj\Debug\Luxefoods_WindowsForms.pdb" />
     <Content Include="obj\Debug\TempPE\LuxeFoodsDataSet.Designer.cs.dll" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="Resources\arrow-204-16.png" />
+    <Content Include="Resources\arrow-28-16.png" />
+    <Content Include="Resources\arrow-28-48.png" />
+    <Content Include="Resources\arrow-92-32.png" />
+    <Content Include="Resources\icons8-down-button-32 %281%29.png" />
+    <Content Include="Resources\milk-2-32.png" />
+    <Content Include="Resources\peanuts-32.png" />
+    <Content Include="Resources\pictureBox2_BackgroundImage.png" />
+    <Content Include="Resources\Plaatjes2-375x210.jpg" />
+    <Content Include="Resources\vodka.jpg" />
+    <Content Include="Resources\whitearrowicon.png" />
+    <Content Include="Resources\wijnfles-etiketten-botanical-romance-thankyou-d020031.jpg" />
     <Content Include="restaurant-floorplan-example.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
