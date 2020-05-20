@@ -489,72 +489,94 @@ namespace Luxefoods_WindowsForms
 
         private void listBox1617_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1718.SelectedItem = null;
-            listBox1819.SelectedItem = null;
-            listBox1920.SelectedItem = null;
-            listBox2021.SelectedItem = null;
-            listBox2122.SelectedItem = null;
-            listBox2223.SelectedItem = null;
+            if (listBox1617.SelectedIndex != 20)
+            {
+                listBox1718.SelectedItem = null;
+                listBox1819.SelectedItem = null;
+                listBox1920.SelectedItem = null;
+                listBox2021.SelectedItem = null;
+                listBox2122.SelectedItem = null;
+                listBox2223.SelectedItem = null;
+            }
         }
 
         private void listBox1718_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1617.SelectedItem = null;
-            listBox1819.SelectedItem = null;
-            listBox1920.SelectedItem = null;
-            listBox2021.SelectedItem = null;
-            listBox2122.SelectedItem = null;
-            listBox2223.SelectedItem = null;
+            if (listBox1718.SelectedIndex != 20)
+            {
+                listBox1617.SelectedItem = null;
+                listBox1819.SelectedItem = null;
+                listBox1920.SelectedItem = null;
+                listBox2021.SelectedItem = null;
+                listBox2122.SelectedItem = null;
+                listBox2223.SelectedItem = null;
+            }
+
         }
 
         private void listBox1819_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1718.SelectedItem = null;
-            listBox1617.SelectedItem = null;
-            listBox1920.SelectedItem = null;
-            listBox2021.SelectedItem = null;
-            listBox2122.SelectedItem = null;
-            listBox2223.SelectedItem = null;
+            if (listBox1819.SelectedIndex != 20)
+            {
+                listBox1718.SelectedItem = null;
+                listBox1617.SelectedItem = null;
+                listBox1920.SelectedItem = null;
+                listBox2021.SelectedItem = null;
+                listBox2122.SelectedItem = null;
+                listBox2223.SelectedItem = null;
+            }
         }
 
         private void listBox1920_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1718.SelectedItem = null;
-            listBox1819.SelectedItem = null;
-            listBox1617.SelectedItem = null;
-            listBox2021.SelectedItem = null;
-            listBox2122.SelectedItem = null;
-            listBox2223.SelectedItem = null;
+            if (listBox1920.SelectedIndex != 20)
+            {
+                listBox1718.SelectedItem = null;
+                listBox1819.SelectedItem = null;
+                listBox1617.SelectedItem = null;
+                listBox2021.SelectedItem = null;
+                listBox2122.SelectedItem = null;
+                listBox2223.SelectedItem = null;
+            }
         }
 
         private void listBox2021_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1718.SelectedItem = null;
-            listBox1819.SelectedItem = null;
-            listBox1920.SelectedItem = null;
-            listBox1617.SelectedItem = null;
-            listBox2122.SelectedItem = null;
-            listBox2223.SelectedItem = null;
+            if (listBox2021.SelectedIndex != 20)
+            {
+                listBox1718.SelectedItem = null;
+                listBox1819.SelectedItem = null;
+                listBox1920.SelectedItem = null;
+                listBox1617.SelectedItem = null;
+                listBox2122.SelectedItem = null;
+                listBox2223.SelectedItem = null;
+            }
         }
 
         private void listBox2122_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1718.SelectedItem = null;
-            listBox1819.SelectedItem = null;
-            listBox1920.SelectedItem = null;
-            listBox2021.SelectedItem = null;
-            listBox1617.SelectedItem = null;
-            listBox2223.SelectedItem = null;
+            if (listBox2122.SelectedIndex != 20)
+            {
+                listBox1718.SelectedItem = null;
+                listBox1819.SelectedItem = null;
+                listBox1920.SelectedItem = null;
+                listBox2021.SelectedItem = null;
+                listBox1617.SelectedItem = null;
+                listBox2223.SelectedItem = null;
+            }
         }
 
         private void listBox2223_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1718.SelectedItem = null;
-            listBox1819.SelectedItem = null;
-            listBox1920.SelectedItem = null;
-            listBox2021.SelectedItem = null;
-            listBox2122.SelectedItem = null;
-            listBox1617.SelectedItem = null;
+            if (listBox2223.SelectedIndex != 20)
+            {
+                listBox1718.SelectedItem = null;
+                listBox1819.SelectedItem = null;
+                listBox1920.SelectedItem = null;
+                listBox2021.SelectedItem = null;
+                listBox2122.SelectedItem = null;
+                listBox1617.SelectedItem = null;
+            }
         }
 
         private void PlaceReservationButton_Click(object sender, EventArgs e)
@@ -569,6 +591,7 @@ namespace Luxefoods_WindowsForms
             ///     }
             /// 
             /// }
+            
         }
 
     }
