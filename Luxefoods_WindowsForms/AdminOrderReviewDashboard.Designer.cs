@@ -58,6 +58,7 @@
             this.MinimizeButton = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Label();
             this.OriginalRestaurantLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -167,7 +168,7 @@
             this.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditButton.ForeColor = System.Drawing.Color.White;
-            this.EditButton.Location = new System.Drawing.Point(1574, 938);
+            this.EditButton.Location = new System.Drawing.Point(1551, 705);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(279, 115);
             this.EditButton.TabIndex = 9;
@@ -281,7 +282,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 705);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 522);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(756, 546);
             this.pictureBox1.TabIndex = 11;
@@ -442,12 +443,26 @@
             this.OriginalRestaurantLabel.TabIndex = 24;
             this.OriginalRestaurantLabel.Text = "Original Restaurant";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
+            this.button1.Location = new System.Drawing.Point(1551, 893);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(279, 106);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Delete Order";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
             // AdminOrderReviewDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
-            this.ClientSize = new System.Drawing.Size(1925, 1282);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.OriginalRestaurantLabel);
             this.Controls.Add(this.MinimizeButton);
             this.Controls.Add(this.label3);
@@ -509,5 +524,6 @@
         private System.Windows.Forms.Label MinimizeButton;
         private System.Windows.Forms.Label ExitButton;
         private System.Windows.Forms.Label OriginalRestaurantLabel;
+        private System.Windows.Forms.Button button1;
     }
 }

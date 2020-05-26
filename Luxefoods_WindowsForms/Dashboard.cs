@@ -19,8 +19,7 @@ namespace Luxefoods_WindowsForms
         public const int HT_CAPTION = 0x2;
 
         [DllImportAttribute("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd,
-                         int Msg, int wParam, int lParam);
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
         private int globalAdminID;
@@ -28,12 +27,13 @@ namespace Luxefoods_WindowsForms
         {
             globalAdminID = adminID;
             InitializeComponent();
+            CenterToScreen();
             fillChart(DateTime.Now);
             fillListBox();
             fillReservationListBox(DateTime.Now);
             fillAdminInfo(adminID);
             EditReservationButton.Hide();
-            WindowState = FormWindowState.Maximized;
+            //WindowState = FormWindowState.Maximized;
         }
 
         private void fillAdminInfo(int adminID)
@@ -312,6 +312,23 @@ namespace Luxefoods_WindowsForms
         private void MinimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void logoutButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login.previousPage = "Dashboard";
+            if(Login.person != null)
+            {
+                this.Hide();
+                Template form1 = new Template();
+                form1.Show();
+            }
+            else
+            {
+                this.Hide();
+                Login form1 = new Login();
+                form1.Show();
+            }
         }
     }
 }

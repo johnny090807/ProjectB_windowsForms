@@ -15,6 +15,7 @@ namespace Luxefoods_WindowsForms
         public aboutUs()
         {
             InitializeComponent();
+            CenterToScreen();
             if (Login.person != null)
             {
                 this.loginButton.Text = Login.person.voornaam + " " + Login.person.achternaam;

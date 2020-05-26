@@ -15,6 +15,7 @@ namespace Luxefoods_WindowsForms
         public Form1()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
