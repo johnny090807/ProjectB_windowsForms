@@ -462,7 +462,6 @@ namespace Luxefoods_WindowsForms
                 return hour;
             }
             if (listBox1819.SelectedItem != null)
-<<<<<<< Updated upstream
             {
                 int hour = 18;
                 return hour;
@@ -479,24 +478,6 @@ namespace Luxefoods_WindowsForms
             }
             if (listBox2122.SelectedItem != null)
             {
-=======
-            {
-                int hour = 18;
-                return hour;
-            }
-            if (listBox1920.SelectedItem != null)
-            {
-                int hour = 19;
-                return hour;
-            }
-            if (listBox2021.SelectedItem != null)
-            {
-                int hour = 20;
-                return hour;
-            }
-            if (listBox2122.SelectedItem != null)
-            {
->>>>>>> Stashed changes
                 int hour = 21;
                 return hour;
             }
