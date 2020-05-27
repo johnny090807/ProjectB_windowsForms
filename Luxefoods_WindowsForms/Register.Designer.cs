@@ -144,7 +144,7 @@
             this.PasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.PasswordTxtBox.Location = new System.Drawing.Point(81, 379);
             this.PasswordTxtBox.Name = "PasswordTxtBox";
-            this.PasswordTxtBox.PasswordChar = '€';
+            this.PasswordTxtBox.PasswordChar = '*';
             this.PasswordTxtBox.Size = new System.Drawing.Size(363, 53);
             this.PasswordTxtBox.TabIndex = 4;
             // 
@@ -172,7 +172,7 @@
             this.VerifyPasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.VerifyPasswordTxtBox.Location = new System.Drawing.Point(81, 461);
             this.VerifyPasswordTxtBox.Name = "VerifyPasswordTxtBox";
-            this.VerifyPasswordTxtBox.PasswordChar = '€';
+            this.VerifyPasswordTxtBox.PasswordChar = '*';
             this.VerifyPasswordTxtBox.Size = new System.Drawing.Size(363, 53);
             this.VerifyPasswordTxtBox.TabIndex = 5;
             // 

@@ -57,6 +57,7 @@ namespace Luxefoods_WindowsForms
             globalKeywords = keywords;
             globalAdminID = adminID;
             InitializeComponent();
+            CenterToScreen();
             fillDashboard(ID);
             fillComboBox(ID);
             setDateTimePicker(ID);

@@ -144,6 +144,12 @@ namespace Luxefoods_WindowsForms
                 Reservation reservationForm = new Reservation();
                 reservationForm.Show();
             }
+            else if (previousPage == "Dashboard")
+            {
+                this.Hide();
+                Dashboard dashboardForm = new Dashboard(person.id);
+                dashboardForm.Show();
+            }
             else if (previousPage == "checkReservations")
             {
                 this.Hide();

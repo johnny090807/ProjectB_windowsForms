@@ -15,3 +15,5 @@ Luxefoods_WindowsForms/obj/Debug/Luxefoods_WindowsForms.exe
 Luxefoods_WindowsForms/obj/Debug/Luxefoods_WindowsForms.pdb
 .vs/Luxefoods_WindowsForms/v16/.suo
 Luxefoods_WindowsForms/obj/Debug/Luxefoods_WindowsForms.csprojAssemblyReference.cache
+*.ide
+.vs/Luxefoods_WindowsForms/v16/.suo

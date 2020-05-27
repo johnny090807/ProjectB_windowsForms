@@ -15,6 +15,7 @@ namespace Luxefoods_WindowsForms
         public MenuHors()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void ArrowLeft_Click(object sender, EventArgs e)

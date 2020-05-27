@@ -18,9 +18,12 @@ namespace Luxefoods_WindowsForms
         public Login.User person = Login.person;
         public Menu()
         {
-            InitializeComponent();/*
+            InitializeComponent();
+            CenterToScreen();
+            /*
             MenuPanel.Height = SpecialsBTN.Height;
-            MenuPanel.Top = SpecialsBTN.Top;*/
+            MenuPanel.Top = SpecialsBTN.Top;
+            */
             faqANS1.Visible = false;
             faqANS3.Visible = false;
             faqANS2.Visible = false;

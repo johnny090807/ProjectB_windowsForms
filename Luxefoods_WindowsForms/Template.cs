@@ -14,8 +14,8 @@ namespace Luxefoods_WindowsForms
     {
         public Template()
         {
-            
             InitializeComponent();
+            CenterToScreen();
             this.label1.Text = Login.person.voornaam;
 
         }

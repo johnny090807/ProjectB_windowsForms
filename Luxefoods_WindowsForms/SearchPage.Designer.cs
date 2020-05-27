@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.MinimizeButton = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Label();
+            this.EditOrderButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -61,7 +62,7 @@
             this.searchResultsList.ItemHeight = 24;
             this.searchResultsList.Location = new System.Drawing.Point(39, 198);
             this.searchResultsList.Name = "searchResultsList";
-            this.searchResultsList.Size = new System.Drawing.Size(1842, 892);
+            this.searchResultsList.Size = new System.Drawing.Size(1823, 796);
             this.searchResultsList.TabIndex = 2;
             this.searchResultsList.SelectedIndexChanged += new System.EventHandler(this.searchResultsList_SelectedIndexChanged);
             // 
@@ -177,12 +178,26 @@
             this.ExitButton.Text = "X";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // EditOrderButton
+            // 
+            this.EditOrderButton.BackColor = System.Drawing.Color.Coral;
+            this.EditOrderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditOrderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.EditOrderButton.Location = new System.Drawing.Point(1441, 135);
+            this.EditOrderButton.Name = "EditOrderButton";
+            this.EditOrderButton.Size = new System.Drawing.Size(255, 47);
+            this.EditOrderButton.TabIndex = 27;
+            this.EditOrderButton.Text = "Edit Reservation";
+            this.EditOrderButton.UseVisualStyleBackColor = false;
+            this.EditOrderButton.Click += new System.EventHandler(this.EditReservationButton_Click);
+            // 
             // SearchPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
-            this.ClientSize = new System.Drawing.Size(1925, 1282);
+            this.ClientSize = new System.Drawing.Size(1925, 1100);
+            this.Controls.Add(this.EditOrderButton);
             this.Controls.Add(this.MinimizeButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.label3);
@@ -213,5 +228,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label MinimizeButton;
         private System.Windows.Forms.Label ExitButton;
+        private System.Windows.Forms.Button EditOrderButton;
     }
 }

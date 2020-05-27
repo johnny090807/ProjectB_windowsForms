@@ -15,6 +15,7 @@ namespace Luxefoods_WindowsForms
         public MenuSpecial()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void button1_Click(object sender, EventArgs e)

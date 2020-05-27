@@ -15,6 +15,7 @@ namespace Luxefoods_WindowsForms
         public homePage()
         {
             InitializeComponent();
+            CenterToScreen();
             if (Login.person != null)
             {
                 this.linkLabel6.Text = Login.person.voornaam + " " + Login.person.achternaam;

@@ -47,6 +47,7 @@ namespace Luxefoods_WindowsForms
             globalPrevious = previous;
             globalAdminID = adminID;
             InitializeComponent();
+            CenterToScreen();
             label2.Text = "Looking for: " + keywords + " by: " +option;
             if (option == "Name") {
                 searchReservationByName(keywords);
@@ -60,7 +61,7 @@ namespace Luxefoods_WindowsForms
             {
                 searchReservationByPhoneNumber(keywords);
             }
-            EditReservationButton.Hide();
+            EditOrderButton.Hide();
         }
         private void Form1_MouseDown(object sender,
         System.Windows.Forms.MouseEventArgs e)
@@ -395,11 +396,11 @@ namespace Luxefoods_WindowsForms
         {
             if (searchResultsList.SelectedItem != null)
             {
-                EditReservationButton.Show();
+                EditOrderButton.Show();
             }
             else
             {
-                EditReservationButton.Hide();
+                EditOrderButton.Hide();
             }
         }
 
