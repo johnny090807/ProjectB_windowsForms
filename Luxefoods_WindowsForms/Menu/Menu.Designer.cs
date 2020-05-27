@@ -240,6 +240,7 @@
             // 
             // SideBar
             // 
+            this.SideBar.AutoScroll = true;
             this.SideBar.BackColor = System.Drawing.Color.Black;
             this.SideBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SideBar.Controls.Add(this.MenuPanel);

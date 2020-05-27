@@ -628,5 +628,12 @@ namespace Luxefoods_WindowsForms
                 form2.Show();
             }
         }
+
+        private void LuxeFoodsLogoLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            homePage HomepageForm = new homePage();
+            HomepageForm.Show();
+        }
     }
 }

@@ -158,7 +158,7 @@
             // 
             this.layoutPicture.Image = ((System.Drawing.Image)(resources.GetObject("layoutPicture.Image")));
             this.layoutPicture.Location = new System.Drawing.Point(739, 65);
-            this.layoutPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutPicture.Margin = new System.Windows.Forms.Padding(2);
             this.layoutPicture.Name = "layoutPicture";
             this.layoutPicture.Size = new System.Drawing.Size(507, 311);
             this.layoutPicture.TabIndex = 5;
@@ -188,7 +188,7 @@
             this.AvailabilityTable.Cursor = System.Windows.Forms.Cursors.Default;
             this.AvailabilityTable.ForeColor = System.Drawing.Color.White;
             this.AvailabilityTable.Location = new System.Drawing.Point(10, 391);
-            this.AvailabilityTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AvailabilityTable.Margin = new System.Windows.Forms.Padding(2);
             this.AvailabilityTable.Name = "AvailabilityTable";
             this.AvailabilityTable.RowCount = 1;
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -303,7 +303,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1285, 725);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -344,7 +344,7 @@
             this.PlaceReservationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.PlaceReservationButton.ForeColor = System.Drawing.Color.White;
             this.PlaceReservationButton.Location = new System.Drawing.Point(1032, 673);
-            this.PlaceReservationButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PlaceReservationButton.Margin = new System.Windows.Forms.Padding(2);
             this.PlaceReservationButton.Name = "PlaceReservationButton";
             this.PlaceReservationButton.Size = new System.Drawing.Size(218, 39);
             this.PlaceReservationButton.TabIndex = 13;
@@ -365,6 +365,7 @@
             this.LuxeFoodsLogoLabel.Size = new System.Drawing.Size(188, 39);
             this.LuxeFoodsLogoLabel.TabIndex = 14;
             this.LuxeFoodsLogoLabel.Text = "LuxeFoods";
+            this.LuxeFoodsLogoLabel.Click += new System.EventHandler(this.LuxeFoodsLogoLabel_Click);
             // 
             // aboutUsButton
             // 
@@ -537,7 +538,7 @@
             "Area 5",
             "Area 6"});
             this.AreaComboBox.Location = new System.Drawing.Point(384, 256);
-            this.AreaComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AreaComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.AreaComboBox.Name = "AreaComboBox";
             this.AreaComboBox.Size = new System.Drawing.Size(272, 32);
             this.AreaComboBox.TabIndex = 21;
@@ -578,7 +579,7 @@
             this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 428);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
