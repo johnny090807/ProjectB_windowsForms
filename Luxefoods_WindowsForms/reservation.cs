@@ -16,11 +16,13 @@ namespace Luxefoods_WindowsForms
     public partial class Reservation : Form
     {
         List<List<int>> GlobalListListBoxes;
-        public Reservation()
+        private int globalUserId;
+        public Reservation(int userId)
         {
             InitializeComponent();
+            globalUserId = userId;
             CenterToScreen();
-            var listArea1 = new List<int> { 1, 2, 3, 4, 7, 8, 9, 10, 14, 15, 16, 17, 20, 21, 22 };
+            List<int> listArea1 = new List<int> { 1, 2, 3, 4, 7, 8, 9, 10, 14, 15, 16, 17, 20, 21, 22 };
             List<int> listArea2 = new List<int> { 5, 6, 11, 12, 18, 19, 31, 32, 33, 34, 35 };
             List<int> listArea3 = new List<int> { 23, 24, 25, 26, 27, 28, 29, 30 };
             List<int> listArea4 = new List<int> { 36, 37, 38, 39, 40, 41, 42, 43 };
@@ -42,62 +44,6 @@ namespace Luxefoods_WindowsForms
                 restaurantId = restaurantid;
                 
             }
-        }
-
-        private int globalUserId;
-        private int globalRestaurantId;
-        private int globalTableNumber;
-        private DateTime globalDate;
-        private List<TakenSeats> globalTakenTimesWithTables;
-
-        private int getUserId()
-        {
-            return globalUserId;
-        }
-
-        private int getRestaurantId()
-        {
-            return globalRestaurantId;
-        }
-
-        private int getTableNumber()
-        {
-            return globalTableNumber;
-        }
-
-        private DateTime getDate()
-        {
-            return globalDate;
-        }
-
-        private List<TakenSeats> getTakenTimesWithTables()
-        {
-            return globalTakenTimesWithTables;
-        }
-
-        private void setUserId(int param)
-        {
-            globalUserId = param;
-        }
-
-        private void setRestaurantId(int param)
-        {
-            globalRestaurantId = param;
-        }
-
-        private void setTableNumber(int param)
-        {
-            globalTableNumber = param;
-        }
-
-        private void setDate(DateTime param)
-        {
-            globalDate = param;
-        }
-
-        private void setTakenTimesWithTables(List<TakenSeats> param)
-        {
-            globalTakenTimesWithTables = param;
         }
 
         SqlConnection connection = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -345,7 +291,7 @@ namespace Luxefoods_WindowsForms
 
             // RBL: Restaurant kiezen en naar string converten// Functie maken om restaurantId van geselecteerd restaurant te selecteren
             string restaurantChoice = restaurantComboCox.SelectedItem.ToString();
-            int restaurantId = restaurantComboCox.SelectedIndex;
+            int restaurantId = restaurantComboCox.SelectedIndex+1;
 
             // RBL: DateTime implementeren in class
             DateTime date = dateTimePicker1.Value;
@@ -388,6 +334,7 @@ namespace Luxefoods_WindowsForms
                 //(RBL: Weergeven in table vanuit list, of direct vanuit DB in table zetten?)
                 //(RBL: Oplossing voor weergave: Maak een clickable box, filter deze op tijd (bijv. 16:00-17:00) en op tafelnummer bijv area 1 is 1-20 en geef deze weer in het eerste vakje, maak deze voor alle vakjes)
                 //De ontvangen data in eigen TakenSeats class zetten om die dan in een list te zetten zodat het makkelijker terug te vinden           while (reader.Read())
+                while (reader.Read())
                 {
                     TakenSeats p1 = new TakenSeats(reader.GetDateTime(0), reader.GetInt32(1), reader.GetInt32(2));
                     takenTimesWithTables.Add(p1);
@@ -431,6 +378,7 @@ namespace Luxefoods_WindowsForms
             int hour = SelectHour();
             TimeSpan ts = new TimeSpan(hour, 0, 0);
             date = new DateTime(date.Year, date.Month, date.Day, ts.Hours, ts.Minutes, ts.Seconds);
+            string dateStr = $"{date.Year}/{date.Month}/{date.Day} {ts.Hours}:{ts.Minutes}:{ts.Seconds}";
 
 
             // RBL: Aanpassen van keuze via typen naar aangeklikte mogelijkheid in de table/form
@@ -441,12 +389,69 @@ namespace Luxefoods_WindowsForms
             // RBL: De checks aanpassen, bij allemaal een pop up window met "Helaas is deze tafel in de tussentijd gereserveerd, kies aub een nieuwe tafel/tijd" ipv writeline.
             // Checken of alles klopt
 
-            setTakenTimesWithTables(takenTimesWithTables);
-            setDate(date);
-            setTableNumber(tableNumber);
-            setRestaurantId(restaurantId);
-            setUserId(userId);
-            placereservationbuttonclick(takenTimesWithTables, date, tableNumber, restaurantId, userId);
+            bool submitChecked = false;
+
+            while (!submitChecked)
+            {
+
+                DialogResult beforeSubmit = MessageBox.Show("Your reservation is Finished!\nThis is how you reservation looks like:\nUserId: " + userId + ", RestaurantId: " + restaurantId + ", Date: " + dateStr + ", Table Number: " + tableNumber + "\n Do you want to Submit the reservation?", "Check before submitting", MessageBoxButtons.YesNo);
+
+                if (beforeSubmit == DialogResult.Yes)
+                {
+                    bool trueData = true;
+
+                    // Security check om te kijken of de uiteindelijke data zeker beschikbaar is
+                    foreach (TakenSeats x in takenTimesWithTables)
+                    {
+
+                        // Als gereserveerde tijd zelfde is als gekozen tijd en tafel nummer zelfde is als gekozen tafel nummer en restaurant ids zijn ook zelfde dan is die plek als gereserveerd door iemand anders
+                        if (x.takenTime == date && x.takenSeat == tableNumber && x.restaurantId == restaurantId)
+                        {
+                            MessageBox.Show("There is already an reservation made for this time and table! Please choose another time or table.", "Oops, our bad.", MessageBoxButtons.OK);
+                            trueData = false;
+                            break;
+                        }
+                    }
+
+                    // Als dit niet klopt dan sturen wij de data naar de database
+                    connection.Open();
+                    if (connection.State == System.Data.ConnectionState.Open && trueData)
+                    {
+
+                        // SQL Command om de RestaurantId, UserId, date en tableNumber in de database in de juiste plekken te zetten
+                        string q = $"INSERT INTO [reservering] (restaurantId, klantId, datum, tafelNummer) VALUES  ('{restaurantId}', '{userId}', '{dateStr}', '{tableNumber}')";
+
+                        try
+                        {
+
+                            // de SQL command in een command zetten met de erbij toegevoegde connection string
+                            SqlCommand cmd = new SqlCommand(q, connection);
+
+                            // Execute een non query command in de database
+                            cmd.ExecuteNonQuery();
+
+
+                            MessageBox.Show("Reservation has succesfully been submitted");
+                            submitChecked = !submitChecked;
+                        }
+                        catch (Exception ex)
+                        {
+                            //Error handler, print gelijk de error uit
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+
+                    // Connectie met database beindigen
+                    connection.Close();
+
+                    //Als 2 dan reservering annuleren
+                }
+                else if (beforeSubmit == DialogResult.No)
+                {
+                    MessageBox.Show("We've cancelled the reservation, please try again");
+                    submitChecked = !submitChecked;
+                }
+            }
         }
 
         int SelectHour()
@@ -531,75 +536,6 @@ namespace Luxefoods_WindowsForms
                 string tableNumberString = listBox2223.SelectedItem.ToString();
                 int tableNumber = Convert.ToInt32(tableNumberString);
                 return tableNumber;
-            }
-
-        }
-
-        void placereservationbuttonclick(List<TakenSeats> takenTimesWithTables, DateTime date, int tableNumber, int restaurantId, int userId)
-        {
-
-            bool submitChecked = false;
-
-            while (!submitChecked)
-            {
-
-                DialogResult beforeSubmit = MessageBox.Show("Your reservation is Finished!\nThis is how you reservation looks like:\nUserId: " + userId + ", RestaurantId: " + restaurantId + ", Date: " + date + ", Table Number: " + tableNumber + "\n Do you want to Submit the reservation?", "Check before submitting", MessageBoxButtons.YesNo);
-                
-                if (beforeSubmit == DialogResult.Yes)
-                {
-                    bool trueData = true;
-
-                    // Security check om te kijken of de uiteindelijke data zeker beschikbaar is
-                    foreach (TakenSeats x in takenTimesWithTables)
-                    {
-
-                        // Als gereserveerde tijd zelfde is als gekozen tijd en tafel nummer zelfde is als gekozen tafel nummer en restaurant ids zijn ook zelfde dan is die plek als gereserveerd door iemand anders
-                        if (x.takenTime == date && x.takenSeat == tableNumber && x.restaurantId == restaurantId)
-                        {
-                            MessageBox.Show("There is already an reservation made for this time and table! Please choose another time or table.", "Oops, our bad.", MessageBoxButtons.OK);
-                            trueData = false;
-                            break;
-                        }
-                    }
-
-                    // Als dit niet klopt dan sturen wij de data naar de database
-                    connection.Open();
-                    if (connection.State == System.Data.ConnectionState.Open && trueData)
-                    {
-
-                        // SQL Command om de RestaurantId, UserId, date en tableNumber in de database in de juiste plekken te zetten
-                        string q = $"INSERT INTO [reservering] (restaurantId, klantId, datum, tafelNummer) VALUES  ('{restaurantId}', '{userId}', '{date}', '{tableNumber}')";
-
-                        try
-                        {
-
-                            // de SQL command in een command zetten met de erbij toegevoegde connection string
-                            SqlCommand cmd = new SqlCommand(q, connection);
-
-                            // Execute een non query command in de database
-                            cmd.ExecuteNonQuery();
-
-
-                            MessageBox.Show("Reservation has succesfully been submitted");
-                            submitChecked = !submitChecked;
-                        }
-                        catch (Exception ex)
-                        {
-                            //Error handler, print gelijk de error uit
-                            MessageBox.Show(ex.Message);
-                        }
-                    }
-
-                    // Connectie met database beindigen
-                    connection.Close();
-
-                    //Als 2 dan reservering annuleren
-                }
-                else if (beforeSubmit == DialogResult.No)
-                {
-                    MessageBox.Show("We've cancelled the reservation, please try again");
-                    submitChecked = !submitChecked;
-                }
             }
 
         }
@@ -698,7 +634,8 @@ namespace Luxefoods_WindowsForms
 
         private void PlaceReservationButton_Click(object sender, EventArgs e)
         {
-            placereservationbuttonclick(getTakenTimesWithTables(), getDate(), getTableNumber(), getRestaurantId(), getUserId());
+            makeReservation(globalUserId);
+            //placereservationbuttonclick(getTakenTimesWithTables(), getDate(), getTableNumber(), getRestaurantId(), getUserId());
             /// foreach (x in listBoxesList) {
             ///     if (x.selectedItem != null) {
             ///         if (int.TryParse(x.selectedItem)) {
