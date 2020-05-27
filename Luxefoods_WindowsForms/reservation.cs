@@ -125,24 +125,6 @@ namespace Luxefoods_WindowsForms
             MinimizeButton.ForeColor = Color.Black;
         }
 
-        /*
-     * ----- CHECK AVAILABILITY BUTTON -----
-     * People = seats.value
-     * Date = dateTimePicker1.value
-     * TableSize = 4
-     * TablesNeeded = People // TableSize
-     * ShowAvailableTables(TablesNeeded)
-     * 
-     * 
-     * 
-     * ----- ShowShowAvailableTables(int amountOfTables) -----
-     * fetch data from the database
-     * look for amounrOfTables in the same zone for the same time
-     * 
-     *
-     * 
-     * 
-     */
 
         private void aboutUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -176,22 +158,6 @@ namespace Luxefoods_WindowsForms
             this.restaurantTableAdapter.Fill(this.luxeFoodsDataSet.restaurant);
 
         }
-
-
-        /*  ! Er zit een fout in deze code kacper, als je het zo doet en je komt met 5 mensen, krijg je 1 tafel. 
-         * ----- CHECK AVAILABILITY BUTTON -----
-         * People = seats.value
-         * Date = dateTimePicker1.value
-         * TableSize = 4
-         * TablesNeeded = People // TableSize
-         * ShowAvailableTables(TablesNeeded)
-         * 
-         * 
-         * 
-         * ----- ShowShowAvailableTables(int amountOfTables) -----
-         * fetch data from the database
-         * look for amounrOfTables in the same zone for the same time
-         */
 
         //showAvailableTables(int amountOfTables);
 
@@ -389,7 +355,6 @@ namespace Luxefoods_WindowsForms
             //Tafel keuze
             int tableNumber = SelectTableNumber();
 
-            // RBL: Ga naar check reservation form zodat ze daar hun reseervatie zien en kunnen kijken of het klopt/het aanpassen
             // RBL: De checks aanpassen, bij allemaal een pop up window met "Helaas is deze tafel in de tussentijd gereserveerd, kies aub een nieuwe tafel/tijd" ipv writeline.
             // Checken of alles klopt
 
@@ -639,17 +604,6 @@ namespace Luxefoods_WindowsForms
         private void PlaceReservationButton_Click(object sender, EventArgs e)
         {
             makeReservation(globalUserId);
-            //placereservationbuttonclick(getTakenTimesWithTables(), getDate(), getTableNumber(), getRestaurantId(), getUserId());
-            /// foreach (x in listBoxesList) {
-            ///     if (x.selectedItem != null) {
-            ///         if (int.TryParse(x.selectedItem)) {
-            ///             int.Parse(x.selectedItem)
-            ///         }
-            ///         
-            ///
-            ///     }
-            /// 
-            /// }
             
         }
 
