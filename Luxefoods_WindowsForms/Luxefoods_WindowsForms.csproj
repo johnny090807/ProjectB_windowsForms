@@ -49,11 +49,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>C:\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -195,6 +199,11 @@
     <Compile Include="modifyReservation.Designer.cs">
       <DependentUpon>modifyReservation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="reservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,14 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SearchPage.resx">
       <DependentUpon>SearchPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,15 +318,26 @@
     <Content Include="obj\Debug\Luxefoods_WindowsForms.pdb" />
     <Content Include="obj\Debug\TempPE\LuxeFoodsDataSet.Designer.cs.dll" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="Resources\account.png" />
     <Content Include="Resources\arrow-204-16.png" />
     <Content Include="Resources\arrow-28-16.png" />
     <Content Include="Resources\arrow-28-48.png" />
     <Content Include="Resources\arrow-92-32.png" />
+    <Content Include="Resources\background.png" />
+    <None Include="Resources\call.png" />
     <Content Include="Resources\icons8-down-button-32 %281%29.png" />
+    <None Include="Resources\key %281%29.png" />
+    <None Include="Resources\mail.png" />
+    <Content Include="Resources\login.png" />
+    <Content Include="Resources\logout.png" />
     <Content Include="Resources\milk-2-32.png" />
     <Content Include="Resources\peanuts-32.png" />
+    <None Include="Resources\phone.png" />
+    <None Include="Resources\person.png" />
     <Content Include="Resources\pictureBox2_BackgroundImage.png" />
     <Content Include="Resources\Plaatjes2-375x210.jpg" />
+    <Content Include="Resources\Register_background.png" />
+    <None Include="Resources\user.png" />
     <Content Include="Resources\vodka.jpg" />
     <Content Include="Resources\whitearrowicon.png" />
     <Content Include="Resources\wijnfles-etiketten-botanical-romance-thankyou-d020031.jpg" />

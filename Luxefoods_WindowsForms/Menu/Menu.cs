@@ -193,7 +193,7 @@ namespace Luxefoods_WindowsForms
         private void ReservationsBTN_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Reservation reservationForm = new Reservation();
+            Reservation reservationForm = new Reservation(Login.person.id);
             reservationForm.Show();
         }
 

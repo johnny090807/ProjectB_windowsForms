@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace Luxefoods_WindowsForms
 {
@@ -21,10 +22,6 @@ namespace Luxefoods_WindowsForms
             InitializeComponent();
             CenterToScreen();
             this.AcceptButton = RegisterBtn;
-            /*if (person != null)
-            {
-                label1.Text = person.admin.ToString();
-            }*/
         }
 
         static string EncryptPassword(string text)
@@ -38,17 +35,26 @@ namespace Luxefoods_WindowsForms
         }
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
-            if (VoornaamTxtBox.Text == "" || AchternaamTxtBox.Text == "" || TelefoonTxtBox.Text == "" || EmailTxtBox.Text == "" || PasswordTxtBox.Text == "" || VerifyPasswordTxtBox.Text == "")
+            string EmailPattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
+            
+            if (VoornaamTxtBox.text == "Voornaam" || AchternaamTxtBox.text == "Achternaam" || TelefoonTxtBox.text == "Telefoon nummer" || EmailTxtBox.text == "Email" || PasswordTxtBox.text == "Wachtwoord" || VerifyPasswordTxtBox.text == "Vul nog een keer het wachtwoord in")
             {
-                MessageBox.Show("Fill everything in.");
+                ErrorMessageLabel.Text = "Fill everything in.";
+                return;
             }
-            else if(PasswordTxtBox.TextLength < 8)
+            if(PasswordTxtBox.text.Length < 8 || PasswordTxtBox.text == "Password")
             {
-                MessageBox.Show("Password needs to be longer");
+                ErrorMessageLabel.Text = "Password needs to be longer";
+                return;
             }
-            else if(PasswordTxtBox.Text != VerifyPasswordTxtBox.Text)
+            if (!Regex.IsMatch(EmailTxtBox.text, EmailPattern))
             {
-                label6.Text = "Password doesn't match";
+                ErrorMessageLabel.Text = "Please provide real email";
+                return;
+            }
+            if (PasswordTxtBox.text != VerifyPasswordTxtBox.text)
+            {
+                ErrorMessageLabel.Text = "Passwords do not match";
             }
             else
             {
@@ -56,7 +62,7 @@ namespace Luxefoods_WindowsForms
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
-                    string q = $"INSERT INTO [user] (voornaam, achternaam, email, telefoonnummer, password, admin) VALUES  ('{VoornaamTxtBox.Text}', '{AchternaamTxtBox.Text}', '{EmailTxtBox.Text}', '{TelefoonTxtBox.Text}', '{EncryptPassword(PasswordTxtBox.Text)}', '0')";
+                    string q = $"INSERT INTO [user] (voornaam, achternaam, email, telefoonnummer, password, admin) VALUES  ('{VoornaamTxtBox.text}', '{AchternaamTxtBox.text}', '{EmailTxtBox.text}', '{TelefoonTxtBox.text}', '{EncryptPassword(PasswordTxtBox.text)}', '0')";
 
                     try
                     {
@@ -64,8 +70,7 @@ namespace Luxefoods_WindowsForms
                         cmd.ExecuteNonQuery();
 
                         con.Close();
-
-                        MessageBox.Show("Saved user");
+                        MessageBox.Show($"Thanks for creating an account! {VoornaamTxtBox.text} {AchternaamTxtBox.text}");
                         this.Hide();
                         Login form2 = new Login();
                         form2.Show();
@@ -93,9 +98,65 @@ namespace Luxefoods_WindowsForms
             this.Close();
         }
 
-        private void minimizeBtn_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            ControlPaint.DrawBorder(e.Graphics, this.panel1.ClientRectangle, Color.Black, ButtonBorderStyle.Solid);
+        }
+        private void EnterTxtBox(object sender, EventArgs e)
+        {
+            Bunifu.Framework.UI.BunifuTextbox clickedTextbox = (Bunifu.Framework.UI.BunifuTextbox)sender;
+            if (clickedTextbox.text == "Voornaam")
+            {
+                clickedTextbox.text = "";
+            }
+            else if (clickedTextbox.text == "Achternaam")
+            {
+                clickedTextbox.text = "";
+            }
+            else if (clickedTextbox.text == "Email")
+            {
+                clickedTextbox.text = "";
+            }
+            else if (clickedTextbox.text == "Telefoon nummer")
+            {
+                clickedTextbox.text = "";
+            }
+            else if (clickedTextbox.text == "Wachtwoord")
+            {
+                clickedTextbox.text = "";
+            }
+            else if (clickedTextbox.text == "Vul nog een keer het wachtwoord in")
+            {
+                clickedTextbox.text = "";
+            }
+        }
+        private void LeaveTxtBox(object sender, EventArgs e)
+        {
+            Bunifu.Framework.UI.BunifuTextbox clickedTextbox = (Bunifu.Framework.UI.BunifuTextbox)sender;
+            if (clickedTextbox.TabIndex == 0 && clickedTextbox.text == "")
+            {
+                clickedTextbox.text = "Voornaam";
+            }
+            else if (clickedTextbox.TabIndex == 1 && clickedTextbox.text == "")
+            {
+                clickedTextbox.text = "Achternaam";
+            }
+            else if (clickedTextbox.TabIndex == 2 && clickedTextbox.text == "")
+            {
+                clickedTextbox.text = "Email";
+            }
+            else if (clickedTextbox.TabIndex == 3 && clickedTextbox.text == "")
+            {
+                clickedTextbox.text = "Telefoon nummer";
+            }
+            else if (clickedTextbox.TabIndex == 4 && clickedTextbox.text == "")
+            {
+                clickedTextbox.text = "Wachtwoord";
+            }
+            else if (clickedTextbox.TabIndex == 5 && clickedTextbox.text == "")
+            {
+                clickedTextbox.text = "Vul nog een keer het wachtwoord in";
+            }
         }
     }
 }

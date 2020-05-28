@@ -90,7 +90,7 @@ namespace Luxefoods_WindowsForms
         private void reservationsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Reservation reservationForm = new Reservation();
+            Reservation reservationForm = new Reservation(Login.person.id);
             reservationForm.Show();
 
         }

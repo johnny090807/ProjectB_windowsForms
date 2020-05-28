@@ -117,4 +117,148 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="VoornaamTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAaoAAAA/CAYAAACxU4yyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVHhe7dVBbiMxEANA//+bfkgWBmQEdprjSXbEUxXA
+        E1u68gYAAMBO9/v9S0RE5Oqsmfm76VMREZGrs2bnd6aPREREdmXNz2fT4ynrHABOmbZkyjqfTQ+eWScA
+        cIlpa55ZJ6+mw0dWDQBbTNvzyKq/nToCgA1ObdDHAwDY6HCH3ssfBwCw2eEWHZYAUHC4RbEAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R+/FSwkABYdbdFgCQMHH
+        LTosAWCzjzv0fjAeAcAGpzZoOnpk1QCwxbQ9j6z61XT4zDoBgEtMW/PMOplND6ascwA4ZdqSKev8s+mx
+        iIjIrqz5+Z3pIxERkauzZufvpk9FRET+N2tmAAAA2OB2+wc6hR0XxfXBDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="VoornaamTxtBox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC7SURBVFhH7Y5BDsQgDAP5/zd5yFaq0op2ncRGYffCSL6Q
+        cULbZPTeP1FMWwM6iGJ6LehQFKvVwBxgnGnYxawnoyxVXBplaeZmc4hSytxx7jlfKIXMHeeR94AtzHqR
+        exOVopnHTAeWUBT3nfNQBCqNMW3dBy6y4nvOxuq/4a8foI4jaSa27iZ1kFARb/d5dISSErwd6O1BKojI
+        +ySZRNopySTSTkkmkXZWH7/YH5A/sCp2xgeVKmNnNg6tHQAbzL37Jke7AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="AchternaamTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAaoAAAA/CAYAAACxU4yyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVHhe7dVBbiMxEANA//+bfkgWBmQEdprjSXbEUxXA
+        E1u68gYAAMBO9/v9S0RE5Oqsmfm76VMREZGrs2bnd6aPREREdmXNz2fT4ynrHABOmbZkyjqfTQ+eWScA
+        cIlpa55ZJ6+mw0dWDQBbTNvzyKq/nToCgA1ObdDHAwDY6HCH3ssfBwCw2eEWHZYAUHC4RbEAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R+/FSwkABYdbdFgCQMHH
+        LTosAWCzjzv0fjAeAcAGpzZoOnpk1QCwxbQ9j6z61XT4zDoBgEtMW/PMOplND6ascwA4ZdqSKev8s+mx
+        iIjIrqz5+Z3pIxERkauzZufvpk9FRET+N2tmAAAA2OB2+wc6hR0XxfXBDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="AchternaamTxtBox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC7SURBVFhH7Y5BDsQgDAP5/zd5yFaq0op2ncRGYffCSL6Q
+        cULbZPTeP1FMWwM6iGJ6LehQFKvVwBxgnGnYxawnoyxVXBplaeZmc4hSytxx7jlfKIXMHeeR94AtzHqR
+        exOVopnHTAeWUBT3nfNQBCqNMW3dBy6y4nvOxuq/4a8foI4jaSa27iZ1kFARb/d5dISSErwd6O1BKojI
+        +ySZRNopySTSTkkmkXZWH7/YH5A/sCp2xgeVKmNnNg6tHQAbzL37Jke7AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="EmailTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAaoAAAA/CAYAAACxU4yyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVHhe7dVBbiMxEANA//+bfkgWBmQEdprjSXbEUxXA
+        E1u68gYAAMBO9/v9S0RE5Oqsmfm76VMREZGrs2bnd6aPREREdmXNz2fT4ynrHABOmbZkyjqfTQ+eWScA
+        cIlpa55ZJ6+mw0dWDQBbTNvzyKq/nToCgA1ObdDHAwDY6HCH3ssfBwCw2eEWHZYAUHC4RbEAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R+/FSwkABYdbdFgCQMHH
+        LTosAWCzjzv0fjAeAcAGpzZoOnpk1QCwxbQ9j6z61XT4zDoBgEtMW/PMOplND6ascwA4ZdqSKev8s+mx
+        iIjIrqz5+Z3pIxERkauzZufvpk9FRET+N2tmAAAA2OB2+wc6hR0XxfXBDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="EmailTxtBox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADfSURBVFhH7ZALCsMwDEN7/2vmICsukQhB/qSEdbA+MDTS
+        czJ2vLy01j5Pzm/+gP7nbEe+pUKbvrMN9YYNCyVdmxtQ9/J7DA2c5/wu3n08z4WBTHUrRPcwU6WB3Osz
+        sn3mnmCgixxFZY9dJBnoMw9UffaZaMDJ3Kpn0KnIAK7yo05Bt7oErzp9zYVeZQHO6vR1CZ1MRj97q/kM
+        +0hEFzmKyh47T0Lu9RnZPnMlIFPdCtE9zOYS5zm/i3cfz2OB7zHbgbqX32MxzrW5EfWGjSz6znbkWyr8
+        5jz/A17+nOM4Ab0rXwzswzVwAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="TelefoonTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAaoAAAA/CAYAAACxU4yyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVHhe7dVBbiMxEANA//+bfkgWBmQEdprjSXbEUxXA
+        E1u68gYAAMBO9/v9S0RE5Oqsmfm76VMREZGrs2bnd6aPREREdmXNz2fT4ynrHABOmbZkyjqfTQ+eWScA
+        cIlpa55ZJ6+mw0dWDQBbTNvzyKq/nToCgA1ObdDHAwDY6HCH3ssfBwCw2eEWHZYAUHC4RbEAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R+/FSwkABYdbdFgCQMHH
+        LTosAWCzjzv0fjAeAcAGpzZoOnpk1QCwxbQ9j6z61XT4zDoBgEtMW/PMOplND6ascwA4ZdqSKev8s+mx
+        iIjIrqz5+Z3pIxERkauzZufvpk9FRET+N2tmAAAA2OB2+wc6hR0XxfXBDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="TelefoonTxtBox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEQSURBVFhHtY4BDsMwCAP7/2/2Idu6QeU5YGibnBQpwQdk
+        Q/Z9f/GxaD3Rcj+mrCFbFtWWoBapbBrVgs4n0KncgaqhMxQdPqbkdMRLAz+gX/a0pA/K84ydqDZQCoby
+        POPD2VdmZGiUQwB03ef3H2lgyGYjcrjG+QmLiMoQ9NzN3sd9IAtlU4D73hPd/f1HFmZ1Bfrcj/eBLJRN
+        Aej7nd/HfYBlJ6svIVuW1ZeQLcvq01GLVDYVtUhlU1GLVOagozyJGtDN+JjSRzVj5jm/D7CG9TaqGTM8
+        Fp90HEnVWOUOepU78KgZeDQDm28NMB714wfuDnnSe4KfuDLsTk8KDusM7XqXwcGdY23ziZZF52dv2xtA
+        61QVFwIrEQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="PasswordTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAaoAAAA/CAYAAACxU4yyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVHhe7dVBbiMxEANA//+bfkgWBmQEdprjSXbEUxXA
+        E1u68gYAAMBO9/v9S0RE5Oqsmfm76VMREZGrs2bnd6aPREREdmXNz2fT4ynrHABOmbZkyjqfTQ+eWScA
+        cIlpa55ZJ6+mw0dWDQBbTNvzyKq/nToCgA1ObdDHAwDY6HCH3ssfBwCw2eEWHZYAUHC4RbEAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R+/FSwkABYdbdFgCQMHH
+        LTosAWCzjzv0fjAeAcAGpzZoOnpk1QCwxbQ9j6z61XT4zDoBgEtMW/PMOplND6ascwA4ZdqSKev8s+mx
+        iIjIrqz5+Z3pIxERkauzZufvpk9FRET+N2tmAAAA2OB2+wc6hR0XxfXBDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="PasswordTxtBox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADuSURBVFhH7Y5RDoMhCIO9/zU9yLbfQNI1gCiavexL+qAt
+        hdZ7f0Vqt7GWoiR2D2/R/wD9R4l1Fq8cF3uZI2QWXD3gYXYE+lGuRFSOnpc5QmbB1QMeZkegjxL7DFEx
+        eiyJnCEqxj/MWdkS2WLMWZLYHtkizEWS+BqzAvQ5F3lLeAXev8VK1oQL+J1hZ+YLLNgtqswOygUfqvPl
+        gtK8DmcKvFx23iQzrBmW2L874BH6I7wKl1lYPv5Z/hJRgXrs45/lL6EFXgn7+EaN8A6zEvRR6I1gBS5m
+        0NcMv8tgYVSazW3B5TPJ2FmsRSyJAq29Acxk3wbV2kDZAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="VerifyPasswordTxtBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAaoAAAA/CAYAAACxU4yyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVHhe7dVBbiMxEANA//+bfkgWBmQEdprjSXbEUxXA
+        E1u68gYAAMBO9/v9S0RE5Oqsmfm76VMREZGrs2bnd6aPREREdmXNz2fT4ynrHABOmbZkyjqfTQ+eWScA
+        cIlpa55ZJ6+mw0dWDQBbTNvzyKq/nToCgA1ObdDHAwDY6HCH3ssfBwCw2eEWHZYAUHC4RbEAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EA
+        gKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R7EAgKK4R+/FSwkABYdbdFgCQMHH
+        LTosAWCzjzv0fjAeAcAGpzZoOnpk1QCwxbQ9j6z61XT4zDoBgEtMW/PMOplND6ascwA4ZdqSKev8s+mx
+        iIjIrqz5+Z3pIxERkauzZufvpk9FRET+N2tmAAAA2OB2+wc6hR0XxfXBDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="VerifyPasswordTxtBox.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADuSURBVFhH7Y5RDoMhCIO9/zU9yLbfQNI1gCiavexL+qAt
+        hdZ7f0Vqt7GWoiR2D2/R/wD9R4l1Fq8cF3uZI2QWXD3gYXYE+lGuRFSOnpc5QmbB1QMeZkegjxL7DFEx
+        eiyJnCEqxj/MWdkS2WLMWZLYHtkizEWS+BqzAvQ5F3lLeAXev8VK1oQL+J1hZ+YLLNgtqswOygUfqvPl
+        gtK8DmcKvFx23iQzrBmW2L874BH6I7wKl1lYPv5Z/hJRgXrs45/lL6EFXgn7+EaN8A6zEvRR6I1gBS5m
+        0NcMv8tgYVSazW3B5TPJ2FmsRSyJAq29Acxk3wbV2kDZAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>
