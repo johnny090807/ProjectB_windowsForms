@@ -31,7 +31,7 @@
             this.LoginBtn = new System.Windows.Forms.Button();
             this.RegisterBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new System.Windows.Forms.Label();
             this.exitBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ErrorMessageLabel = new System.Windows.Forms.Label();
@@ -147,7 +147,7 @@
             this.PasswordCheck.MinimumSize = new System.Drawing.Size(4, 50);
             this.PasswordCheck.Name = "PasswordCheck";
             this.PasswordCheck.PasswordChar = '*';
-            this.PasswordCheck.Size = new System.Drawing.Size(477, 50);
+            this.PasswordCheck.Size = new System.Drawing.Size(477, 44);
             this.PasswordCheck.TabIndex = 1;
             // 
             // label1
@@ -171,7 +171,7 @@
             this.EmailCheck.Margin = new System.Windows.Forms.Padding(20);
             this.EmailCheck.MinimumSize = new System.Drawing.Size(4, 50);
             this.EmailCheck.Name = "EmailCheck";
-            this.EmailCheck.Size = new System.Drawing.Size(477, 50);
+            this.EmailCheck.Size = new System.Drawing.Size(477, 44);
             this.EmailCheck.TabIndex = 0;
             this.EmailCheck.Text = "Email";
             this.EmailCheck.Enter += new System.EventHandler(this.EnterTxtBox);
@@ -207,7 +207,7 @@
         private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Button RegisterBtn;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private System.Windows.Forms.Label bunifuCustomLabel1;
         private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label ErrorMessageLabel;
