@@ -67,15 +67,15 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (EmailCheck.text == "Voornaam" || PasswordCheck.text == "Wachtwoord")
+            if (EmailCheck.Text == "Voornaam" || PasswordCheck.Text == "Wachtwoord")
             {
                 ErrorMessageLabel.Text = "Fill everything in.";
             }
             else
             {
-                string q = $"SELECT DISTINCT * FROM [user] WHERE email='{EmailCheck.text}'";
+                string q = $"SELECT DISTINCT * FROM [user] WHERE email='{EmailCheck.Text}'";
                 string password = "";
-                string typedPassword = EncryptPassword(PasswordCheck.text);
+                string typedPassword = EncryptPassword(PasswordCheck.Text);
                 try
                 {
                     SqlConnection con = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -185,59 +185,20 @@ namespace Luxefoods_WindowsForms
 
         private void EnterTxtBox(object sender, EventArgs e)
         {
-            Bunifu.Framework.UI.BunifuTextbox clickedTextbox = (Bunifu.Framework.UI.BunifuTextbox)sender;
-            if (clickedTextbox.text == "Voornaam")
+            TextBox clickedTextbox = (TextBox)sender;
+            if (clickedTextbox.Text == "Email")
             {
-                clickedTextbox.text = "";
-            }
-            else if (clickedTextbox.text == "Achternaam")
-            {
-                clickedTextbox.text = "";
-            }
-            else if (clickedTextbox.text == "Email")
-            {
-                clickedTextbox.text = "";
-            }
-            else if (clickedTextbox.text == "Telefoon nummer")
-            {
-                clickedTextbox.text = "";
-            }
-            else if (clickedTextbox.text == "Wachtwoord")
-            {
-                clickedTextbox.text = "";
-            }
-            else if (clickedTextbox.text == "Vul nog een keer het wachtwoord in")
-            {
-                clickedTextbox.text = "";
+                clickedTextbox.Text = "";
             }
         }
         private void LeaveTxtBox(object sender, EventArgs e)
         {
-            Bunifu.Framework.UI.BunifuTextbox clickedTextbox = (Bunifu.Framework.UI.BunifuTextbox)sender;
-            if (clickedTextbox.TabIndex == 0 && clickedTextbox.text == "")
+            TextBox clickedTextbox = (TextBox)sender;
+            if (clickedTextbox.TabIndex == 0 && clickedTextbox.Text == "")
             {
-                clickedTextbox.text = "Voornaam";
+                clickedTextbox.Text = "Email";
             }
-            else if (clickedTextbox.TabIndex == 1 && clickedTextbox.text == "")
-            {
-                clickedTextbox.text = "Achternaam";
-            }
-            else if (clickedTextbox.TabIndex == 2 && clickedTextbox.text == "")
-            {
-                clickedTextbox.text = "Email";
-            }
-            else if (clickedTextbox.TabIndex == 3 && clickedTextbox.text == "")
-            {
-                clickedTextbox.text = "Telefoon nummer";
-            }
-            else if (clickedTextbox.TabIndex == 4 && clickedTextbox.text == "")
-            {
-                clickedTextbox.text = "Wachtwoord";
-            }
-            else if (clickedTextbox.TabIndex == 5 && clickedTextbox.text == "")
-            {
-                clickedTextbox.text = "Vul nog een keer het wachtwoord in";
-            }
+          
         }
     }
 }

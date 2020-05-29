@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.LoginBtn = new System.Windows.Forms.Button();
             this.RegisterBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.exitBtn = new System.Windows.Forms.Button();
-            this.PasswordCheck = new Bunifu.Framework.UI.BunifuTextbox();
-            this.EmailCheck = new Bunifu.Framework.UI.BunifuTextbox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ErrorMessageLabel = new System.Windows.Forms.Label();
+            this.PasswordCheck = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.EmailCheck = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +47,7 @@
             this.LoginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(21)))), ((int)(((byte)(1)))));
             this.LoginBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.background_TxtBox;
             this.LoginBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LoginBtn.FlatAppearance.BorderSize = 0;
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -116,40 +117,6 @@
             this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
-            // PasswordCheck
-            // 
-            this.PasswordCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(39)))), ((int)(((byte)(4)))));
-            this.PasswordCheck.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PasswordCheck.BackgroundImage")));
-            this.PasswordCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PasswordCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordCheck.ForeColor = System.Drawing.Color.White;
-            this.PasswordCheck.Icon = ((System.Drawing.Image)(resources.GetObject("PasswordCheck.Icon")));
-            this.PasswordCheck.Location = new System.Drawing.Point(88, 203);
-            this.PasswordCheck.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.PasswordCheck.Name = "PasswordCheck";
-            this.PasswordCheck.Size = new System.Drawing.Size(477, 59);
-            this.PasswordCheck.TabIndex = 1;
-            this.PasswordCheck.text = "Wachtwoord";
-            this.PasswordCheck.Enter += new System.EventHandler(this.EnterTxtBox);
-            this.PasswordCheck.Leave += new System.EventHandler(this.LeaveTxtBox);
-            // 
-            // EmailCheck
-            // 
-            this.EmailCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(46)))), ((int)(((byte)(5)))));
-            this.EmailCheck.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EmailCheck.BackgroundImage")));
-            this.EmailCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.EmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailCheck.ForeColor = System.Drawing.Color.White;
-            this.EmailCheck.Icon = ((System.Drawing.Image)(resources.GetObject("EmailCheck.Icon")));
-            this.EmailCheck.Location = new System.Drawing.Point(88, 86);
-            this.EmailCheck.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.EmailCheck.Name = "EmailCheck";
-            this.EmailCheck.Size = new System.Drawing.Size(477, 59);
-            this.EmailCheck.TabIndex = 0;
-            this.EmailCheck.text = "Email";
-            this.EmailCheck.Enter += new System.EventHandler(this.EnterTxtBox);
-            this.EmailCheck.Leave += new System.EventHandler(this.LeaveTxtBox);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
@@ -170,6 +137,46 @@
             this.ErrorMessageLabel.Size = new System.Drawing.Size(0, 29);
             this.ErrorMessageLabel.TabIndex = 15;
             // 
+            // PasswordCheck
+            // 
+            this.PasswordCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(46)))), ((int)(((byte)(5)))));
+            this.PasswordCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordCheck.ForeColor = System.Drawing.SystemColors.Window;
+            this.PasswordCheck.Location = new System.Drawing.Point(88, 229);
+            this.PasswordCheck.Margin = new System.Windows.Forms.Padding(20);
+            this.PasswordCheck.MinimumSize = new System.Drawing.Size(4, 50);
+            this.PasswordCheck.Name = "PasswordCheck";
+            this.PasswordCheck.PasswordChar = '*';
+            this.PasswordCheck.Size = new System.Drawing.Size(477, 50);
+            this.PasswordCheck.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(82, 176);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 33);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Wachtwoord";
+            // 
+            // EmailCheck
+            // 
+            this.EmailCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(46)))), ((int)(((byte)(5)))));
+            this.EmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailCheck.ForeColor = System.Drawing.SystemColors.Window;
+            this.EmailCheck.Location = new System.Drawing.Point(88, 106);
+            this.EmailCheck.Margin = new System.Windows.Forms.Padding(20);
+            this.EmailCheck.MinimumSize = new System.Drawing.Size(4, 50);
+            this.EmailCheck.Name = "EmailCheck";
+            this.EmailCheck.Size = new System.Drawing.Size(477, 50);
+            this.EmailCheck.TabIndex = 0;
+            this.EmailCheck.Text = "Email";
+            this.EmailCheck.Enter += new System.EventHandler(this.EnterTxtBox);
+            this.EmailCheck.Leave += new System.EventHandler(this.LeaveTxtBox);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,9 +184,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.Register_background;
             this.ClientSize = new System.Drawing.Size(638, 512);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.PasswordCheck);
             this.Controls.Add(this.EmailCheck);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.PasswordCheck);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.RegisterBtn);
             this.Controls.Add(this.LoginBtn);
@@ -191,6 +199,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -200,9 +209,10 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Button exitBtn;
-        private Bunifu.Framework.UI.BunifuTextbox PasswordCheck;
-        private Bunifu.Framework.UI.BunifuTextbox EmailCheck;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label ErrorMessageLabel;
+        private System.Windows.Forms.TextBox PasswordCheck;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox EmailCheck;
     }
 }

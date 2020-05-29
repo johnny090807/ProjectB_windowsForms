@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.RegisterBtn = new System.Windows.Forms.Button();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
-            this.VoornaamTxtBox = new Bunifu.Framework.UI.BunifuTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.AchternaamTxtBox = new Bunifu.Framework.UI.BunifuTextbox();
-            this.EmailTxtBox = new Bunifu.Framework.UI.BunifuTextbox();
-            this.TelefoonTxtBox = new Bunifu.Framework.UI.BunifuTextbox();
-            this.PasswordTxtBox = new Bunifu.Framework.UI.BunifuTextbox();
-            this.VerifyPasswordTxtBox = new Bunifu.Framework.UI.BunifuTextbox();
             this.ErrorMessageLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.VoornaamTxtBox = new System.Windows.Forms.TextBox();
+            this.AchternaamTxtBox = new System.Windows.Forms.TextBox();
+            this.EmailTxtBox = new System.Windows.Forms.TextBox();
+            this.TelefoonTxtBox = new System.Windows.Forms.TextBox();
+            this.PasswordTxtBox = new System.Windows.Forms.TextBox();
+            this.VerifyPasswordTxtBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -51,10 +52,11 @@
             this.RegisterBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(21)))), ((int)(((byte)(1)))));
             this.RegisterBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.background_TxtBox;
             this.RegisterBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.RegisterBtn.FlatAppearance.BorderSize = 0;
             this.RegisterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RegisterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegisterBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RegisterBtn.Location = new System.Drawing.Point(171, 520);
+            this.RegisterBtn.Location = new System.Drawing.Point(171, 524);
             this.RegisterBtn.Name = "RegisterBtn";
             this.RegisterBtn.Size = new System.Drawing.Size(361, 74);
             this.RegisterBtn.TabIndex = 6;
@@ -68,7 +70,7 @@
             this.LoginBtn.FlatAppearance.BorderSize = 0;
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBtn.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.LoginBtn.Location = new System.Drawing.Point(36, 650);
+            this.LoginBtn.Location = new System.Drawing.Point(40, 641);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(626, 23);
             this.LoginBtn.TabIndex = 7;
@@ -92,23 +94,6 @@
             this.exitBtn.TabIndex = 13;
             this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
-            // 
-            // VoornaamTxtBox
-            // 
-            this.VoornaamTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(46)))), ((int)(((byte)(5)))));
-            this.VoornaamTxtBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VoornaamTxtBox.BackgroundImage")));
-            this.VoornaamTxtBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.VoornaamTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VoornaamTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.VoornaamTxtBox.Icon = ((System.Drawing.Image)(resources.GetObject("VoornaamTxtBox.Icon")));
-            this.VoornaamTxtBox.Location = new System.Drawing.Point(142, 90);
-            this.VoornaamTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.VoornaamTxtBox.Name = "VoornaamTxtBox";
-            this.VoornaamTxtBox.Size = new System.Drawing.Size(424, 59);
-            this.VoornaamTxtBox.TabIndex = 0;
-            this.VoornaamTxtBox.text = "Voornaam";
-            this.VoornaamTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
-            this.VoornaamTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
             // 
             // panel1
             // 
@@ -138,91 +123,6 @@
             this.bunifuCustomLabel1.TabIndex = 14;
             this.bunifuCustomLabel1.Text = "LuxeFoods";
             // 
-            // AchternaamTxtBox
-            // 
-            this.AchternaamTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(39)))), ((int)(((byte)(4)))));
-            this.AchternaamTxtBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AchternaamTxtBox.BackgroundImage")));
-            this.AchternaamTxtBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AchternaamTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AchternaamTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.AchternaamTxtBox.Icon = ((System.Drawing.Image)(resources.GetObject("AchternaamTxtBox.Icon")));
-            this.AchternaamTxtBox.Location = new System.Drawing.Point(142, 159);
-            this.AchternaamTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.AchternaamTxtBox.Name = "AchternaamTxtBox";
-            this.AchternaamTxtBox.Size = new System.Drawing.Size(424, 59);
-            this.AchternaamTxtBox.TabIndex = 1;
-            this.AchternaamTxtBox.text = "Achternaam";
-            this.AchternaamTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
-            this.AchternaamTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
-            // 
-            // EmailTxtBox
-            // 
-            this.EmailTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(33)))), ((int)(((byte)(4)))));
-            this.EmailTxtBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EmailTxtBox.BackgroundImage")));
-            this.EmailTxtBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.EmailTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.EmailTxtBox.Icon = ((System.Drawing.Image)(resources.GetObject("EmailTxtBox.Icon")));
-            this.EmailTxtBox.Location = new System.Drawing.Point(142, 228);
-            this.EmailTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.EmailTxtBox.Name = "EmailTxtBox";
-            this.EmailTxtBox.Size = new System.Drawing.Size(424, 59);
-            this.EmailTxtBox.TabIndex = 2;
-            this.EmailTxtBox.text = "Email";
-            this.EmailTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
-            this.EmailTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
-            // 
-            // TelefoonTxtBox
-            // 
-            this.TelefoonTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(4)))));
-            this.TelefoonTxtBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TelefoonTxtBox.BackgroundImage")));
-            this.TelefoonTxtBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TelefoonTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TelefoonTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.TelefoonTxtBox.Icon = ((System.Drawing.Image)(resources.GetObject("TelefoonTxtBox.Icon")));
-            this.TelefoonTxtBox.Location = new System.Drawing.Point(142, 297);
-            this.TelefoonTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TelefoonTxtBox.Name = "TelefoonTxtBox";
-            this.TelefoonTxtBox.Size = new System.Drawing.Size(424, 59);
-            this.TelefoonTxtBox.TabIndex = 3;
-            this.TelefoonTxtBox.text = "Telefoon nummer";
-            this.TelefoonTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
-            this.TelefoonTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
-            // 
-            // PasswordTxtBox
-            // 
-            this.PasswordTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(23)))), ((int)(((byte)(3)))));
-            this.PasswordTxtBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PasswordTxtBox.BackgroundImage")));
-            this.PasswordTxtBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.PasswordTxtBox.Icon = ((System.Drawing.Image)(resources.GetObject("PasswordTxtBox.Icon")));
-            this.PasswordTxtBox.Location = new System.Drawing.Point(142, 366);
-            this.PasswordTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.PasswordTxtBox.Name = "PasswordTxtBox";
-            this.PasswordTxtBox.Size = new System.Drawing.Size(424, 59);
-            this.PasswordTxtBox.TabIndex = 4;
-            this.PasswordTxtBox.text = "Wachtwoord";
-            this.PasswordTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
-            this.PasswordTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
-            // 
-            // VerifyPasswordTxtBox
-            // 
-            this.VerifyPasswordTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(23)))), ((int)(((byte)(3)))));
-            this.VerifyPasswordTxtBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VerifyPasswordTxtBox.BackgroundImage")));
-            this.VerifyPasswordTxtBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.VerifyPasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VerifyPasswordTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.VerifyPasswordTxtBox.Icon = ((System.Drawing.Image)(resources.GetObject("VerifyPasswordTxtBox.Icon")));
-            this.VerifyPasswordTxtBox.Location = new System.Drawing.Point(142, 435);
-            this.VerifyPasswordTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.VerifyPasswordTxtBox.Name = "VerifyPasswordTxtBox";
-            this.VerifyPasswordTxtBox.Size = new System.Drawing.Size(424, 59);
-            this.VerifyPasswordTxtBox.TabIndex = 5;
-            this.VerifyPasswordTxtBox.text = "Vul nog een keer het wachtwoord in";
-            this.VerifyPasswordTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
-            this.VerifyPasswordTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
-            // 
             // ErrorMessageLabel
             // 
             this.ErrorMessageLabel.AutoSize = true;
@@ -238,10 +138,120 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.ErrorMessageLabel);
-            this.panel2.Location = new System.Drawing.Point(171, 600);
+            this.panel2.Location = new System.Drawing.Point(171, 604);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(361, 31);
             this.panel2.TabIndex = 16;
+            // 
+            // VoornaamTxtBox
+            // 
+            this.VoornaamTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(46)))), ((int)(((byte)(5)))));
+            this.VoornaamTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VoornaamTxtBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.VoornaamTxtBox.Location = new System.Drawing.Point(142, 84);
+            this.VoornaamTxtBox.Margin = new System.Windows.Forms.Padding(20);
+            this.VoornaamTxtBox.MinimumSize = new System.Drawing.Size(4, 50);
+            this.VoornaamTxtBox.Name = "VoornaamTxtBox";
+            this.VoornaamTxtBox.Size = new System.Drawing.Size(424, 44);
+            this.VoornaamTxtBox.TabIndex = 0;
+            this.VoornaamTxtBox.Text = "Voornaam";
+            this.VoornaamTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
+            this.VoornaamTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
+            // 
+            // AchternaamTxtBox
+            // 
+            this.AchternaamTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(39)))), ((int)(((byte)(4)))));
+            this.AchternaamTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AchternaamTxtBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.AchternaamTxtBox.Location = new System.Drawing.Point(142, 143);
+            this.AchternaamTxtBox.Margin = new System.Windows.Forms.Padding(20);
+            this.AchternaamTxtBox.MinimumSize = new System.Drawing.Size(4, 50);
+            this.AchternaamTxtBox.Name = "AchternaamTxtBox";
+            this.AchternaamTxtBox.Size = new System.Drawing.Size(424, 44);
+            this.AchternaamTxtBox.TabIndex = 1;
+            this.AchternaamTxtBox.Text = "Achternaam";
+            this.AchternaamTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
+            this.AchternaamTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
+            // 
+            // EmailTxtBox
+            // 
+            this.EmailTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(33)))), ((int)(((byte)(4)))));
+            this.EmailTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTxtBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.EmailTxtBox.Location = new System.Drawing.Point(142, 203);
+            this.EmailTxtBox.Margin = new System.Windows.Forms.Padding(20);
+            this.EmailTxtBox.MinimumSize = new System.Drawing.Size(4, 50);
+            this.EmailTxtBox.Name = "EmailTxtBox";
+            this.EmailTxtBox.Size = new System.Drawing.Size(424, 44);
+            this.EmailTxtBox.TabIndex = 2;
+            this.EmailTxtBox.Text = "Email";
+            this.EmailTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
+            this.EmailTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
+            // 
+            // TelefoonTxtBox
+            // 
+            this.TelefoonTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(4)))));
+            this.TelefoonTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TelefoonTxtBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.TelefoonTxtBox.Location = new System.Drawing.Point(142, 263);
+            this.TelefoonTxtBox.Margin = new System.Windows.Forms.Padding(20);
+            this.TelefoonTxtBox.MinimumSize = new System.Drawing.Size(4, 50);
+            this.TelefoonTxtBox.Name = "TelefoonTxtBox";
+            this.TelefoonTxtBox.Size = new System.Drawing.Size(424, 44);
+            this.TelefoonTxtBox.TabIndex = 3;
+            this.TelefoonTxtBox.Text = "Telefoon nummer";
+            this.TelefoonTxtBox.Enter += new System.EventHandler(this.EnterTxtBox);
+            this.TelefoonTxtBox.Leave += new System.EventHandler(this.LeaveTxtBox);
+            // 
+            // PasswordTxtBox
+            // 
+            this.PasswordTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(23)))), ((int)(((byte)(3)))));
+            this.PasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTxtBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.PasswordTxtBox.Location = new System.Drawing.Point(142, 351);
+            this.PasswordTxtBox.Margin = new System.Windows.Forms.Padding(20);
+            this.PasswordTxtBox.MinimumSize = new System.Drawing.Size(4, 50);
+            this.PasswordTxtBox.Name = "PasswordTxtBox";
+            this.PasswordTxtBox.PasswordChar = '*';
+            this.PasswordTxtBox.Size = new System.Drawing.Size(424, 50);
+            this.PasswordTxtBox.TabIndex = 4;
+            // 
+            // VerifyPasswordTxtBox
+            // 
+            this.VerifyPasswordTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(23)))), ((int)(((byte)(3)))));
+            this.VerifyPasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VerifyPasswordTxtBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.VerifyPasswordTxtBox.Location = new System.Drawing.Point(142, 457);
+            this.VerifyPasswordTxtBox.Margin = new System.Windows.Forms.Padding(20);
+            this.VerifyPasswordTxtBox.MinimumSize = new System.Drawing.Size(4, 50);
+            this.VerifyPasswordTxtBox.Name = "VerifyPasswordTxtBox";
+            this.VerifyPasswordTxtBox.PasswordChar = '*';
+            this.VerifyPasswordTxtBox.Size = new System.Drawing.Size(424, 50);
+            this.VerifyPasswordTxtBox.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(136, 318);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 33);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Wachtwoord";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(136, 418);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(280, 33);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Herhaal wachtwoord";
             // 
             // Register
             // 
@@ -249,15 +259,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.Register_background;
-            this.ClientSize = new System.Drawing.Size(701, 696);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(701, 676);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.VerifyPasswordTxtBox);
             this.Controls.Add(this.PasswordTxtBox);
             this.Controls.Add(this.TelefoonTxtBox);
             this.Controls.Add(this.EmailTxtBox);
             this.Controls.Add(this.AchternaamTxtBox);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.VoornaamTxtBox);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.RegisterBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -268,6 +280,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -275,16 +288,18 @@
         private System.Windows.Forms.Button RegisterBtn;
         private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Button exitBtn;
-        private Bunifu.Framework.UI.BunifuTextbox VoornaamTxtBox;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuTextbox AchternaamTxtBox;
-        private Bunifu.Framework.UI.BunifuTextbox EmailTxtBox;
-        private Bunifu.Framework.UI.BunifuTextbox TelefoonTxtBox;
-        private Bunifu.Framework.UI.BunifuTextbox PasswordTxtBox;
-        private Bunifu.Framework.UI.BunifuTextbox VerifyPasswordTxtBox;
         private System.Windows.Forms.Label ErrorMessageLabel;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox VoornaamTxtBox;
+        private System.Windows.Forms.TextBox AchternaamTxtBox;
+        private System.Windows.Forms.TextBox EmailTxtBox;
+        private System.Windows.Forms.TextBox TelefoonTxtBox;
+        private System.Windows.Forms.TextBox PasswordTxtBox;
+        private System.Windows.Forms.TextBox VerifyPasswordTxtBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

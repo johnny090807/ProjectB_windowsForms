@@ -37,22 +37,22 @@ namespace Luxefoods_WindowsForms
         {
             string EmailPattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
             
-            if (VoornaamTxtBox.text == "Voornaam" || AchternaamTxtBox.text == "Achternaam" || TelefoonTxtBox.text == "Telefoon nummer" || EmailTxtBox.text == "Email" || PasswordTxtBox.text == "Wachtwoord" || VerifyPasswordTxtBox.text == "Vul nog een keer het wachtwoord in")
+            if (VoornaamTxtBox.Text == "Voornaam" || AchternaamTxtBox.Text == "Achternaam" || TelefoonTxtBox.Text == "Telefoon nummer" || EmailTxtBox.Text == "Email" || PasswordTxtBox.Text == "Wachtwoord" || VerifyPasswordTxtBox.Text == "Vul nog een keer het wachtwoord in")
             {
                 ErrorMessageLabel.Text = "Fill everything in.";
                 return;
             }
-            if(PasswordTxtBox.text.Length < 8 || PasswordTxtBox.text == "Password")
+            if(PasswordTxtBox.Text.Length < 8 || PasswordTxtBox.Text == "Password")
             {
                 ErrorMessageLabel.Text = "Password needs to be longer";
                 return;
             }
-            if (!Regex.IsMatch(EmailTxtBox.text, EmailPattern))
+            if (!Regex.IsMatch(EmailTxtBox.Text, EmailPattern))
             {
                 ErrorMessageLabel.Text = "Please provide real email";
                 return;
             }
-            if (PasswordTxtBox.text != VerifyPasswordTxtBox.text)
+            if (PasswordTxtBox.Text != VerifyPasswordTxtBox.Text)
             {
                 ErrorMessageLabel.Text = "Passwords do not match";
             }
@@ -62,7 +62,7 @@ namespace Luxefoods_WindowsForms
                 con.Open();
                 if (con.State == System.Data.ConnectionState.Open)
                 {
-                    string q = $"INSERT INTO [user] (voornaam, achternaam, email, telefoonnummer, password, admin) VALUES  ('{VoornaamTxtBox.text}', '{AchternaamTxtBox.text}', '{EmailTxtBox.text}', '{TelefoonTxtBox.text}', '{EncryptPassword(PasswordTxtBox.text)}', '0')";
+                    string q = $"INSERT INTO [user] (voornaam, achternaam, email, telefoonnummer, password, admin) VALUES  ('{VoornaamTxtBox.Text}', '{AchternaamTxtBox.Text}', '{EmailTxtBox.Text}', '{TelefoonTxtBox.Text}', '{EncryptPassword(PasswordTxtBox.Text)}', '0')";
 
                     try
                     {
@@ -70,7 +70,7 @@ namespace Luxefoods_WindowsForms
                         cmd.ExecuteNonQuery();
 
                         con.Close();
-                        MessageBox.Show($"Thanks for creating an account! {VoornaamTxtBox.text} {AchternaamTxtBox.text}");
+                        MessageBox.Show($"Thanks for creating an account! {VoornaamTxtBox.Text} {AchternaamTxtBox.Text}");
                         this.Hide();
                         Login form2 = new Login();
                         form2.Show();
@@ -95,7 +95,7 @@ namespace Luxefoods_WindowsForms
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.CheckWhichFormWasOpened();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -104,59 +104,96 @@ namespace Luxefoods_WindowsForms
         }
         private void EnterTxtBox(object sender, EventArgs e)
         {
-            Bunifu.Framework.UI.BunifuTextbox clickedTextbox = (Bunifu.Framework.UI.BunifuTextbox)sender;
-            if (clickedTextbox.text == "Voornaam")
+            TextBox clickedTextbox = (TextBox)sender;
+            if (clickedTextbox.Text == "Voornaam")
             {
-                clickedTextbox.text = "";
+                clickedTextbox.Text = "";
             }
-            else if (clickedTextbox.text == "Achternaam")
+            else if (clickedTextbox.Text == "Achternaam")
             {
-                clickedTextbox.text = "";
+                clickedTextbox.Text = "";
             }
-            else if (clickedTextbox.text == "Email")
+            else if (clickedTextbox.Text == "Email")
             {
-                clickedTextbox.text = "";
+                clickedTextbox.Text = "";
             }
-            else if (clickedTextbox.text == "Telefoon nummer")
+            else if (clickedTextbox.Text == "Telefoon nummer")
             {
-                clickedTextbox.text = "";
-            }
-            else if (clickedTextbox.text == "Wachtwoord")
-            {
-                clickedTextbox.text = "";
-            }
-            else if (clickedTextbox.text == "Vul nog een keer het wachtwoord in")
-            {
-                clickedTextbox.text = "";
+                clickedTextbox.Text = "";
             }
         }
         private void LeaveTxtBox(object sender, EventArgs e)
         {
-            Bunifu.Framework.UI.BunifuTextbox clickedTextbox = (Bunifu.Framework.UI.BunifuTextbox)sender;
-            if (clickedTextbox.TabIndex == 0 && clickedTextbox.text == "")
+            TextBox clickedTextbox = (TextBox)sender;
+            if (clickedTextbox.TabIndex == 0 && clickedTextbox.Text == "")
             {
-                clickedTextbox.text = "Voornaam";
+                clickedTextbox.Text = "Voornaam";
             }
-            else if (clickedTextbox.TabIndex == 1 && clickedTextbox.text == "")
+            else if (clickedTextbox.TabIndex == 1 && clickedTextbox.Text == "")
             {
-                clickedTextbox.text = "Achternaam";
+                clickedTextbox.Text = "Achternaam";
             }
-            else if (clickedTextbox.TabIndex == 2 && clickedTextbox.text == "")
+            else if (clickedTextbox.TabIndex == 2 && clickedTextbox.Text == "")
             {
-                clickedTextbox.text = "Email";
+                clickedTextbox.Text = "Email";
             }
-            else if (clickedTextbox.TabIndex == 3 && clickedTextbox.text == "")
+            else if (clickedTextbox.TabIndex == 3 && clickedTextbox.Text == "")
             {
-                clickedTextbox.text = "Telefoon nummer";
-            }
-            else if (clickedTextbox.TabIndex == 4 && clickedTextbox.text == "")
-            {
-                clickedTextbox.text = "Wachtwoord";
-            }
-            else if (clickedTextbox.TabIndex == 5 && clickedTextbox.text == "")
-            {
-                clickedTextbox.text = "Vul nog een keer het wachtwoord in";
+                clickedTextbox.Text = "Telefoon nummer";
             }
         }
+        public void CheckWhichFormWasOpened()
+        {
+            string previousPage = Login.previousPage;
+            if (previousPage == "Menu")
+            {
+                Menu menuForm = new Menu();
+                menuForm.Show();
+                this.Hide();
+            }
+            else if (previousPage == "Reservation")
+            {
+                this.Hide();
+                Reservation reservationForm = new Reservation(Login.person.id);
+                reservationForm.Show();
+            }
+            else if (previousPage == "Dashboard")
+            {
+                this.Hide();
+                Dashboard dashboardForm = new Dashboard(person.id);
+                dashboardForm.Show();
+            }
+            else if (previousPage == "checkReservations")
+            {
+                this.Hide();
+                checkReservation checkReservationForm = new checkReservation();
+                checkReservationForm.Show();
+            }
+            else if (previousPage == "ContactUs")
+            {
+                this.Hide();
+                contactUs contactForm = new contactUs();
+                contactForm.Show();
+            }
+            else if (previousPage == "AboutUs")
+            {
+                this.Hide();
+                aboutUs aboutForm = new aboutUs();
+                aboutForm.Show();
+            }
+            else if (previousPage == "Home")
+            {
+                this.Hide();
+                homePage homeForm = new homePage();
+                homeForm.Show();
+            }
+            else
+            {
+                this.Hide();
+                Register registerForm = new Register();
+                registerForm.Show();
+            }
+
+            }
     }
 }
