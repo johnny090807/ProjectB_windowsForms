@@ -13,8 +13,7 @@ namespace Luxefoods_WindowsForms
 {
     public partial class Menu : Form
     {
-
-        Button clickedButton = new Button();
+        public Button clickedButton = new Button();
         public Login.User person = Login.person;
         public Menu()
         {
@@ -28,7 +27,7 @@ namespace Luxefoods_WindowsForms
             faqANS3.Visible = false;
             faqANS2.Visible = false;
             faqANS4.Visible = false;
-            openChildForm(new MenuSpecial());
+            openChildForm(new MenuSpecial(clickedButton));
             if(person != null)
             {
                 this.LoginBTN.Text = person.voornaam + " " + person.achternaam;
@@ -55,9 +54,9 @@ namespace Luxefoods_WindowsForms
         }
 
         private void getMenuItems(object sender, EventArgs e)
-        { 
-            openChildForm(new MenuSpecial());
+        {
             clickedButton = (Button)sender;
+            openChildForm(new MenuSpecial(clickedButton));
             MenuPanel.Height = clickedButton.Height;
             MenuPanel.Top = clickedButton.Top;
             
@@ -67,15 +66,14 @@ namespace Luxefoods_WindowsForms
         {
             faqANS1.Visible = !faqANS1.Visible;
         }
+        private void faqBTN2_Click(object sender, EventArgs e)
+        {
+            faqANS2.Visible = !faqANS2.Visible;
+        }
 
         private void faqBTN3_Click(object sender, EventArgs e)
         {
             faqANS3.Visible = !faqANS3.Visible;
-        }
-
-        private void faqBTN2_Click(object sender, EventArgs e)
-        {
-            faqANS2.Visible = !faqANS2.Visible;
         }
 
         private void faqBTN4_Click(object sender, EventArgs e)
@@ -148,8 +146,8 @@ namespace Luxefoods_WindowsForms
                         extraButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
                         extraButton.FlatAppearance.BorderSize = 0;
                         extraButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-                        extraButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-                        extraButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+                        extraButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+                        extraButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
                         extraButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                         extraButton.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         extraButton.ForeColor = System.Drawing.Color.White;
@@ -168,11 +166,6 @@ namespace Luxefoods_WindowsForms
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }
-            int iteration = 6;
-            for(int i = 0; i < iteration; i++)
-            {
-                
             }
         }
 

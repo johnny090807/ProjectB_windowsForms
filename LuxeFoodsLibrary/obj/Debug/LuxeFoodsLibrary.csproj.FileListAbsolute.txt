@@ -1,7 +1,0 @@
-C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\LuxeFoodsLibrary\bin\Debug\LuxeFoodsLibrary.dll
-C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\LuxeFoodsLibrary\bin\Debug\LuxeFoodsLibrary.pdb
-C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\LuxeFoodsLibrary\obj\Debug\LuxeFoodsLibrary.csprojAssemblyReference.cache
-C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\LuxeFoodsLibrary\obj\Debug\LuxeFoodsLibrary.dll
-C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\LuxeFoodsLibrary\obj\Debug\LuxeFoodsLibrary.pdb
-C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\LuxeFoodsLibrary\obj\Debug\LuxeFoodsLibrary.CustomTextBox.resources
-C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\LuxeFoodsLibrary\obj\Debug\LuxeFoodsLibrary.csproj.GenerateResource.cache
