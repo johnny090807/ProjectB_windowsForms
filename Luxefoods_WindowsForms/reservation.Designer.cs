@@ -566,7 +566,7 @@ namespace Luxefoods_WindowsForms
             // 
             this.Reservation_page_title.AutoSize = true;
             this.Reservation_page_title.BackColor = System.Drawing.Color.Black;
-            this.Reservation_page_title.Font = new Font(pf, Reservation_page_title.Font.Size);
+            /*this.Reservation_page_title.Font = new Font(pf, Reservation_page_title.Font.Size);*/
             this.Reservation_page_title.ForeColor = System.Drawing.Color.White;
             this.Reservation_page_title.Location = new System.Drawing.Point(171, 122);
             this.Reservation_page_title.Name = "Reservation_page_title";
