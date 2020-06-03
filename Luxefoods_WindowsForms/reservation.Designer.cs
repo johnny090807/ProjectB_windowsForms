@@ -1,4 +1,17 @@
-﻿namespace Luxefoods_WindowsForms
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Drawing.Text;
+using System.Runtime.InteropServices;
+
+namespace Luxefoods_WindowsForms
 {
     partial class Reservation
     {
@@ -18,6 +31,30 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private FontFamily[] importCustomFont()
+        {
+            //Create your private font collection object.
+            PrivateFontCollection pfc = new PrivateFontCollection();
+
+            //Select your font from the resources.
+            //My font here is "Digireu.ttf"
+            int fontLength = Properties.Resources.Lato_Light.Length;
+
+            // create a buffer to read in to
+            byte[] fontdata = Properties.Resources.Lato_Light;
+
+            // create an unsafe memory block for the font data
+            System.IntPtr data = Marshal.AllocCoTaskMem(fontLength);
+
+            // copy the bytes to the unsafe memory block
+            Marshal.Copy(fontdata, 0, data, fontLength);
+
+            // pass the font to the font collection
+            pfc.AddMemoryFont(data, fontLength);
+
+            return pfc.Families;
         }
 
         #region Windows Form Designer generated code
@@ -85,6 +122,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).BeginInit();
             this.SuspendLayout();
+            importCustomFont();
             // 
             // dateTimePicker1
             // 
@@ -197,7 +235,7 @@
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.AvailabilityTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.AvailabilityTable.Size = new System.Drawing.Size(1858, 50);
             this.AvailabilityTable.TabIndex = 6;
             // 
@@ -528,7 +566,7 @@
             // 
             this.Reservation_page_title.AutoSize = true;
             this.Reservation_page_title.BackColor = System.Drawing.Color.Black;
-            this.Reservation_page_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 34F);
+            this.Reservation_page_title.Font = new Font(pf, Reservation_page_title.Font.Size);
             this.Reservation_page_title.ForeColor = System.Drawing.Color.White;
             this.Reservation_page_title.Location = new System.Drawing.Point(171, 122);
             this.Reservation_page_title.Name = "Reservation_page_title";

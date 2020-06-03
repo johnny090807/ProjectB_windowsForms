@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Drawing.Text;
+using System.Runtime.InteropServices;
 
 namespace Luxefoods_WindowsForms
 {
@@ -35,6 +36,8 @@ namespace Luxefoods_WindowsForms
                 this.loginButton.Text = Login.person.voornaam + " " + Login.person.achternaam;
             }
         }
+
+        
 
         public class TakenSeats
         {
