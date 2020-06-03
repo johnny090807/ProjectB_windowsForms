@@ -114,7 +114,6 @@
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.reservation.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.SearchPage.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Template.resources" />
-    <EmbeddedResource Include="ReservationBackEnd.cs" />
     <Compile Include="aboutUs.cs">
       <SubType>Form</SubType>
     </Compile>

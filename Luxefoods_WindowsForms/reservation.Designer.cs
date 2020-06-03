@@ -19,7 +19,7 @@ namespace Luxefoods_WindowsForms
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
+        PrivateFontCollection pfc = new PrivateFontCollection();
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -33,37 +33,40 @@ namespace Luxefoods_WindowsForms
             base.Dispose(disposing);
         }
 
-        private FontFamily[] importCustomFont()
-        {
-            //Create your private font collection object.
-            PrivateFontCollection pfc = new PrivateFontCollection();
+        /// <summary>
+        ///         {
+        //Create your private font collection object.
+        ///PrivateFontCollection pfc = new PrivateFontCollection();
 
-            //Select your font from the resources.
-            //My font here is "Digireu.ttf"
-            int fontLength = Properties.Resources.Lato_Light.Length;
+        //Select your font from the resources.
+        //My font here is "Digireu.ttf"
+        ///int fontLength = Properties.Resources.Lato_Light.Length;
 
-            // create a buffer to read in to
-            byte[] fontdata = Properties.Resources.Lato_Light;
+        // create a buffer to read in to
+        ///byte[] fontdata = Properties.Resources.Lato_Light;
 
-            // create an unsafe memory block for the font data
-            System.IntPtr data = Marshal.AllocCoTaskMem(fontLength);
+        // create an unsafe memory block for the font data
+        ///System.IntPtr data = Marshal.AllocCoTaskMem(fontLength);
 
-            // copy the bytes to the unsafe memory block
-            Marshal.Copy(fontdata, 0, data, fontLength);
+        // copy the bytes to the unsafe memory block
+        ///Marshal.Copy(fontdata, 0, data, fontLength);
 
             // pass the font to the font collection
-            pfc.AddMemoryFont(data, fontLength);
+           /// pfc.AddMemoryFont(data, fontLength);
 
-            return pfc.Families;
-        }
+            ///return pfc.Families;
+       /// }s
+    /// 
+    /// </summary> FontFamily[] importCustomFont()
 
-        #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
+    #region Windows Form Designer generated code
+
+    /// <summary>
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reservation));
@@ -122,7 +125,7 @@ namespace Luxefoods_WindowsForms
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).BeginInit();
             this.SuspendLayout();
-            importCustomFont();
+            ///importCustomFont();
             // 
             // dateTimePicker1
             // 
@@ -566,7 +569,7 @@ namespace Luxefoods_WindowsForms
             // 
             this.Reservation_page_title.AutoSize = true;
             this.Reservation_page_title.BackColor = System.Drawing.Color.Black;
-            this.Reservation_page_title.Font = new Font(pf, Reservation_page_title.Font.Size);
+            this.Reservation_page_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
             this.Reservation_page_title.ForeColor = System.Drawing.Color.White;
             this.Reservation_page_title.Location = new System.Drawing.Point(171, 122);
             this.Reservation_page_title.Name = "Reservation_page_title";

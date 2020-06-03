@@ -82,8 +82,8 @@ namespace Luxefoods_WindowsForms
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            checkReservation reservationForm = new checkReservation();
-            reservationForm.Show();
+            checkReservation checkReservationForm = new checkReservation();
+            checkReservationForm.Show();
         }
 
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
