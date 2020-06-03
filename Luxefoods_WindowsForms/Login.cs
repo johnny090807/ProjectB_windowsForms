@@ -67,9 +67,9 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (EmailCheck.Text == "" || PasswordCheck.Text == "")
+            if (EmailCheck.Text == "Voornaam" || PasswordCheck.Text == "Wachtwoord")
             {
-                MessageBox.Show("Vul alle velden in.");
+                ErrorMessageLabel.Text = "Fill everything in.";
             }
             else
             {
@@ -141,7 +141,7 @@ namespace Luxefoods_WindowsForms
             else if (previousPage == "Reservation")
             {
                 this.Hide();
-                Reservation reservationForm = new Reservation();
+                Reservation reservationForm = new Reservation(Login.person.id);
                 reservationForm.Show();
             }
             else if (previousPage == "Dashboard")
@@ -181,6 +181,24 @@ namespace Luxefoods_WindowsForms
                 registerForm.Show();
             }
 
+        }
+
+        private void EnterTxtBox(object sender, EventArgs e)
+        {
+            TextBox clickedTextbox = (TextBox)sender;
+            if (clickedTextbox.Text == "Email")
+            {
+                clickedTextbox.Text = "";
+            }
+        }
+        private void LeaveTxtBox(object sender, EventArgs e)
+        {
+            TextBox clickedTextbox = (TextBox)sender;
+            if (clickedTextbox.TabIndex == 0 && clickedTextbox.Text == "")
+            {
+                clickedTextbox.Text = "Email";
+            }
+          
         }
     }
 }

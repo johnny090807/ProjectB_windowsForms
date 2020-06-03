@@ -76,7 +76,7 @@ namespace Luxefoods_WindowsForms
         private void reservationsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            checkReservation f2 = new checkReservation();
+            Reservation f2 = new Reservation(Login.person.id);
             f2.ShowDialog();
             this.Close();
         }

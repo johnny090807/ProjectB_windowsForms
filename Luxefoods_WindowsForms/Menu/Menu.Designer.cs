@@ -59,7 +59,7 @@
             // 
             // Navbar
             // 
-            this.Navbar.BackColor = System.Drawing.Color.Black;
+            this.Navbar.BackColor = System.Drawing.Color.Transparent;
             this.Navbar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Navbar.Controls.Add(this.FullscreenBtn);
             this.Navbar.Controls.Add(this.MinimizeBtn);
@@ -129,8 +129,8 @@
             this.AboutBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.AboutBTN.FlatAppearance.BorderSize = 0;
             this.AboutBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.AboutBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.AboutBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AboutBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.AboutBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
             this.AboutBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AboutBTN.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutBTN.ForeColor = System.Drawing.Color.Transparent;
@@ -148,8 +148,8 @@
             this.ReservationsBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.ReservationsBTN.FlatAppearance.BorderSize = 0;
             this.ReservationsBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.ReservationsBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.ReservationsBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ReservationsBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.ReservationsBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
             this.ReservationsBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReservationsBTN.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReservationsBTN.ForeColor = System.Drawing.Color.Transparent;
@@ -168,8 +168,8 @@
             this.MenuBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.MenuBTN.FlatAppearance.BorderSize = 0;
             this.MenuBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.MenuBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.MenuBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MenuBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.MenuBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
             this.MenuBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenuBTN.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuBTN.ForeColor = System.Drawing.Color.Transparent;
@@ -186,8 +186,8 @@
             this.ContactBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.ContactBTN.FlatAppearance.BorderSize = 0;
             this.ContactBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.ContactBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.ContactBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ContactBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.ContactBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
             this.ContactBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContactBTN.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactBTN.ForeColor = System.Drawing.Color.Transparent;
@@ -205,8 +205,8 @@
             this.LoginBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.LoginBTN.FlatAppearance.BorderSize = 0;
             this.LoginBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.LoginBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.LoginBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LoginBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.LoginBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
             this.LoginBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBTN.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBTN.ForeColor = System.Drawing.Color.Transparent;
@@ -224,8 +224,8 @@
             this.HomeBTN.Dock = System.Windows.Forms.DockStyle.Left;
             this.HomeBTN.FlatAppearance.BorderSize = 0;
             this.HomeBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.HomeBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.HomeBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HomeBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.HomeBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
             this.HomeBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HomeBTN.Font = new System.Drawing.Font("Bahnschrift", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBTN.ForeColor = System.Drawing.Color.Transparent;
@@ -240,32 +240,34 @@
             // 
             // SideBar
             // 
-            this.SideBar.BackColor = System.Drawing.Color.Black;
+            this.SideBar.AutoScroll = true;
+            this.SideBar.BackColor = System.Drawing.Color.Transparent;
             this.SideBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SideBar.Controls.Add(this.MenuPanel);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar.Location = new System.Drawing.Point(0, 89);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(230, 578);
+            this.SideBar.Size = new System.Drawing.Size(259, 578);
             this.SideBar.TabIndex = 1;
             // 
             // MenuPanel
             // 
             this.MenuPanel.BackColor = System.Drawing.Color.White;
-            this.MenuPanel.Location = new System.Drawing.Point(222, 0);
+            this.MenuPanel.Location = new System.Drawing.Point(249, -1);
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(7, 74);
             this.MenuPanel.TabIndex = 8;
             // 
             // ContainerPanel
             // 
-            this.ContainerPanel.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.ballentine;
+            this.ContainerPanel.AutoScroll = true;
+            this.ContainerPanel.BackColor = System.Drawing.Color.Transparent;
             this.ContainerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ContainerPanel.Controls.Add(this.FAQPanel);
             this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContainerPanel.Location = new System.Drawing.Point(230, 89);
+            this.ContainerPanel.Location = new System.Drawing.Point(259, 89);
             this.ContainerPanel.Name = "ContainerPanel";
-            this.ContainerPanel.Size = new System.Drawing.Size(845, 578);
+            this.ContainerPanel.Size = new System.Drawing.Size(816, 578);
             this.ContainerPanel.TabIndex = 3;
             // 
             // FAQPanel
@@ -283,7 +285,7 @@
             this.FAQPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.FAQPanel.Location = new System.Drawing.Point(0, 422);
             this.FAQPanel.Name = "FAQPanel";
-            this.FAQPanel.Size = new System.Drawing.Size(845, 156);
+            this.FAQPanel.Size = new System.Drawing.Size(816, 156);
             this.FAQPanel.TabIndex = 8;
             // 
             // faqANS4
@@ -429,7 +431,7 @@
             // faqLBL
             // 
             this.faqLBL.AutoSize = true;
-            this.faqLBL.BackColor = System.Drawing.Color.Black;
+            this.faqLBL.BackColor = System.Drawing.Color.Transparent;
             this.faqLBL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.faqLBL.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.faqLBL.ForeColor = System.Drawing.Color.White;
@@ -444,7 +446,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.ballentine;
+            this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.Register_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1075, 667);
             this.Controls.Add(this.ContainerPanel);
@@ -455,7 +457,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu";
+            this.Text = " ";
             this.Navbar.ResumeLayout(false);
             this.SideBar.ResumeLayout(false);
             this.ContainerPanel.ResumeLayout(false);
