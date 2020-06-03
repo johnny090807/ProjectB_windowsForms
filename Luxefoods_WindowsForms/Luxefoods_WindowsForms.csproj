@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -267,6 +267,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\Lato\Lato-Black.ttf" />
+    <None Include="Resources\Lato\Lato-BlackItalic.ttf" />
+    <None Include="Resources\Lato\Lato-Bold.ttf" />
+    <None Include="Resources\Lato\Lato-BoldItalic.ttf" />
+    <None Include="Resources\Lato\Lato-Italic.ttf" />
+    <Content Include="Resources\Lato\Lato-Light.ttf" />
+    <None Include="Resources\Lato\Lato-LightItalic.ttf" />
+    <None Include="Resources\Lato\Lato-Regular.ttf" />
+    <None Include="Resources\Lato\Lato-Thin.ttf" />
+    <None Include="Resources\Lato\Lato-ThinItalic.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
