@@ -32,7 +32,7 @@
             this.LoginBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new System.Windows.Forms.Label();
             this.ErrorMessageLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.VoornaamTxtBox = new System.Windows.Forms.TextBox();
@@ -213,7 +213,7 @@
             this.PasswordTxtBox.MinimumSize = new System.Drawing.Size(4, 50);
             this.PasswordTxtBox.Name = "PasswordTxtBox";
             this.PasswordTxtBox.PasswordChar = '*';
-            this.PasswordTxtBox.Size = new System.Drawing.Size(424, 50);
+            this.PasswordTxtBox.Size = new System.Drawing.Size(424, 44);
             this.PasswordTxtBox.TabIndex = 4;
             // 
             // VerifyPasswordTxtBox
@@ -226,7 +226,7 @@
             this.VerifyPasswordTxtBox.MinimumSize = new System.Drawing.Size(4, 50);
             this.VerifyPasswordTxtBox.Name = "VerifyPasswordTxtBox";
             this.VerifyPasswordTxtBox.PasswordChar = '*';
-            this.VerifyPasswordTxtBox.Size = new System.Drawing.Size(424, 50);
+            this.VerifyPasswordTxtBox.Size = new System.Drawing.Size(424, 44);
             this.VerifyPasswordTxtBox.TabIndex = 5;
             // 
             // label1
@@ -289,7 +289,7 @@
         private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private System.Windows.Forms.Label bunifuCustomLabel1;
         private System.Windows.Forms.Label ErrorMessageLabel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox VoornaamTxtBox;
