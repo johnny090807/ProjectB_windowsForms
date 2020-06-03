@@ -69,7 +69,7 @@ namespace Luxefoods_WindowsForms
             else if (previousPage == "Reservation")
             {
                 this.Hide();
-                Reservation reservationForm = new Reservation();
+                Reservation reservationForm = new Reservation(Login.person.id);
                 reservationForm.Show();
             }
             else if (previousPage == "checkReservations")

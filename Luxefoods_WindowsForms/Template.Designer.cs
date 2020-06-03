@@ -37,6 +37,8 @@
             // ExitButton
             // 
             this.ExitButton.AutoSize = true;
+            this.ExitButton.BackColor = System.Drawing.Color.Transparent;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitButton.Location = new System.Drawing.Point(762, 9);
             this.ExitButton.Name = "ExitButton";
@@ -50,6 +52,8 @@
             // MinimizeButton
             // 
             this.MinimizeButton.AutoSize = true;
+            this.MinimizeButton.BackColor = System.Drawing.Color.Transparent;
+            this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MinimizeButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimizeButton.Location = new System.Drawing.Point(731, 9);
             this.MinimizeButton.Name = "MinimizeButton";
@@ -63,6 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
@@ -72,18 +77,22 @@
             // 
             // LogoutBtn
             // 
-            this.LogoutBtn.Location = new System.Drawing.Point(344, 184);
+            this.LogoutBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LogoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutBtn.Location = new System.Drawing.Point(458, 258);
             this.LogoutBtn.Name = "LogoutBtn";
-            this.LogoutBtn.Size = new System.Drawing.Size(75, 23);
+            this.LogoutBtn.Size = new System.Drawing.Size(338, 145);
             this.LogoutBtn.TabIndex = 5;
             this.LogoutBtn.Text = "LOGOUT";
-            this.LogoutBtn.UseVisualStyleBackColor = true;
+            this.LogoutBtn.UseVisualStyleBackColor = false;
             this.LogoutBtn.Click += new System.EventHandler(this.LogoutBtn_Click);
             // 
             // Template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.Register_background;
             this.ClientSize = new System.Drawing.Size(808, 415);
             this.Controls.Add(this.LogoutBtn);
             this.Controls.Add(this.label1);
