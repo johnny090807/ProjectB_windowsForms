@@ -50,7 +50,6 @@
             // RegisterBtn
             // 
             this.RegisterBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(21)))), ((int)(((byte)(1)))));
-            this.RegisterBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.background_TxtBox;
             this.RegisterBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.RegisterBtn.FlatAppearance.BorderSize = 0;
             this.RegisterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
