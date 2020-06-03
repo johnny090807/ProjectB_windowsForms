@@ -30,15 +30,15 @@
         {
             this.FullscreenPanel = new System.Windows.Forms.Panel();
             this.GerechtenPanel = new System.Windows.Forms.Panel();
+            this.GerechtItemPanel = new System.Windows.Forms.Panel();
+            this.ErrorLabel = new System.Windows.Forms.Label();
             this.HeaderPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.HoofdmenuBtn = new System.Windows.Forms.Button();
             this.NagerechtBtn = new System.Windows.Forms.Button();
-            this.ErrorLabel = new System.Windows.Forms.Label();
-            this.GerechtItemPanel = new System.Windows.Forms.Panel();
             this.FullscreenPanel.SuspendLayout();
             this.GerechtenPanel.SuspendLayout();
-            this.HeaderPanel.SuspendLayout();
             this.GerechtItemPanel.SuspendLayout();
+            this.HeaderPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // FullscreenPanel
@@ -55,12 +55,38 @@
             // 
             // GerechtenPanel
             // 
+            this.GerechtenPanel.AutoScroll = true;
             this.GerechtenPanel.Controls.Add(this.GerechtItemPanel);
             this.GerechtenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GerechtenPanel.Location = new System.Drawing.Point(0, 57);
             this.GerechtenPanel.Name = "GerechtenPanel";
             this.GerechtenPanel.Size = new System.Drawing.Size(845, 550);
             this.GerechtenPanel.TabIndex = 1;
+            // 
+            // GerechtItemPanel
+            // 
+            this.GerechtItemPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.GerechtItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.GerechtItemPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GerechtItemPanel.Controls.Add(this.ErrorLabel);
+            this.GerechtItemPanel.Location = new System.Drawing.Point(0, 0);
+            this.GerechtItemPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.GerechtItemPanel.Name = "GerechtItemPanel";
+            this.GerechtItemPanel.Size = new System.Drawing.Size(845, 82);
+            this.GerechtItemPanel.TabIndex = 2;
+            // 
+            // ErrorLabel
+            // 
+            this.ErrorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ErrorLabel.AutoSize = true;
+            this.ErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ErrorLabel.Location = new System.Drawing.Point(114, 19);
+            this.ErrorLabel.Margin = new System.Windows.Forms.Padding(20);
+            this.ErrorLabel.Name = "ErrorLabel";
+            this.ErrorLabel.Size = new System.Drawing.Size(612, 33);
+            this.ErrorLabel.TabIndex = 0;
+            this.ErrorLabel.Text = "Klik boven in het menu voor een van de opties";
             // 
             // HeaderPanel
             // 
@@ -108,31 +134,6 @@
             this.NagerechtBtn.UseVisualStyleBackColor = true;
             this.NagerechtBtn.Click += new System.EventHandler(this.NagerechtBtn_Click);
             // 
-            // ErrorLabel
-            // 
-            this.ErrorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ErrorLabel.AutoSize = true;
-            this.ErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ErrorLabel.Location = new System.Drawing.Point(114, 19);
-            this.ErrorLabel.Margin = new System.Windows.Forms.Padding(20);
-            this.ErrorLabel.Name = "ErrorLabel";
-            this.ErrorLabel.Size = new System.Drawing.Size(612, 33);
-            this.ErrorLabel.TabIndex = 0;
-            this.ErrorLabel.Text = "Klik boven in het menu voor een van de opties";
-            // 
-            // GerechtItemPanel
-            // 
-            this.GerechtItemPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.GerechtItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.GerechtItemPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GerechtItemPanel.Controls.Add(this.ErrorLabel);
-            this.GerechtItemPanel.Location = new System.Drawing.Point(0, 0);
-            this.GerechtItemPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.GerechtItemPanel.Name = "GerechtItemPanel";
-            this.GerechtItemPanel.Size = new System.Drawing.Size(845, 82);
-            this.GerechtItemPanel.TabIndex = 2;
-            // 
             // MenuSpecial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,9 +145,9 @@
             this.Text = "MenuSpecial";
             this.FullscreenPanel.ResumeLayout(false);
             this.GerechtenPanel.ResumeLayout(false);
-            this.HeaderPanel.ResumeLayout(false);
             this.GerechtItemPanel.ResumeLayout(false);
             this.GerechtItemPanel.PerformLayout();
+            this.HeaderPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
