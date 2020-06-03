@@ -315,8 +315,8 @@
     <None Include="Resources\key %281%29.png" />
     <None Include="Resources\mail.png" />
     <Content Include="Resources\login.png" />
-    <Content Include="Resources\logout.png" />
     <None Include="Resources\milk %281%29.png" />
+    <Content Include="Resources\logout.png" />
     <Content Include="Resources\milk-2-32.png" />
     <None Include="Resources\peanut.png" />
     <Content Include="Resources\peanuts-32.png" />
