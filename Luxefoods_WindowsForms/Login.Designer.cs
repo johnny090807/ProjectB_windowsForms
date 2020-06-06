@@ -77,7 +77,7 @@
             this.RegisterBtn.ForeColor = System.Drawing.SystemColors.Highlight;
             this.RegisterBtn.Location = new System.Drawing.Point(12, 560);
             this.RegisterBtn.Name = "RegisterBtn";
-            this.RegisterBtn.Size = new System.Drawing.Size(614, 38);
+            this.RegisterBtn.Size = new System.Drawing.Size(921, 58);
             this.RegisterBtn.TabIndex = 3;
             this.RegisterBtn.TabStop = false;
             this.RegisterBtn.Text = "Not registered yet? Click here...";
@@ -141,7 +141,7 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(638, 610);
@@ -154,6 +154,7 @@
             this.Controls.Add(this.PasswordCheck);
             this.Controls.Add(this.EmailCheck);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.Text = "Form2";
             this.ResumeLayout(false);
