@@ -125,6 +125,7 @@
             // 
             // AboutBTN
             // 
+            this.AboutBTN.AutoSize = true;
             this.AboutBTN.BackColor = System.Drawing.Color.Transparent;
             this.AboutBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.AboutBTN.FlatAppearance.BorderSize = 0;
@@ -144,6 +145,7 @@
             // 
             // ReservationsBTN
             // 
+            this.ReservationsBTN.AutoSize = true;
             this.ReservationsBTN.BackColor = System.Drawing.Color.Transparent;
             this.ReservationsBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.ReservationsBTN.FlatAppearance.BorderSize = 0;
@@ -164,6 +166,7 @@
             // 
             // MenuBTN
             // 
+            this.MenuBTN.AutoSize = true;
             this.MenuBTN.BackColor = System.Drawing.Color.Transparent;
             this.MenuBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.MenuBTN.FlatAppearance.BorderSize = 0;
@@ -182,6 +185,7 @@
             // 
             // ContactBTN
             // 
+            this.ContactBTN.AutoSize = true;
             this.ContactBTN.BackColor = System.Drawing.Color.Transparent;
             this.ContactBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.ContactBTN.FlatAppearance.BorderSize = 0;
@@ -201,6 +205,7 @@
             // 
             // LoginBTN
             // 
+            this.LoginBTN.AutoSize = true;
             this.LoginBTN.BackColor = System.Drawing.Color.Transparent;
             this.LoginBTN.Dock = System.Windows.Forms.DockStyle.Right;
             this.LoginBTN.FlatAppearance.BorderSize = 0;
@@ -459,6 +464,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Navbar.ResumeLayout(false);
+            this.Navbar.PerformLayout();
             this.SideBar.ResumeLayout(false);
             this.ContainerPanel.ResumeLayout(false);
             this.FAQPanel.ResumeLayout(false);

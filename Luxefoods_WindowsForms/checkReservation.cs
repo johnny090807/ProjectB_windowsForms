@@ -75,10 +75,18 @@ namespace Luxefoods_WindowsForms
 
         private void reservationsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            Reservation f2 = new Reservation(Login.person.id);
-            f2.ShowDialog();
-            this.Close();
+            try
+            {
+                Reservation f2 = new Reservation(Login.person.id);
+                this.Hide();
+                f2.ShowDialog();
+                this.Close();
+
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show("Je moet ingelogd zijn.");
+            }
         }
 
         private void contactUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -113,9 +121,18 @@ namespace Luxefoods_WindowsForms
         private void loginButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Login.previousPage = "checkReservations";
-            this.Hide();
-            Login loginForm = new Login();
-            loginForm.Show();
+            if (Login.person != null)
+            {
+                this.Hide();
+                Template form1 = new Template();
+                form1.Show();
+            }
+            else
+            {
+                this.Hide();
+                Login form2 = new Login();
+                form2.Show();
+            }
         }
 
         /*
