@@ -30,7 +30,7 @@ namespace Luxefoods_WindowsForms
             openChildForm(new MenuSpecial(clickedButton));
             if(person != null)
             {
-                this.LoginBTN.Text = person.voornaam + " " + person.achternaam;
+                this.LoginBTN.Text = "Logout";
             }
             this.addButtonsToPanel();
             
@@ -103,12 +103,14 @@ namespace Luxefoods_WindowsForms
 
         private void FullscreenBtn_Click(object sender, EventArgs e)
         {
-            if(WindowState == FormWindowState.Maximized)
+            if (WindowState == FormWindowState.Maximized)
             {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.expand;
                 WindowState = FormWindowState.Normal;
             }
             else
             {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.compress;
                 WindowState = FormWindowState.Maximized;
             }
         }
@@ -203,6 +205,13 @@ namespace Luxefoods_WindowsForms
             this.Hide();
             homePage homeForm = new homePage();
             homeForm.Show();
+        }
+
+        private void MakeReservationBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            checkReservation reservationForm= new checkReservation();
+            reservationForm.Show();
         }
     }
 }

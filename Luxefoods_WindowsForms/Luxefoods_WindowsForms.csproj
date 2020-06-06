@@ -271,6 +271,8 @@
     <None Include="Resources\Lato\Lato-Bold.ttf" />
     <None Include="Resources\Lato\Lato-BoldItalic.ttf" />
     <None Include="Resources\Lato\Lato-Italic.ttf" />
+    <None Include="Resources\compress.png" />
+    <None Include="Resources\expand.png" />
     <Content Include="Resources\Lato\Lato-Light.ttf" />
     <None Include="Resources\Lato\Lato-LightItalic.ttf" />
     <None Include="Resources\Lato\Lato-Regular.ttf" />
@@ -316,9 +318,11 @@
     <None Include="Resources\mail.png" />
     <Content Include="Resources\login.png" />
     <None Include="Resources\milk %281%29.png" />
+    <None Include="Resources\logout %281%29.png" />
     <Content Include="Resources\logout.png" />
     <Content Include="Resources\milk-2-32.png" />
     <None Include="Resources\peanut.png" />
+    <None Include="Resources\minimize.png" />
     <Content Include="Resources\peanuts-32.png" />
     <None Include="Resources\phone.png" />
     <None Include="Resources\person.png" />

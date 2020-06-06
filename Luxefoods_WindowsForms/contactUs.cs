@@ -18,10 +18,10 @@ namespace Luxefoods_WindowsForms
             CenterToScreen();
             if (Login.person != null)
             {
-                this.linkLabel2.Text = Login.person.voornaam + " " + Login.person.achternaam;
+                this.LoginBtn.Text = "Logout";
             }
         }
-
+        
         private void AvailabilityTable_Paint(object sender, PaintEventArgs e)
         {
 
@@ -41,38 +41,18 @@ namespace Luxefoods_WindowsForms
             }
         }
 
-        private void ExitButton_Hover_Enter(object sender, EventArgs e)
-            {
-                ExitButton.ForeColor = Color.Red;
-            }
-
-        private void ExitButton_Hover_Leave(object sender, EventArgs e)
-            {
-                ExitButton.ForeColor = Color.Black;
-            }
-
         private void MinimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        private void MinimizeButton_Hover_Enter(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Red;
-        }
-        private void MinimizeButton_Hover_Leave(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Black;
-        }
-        
-        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void MenuBtnClick(object sender, EventArgs e)
         {
             this.Hide();
             Menu menuForm = new Menu();
             menuForm.Show();
         }
 
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void CheckReservationsClick(object sender, EventArgs e)
         {
             this.Hide();
             checkReservation reservationForm = new checkReservation();
@@ -80,44 +60,30 @@ namespace Luxefoods_WindowsForms
 
         }
 
-        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            try
-            {
-                Reservation reservationForm = new Reservation(Login.person.id);
-                this.Hide();
-                reservationForm.Show();
-            }
-            catch (Exception er)
-            {
-                MessageBox.Show("Je moet eerst ingelogd zijn.");
-            }
-        }
-
-        private void label4_Click(object sender, EventArgs e)
+        private void HomeBtnClick(object sender, EventArgs e)
         {
             this.Hide();
             homePage homeForm = new homePage();
             homeForm.Show();
         }
 
-        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void AboutUsPage(object sender, EventArgs e)
         {
             this.Hide();
             aboutUs aboutForm = new aboutUs();
             aboutForm.Show();
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void ContactUsPage(object sender, EventArgs e)
         {
             this.Hide();
             contactUs contactForm = new contactUs();
             contactForm.Show();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LoginPageClick(object sender, EventArgs e)
         {
-            Login.previousPage = "AboutUs";
+            Login.previousPage = "ContactUs";
             if (Login.person != null)
             {
                 this.Hide();
@@ -129,6 +95,19 @@ namespace Luxefoods_WindowsForms
                 this.Hide();
                 Login form2 = new Login();
                 form2.Show();
+            }
+        }
+        private void FullscreenBtn_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.expand;
+                WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.compress;
+                WindowState = FormWindowState.Maximized;
             }
         }
     }

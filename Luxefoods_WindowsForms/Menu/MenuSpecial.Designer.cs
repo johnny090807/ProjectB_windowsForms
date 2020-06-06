@@ -29,22 +29,21 @@
         private void InitializeComponent()
         {
             this.FullscreenPanel = new System.Windows.Forms.Panel();
-            this.HeaderPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.HoofdmenuBtn = new System.Windows.Forms.Button();
-            this.NagerechtBtn = new System.Windows.Forms.Button();
             this.GerechtenPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.GerechtItemPanel = new System.Windows.Forms.Panel();
             this.ErrorLabel = new System.Windows.Forms.Label();
+            this.HeaderPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.HoofdmenuBtn = new System.Windows.Forms.Button();
+            this.NagerechtBtn = new System.Windows.Forms.Button();
             this.FullscreenPanel.SuspendLayout();
-            this.HeaderPanel.SuspendLayout();
             this.GerechtenPanel.SuspendLayout();
             this.GerechtItemPanel.SuspendLayout();
+            this.HeaderPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // FullscreenPanel
             // 
-            this.FullscreenPanel.BackColor = System.Drawing.Color.Transparent;
-            this.FullscreenPanel.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.Register_background;
+            this.FullscreenPanel.BackColor = System.Drawing.Color.Black;
             this.FullscreenPanel.Controls.Add(this.GerechtenPanel);
             this.FullscreenPanel.Controls.Add(this.HeaderPanel);
             this.FullscreenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -52,6 +51,42 @@
             this.FullscreenPanel.Name = "FullscreenPanel";
             this.FullscreenPanel.Size = new System.Drawing.Size(845, 607);
             this.FullscreenPanel.TabIndex = 0;
+            // 
+            // GerechtenPanel
+            // 
+            this.GerechtenPanel.AutoScroll = true;
+            this.GerechtenPanel.Controls.Add(this.GerechtItemPanel);
+            this.GerechtenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GerechtenPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.GerechtenPanel.Location = new System.Drawing.Point(0, 57);
+            this.GerechtenPanel.Name = "GerechtenPanel";
+            this.GerechtenPanel.Size = new System.Drawing.Size(845, 550);
+            this.GerechtenPanel.TabIndex = 1;
+            this.GerechtenPanel.WrapContents = false;
+            // 
+            // GerechtItemPanel
+            // 
+            this.GerechtItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.GerechtItemPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GerechtItemPanel.Controls.Add(this.ErrorLabel);
+            this.GerechtItemPanel.Location = new System.Drawing.Point(0, 0);
+            this.GerechtItemPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.GerechtItemPanel.Name = "GerechtItemPanel";
+            this.GerechtItemPanel.Size = new System.Drawing.Size(808, 82);
+            this.GerechtItemPanel.TabIndex = 7;
+            // 
+            // ErrorLabel
+            // 
+            this.ErrorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ErrorLabel.AutoSize = true;
+            this.ErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ErrorLabel.Location = new System.Drawing.Point(96, 19);
+            this.ErrorLabel.Margin = new System.Windows.Forms.Padding(20);
+            this.ErrorLabel.Name = "ErrorLabel";
+            this.ErrorLabel.Size = new System.Drawing.Size(612, 33);
+            this.ErrorLabel.TabIndex = 0;
+            this.ErrorLabel.Text = "Klik boven in het menu voor een van de opties";
             // 
             // HeaderPanel
             // 
@@ -99,42 +134,6 @@
             this.NagerechtBtn.UseVisualStyleBackColor = true;
             this.NagerechtBtn.Click += new System.EventHandler(this.NagerechtBtn_Click);
             // 
-            // GerechtenPanel
-            // 
-            this.GerechtenPanel.AutoScroll = true;
-            this.GerechtenPanel.Controls.Add(this.GerechtItemPanel);
-            this.GerechtenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GerechtenPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.GerechtenPanel.Location = new System.Drawing.Point(0, 57);
-            this.GerechtenPanel.Name = "GerechtenPanel";
-            this.GerechtenPanel.Size = new System.Drawing.Size(845, 550);
-            this.GerechtenPanel.TabIndex = 1;
-            this.GerechtenPanel.WrapContents = false;
-            // 
-            // GerechtItemPanel
-            // 
-            this.GerechtItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.GerechtItemPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GerechtItemPanel.Controls.Add(this.ErrorLabel);
-            this.GerechtItemPanel.Location = new System.Drawing.Point(0, 0);
-            this.GerechtItemPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.GerechtItemPanel.Name = "GerechtItemPanel";
-            this.GerechtItemPanel.Size = new System.Drawing.Size(808, 82);
-            this.GerechtItemPanel.TabIndex = 7;
-            // 
-            // ErrorLabel
-            // 
-            this.ErrorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ErrorLabel.AutoSize = true;
-            this.ErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ErrorLabel.Location = new System.Drawing.Point(96, 19);
-            this.ErrorLabel.Margin = new System.Windows.Forms.Padding(20);
-            this.ErrorLabel.Name = "ErrorLabel";
-            this.ErrorLabel.Size = new System.Drawing.Size(612, 33);
-            this.ErrorLabel.TabIndex = 0;
-            this.ErrorLabel.Text = "Klik boven in het menu voor een van de opties";
-            // 
             // MenuSpecial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,10 +144,10 @@
             this.Name = "MenuSpecial";
             this.Text = "MenuSpecial";
             this.FullscreenPanel.ResumeLayout(false);
-            this.HeaderPanel.ResumeLayout(false);
             this.GerechtenPanel.ResumeLayout(false);
             this.GerechtItemPanel.ResumeLayout(false);
             this.GerechtItemPanel.PerformLayout();
+            this.HeaderPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

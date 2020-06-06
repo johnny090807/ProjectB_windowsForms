@@ -29,81 +29,63 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(contactUs));
-            this.ExitButton = new System.Windows.Forms.Label();
-            this.MinimizeButton = new System.Windows.Forms.Label();
             this.HeaderLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Header = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.CheckReservationsBtn = new System.Windows.Forms.Button();
+            this.ReservationsBtn = new System.Windows.Forms.Button();
+            this.AboutBtn = new System.Windows.Forms.Button();
+            this.ContactBtn = new System.Windows.Forms.Button();
+            this.FullscreenBtn = new System.Windows.Forms.Button();
+            this.MinimizeBtn = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.LoginBtn = new System.Windows.Forms.Button();
+            this.BodyPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.Header.SuspendLayout();
+            this.BodyPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ExitButton
-            // 
-            this.ExitButton.AutoSize = true;
-            this.ExitButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(1823, 9);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(34, 37);
-            this.ExitButton.TabIndex = 11;
-            this.ExitButton.Text = "X";
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
-            this.ExitButton.MouseEnter += new System.EventHandler(this.ExitButton_Hover_Enter);
-            this.ExitButton.MouseLeave += new System.EventHandler(this.ExitButton_Hover_Leave);
-            // 
-            // MinimizeButton
-            // 
-            this.MinimizeButton.AutoSize = true;
-            this.MinimizeButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MinimizeButton.Location = new System.Drawing.Point(1757, 9);
-            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(25, 37);
-            this.MinimizeButton.TabIndex = 12;
-            this.MinimizeButton.Text = "-";
-            this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
-            this.MinimizeButton.MouseEnter += new System.EventHandler(this.MinimizeButton_Hover_Enter);
-            this.MinimizeButton.MouseLeave += new System.EventHandler(this.MinimizeButton_Hover_Leave);
             // 
             // HeaderLabel
             // 
-            this.HeaderLabel.AutoSize = true;
-            this.HeaderLabel.BackColor = System.Drawing.Color.Black;
+            this.HeaderLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HeaderLabel.BackColor = System.Drawing.Color.Transparent;
+            this.HeaderLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 34F);
             this.HeaderLabel.ForeColor = System.Drawing.Color.White;
-            this.HeaderLabel.Location = new System.Drawing.Point(776, 124);
+            this.HeaderLabel.Location = new System.Drawing.Point(485, 0);
             this.HeaderLabel.Name = "HeaderLabel";
-            this.HeaderLabel.Size = new System.Drawing.Size(244, 53);
+            this.HeaderLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.HeaderLabel.Size = new System.Drawing.Size(244, 86);
             this.HeaderLabel.TabIndex = 34;
             this.HeaderLabel.Text = "Contact us";
+            this.HeaderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(378, 267);
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(133, 99);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1204, 723);
+            this.pictureBox1.Size = new System.Drawing.Size(904, 551);
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(746, 753);
+            this.label1.Location = new System.Drawing.Point(427, 469);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 29);
             this.label1.TabIndex = 36;
@@ -111,11 +93,12 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(746, 825);
+            this.label2.Location = new System.Drawing.Point(427, 521);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 26);
             this.label2.TabIndex = 36;
@@ -123,184 +106,260 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(746, 894);
+            this.label3.Location = new System.Drawing.Point(427, 576);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(139, 26);
             this.label3.TabIndex = 36;
             this.label3.Text = "06-12345678";
             // 
-            // pictureBox2
+            // Header
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, -3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1920, 1086);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 37;
-            this.pictureBox2.TabStop = false;
+            this.Header.BackColor = System.Drawing.Color.Transparent;
+            this.Header.Controls.Add(this.button1);
+            this.Header.Controls.Add(this.CheckReservationsBtn);
+            this.Header.Controls.Add(this.ReservationsBtn);
+            this.Header.Controls.Add(this.AboutBtn);
+            this.Header.Controls.Add(this.ContactBtn);
+            this.Header.Controls.Add(this.FullscreenBtn);
+            this.Header.Controls.Add(this.MinimizeBtn);
+            this.Header.Controls.Add(this.ExitBtn);
+            this.Header.Controls.Add(this.button2);
+            this.Header.Controls.Add(this.LoginBtn);
+            this.Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Header.Location = new System.Drawing.Point(0, 0);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(1180, 80);
+            this.Header.TabIndex = 47;
             // 
-            // linkLabel2
+            // button1
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.linkLabel2.LinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(1567, 24);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(73, 29);
-            this.linkLabel2.TabIndex = 44;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Login";
-            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(236, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 80);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Menu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.MenuBtnClick);
             // 
-            // linkLabel3
+            // CheckReservationsBtn
             // 
-            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.linkLabel3.LinkColor = System.Drawing.Color.White;
-            this.linkLabel3.Location = new System.Drawing.Point(1345, 24);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(125, 29);
-            this.linkLabel3.TabIndex = 43;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Contact us";
-            this.linkLabel3.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            this.CheckReservationsBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CheckReservationsBtn.FlatAppearance.BorderSize = 0;
+            this.CheckReservationsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.CheckReservationsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.CheckReservationsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CheckReservationsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckReservationsBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.CheckReservationsBtn.Location = new System.Drawing.Point(370, 0);
+            this.CheckReservationsBtn.Name = "CheckReservationsBtn";
+            this.CheckReservationsBtn.Size = new System.Drawing.Size(193, 80);
+            this.CheckReservationsBtn.TabIndex = 27;
+            this.CheckReservationsBtn.Text = "My reservations";
+            this.CheckReservationsBtn.UseVisualStyleBackColor = true;
+            this.CheckReservationsBtn.Click += new System.EventHandler(this.CheckReservationsClick);
             // 
-            // linkLabel4
+            // ReservationsBtn
             // 
-            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.linkLabel4.LinkColor = System.Drawing.Color.White;
-            this.linkLabel4.Location = new System.Drawing.Point(500, 24);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(181, 29);
-            this.linkLabel4.TabIndex = 41;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "My reservations";
-            this.linkLabel4.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            this.ReservationsBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ReservationsBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ReservationsBtn.FlatAppearance.BorderSize = 0;
+            this.ReservationsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.ReservationsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.ReservationsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReservationsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReservationsBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.ReservationsBtn.Location = new System.Drawing.Point(563, 0);
+            this.ReservationsBtn.Name = "ReservationsBtn";
+            this.ReservationsBtn.Size = new System.Drawing.Size(221, 80);
+            this.ReservationsBtn.TabIndex = 28;
+            this.ReservationsBtn.Text = "Place a reservation";
+            this.ReservationsBtn.UseVisualStyleBackColor = false;
             // 
-            // linkLabel5
+            // AboutBtn
             // 
-            this.linkLabel5.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.linkLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.linkLabel5.LinkColor = System.Drawing.Color.White;
-            this.linkLabel5.Location = new System.Drawing.Point(357, 24);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(73, 29);
-            this.linkLabel5.TabIndex = 42;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Menu";
-            this.linkLabel5.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
+            this.AboutBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.AboutBtn.FlatAppearance.BorderSize = 0;
+            this.AboutBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.AboutBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.AboutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AboutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AboutBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.AboutBtn.Location = new System.Drawing.Point(784, 0);
+            this.AboutBtn.Name = "AboutBtn";
+            this.AboutBtn.Size = new System.Drawing.Size(132, 80);
+            this.AboutBtn.TabIndex = 29;
+            this.AboutBtn.Text = "About us";
+            this.AboutBtn.UseVisualStyleBackColor = true;
+            this.AboutBtn.Click += new System.EventHandler(this.AboutUsPage);
             // 
-            // linkLabel6
+            // ContactBtn
             // 
-            this.linkLabel6.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.linkLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.linkLabel6.LinkColor = System.Drawing.Color.White;
-            this.linkLabel6.Location = new System.Drawing.Point(795, 24);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(218, 29);
-            this.linkLabel6.TabIndex = 40;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "Place a reservation";
-            this.linkLabel6.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
+            this.ContactBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ContactBtn.FlatAppearance.BorderSize = 0;
+            this.ContactBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.ContactBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContactBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.ContactBtn.Location = new System.Drawing.Point(916, 0);
+            this.ContactBtn.Name = "ContactBtn";
+            this.ContactBtn.Size = new System.Drawing.Size(132, 80);
+            this.ContactBtn.TabIndex = 30;
+            this.ContactBtn.Text = "Contact us";
+            this.ContactBtn.UseVisualStyleBackColor = true;
             // 
-            // linkLabel7
+            // FullscreenBtn
             // 
-            this.linkLabel7.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.linkLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.linkLabel7.LinkColor = System.Drawing.Color.White;
-            this.linkLabel7.Location = new System.Drawing.Point(1148, 24);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(106, 29);
-            this.linkLabel7.TabIndex = 39;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "About us";
-            this.linkLabel7.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
+            this.FullscreenBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.expand;
+            this.FullscreenBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.FullscreenBtn.FlatAppearance.BorderSize = 0;
+            this.FullscreenBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.FullscreenBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.FullscreenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FullscreenBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FullscreenBtn.ForeColor = System.Drawing.Color.White;
+            this.FullscreenBtn.Location = new System.Drawing.Point(1125, 0);
+            this.FullscreenBtn.Name = "FullscreenBtn";
+            this.FullscreenBtn.Size = new System.Drawing.Size(28, 26);
+            this.FullscreenBtn.TabIndex = 34;
+            this.FullscreenBtn.UseVisualStyleBackColor = true;
+            this.FullscreenBtn.Click += new System.EventHandler(this.FullscreenBtn_Click);
             // 
-            // label4
+            // MinimizeBtn
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(188, 39);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "LuxeFoods";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.MinimizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimizeBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.minimize;
+            this.MinimizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.MinimizeBtn.FlatAppearance.BorderSize = 0;
+            this.MinimizeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.MinimizeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MinimizeBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimizeBtn.ForeColor = System.Drawing.Color.White;
+            this.MinimizeBtn.Location = new System.Drawing.Point(1098, 0);
+            this.MinimizeBtn.Name = "MinimizeBtn";
+            this.MinimizeBtn.Size = new System.Drawing.Size(28, 26);
+            this.MinimizeBtn.TabIndex = 33;
+            this.MinimizeBtn.UseVisualStyleBackColor = true;
+            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeButton_Click);
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.logout__1_;
+            this.ExitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ExitBtn.FlatAppearance.BorderSize = 0;
+            this.ExitBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.ExitBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.ForeColor = System.Drawing.Color.White;
+            this.ExitBtn.Location = new System.Drawing.Point(1152, 0);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(28, 26);
+            this.ExitBtn.TabIndex = 32;
+            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(258, 80);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "LuxeFoods";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.HomeBtnClick);
+            // 
+            // LoginBtn
+            // 
+            this.LoginBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.LoginBtn.FlatAppearance.BorderSize = 0;
+            this.LoginBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.LoginBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.LoginBtn.Location = new System.Drawing.Point(1048, 0);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(132, 80);
+            this.LoginBtn.TabIndex = 31;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.UseVisualStyleBackColor = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginPageClick);
+            // 
+            // BodyPanel
+            // 
+            this.BodyPanel.BackColor = System.Drawing.Color.Transparent;
+            this.BodyPanel.Controls.Add(this.label3);
+            this.BodyPanel.Controls.Add(this.label1);
+            this.BodyPanel.Controls.Add(this.label2);
+            this.BodyPanel.Controls.Add(this.HeaderLabel);
+            this.BodyPanel.Controls.Add(this.pictureBox1);
+            this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BodyPanel.Location = new System.Drawing.Point(0, 80);
+            this.BodyPanel.Name = "BodyPanel";
+            this.BodyPanel.Size = new System.Drawing.Size(1180, 693);
+            this.BodyPanel.TabIndex = 48;
             // 
             // contactUs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.linkLabel4);
-            this.Controls.Add(this.linkLabel5);
-            this.Controls.Add(this.linkLabel6);
-            this.Controls.Add(this.linkLabel7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.HeaderLabel);
-            this.Controls.Add(this.MinimizeButton);
-            this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.pictureBox2);
+            this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
+            this.ClientSize = new System.Drawing.Size(1180, 773);
+            this.Controls.Add(this.BodyPanel);
+            this.Controls.Add(this.Header);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.Name = "contactUs";
             this.Text = "Make a contactUs";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Header.ResumeLayout(false);
+            this.BodyPanel.ResumeLayout(false);
+            this.BodyPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label ExitButton;
-        private System.Windows.Forms.Label MinimizeButton;
         private System.Windows.Forms.Label HeaderLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.LinkLabel linkLabel6;
-        private System.Windows.Forms.LinkLabel linkLabel7;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel Header;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CheckReservationsBtn;
+        private System.Windows.Forms.Button ReservationsBtn;
+        private System.Windows.Forms.Button AboutBtn;
+        private System.Windows.Forms.Button ContactBtn;
+        private System.Windows.Forms.Button FullscreenBtn;
+        private System.Windows.Forms.Button MinimizeBtn;
+        private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button LoginBtn;
+        private System.Windows.Forms.Panel BodyPanel;
     }
 }

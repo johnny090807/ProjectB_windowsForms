@@ -18,8 +18,9 @@ namespace Luxefoods_WindowsForms
             CenterToScreen();
             if (Login.person != null)
             {
-                this.linkLabel6.Text = Login.person.voornaam + " " + Login.person.achternaam;
+                this.LoginBtn.Text = "Logout";
             }
+            Header.BackColor = Color.FromArgb(100, Color.Black);
         }
 
         private void AvailabilityTable_Paint(object sender, PaintEventArgs e)
@@ -40,39 +41,30 @@ namespace Luxefoods_WindowsForms
                 System.Environment.Exit(1);
             }
         }
-
-        private void ExitButton_Hover_Enter(object sender, EventArgs e)
-        {
-            ExitButton.ForeColor = Color.Red;
-        }
-
-        private void ExitButton_Hover_Leave(object sender, EventArgs e)
-        {
-            ExitButton.ForeColor = Color.Black;
-        }
-
         private void MinimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        private void MinimizeButton_Hover_Enter(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Red;
-        }
-        private void MinimizeButton_Hover_Leave(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Black;
-        }
-
-        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Contact(object sender, EventArgs e)
         {
             this.Hide();
             contactUs contactForm = new contactUs();
             contactForm.Show();
         }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void FullscreenBtn_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.expand;
+                WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.compress;
+                WindowState = FormWindowState.Maximized;
+            }
+        }
+        private void Reservation(object sender, EventArgs e)
         {
             try
             {
@@ -86,14 +78,14 @@ namespace Luxefoods_WindowsForms
             }
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void CheckReservation(object sender, EventArgs e)
         {
             this.Hide();
             checkReservation checkReservationForm = new checkReservation();
             checkReservationForm.Show();
         }
 
-        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LoginClick(object sender, EventArgs e)
         {
             Login.previousPage = "Home";
             if (Login.person != null)
@@ -110,14 +102,14 @@ namespace Luxefoods_WindowsForms
             }
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void MenuClick(object sender, EventArgs e)
         {
             this.Hide();
             Menu menuForm = new Menu();
             menuForm.Show();
         }
 
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void AboutClick(object sender, EventArgs e)
         {
             this.Hide();
             aboutUs aboutForm = new aboutUs();
