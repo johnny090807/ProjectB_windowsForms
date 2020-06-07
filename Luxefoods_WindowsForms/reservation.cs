@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Drawing.Text;
+using System.Runtime.InteropServices;
 
 namespace Luxefoods_WindowsForms
 {
@@ -30,13 +31,13 @@ namespace Luxefoods_WindowsForms
             List<int> listArea6 = new List<int> { 50, 51, 52, 53, 54, 55 };
             GlobalListListBoxes = new List<List<int>> { listArea1, listArea2, listArea3, listArea4, listArea5, listArea6 };
             fillCalender();
-
             if (Login.person != null)
             {
-                this.loginButton.Text = "Logout";
+                this.LoginBtn.Text = "Logout";
             }
-
         }
+
+        
 
         public class TakenSeats
         {
@@ -102,51 +103,11 @@ namespace Luxefoods_WindowsForms
                 System.Environment.Exit(1);
             }
         }
-
-        private void ExitButton_Hover_Enter(object sender, EventArgs e)
-        {
-            ExitButton.ForeColor = Color.Red;
-        }
-
-        private void ExitButton_Hover_Leave(object sender, EventArgs e)
-        {
-            ExitButton.ForeColor = Color.Black;
-        }
-
         private void MinimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        private void MinimizeButton_Hover_Enter(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Red;
-        }
-        private void MinimizeButton_Hover_Leave(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Black;
-        }
-
-        /*
-     * ----- CHECK AVAILABILITY BUTTON -----
-     * People = seats.value
-     * Date = dateTimePicker1.value
-     * TableSize = 4
-     * TablesNeeded = People // TableSize
-     * ShowAvailableTables(TablesNeeded)
-     * 
-     * 
-     * 
-     * ----- ShowShowAvailableTables(int amountOfTables) -----
-     * fetch data from the database
-     * look for amounrOfTables in the same zone for the same time
-     * 
-     *
-     * 
-     * 
-     */
-
-        private void aboutUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void aboutUsButton_LinkClicked(object sender, EventArgs e)
         {
             this.Hide();
             aboutUs f1 = new aboutUs();
@@ -154,7 +115,7 @@ namespace Luxefoods_WindowsForms
             this.Close();
         }
 
-        private void reservationsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void reservationsButton_LinkClicked(object sender, EventArgs e)
         {
             this.Hide();
             checkReservation f2 = new checkReservation();
@@ -162,7 +123,7 @@ namespace Luxefoods_WindowsForms
             this.Close();
         }
 
-        private void contactUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void contactUsButton_LinkClicked(object sender, EventArgs e)
         {
             this.Hide();
             contactUs f1 = new contactUs();
@@ -179,505 +140,83 @@ namespace Luxefoods_WindowsForms
 
         }
 
-
-        /*  ! Er zit een fout in deze code kacper, als je het zo doet en je komt met 5 mensen, krijg je 1 tafel. 
-         * ----- CHECK AVAILABILITY BUTTON -----
-         * People = seats.value
-         * Date = dateTimePicker1.value
-         * TableSize = 4
-         * TablesNeeded = People // TableSize
-         * ShowAvailableTables(TablesNeeded)
-         * 
-         * 
-         * 
-         * ----- ShowShowAvailableTables(int amountOfTables) -----
-         * fetch data from the database
-         * look for amounrOfTables in the same zone for the same time
-         */
-
         //showAvailableTables(int amountOfTables);
 
         private void availabilityButton_Click(object sender, EventArgs e)
         {
-            List<string> RestaurantNames = new List<string>();
-
-            //Maak een request naar de database om alle restaurant namen in een List op te slaan (Nodig?)
-            SqlCommand read = new SqlCommand("select * from restaurant", connection);
-            connection.Open();
-            using (SqlDataReader reader = read.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    RestaurantNames.Add(reader.GetString(1));
-
-                }
-
-                // Connectie met database beindigen
-                connection.Close();
-            }
-            // RBL: Restaurant kiezen en naar string converten// Functie maken om restaurantId van geselecteerd restaurant te selecteren
-            string restaurantChoice = restaurantComboCox.SelectedItem.ToString();
-            int restaurantId = restaurantComboCox.SelectedIndex + 1;
-
-            // RBL: DateTime implementeren in class
-            DateTime date = dateTimePicker1.Value;
-
-            // RBL: Initializeer aantal Lists
-            List<DateTime> availableTimes = new List<DateTime>() {
-                new DateTime(date.Year, date.Month, date.Day, 16, 00, 00),
-                new DateTime(date.Year, date.Month, date.Day, 17, 00, 00),
-                new DateTime(date.Year, date.Month, date.Day, 18, 00, 00),
-                new DateTime(date.Year, date.Month, date.Day, 19, 00, 00),
-                new DateTime(date.Year, date.Month, date.Day, 20, 00, 00),
-                new DateTime(date.Year, date.Month, date.Day, 21, 00, 00),
-                new DateTime(date.Year, date.Month, date.Day, 22, 00, 00)
-            };
-            List<TakenSeats> takenTimesWithTables = new List<TakenSeats>();
-            List<TakenSeats> availableTimesWithTables = new List<TakenSeats>();
-
-            // (RBL: Aanpassen?)
-            // Algorithm om een List vol te maken met alle mogelijke tijden om te reserveren y = aantal restauranten (1-2), i = lengte van de availableTimes List (max 7) en x = de max mogelijke tafels (max 55)
-            for (int y = 1; y < RestaurantNames.Count + 1; y++)
-            {
-                for (int i = 0; i < availableTimes.Count; i++)
-                {
-                    for (int x = 1; x <= 55; x++)
-                    {
-                        availableTimesWithTables.Add(new TakenSeats(availableTimes[i], x, y));
-                    }
-                }
-            }
-
-            //RBL: Vragen aan Kacper:
-            // - Klopt het dat takenseats de list is waar de tafels in gedisplayed worden? Zie line 232
-            // - 
-            // Request naar Databse sturen om alle gereserveerde tijden op de eerder gegeven datum te krijgen en in takenTimesWithTables List te zetten
-            SqlCommand readCommand = new SqlCommand("select datum, tafelNummer, restaurantId from reservering where datum between '" + date.Month + "/" + date.Day + "/" + date.Year + "' and '" + date.Month + "/" + date.Day + "/" + date.Year + " 23:59:59'", connection);
-            connection.Open();
-            using (SqlDataReader reader = readCommand.ExecuteReader())
-            {
-
-                //(RBL: Weergeven in table vanuit list, of direct vanuit DB in table zetten?)
-                //(RBL: Oplossing voor weergave: Maak een clickable box, filter deze op tijd (bijv. 16:00-17:00) en op tafelnummer bijv area 1 is 1-20 en geef deze weer in het eerste vakje, maak deze voor alle vakjes)
-                //De ontvangen data in eigen TakenSeats class zetten om die dan in een list te zetten zodat het makkelijker terug te vinden           while (reader.Read())
-                while (reader.Read())
-                {
-                    TakenSeats p1 = new TakenSeats(reader.GetDateTime(0), reader.GetInt32(1), reader.GetInt32(2));
-                    takenTimesWithTables.Add(p1);
-                }
-
-                // Connectie met database beindigen
-                connection.Close();
-            }
-
-            //(RBL: aanpassen, restaurantID bestaat niet in deze versie)(RBL: Edit, restaurantId bestaat weer, testen of het nog werkt. mogelijke bug cause!) 
-            // Kijken welke tafels al gereserveerd waren en die van de availableTimesWithTables verwijderen
-            foreach (TakenSeats x in takenTimesWithTables)
-            {
-                foreach (TakenSeats i in availableTimesWithTables.ToList())
-                {
-
-                    // Als restauranten niet zelfde iD hebben gelijk verwijderen
-                    if (i.restaurantId != restaurantId)
-                    {
-                        availableTimesWithTables.Remove(i);
-                    }
-
-                    // Overige restauranten die zelfde tafel nummer, reserverings tijd en restaurant id hebben ook verwijderen
-                    if ((x.takenSeat == i.takenSeat) && (x.takenTime == i.takenTime) && (x.restaurantId == restaurantId))
-                    {
-                        availableTimesWithTables.Remove(i);
-                    }
-                }
-            }
-
-            //(RBL: Aanpassen naar winform ipv consolewriteline)
-            //Alleen de overgebleven werkelijke availableTimesWithTables laten zien
-            Console.WriteLine("Those are all the available times for " + date.Year + "-" + date.Month + "-" + date.Day + ": ");
-            foreach (TakenSeats x in availableTimesWithTables)
-            {
-                Console.WriteLine(x.takenTime + " and seat nr. " + x.takenSeat);
-            }
-
-            IEnumerable<int> commonSeats16 = null;
-            IEnumerable<int> commonSeats17 = null;
-            IEnumerable<int> commonSeats18 = null;
-            IEnumerable<int> commonSeats19 = null;
-            IEnumerable<int> commonSeats20 = null;
-            IEnumerable<int> commonSeats21 = null;
-            IEnumerable<int> commonSeats22 = null;
-
-            IEnumerable<int> A1C16 = GlobalListListBoxes[0];
-            IEnumerable<int> A1C17 = GlobalListListBoxes[0];
-            IEnumerable<int> A1C18 = GlobalListListBoxes[0];
-            IEnumerable<int> A1C19 = GlobalListListBoxes[0];
-            IEnumerable<int> A1C20 = GlobalListListBoxes[0];
-            IEnumerable<int> A1C21 = GlobalListListBoxes[0];
-            IEnumerable<int> A1C22 = GlobalListListBoxes[0];
-
-            IEnumerable<int> A2C16 = GlobalListListBoxes[1];
-            IEnumerable<int> A2C17 = GlobalListListBoxes[1];
-            IEnumerable<int> A2C18 = GlobalListListBoxes[1];
-            IEnumerable<int> A2C19 = GlobalListListBoxes[1];
-            IEnumerable<int> A2C20 = GlobalListListBoxes[1];
-            IEnumerable<int> A2C21 = GlobalListListBoxes[1];
-            IEnumerable<int> A2C22 = GlobalListListBoxes[1];
-
-            IEnumerable<int> A3C16 = GlobalListListBoxes[2];
-            IEnumerable<int> A3C17 = GlobalListListBoxes[2];
-            IEnumerable<int> A3C18 = GlobalListListBoxes[2];
-            IEnumerable<int> A3C19 = GlobalListListBoxes[2];
-            IEnumerable<int> A3C20 = GlobalListListBoxes[2];
-            IEnumerable<int> A3C21 = GlobalListListBoxes[2];
-            IEnumerable<int> A3C22 = GlobalListListBoxes[2];
-
-            IEnumerable<int> A4C16 = GlobalListListBoxes[3];
-            IEnumerable<int> A4C17 = GlobalListListBoxes[3];
-            IEnumerable<int> A4C18 = GlobalListListBoxes[3];
-            IEnumerable<int> A4C19 = GlobalListListBoxes[3];
-            IEnumerable<int> A4C20 = GlobalListListBoxes[3];
-            IEnumerable<int> A4C21 = GlobalListListBoxes[3];
-            IEnumerable<int> A4C22 = GlobalListListBoxes[3];
-
-            IEnumerable<int> A5C16 = GlobalListListBoxes[4];
-            IEnumerable<int> A5C17 = GlobalListListBoxes[4];
-            IEnumerable<int> A5C18 = GlobalListListBoxes[4];
-            IEnumerable<int> A5C19 = GlobalListListBoxes[4];
-            IEnumerable<int> A5C20 = GlobalListListBoxes[4];
-            IEnumerable<int> A5C21 = GlobalListListBoxes[4]; 
-            IEnumerable<int> A5C22 = GlobalListListBoxes[4];
-
-            IEnumerable<int> A6C16 = GlobalListListBoxes[5];
-            IEnumerable<int> A6C17 = GlobalListListBoxes[5];
-            IEnumerable<int> A6C18 = GlobalListListBoxes[5];
-            IEnumerable<int> A6C19 = GlobalListListBoxes[5];
-            IEnumerable<int> A6C20 = GlobalListListBoxes[5];
-            IEnumerable<int> A6C21 = GlobalListListBoxes[5];
-            IEnumerable<int> A6C22 = GlobalListListBoxes[5];
-
-            //var TakenTimes = availableTimesWithTables.Select(b => b.takenTime);
-            //RBL: Funtcion to add and divide all available tables into hourly availble seats, ready to display
-
-            foreach (TakenSeats x  in availableTimesWithTables)
-            {
-                if (x.takenTime == availableTimes[0])
-                {
-                    commonSeats16 = commonSeats16.Append(x.takenSeat);
-                }
-                if (x.takenTime == availableTimes[1])
-                {
-                    commonSeats17 = commonSeats17.Append(x.takenSeat);
-                }
-                if (x.takenTime == availableTimes[2])
-                {
-                    commonSeats18 = commonSeats18.Append(x.takenSeat);
-                }
-                if (x.takenTime == availableTimes[3])
-                {
-                    commonSeats19 = commonSeats19.Append(x.takenSeat);
-                }
-                if (x.takenTime == availableTimes[4])
-                {
-                    commonSeats20 = commonSeats20.Append(x.takenSeat);
-                }
-                if (x.takenTime == availableTimes[5])
-                {
-                    commonSeats21 = commonSeats21.Append(x.takenSeat);
-                }
-                if (x.takenTime == availableTimes[6])
-                {
-                    commonSeats22 = commonSeats22.Append(x.takenSeat);
-                }
-            }
-            
-            A1C16 = A1C16.Intersect(commonSeats16);
-            List<int> LA1C16 = A1C16.ToList();
-            A2C16 = A2C16.Intersect(commonSeats16);
-            List<int> LA2C16 = A2C16.ToList();
-            A3C16 = A3C16.Intersect(commonSeats16);
-            List<int> LA3C16 = A3C16.ToList();
-            A4C16 = A4C16.Intersect(commonSeats16);
-            List<int> LA4C16 = A4C16.ToList();
-            A5C16 = A5C16.Intersect(commonSeats16);
-            List<int> LA5C16 = A5C16.ToList();
-            A6C16 = A6C16.Intersect(commonSeats16);
-            List<int> LA6C16 = A6C16.ToList();
-
-            A1C17 = A1C17.Intersect(commonSeats17);
-            List<int> LA1C17 = A1C17.ToList();
-            A2C17 = A2C17.Intersect(commonSeats17);
-            List<int> LA2C17 = A2C17.ToList();
-            A3C17 = A3C17.Intersect(commonSeats17);
-            List<int> LA3C17 = A3C17.ToList();
-            A4C17 = A4C17.Intersect(commonSeats17);
-            List<int> LA4C17 = A4C17.ToList();
-            A5C17 = A5C17.Intersect(commonSeats17);
-            List<int> LA5C17 = A5C17.ToList();
-            A6C17 = A6C17.Intersect(commonSeats17);
-            List<int> LA6C17 = A6C17.ToList();
-            
-            A1C18 = A1C18.Intersect(commonSeats18);
-            List<int> LA1C18 = A1C18.ToList();
-            A2C18 = A2C18.Intersect(commonSeats18);
-            List<int> LA2C18 = A2C18.ToList();
-            A3C18 = A3C18.Intersect(commonSeats18);
-            List<int> LA3C18 = A3C18.ToList();
-            A4C18 = A4C18.Intersect(commonSeats18);
-            List<int> LA4C18 = A4C18.ToList();
-            A5C18 = A5C18.Intersect(commonSeats18);
-            List<int> LA5C18 = A5C18.ToList();
-            A6C18 = A6C18.Intersect(commonSeats18);
-            List<int> LA6C18 = A6C18.ToList();
-            
-            A1C19 = A1C19.Intersect(commonSeats19);
-            List<int> LA1C19 = A1C19.ToList();
-            A2C19 = A2C19.Intersect(commonSeats19);
-            List<int> LA2C19 = A2C19.ToList();
-            A3C19 = A3C19.Intersect(commonSeats19);
-            List<int> LA3C19 = A3C19.ToList();
-            A4C19 = A4C19.Intersect(commonSeats19);
-            List<int> LA4C19 = A4C19.ToList();
-            A5C19 = A5C19.Intersect(commonSeats19);
-            List<int> LA5C19 = A5C19.ToList();
-            A6C19 = A6C19.Intersect(commonSeats19);
-            List<int> LA6C19 = A6C19.ToList();
-            
-            A1C20 = A1C20.Intersect(commonSeats20);
-            List<int> LA1C20 = A1C20.ToList();
-            A2C20 = A2C20.Intersect(commonSeats20);
-            List<int> LA2C20 = A2C20.ToList();
-            A3C20 = A3C20.Intersect(commonSeats20);
-            List<int> LA3C20 = A3C20.ToList();
-            A4C20 = A4C20.Intersect(commonSeats20);
-            List<int> LA4C20 = A4C20.ToList();
-            A5C20 = A5C20.Intersect(commonSeats20);
-            List<int> LA5C20 = A5C20.ToList();
-            A6C20 = A6C20.Intersect(commonSeats20);
-            List<int> LA6C20 = A6C20.ToList();
-
-            A1C21 = A1C21.Intersect(commonSeats21);
-            List<int> LA1C21 = A1C21.ToList();
-            A2C21 = A2C21.Intersect(commonSeats21);
-            List<int> LA2C21 = A2C21.ToList();
-            A3C21 = A3C21.Intersect(commonSeats21);
-            List<int> LA3C21 = A3C21.ToList();
-            A4C21 = A4C21.Intersect(commonSeats21);
-            List<int> LA4C21 = A4C21.ToList();
-            A5C21 = A5C21.Intersect(commonSeats21);
-            List<int> LA5C21 = A5C21.ToList();
-            A6C21 = A6C21.Intersect(commonSeats21);
-            List<int> LA6C21 = A6C21.ToList();
-
-            A1C22 = A1C22.Intersect(commonSeats22);
-            List<int> LA1C22 = A1C22.ToList();
-            A2C22 = A2C22.Intersect(commonSeats22);
-            List<int> LA2C22 = A2C22.ToList();
-            A3C22 = A3C22.Intersect(commonSeats22);
-            List<int> LA3C22 = A3C22.ToList();
-            A4C22 = A4C22.Intersect(commonSeats22);
-            List<int> LA4C22 = A4C22.ToList();
-            A5C22 = A5C22.Intersect(commonSeats22);
-            List<int> LA5C22 = A5C22.ToList();
-            A6C22 = A6C22.Intersect(commonSeats22);
-            List<int> LA6C22 = A6C22.ToList();
-
-
-
-            /*           if (availableTimesWithTables.Select(b => b.takenTime).Equals(availableTimes[0]))
-                       {
-                           commonSeats16 = availableTimesWithTables.Select(a => a.takenSeat).Intersect(GlobalListListBoxes[0]);
-                       }*/
-
-
             int people = SeatsComboBox.SelectedIndex;
-/*            //DateTime date = new DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, dateTimePicker1.Value.Day);
+            DateTime date = new DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, dateTimePicker1.Value.Day);
             double tableSize = 4.0;
-            var tablesNeeded = Math.Ceiling(people / tableSize);*/
+            var tablesNeeded = Math.Ceiling(people / tableSize);
             if (AreaComboBox.SelectedIndex == 0)
             {
-                if (TimeComboBox.SelectedIndex == 0)
-                {
-                    GenerallistBox.DataSource = LA1C16;
-                }
-                if (TimeComboBox.SelectedIndex == 1)
-                {
-                    GenerallistBox.DataSource = LA1C17;
-                }
-                if (TimeComboBox.SelectedIndex == 2)
-                {
-                    GenerallistBox.DataSource = LA1C18;
-                }
-                if (TimeComboBox.SelectedIndex == 3)
-                {
-                    GenerallistBox.DataSource = LA1C19;
-                }
-                if (TimeComboBox.SelectedIndex == 4)
-                {
-                    GenerallistBox.DataSource = LA1C20;
-                }
-                if (TimeComboBox.SelectedIndex == 5)
-                {
-                    GenerallistBox.DataSource = LA1C21;
-                }
-                if (TimeComboBox.SelectedIndex == 6)
-                {
-                    GenerallistBox.DataSource = LA1C22;
-                }
+                listBox1617.DataSource = GlobalListListBoxes[0];
+                listBox1718.DataSource = GlobalListListBoxes[0];
+                listBox1819.DataSource = GlobalListListBoxes[0];
+                listBox1920.DataSource = GlobalListListBoxes[0];
+                listBox2021.DataSource = GlobalListListBoxes[0];
+                listBox2122.DataSource = GlobalListListBoxes[0];
+                listBox2223.DataSource = GlobalListListBoxes[0];
             }
             if (AreaComboBox.SelectedIndex == 1)
             {
-                if (TimeComboBox.SelectedIndex == 0)
-                {
-                    GenerallistBox.DataSource = LA2C16;
-                }
-                if (TimeComboBox.SelectedIndex == 1)
-                {
-                    GenerallistBox.DataSource = LA2C17;
-                }
-                if (TimeComboBox.SelectedIndex == 2)
-                {
-                    GenerallistBox.DataSource = LA2C18;
-                }
-                if (TimeComboBox.SelectedIndex == 3)
-                {
-                    GenerallistBox.DataSource = LA2C19;
-                }
-                if (TimeComboBox.SelectedIndex == 4)
-                {
-                    GenerallistBox.DataSource = LA2C20;
-                }
-                if (TimeComboBox.SelectedIndex == 5)
-                {
-                    GenerallistBox.DataSource = LA2C21;
-                }
-                if (TimeComboBox.SelectedIndex == 6)
-                {
-                    GenerallistBox.DataSource = LA2C22;
-                }
+                listBox1617.DataSource = GlobalListListBoxes[1];
+                listBox1718.DataSource = GlobalListListBoxes[1];
+                listBox1819.DataSource = GlobalListListBoxes[1];
+                listBox1920.DataSource = GlobalListListBoxes[1];
+                listBox2021.DataSource = GlobalListListBoxes[1];
+                listBox2122.DataSource = GlobalListListBoxes[1];
+                listBox2223.DataSource = GlobalListListBoxes[1];
             }
             if (AreaComboBox.SelectedIndex == 2)
             {
-                if (TimeComboBox.SelectedIndex == 0)
-                {
-                    GenerallistBox.DataSource = LA3C16;
-                }
-                if (TimeComboBox.SelectedIndex == 1)
-                {
-                    GenerallistBox.DataSource = LA3C17;
-                }
-                if (TimeComboBox.SelectedIndex == 2)
-                {
-                    GenerallistBox.DataSource = LA3C18;
-                }
-                if (TimeComboBox.SelectedIndex == 3)
-                {
-                    GenerallistBox.DataSource = LA3C19;
-                }
-                if (TimeComboBox.SelectedIndex == 4)
-                {
-                    GenerallistBox.DataSource = LA3C20;
-                }
-                if (TimeComboBox.SelectedIndex == 5)
-                {
-                    GenerallistBox.DataSource = LA3C21;
-                }
-                if (TimeComboBox.SelectedIndex == 6)
-                {
-                    GenerallistBox.DataSource = LA3C22;
-                }
+                listBox1617.DataSource = GlobalListListBoxes[2];
+                listBox1718.DataSource = GlobalListListBoxes[2];
+                listBox1819.DataSource = GlobalListListBoxes[2];
+                listBox1920.DataSource = GlobalListListBoxes[2];
+                listBox2021.DataSource = GlobalListListBoxes[2];
+                listBox2122.DataSource = GlobalListListBoxes[2];
+                listBox2223.DataSource = GlobalListListBoxes[2];
             }
             if (AreaComboBox.SelectedIndex == 3)
             {
-                if (TimeComboBox.SelectedIndex == 0)
-                {
-                    GenerallistBox.DataSource = LA4C16;
-                }
-                if (TimeComboBox.SelectedIndex == 1)
-                {
-                    GenerallistBox.DataSource = LA4C17;
-                }
-                if (TimeComboBox.SelectedIndex == 2)
-                {
-                    GenerallistBox.DataSource = LA4C18;
-                }
-                if (TimeComboBox.SelectedIndex == 3)
-                {
-                    GenerallistBox.DataSource = LA4C19;
-                }
-                if (TimeComboBox.SelectedIndex == 4)
-                {
-                    GenerallistBox.DataSource = LA4C20;
-                }
-                if (TimeComboBox.SelectedIndex == 5)
-                {
-                    GenerallistBox.DataSource = LA4C21;
-                }
-                if (TimeComboBox.SelectedIndex == 6)
-                {
-                    GenerallistBox.DataSource = LA4C22;
-                }
+                listBox1617.DataSource = GlobalListListBoxes[3];
+                listBox1718.DataSource = GlobalListListBoxes[3];
+                listBox1819.DataSource = GlobalListListBoxes[3];
+                listBox1920.DataSource = GlobalListListBoxes[3];
+                listBox2021.DataSource = GlobalListListBoxes[3];
+                listBox2122.DataSource = GlobalListListBoxes[3];
+                listBox2223.DataSource = GlobalListListBoxes[3];
             }
             if (AreaComboBox.SelectedIndex == 4)
             {
-                if (TimeComboBox.SelectedIndex == 0)
-                {
-                    GenerallistBox.DataSource = LA5C16;
-                }
-                if (TimeComboBox.SelectedIndex == 1)
-                {
-                    GenerallistBox.DataSource = LA5C17;
-                }
-                if (TimeComboBox.SelectedIndex == 2)
-                {
-                    GenerallistBox.DataSource = LA5C18;
-                }
-                if (TimeComboBox.SelectedIndex == 3)
-                {
-                    GenerallistBox.DataSource = LA5C19;
-                }
-                if (TimeComboBox.SelectedIndex == 4)
-                {
-                    GenerallistBox.DataSource = LA5C20;
-                }
-                if (TimeComboBox.SelectedIndex == 5)
-                {
-                    GenerallistBox.DataSource = LA5C21;
-                }
-                if (TimeComboBox.SelectedIndex == 6)
-                {
-                    GenerallistBox.DataSource = LA5C22;
-                }
+                listBox1617.DataSource = GlobalListListBoxes[4];
+                listBox1718.DataSource = GlobalListListBoxes[4];
+                listBox1819.DataSource = GlobalListListBoxes[4];
+                listBox1920.DataSource = GlobalListListBoxes[4];
+                listBox2021.DataSource = GlobalListListBoxes[4];
+                listBox2122.DataSource = GlobalListListBoxes[4];
+                listBox2223.DataSource = GlobalListListBoxes[4];
             }
             if (AreaComboBox.SelectedIndex == 5)
             {
-                if (TimeComboBox.SelectedIndex == 0)
-                {
-                    GenerallistBox.DataSource = LA6C16;
-                }
-                if (TimeComboBox.SelectedIndex == 1)
-                {
-                    GenerallistBox.DataSource = LA6C17;
-                }
-                if (TimeComboBox.SelectedIndex == 2)
-                {
-                    GenerallistBox.DataSource = LA6C18;
-                }
-                if (TimeComboBox.SelectedIndex == 3)
-                {
-                    GenerallistBox.DataSource = LA6C19;
-                }
-                if (TimeComboBox.SelectedIndex == 4)
-                {
-                    GenerallistBox.DataSource = LA6C20;
-                }
-                if (TimeComboBox.SelectedIndex == 5)
-                {
-                    GenerallistBox.DataSource = LA6C21;
-                }
-                if (TimeComboBox.SelectedIndex == 6)
-                {
-                    GenerallistBox.DataSource = LA6C22;
-                }
+                listBox1617.DataSource = GlobalListListBoxes[5];
+                listBox1718.DataSource = GlobalListListBoxes[5];
+                listBox1819.DataSource = GlobalListListBoxes[5];
+                listBox1920.DataSource = GlobalListListBoxes[5];
+                listBox2021.DataSource = GlobalListListBoxes[5];
+                listBox2122.DataSource = GlobalListListBoxes[5];
+                listBox2223.DataSource = GlobalListListBoxes[5];
+            }
+            if (AreaComboBox.SelectedIndex == 6)
+            {
+                listBox1617.DataSource = GlobalListListBoxes[6];
+                listBox1718.DataSource = GlobalListListBoxes[6];
+                listBox1819.DataSource = GlobalListListBoxes[6];
+                listBox1920.DataSource = GlobalListListBoxes[6];
+                listBox2021.DataSource = GlobalListListBoxes[6];
+                listBox2122.DataSource = GlobalListListBoxes[6];
+                listBox2223.DataSource = GlobalListListBoxes[6];
             }
             //showAvailableTables(tablesNeeded);
         }
@@ -797,7 +336,6 @@ namespace Luxefoods_WindowsForms
             //Tafel keuze
             int tableNumber = SelectTableNumber();
 
-            // RBL: Ga naar check reservation form zodat ze daar hun reseervatie zien en kunnen kijken of het klopt/het aanpassen
             // RBL: De checks aanpassen, bij allemaal een pop up window met "Helaas is deze tafel in de tussentijd gereserveerd, kies aub een nieuwe tafel/tijd" ipv writeline.
             // Checken of alles klopt
 
@@ -1047,19 +585,63 @@ namespace Luxefoods_WindowsForms
         private void PlaceReservationButton_Click(object sender, EventArgs e)
         {
             makeReservation(globalUserId);
-            //placereservationbuttonclick(getTakenTimesWithTables(), getDate(), getTableNumber(), getRestaurantId(), getUserId());
-            /// foreach (x in listBoxesList) {
-            ///     if (x.selectedItem != null) {
-            ///         if (int.TryParse(x.selectedItem)) {
-            ///             int.Parse(x.selectedItem)
-            ///         }
-            ///         
-            ///
-            ///     }
-            /// 
-            /// }
             
         }
 
+        private void menuButton_LinkClicked(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menuForm = new Menu();
+            menuForm.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, EventArgs e)
+        {
+            this.Hide();
+            checkReservation reservationForm = new checkReservation();
+            reservationForm.Show();
+        }
+
+        private void loginButton_LinkClicked(object sender, EventArgs e)
+        {
+            Login.previousPage = "Reservation";
+            if (Login.person != null)
+            {
+                this.Hide();
+                Template form1 = new Template();
+                form1.Show();
+            }
+            else
+            {
+                this.Hide();
+                Login form2 = new Login();
+                form2.Show();
+            }
+        }
+
+        private void LuxeFoodsLogoLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            homePage HomepageForm = new homePage();
+            HomepageForm.Show();
+        }
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FullscreenBtn_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.expand;
+                WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.compress;
+                WindowState = FormWindowState.Maximized;
+            }
+        }
     }
 }

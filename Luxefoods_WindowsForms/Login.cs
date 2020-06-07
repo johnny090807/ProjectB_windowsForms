@@ -14,6 +14,7 @@ namespace Luxefoods_WindowsForms
 {
     public partial class Login : Form
     {
+        public static string previousPage = null;
         public static User person = null;
         public class User
         {
@@ -66,9 +67,9 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (EmailCheck.Text == "Email" || PasswordCheck.Text == "")
+            if (EmailCheck.Text == "Voornaam" || PasswordCheck.Text == "Wachtwoord")
             {
-                MessageBox.Show("Vul alle velden in.");
+                ErrorMessageLabel.Text = "Fill everything in.";
             }
             else
             {
@@ -102,22 +103,7 @@ namespace Luxefoods_WindowsForms
                                 dashboardForm.Show();
                             } else
                             {
-                                FormCollection fc = Application.OpenForms;
-                                foreach (Form frm in fc)
-                                {
-                                    if (frm.Name == "MenuSpecial")
-                                    {
-                                        Menu menuForm = new Menu();
-                                        menuForm.Show();
-                                        this.Hide();
-                                    }
-                                    else
-                                    {
-                                        Register registerForm = new Register();
-                                        registerForm.Show();
-                                        this.Hide();
-                                    }
-                                }
+                                CheckWhichFormWasOpened();
                             }
                         }
                         else
@@ -136,15 +122,83 @@ namespace Luxefoods_WindowsForms
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Menu menuForm = new Menu();
-            menuForm.Show();
-            this.Hide();
+            this.CheckWhichFormWasOpened();
         }
         
         private void minimizeBtn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
 
+        }
+        public void CheckWhichFormWasOpened()
+        {
+            if(previousPage == "Menu")
+            {
+                Menu menuForm = new Menu();
+                menuForm.Show();
+                this.Hide();
+            }
+            else if (previousPage == "Reservation")
+            {
+                this.Hide();
+                Reservation reservationForm = new Reservation(Login.person.id);
+                reservationForm.Show();
+            }
+            else if (previousPage == "Dashboard")
+            {
+                this.Hide();
+                Dashboard dashboardForm = new Dashboard(person.id);
+                dashboardForm.Show();
+            }
+            else if (previousPage == "checkReservations")
+            {
+                this.Hide();
+                checkReservation checkReservationForm = new checkReservation();
+                checkReservationForm.Show();
+            }
+            else if (previousPage == "ContactUs")
+            {
+                this.Hide();
+                contactUs contactForm = new contactUs();
+                contactForm.Show();
+            }
+            else if (previousPage == "AboutUs")
+            {
+                this.Hide();
+                aboutUs aboutForm = new aboutUs();
+                aboutForm.Show();
+            }
+            else if (previousPage == "Home")
+            {
+                this.Hide();
+                homePage homeForm = new homePage();
+                homeForm.Show();
+            }
+            else
+            {
+                this.Hide();
+                Register registerForm = new Register();
+                registerForm.Show();
+            }
+
+        }
+
+        private void EnterTxtBox(object sender, EventArgs e)
+        {
+            TextBox clickedTextbox = (TextBox)sender;
+            if (clickedTextbox.Text == "Email")
+            {
+                clickedTextbox.Text = "";
+            }
+        }
+        private void LeaveTxtBox(object sender, EventArgs e)
+        {
+            TextBox clickedTextbox = (TextBox)sender;
+            if (clickedTextbox.TabIndex == 0 && clickedTextbox.Text == "")
+            {
+                clickedTextbox.Text = "Email";
+            }
+          
         }
     }
 }
