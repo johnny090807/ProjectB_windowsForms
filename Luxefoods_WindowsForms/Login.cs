@@ -67,7 +67,7 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (EmailCheck.Text == "Voornaam" || PasswordCheck.Text == "Wachtwoord")
+            if (EmailCheck.Text == "Email" || PasswordCheck.Text == "")
             {
                 ErrorMessageLabel.Text = "Fill everything in.";
             }
