@@ -37,7 +37,6 @@ namespace Luxefoods_WindowsForms
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-                    int i = 0;
                     foreach (DataRow dr in dt.Rows)
                     {
 

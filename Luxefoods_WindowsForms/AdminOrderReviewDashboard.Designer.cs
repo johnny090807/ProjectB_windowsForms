@@ -58,7 +58,6 @@
             this.MinimizeButton = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Label();
             this.OriginalRestaurantLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -154,7 +153,7 @@
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
-            this.DeleteButton.Location = new System.Drawing.Point(1574, 1136);
+            this.DeleteButton.Location = new System.Drawing.Point(1551, 872);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(279, 115);
             this.DeleteButton.TabIndex = 7;
@@ -297,7 +296,7 @@
             this.availableSeatsListBox.ItemHeight = 31;
             this.availableSeatsListBox.Location = new System.Drawing.Point(846, 532);
             this.availableSeatsListBox.Name = "availableSeatsListBox";
-            this.availableSeatsListBox.Size = new System.Drawing.Size(282, 717);
+            this.availableSeatsListBox.Size = new System.Drawing.Size(282, 531);
             this.availableSeatsListBox.TabIndex = 12;
             this.availableSeatsListBox.SelectedIndexChanged += new System.EventHandler(this.availableSeatsListBox_SelectedIndexChanged);
             // 
@@ -443,26 +442,12 @@
             this.OriginalRestaurantLabel.TabIndex = 24;
             this.OriginalRestaurantLabel.Text = "Original Restaurant";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
-            this.button1.Location = new System.Drawing.Point(1551, 893);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(279, 106);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Delete Order";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.DeleteButton_Click);
-            // 
             // AdminOrderReviewDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1924, 1070);
             this.Controls.Add(this.OriginalRestaurantLabel);
             this.Controls.Add(this.MinimizeButton);
             this.Controls.Add(this.label3);
@@ -524,6 +509,5 @@
         private System.Windows.Forms.Label MinimizeButton;
         private System.Windows.Forms.Label ExitButton;
         private System.Windows.Forms.Label OriginalRestaurantLabel;
-        private System.Windows.Forms.Button button1;
     }
 }

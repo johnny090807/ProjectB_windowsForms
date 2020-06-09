@@ -47,6 +47,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.MinimizeButton = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -160,7 +161,7 @@
             this.EditReservationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditReservationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditReservationButton.ForeColor = System.Drawing.Color.White;
-            this.EditReservationButton.Location = new System.Drawing.Point(1484, 238);
+            this.EditReservationButton.Location = new System.Drawing.Point(1484, 261);
             this.EditReservationButton.Name = "EditReservationButton";
             this.EditReservationButton.Size = new System.Drawing.Size(319, 75);
             this.EditReservationButton.TabIndex = 10;
@@ -267,12 +268,27 @@
             this.ExitButton.Text = "X";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(289, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(187, 48);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Menu";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1925, 1100);
+            this.ClientSize = new System.Drawing.Size(2083, 1145);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.MinimizeButton);
@@ -313,5 +329,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label MinimizeButton;
         private System.Windows.Forms.Label ExitButton;
+        private System.Windows.Forms.Button button1;
     }
 }

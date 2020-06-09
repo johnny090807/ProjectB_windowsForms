@@ -78,6 +78,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(1920, 1080);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // label1
             // 

@@ -25,6 +25,16 @@ namespace Luxefoods_WindowsForms
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
+        private void Form1_MouseDown(object sender,
+        System.Windows.Forms.MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
 
         private int globalAdminID;
         public Dashboard(int adminID)
@@ -54,16 +64,6 @@ namespace Luxefoods_WindowsForms
             foreach (DataRow i in tblCustomerInfo.Rows)
             {
                 label1.Text = "Welcome " + i["voornaam"].ToString() + "!";
-            }
-        }
-
-        private void Form1_MouseDown(object sender,
-        System.Windows.Forms.MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
 
@@ -335,6 +335,13 @@ namespace Luxefoods_WindowsForms
                 Login form1 = new Login();
                 form1.Show();
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuDashboard menuDashboard = new MenuDashboard(globalAdminID, "dashboard");
+            menuDashboard.Show();
         }
     }
 }

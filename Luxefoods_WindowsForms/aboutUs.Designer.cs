@@ -80,157 +80,6 @@
             this.HeaderLabel.BackColor = System.Drawing.Color.Black;
             this.HeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
             this.HeaderLabel.ForeColor = System.Drawing.Color.White;
-            this.HeaderLabel.Location = new System.Drawing.Point(788, 135);
-            this.HeaderLabel.Name = "HeaderLabel";
-            this.HeaderLabel.Size = new System.Drawing.Size(318, 82);
-            this.HeaderLabel.TabIndex = 35;
-            this.HeaderLabel.Text = "About us";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(268, 272);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1421, 184);
-            this.label1.TabIndex = 36;
-            this.label1.Text = resources.GetString("label1.Text");
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(388, 513);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1193, 486);
-            this.pictureBox1.TabIndex = 37;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1920, 1080);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 38;
-            this.pictureBox2.TabStop = false;
-            // 
-            // loginButton
-            // 
-            this.loginButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.loginButton.AutoSize = true;
-            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.loginButton.LinkColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(1567, 24);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(105, 40);
-            this.loginButton.TabIndex = 45;
-            this.loginButton.TabStop = true;
-            this.loginButton.Text = "Login";
-            this.loginButton.VisitedLinkColor = System.Drawing.Color.White;
-            this.loginButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginButton_LinkClicked);
-            // 
-            // contactUsButton
-            // 
-            this.contactUsButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.contactUsButton.AutoSize = true;
-            this.contactUsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.contactUsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.contactUsButton.LinkColor = System.Drawing.Color.White;
-            this.contactUsButton.Location = new System.Drawing.Point(1345, 24);
-            this.contactUsButton.Name = "contactUsButton";
-            this.contactUsButton.Size = new System.Drawing.Size(189, 40);
-            this.contactUsButton.TabIndex = 44;
-            this.contactUsButton.TabStop = true;
-            this.contactUsButton.Text = "Contact us";
-            this.contactUsButton.VisitedLinkColor = System.Drawing.Color.White;
-            this.contactUsButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.contactUsButton_LinkClicked);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(500, 24);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(271, 40);
-            this.linkLabel1.TabIndex = 42;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "My reservations";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // menuButton
-            // 
-            this.menuButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.menuButton.AutoSize = true;
-            this.menuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.menuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.menuButton.LinkColor = System.Drawing.Color.White;
-            this.menuButton.Location = new System.Drawing.Point(357, 24);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(107, 40);
-            this.menuButton.TabIndex = 43;
-            this.menuButton.TabStop = true;
-            this.menuButton.Text = "Menu";
-            this.menuButton.VisitedLinkColor = System.Drawing.Color.White;
-            this.menuButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.menuButton_LinkClicked);
-            // 
-            // reservationsButton
-            // 
-            this.reservationsButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.reservationsButton.AutoSize = true;
-            this.reservationsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.reservationsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.reservationsButton.LinkColor = System.Drawing.Color.White;
-            this.reservationsButton.Location = new System.Drawing.Point(795, 24);
-            this.reservationsButton.Name = "reservationsButton";
-            this.reservationsButton.Size = new System.Drawing.Size(325, 40);
-            this.reservationsButton.TabIndex = 41;
-            this.reservationsButton.TabStop = true;
-            this.reservationsButton.Text = "Place a reservation";
-            this.reservationsButton.VisitedLinkColor = System.Drawing.Color.White;
-            this.reservationsButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.reservationsButton_LinkClicked);
-            // 
-            // aboutUsButton
-            // 
-            this.aboutUsButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
-            this.aboutUsButton.AutoSize = true;
-            this.aboutUsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.aboutUsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.aboutUsButton.LinkColor = System.Drawing.Color.White;
-            this.aboutUsButton.Location = new System.Drawing.Point(1148, 24);
-            this.aboutUsButton.Name = "aboutUsButton";
-            this.aboutUsButton.Size = new System.Drawing.Size(159, 40);
-            this.aboutUsButton.TabIndex = 40;
-            this.aboutUsButton.TabStop = true;
-            this.aboutUsButton.Text = "About us";
-            this.aboutUsButton.VisitedLinkColor = System.Drawing.Color.White;
-            // 
-            // LuxeFoodsLogoLabel
-            // 
-            this.LuxeFoodsLogoLabel.AutoSize = true;
-            this.LuxeFoodsLogoLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-            this.LuxeFoodsLogoLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LuxeFoodsLogoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
-            this.LuxeFoodsLogoLabel.ForeColor = System.Drawing.Color.White;
-            this.LuxeFoodsLogoLabel.Location = new System.Drawing.Point(12, 9);
-            this.LuxeFoodsLogoLabel.Name = "LuxeFoodsLogoLabel";
-            this.LuxeFoodsLogoLabel.Size = new System.Drawing.Size(283, 59);
-            this.LuxeFoodsLogoLabel.TabIndex = 39;
-            this.LuxeFoodsLogoLabel.Text = "LuxeFoods";
-            this.LuxeFoodsLogoLabel.Click += new System.EventHandler(this.LuxeFoodsLogoLabel_Click);
-            // 
-            // HeaderLabel
-            // 
-            this.HeaderLabel.AutoSize = true;
-            this.HeaderLabel.BackColor = System.Drawing.Color.Black;
-            this.HeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.HeaderLabel.ForeColor = System.Drawing.Color.White;
             this.HeaderLabel.Location = new System.Drawing.Point(789, 175);
             this.HeaderLabel.Name = "HeaderLabel";
             this.HeaderLabel.Size = new System.Drawing.Size(214, 55);
@@ -257,13 +106,132 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1920, 1080);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 38;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            // 
+            // loginButton
+            // 
+            this.loginButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
+            this.loginButton.AutoSize = true;
+            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
+            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.loginButton.LinkColor = System.Drawing.Color.White;
+            this.loginButton.Location = new System.Drawing.Point(1567, 24);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(73, 29);
+            this.loginButton.TabIndex = 45;
+            this.loginButton.TabStop = true;
+            this.loginButton.Text = "Login";
+            this.loginButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.loginButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginButton_LinkClicked);
+            // 
+            // contactUsButton
+            // 
+            this.contactUsButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
+            this.contactUsButton.AutoSize = true;
+            this.contactUsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
+            this.contactUsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.contactUsButton.LinkColor = System.Drawing.Color.White;
+            this.contactUsButton.Location = new System.Drawing.Point(1345, 24);
+            this.contactUsButton.Name = "contactUsButton";
+            this.contactUsButton.Size = new System.Drawing.Size(125, 29);
+            this.contactUsButton.TabIndex = 44;
+            this.contactUsButton.TabStop = true;
+            this.contactUsButton.Text = "Contact us";
+            this.contactUsButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.contactUsButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.contactUsButton_LinkClicked);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DarkGray;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(500, 24);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(181, 29);
+            this.linkLabel1.TabIndex = 42;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "My reservations";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // menuButton
+            // 
+            this.menuButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
+            this.menuButton.AutoSize = true;
+            this.menuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
+            this.menuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.menuButton.LinkColor = System.Drawing.Color.White;
+            this.menuButton.Location = new System.Drawing.Point(357, 24);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(73, 29);
+            this.menuButton.TabIndex = 43;
+            this.menuButton.TabStop = true;
+            this.menuButton.Text = "Menu";
+            this.menuButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.menuButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.menuButton_LinkClicked);
+            // 
+            // reservationsButton
+            // 
+            this.reservationsButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
+            this.reservationsButton.AutoSize = true;
+            this.reservationsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
+            this.reservationsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.reservationsButton.LinkColor = System.Drawing.Color.White;
+            this.reservationsButton.Location = new System.Drawing.Point(795, 24);
+            this.reservationsButton.Name = "reservationsButton";
+            this.reservationsButton.Size = new System.Drawing.Size(218, 29);
+            this.reservationsButton.TabIndex = 41;
+            this.reservationsButton.TabStop = true;
+            this.reservationsButton.Text = "Place a reservation";
+            this.reservationsButton.VisitedLinkColor = System.Drawing.Color.White;
+            this.reservationsButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.reservationsButton_LinkClicked);
+            // 
+            // aboutUsButton
+            // 
+            this.aboutUsButton.ActiveLinkColor = System.Drawing.Color.DarkGray;
+            this.aboutUsButton.AutoSize = true;
+            this.aboutUsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
+            this.aboutUsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.aboutUsButton.LinkColor = System.Drawing.Color.White;
+            this.aboutUsButton.Location = new System.Drawing.Point(1148, 24);
+            this.aboutUsButton.Name = "aboutUsButton";
+            this.aboutUsButton.Size = new System.Drawing.Size(106, 29);
+            this.aboutUsButton.TabIndex = 40;
+            this.aboutUsButton.TabStop = true;
+            this.aboutUsButton.Text = "About us";
+            this.aboutUsButton.VisitedLinkColor = System.Drawing.Color.White;
+            // 
+            // LuxeFoodsLogoLabel
+            // 
+            this.LuxeFoodsLogoLabel.AutoSize = true;
+            this.LuxeFoodsLogoLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
+            this.LuxeFoodsLogoLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LuxeFoodsLogoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
+            this.LuxeFoodsLogoLabel.ForeColor = System.Drawing.Color.White;
+            this.LuxeFoodsLogoLabel.Location = new System.Drawing.Point(12, 9);
+            this.LuxeFoodsLogoLabel.Name = "LuxeFoodsLogoLabel";
+            this.LuxeFoodsLogoLabel.Size = new System.Drawing.Size(188, 39);
+            this.LuxeFoodsLogoLabel.TabIndex = 39;
+            this.LuxeFoodsLogoLabel.Text = "LuxeFoods";
+            this.LuxeFoodsLogoLabel.Click += new System.EventHandler(this.LuxeFoodsLogoLabel_Click);
+            // 
             // aboutUs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.LuxeFoodsLogoLabel);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.contactUsButton);
             this.Controls.Add(this.linkLabel1);

@@ -54,6 +54,7 @@ namespace Luxefoods_WindowsForms
             this.pictureBox2.Size = new System.Drawing.Size(1925, 1282);
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // ExitButton
             // 
