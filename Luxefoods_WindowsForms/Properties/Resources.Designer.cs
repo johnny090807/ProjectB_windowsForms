@@ -123,9 +123,29 @@ namespace Luxefoods_WindowsForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap compress {
+            get {
+                object obj = ResourceManager.GetObject("compress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eten_test {
             get {
                 object obj = ResourceManager.GetObject("eten_test", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap expand {
+            get {
+                object obj = ResourceManager.GetObject("expand", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,6 +283,16 @@ namespace Luxefoods_WindowsForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout__1_ {
+            get {
+                object obj = ResourceManager.GetObject("logout__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap milk {
             get {
                 object obj = ResourceManager.GetObject("milk", resourceCulture);
@@ -276,6 +306,16 @@ namespace Luxefoods_WindowsForms.Properties {
         internal static System.Drawing.Bitmap milk_2_32 {
             get {
                 object obj = ResourceManager.GetObject("milk-2-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize {
+            get {
+                object obj = ResourceManager.GetObject("minimize", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -40,7 +40,7 @@ namespace Luxefoods_WindowsForms
             CenterToScreen();
             if (Login.person != null)
             {
-                this.loginButton.Text = Login.person.voornaam + " " + Login.person.achternaam;
+                this.LoginBtn.Text = "Logout";
             }
             searchReservationById(Login.person.id);
         }
@@ -134,32 +134,11 @@ namespace Luxefoods_WindowsForms
                 System.Environment.Exit(1);
             }
         }
-
-        private void ExitButton_Hover_Enter(object sender, EventArgs e)
-        {
-            ExitButton.ForeColor = Color.Red;
-        }
-
-        private void ExitButton_Hover_Leave(object sender, EventArgs e)
-        {
-            ExitButton.ForeColor = Color.Black;
-        }
-
         private void MinimizeButton_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        private void MinimizeButton_Hover_Enter(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Red;
-        }
-        private void MinimizeButton_Hover_Leave(object sender, EventArgs e)
-        {
-            MinimizeButton.ForeColor = Color.Black;
-        }
-
-        private void aboutUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void aboutUsButton_LinkClicked(object sender, EventArgs e)
         {
             this.Hide();
             aboutUs f1 = new aboutUs();
@@ -167,15 +146,23 @@ namespace Luxefoods_WindowsForms
             this.Close();
         }
 
-        private void reservationsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void reservationsButton_LinkClicked(object sender, EventArgs e)
         {
-            this.Hide();
-            Reservation f2 = new Reservation(Login.person.id);
-            f2.ShowDialog();
-            this.Close();
+            try
+            {
+                Reservation f2 = new Reservation(Login.person.id);
+                this.Hide();
+                f2.ShowDialog();
+                this.Close();
+
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show("Je moet ingelogd zijn.");
+            }
         }
 
-        private void contactUsButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void contactUsButton_LinkClicked(object sender, EventArgs e)
         {
             this.Hide();
             contactUs f1 = new contactUs();
@@ -183,35 +170,56 @@ namespace Luxefoods_WindowsForms
             this.Close();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void homePageBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             homePage homeForm = new homePage();
             homeForm.Show();
         }
 
-        private void aboutUsButton_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        private void aboutUsButton_LinkClicked_1(object sender, EventArgs e)
         {
             this.Hide();
             aboutUs aboutForm = new aboutUs();
             aboutForm.Show();
         }
 
-        private void menuButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void menuButton_LinkClicked(object sender, EventArgs e)
         {
             this.Hide();
             Menu menuForm = new Menu();
             menuForm.Show();
         }
 
-        private void loginButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void loginButton_LinkClicked(object sender, EventArgs e)
         {
             Login.previousPage = "checkReservations";
-            this.Hide();
-            Login loginForm = new Login();
-            loginForm.Show();
+            if (Login.person != null)
+            {
+                this.Hide();
+                Template form1 = new Template();
+                form1.Show();
+            }
+            else
+            {
+                this.Hide();
+                Login form2 = new Login();
+                form2.Show();
+            }
         }
-
+        private void FullscreenBtn_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.expand;
+                WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.compress;
+                WindowState = FormWindowState.Maximized;
+            }
+        }
         /*
          * ----- CHECK AVAILABILITY BUTTON -----
          * People = seats.value

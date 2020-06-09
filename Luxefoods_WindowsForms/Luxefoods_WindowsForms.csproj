@@ -89,15 +89,6 @@
     <EmbeddedResource Include="homePage.resx">
       <DependentUpon>homePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuDashboard.resx">
-      <DependentUpon>MenuDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuDashboardCreateItem.resx">
-      <DependentUpon>MenuDashboardCreateItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuDashboardGerechtOverview.resx">
-      <DependentUpon>MenuDashboardGerechtOverview.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Menu\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,7 +107,6 @@
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.homePage.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Login.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Menu.resources" />
-    <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.MenuDashboard.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.MenuSpecial.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Modify_reservation.resources" />
     <EmbeddedResource Include="obj\Debug\Luxefoods_WindowsForms.Properties.Resources.resources" />
@@ -167,24 +157,6 @@
       <DependentUpon>homePage.cs</DependentUpon>
     </Compile>
     <Compile Include="LuxeFoodsDataSet.Designer.cs" />
-    <Compile Include="MenuDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuDashboard.Designer.cs">
-      <DependentUpon>MenuDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuDashboardCreateItem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuDashboardCreateItem.Designer.cs">
-      <DependentUpon>MenuDashboardCreateItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuDashboardGerechtOverview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuDashboardGerechtOverview.Designer.cs">
-      <DependentUpon>MenuDashboardGerechtOverview.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,7 +200,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReservationBackEnd.cs" />
     <Compile Include="SearchPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,7 +271,8 @@
     <None Include="Resources\Lato\Lato-Bold.ttf" />
     <None Include="Resources\Lato\Lato-BoldItalic.ttf" />
     <None Include="Resources\Lato\Lato-Italic.ttf" />
-    <Content Include="bin\Debug\Bunifu_UI_v1.52.dll" />
+    <None Include="Resources\compress.png" />
+    <None Include="Resources\expand.png" />
     <Content Include="Resources\Lato\Lato-Light.ttf" />
     <None Include="Resources\Lato\Lato-LightItalic.ttf" />
     <None Include="Resources\Lato\Lato-Regular.ttf" />
@@ -346,9 +318,11 @@
     <None Include="Resources\mail.png" />
     <Content Include="Resources\login.png" />
     <None Include="Resources\milk %281%29.png" />
+    <None Include="Resources\logout %281%29.png" />
     <Content Include="Resources\logout.png" />
     <Content Include="Resources\milk-2-32.png" />
     <None Include="Resources\peanut.png" />
+    <None Include="Resources\minimize.png" />
     <Content Include="Resources\peanuts-32.png" />
     <None Include="Resources\phone.png" />
     <None Include="Resources\person.png" />

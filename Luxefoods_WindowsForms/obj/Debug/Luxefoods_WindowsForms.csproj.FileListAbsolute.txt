@@ -42,6 +42,7 @@ C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\D
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.GenerateResource.cache
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.exe
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.pdb
+<<<<<<< HEAD
 C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe.config
 C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe
 C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.pdb
@@ -69,3 +70,6 @@ C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\L
 C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuDashboard.resources
 C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuDashboardGerechtOverview.resources
 C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.MenuDashboardCreateItem.resources
+=======
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.CoreCompileInputs.cache
+>>>>>>> dc8f0177a3b4853507edef8dc0f2e635ce0c676b
