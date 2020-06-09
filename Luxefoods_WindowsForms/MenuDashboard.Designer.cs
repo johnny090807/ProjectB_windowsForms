@@ -71,6 +71,7 @@
             this.createNewItemButton.TabIndex = 4;
             this.createNewItemButton.Text = "Create New Gerecht";
             this.createNewItemButton.UseVisualStyleBackColor = true;
+            this.createNewItemButton.Click += new System.EventHandler(this.createNewItemButton_Click);
             // 
             // goBackButton
             // 

@@ -156,7 +156,7 @@ namespace Luxefoods_WindowsForms
                 this.Close();
 
             }
-            catch(Exception er)
+            catch
             {
                 MessageBox.Show("Je moet ingelogd zijn.");
             }

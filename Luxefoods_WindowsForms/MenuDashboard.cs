@@ -181,5 +181,12 @@ namespace Luxefoods_WindowsForms
                 dashboard.Show();
             }
         }
+
+        private void createNewItemButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuDashboardCreateItem menuDashboardCreateItem = new MenuDashboardCreateItem((int) restaurantListBox.SelectedValue, globalAdminID, "menuDashboard");
+            menuDashboardCreateItem.Show();
+        }
     }
 }

@@ -214,7 +214,7 @@ namespace Luxefoods_WindowsForms
                 this.Hide();
                 reservationForm.Show();
             }
-            catch(Exception er)
+            catch
             {
                 MessageBox.Show("Je moet eerst ingelogd zijn.");
             }

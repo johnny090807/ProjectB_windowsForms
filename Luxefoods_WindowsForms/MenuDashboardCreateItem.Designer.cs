@@ -54,6 +54,7 @@
             this.goBackButton.TabIndex = 30;
             this.goBackButton.Text = "Go Back";
             this.goBackButton.UseVisualStyleBackColor = false;
+            this.goBackButton.Click += new System.EventHandler(this.goBackButton_Click);
             // 
             // gerechtCategorieSelector
             // 
@@ -65,6 +66,8 @@
             this.gerechtCategorieSelector.Name = "gerechtCategorieSelector";
             this.gerechtCategorieSelector.Size = new System.Drawing.Size(121, 21);
             this.gerechtCategorieSelector.TabIndex = 29;
+            this.gerechtCategorieSelector.Text = "Select The Category";
+            this.gerechtCategorieSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
             // 
             // gerechtNotenSelector
             // 
@@ -76,6 +79,8 @@
             this.gerechtNotenSelector.Name = "gerechtNotenSelector";
             this.gerechtNotenSelector.Size = new System.Drawing.Size(121, 21);
             this.gerechtNotenSelector.TabIndex = 28;
+            this.gerechtNotenSelector.Text = "Select True Or False";
+            this.gerechtNotenSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
             // 
             // gerechtMelkSelector
             // 
@@ -87,10 +92,13 @@
             this.gerechtMelkSelector.Name = "gerechtMelkSelector";
             this.gerechtMelkSelector.Size = new System.Drawing.Size(121, 21);
             this.gerechtMelkSelector.TabIndex = 27;
+            this.gerechtMelkSelector.Text = "Select True Or False";
+            this.gerechtMelkSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
             // 
             // gerechtPrijsInput
             // 
             this.gerechtPrijsInput.Location = new System.Drawing.Point(269, 259);
+            this.gerechtPrijsInput.MaxLength = 10;
             this.gerechtPrijsInput.Name = "gerechtPrijsInput";
             this.gerechtPrijsInput.Size = new System.Drawing.Size(258, 20);
             this.gerechtPrijsInput.TabIndex = 25;
