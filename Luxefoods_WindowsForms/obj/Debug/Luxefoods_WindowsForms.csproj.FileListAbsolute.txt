@@ -43,3 +43,7 @@ C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\D
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.exe
 C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.pdb
 C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe.config
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.exe
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\bin\Debug\Luxefoods_WindowsForms.pdb
+C:\Users\RBL\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.csproj.CopyComplete

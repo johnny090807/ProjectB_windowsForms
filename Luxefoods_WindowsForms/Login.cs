@@ -24,7 +24,7 @@ namespace Luxefoods_WindowsForms
             public string email { get; set; }
             public string telefoonnummer { get; set; }
             public string password { get; set; }
-            public bool admin{ get; set; }
+            public bool admin { get; set; }
             public User(int ID, string first, string last, string e, string t, string pass, bool Admin = false)
             {
                 id = ID;
@@ -67,7 +67,7 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (EmailCheck.Text == "" || PasswordCheck.Text == "")
+            if (EmailCheck.Text == "Voornaam" || PasswordCheck.Text == "Wachtwoord")
             {
                 ErrorMessageLabel.Text = "Fill everything in.";
             }
@@ -92,7 +92,7 @@ namespace Luxefoods_WindowsForms
                         foreach (DataRow dr in dt.Rows)
                         {
                             password = dr["password"].ToString();
-                            person = new User((int) dr["id"] ,dr["voornaam"].ToString(), dr["achternaam"].ToString(), dr["email"].ToString(), dr["telefoonnummer"].ToString(), dr["password"].ToString(), (bool)dr["admin"]);
+                            person = new User((int)dr["id"], dr["voornaam"].ToString(), dr["achternaam"].ToString(), dr["email"].ToString(), dr["telefoonnummer"].ToString(), dr["password"].ToString(), (bool)dr["admin"]);
                         }
                         if (typedPassword == password)
                         {
@@ -101,7 +101,8 @@ namespace Luxefoods_WindowsForms
                             {
                                 Dashboard dashboardForm = new Dashboard(person.id);
                                 dashboardForm.Show();
-                            } else
+                            }
+                            else
                             {
                                 CheckWhichFormWasOpened();
                             }
@@ -124,7 +125,7 @@ namespace Luxefoods_WindowsForms
         {
             this.CheckWhichFormWasOpened();
         }
-        
+
         private void minimizeBtn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -132,7 +133,7 @@ namespace Luxefoods_WindowsForms
         }
         public void CheckWhichFormWasOpened()
         {
-            if(previousPage == "Menu")
+            if (previousPage == "Menu")
             {
                 Menu menuForm = new Menu();
                 menuForm.Show();
@@ -198,8 +199,7 @@ namespace Luxefoods_WindowsForms
             {
                 clickedTextbox.Text = "Email";
             }
-          
+
         }
     }
 }
-
