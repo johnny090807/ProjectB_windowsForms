@@ -35,6 +35,9 @@
             this.HeaderPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.HoofdmenuBtn = new System.Windows.Forms.Button();
             this.NagerechtBtn = new System.Windows.Forms.Button();
+            this.VoorgerechtBtn = new System.Windows.Forms.Button();
+            this.DrankBtn = new System.Windows.Forms.Button();
+            this.WijnBtn = new System.Windows.Forms.Button();
             this.FullscreenPanel.SuspendLayout();
             this.GerechtenPanel.SuspendLayout();
             this.GerechtItemPanel.SuspendLayout();
@@ -72,7 +75,7 @@
             this.GerechtItemPanel.Location = new System.Drawing.Point(0, 0);
             this.GerechtItemPanel.Margin = new System.Windows.Forms.Padding(0);
             this.GerechtItemPanel.Name = "GerechtItemPanel";
-            this.GerechtItemPanel.Size = new System.Drawing.Size(808, 82);
+            this.GerechtItemPanel.Size = new System.Drawing.Size(845, 82);
             this.GerechtItemPanel.TabIndex = 7;
             // 
             // ErrorLabel
@@ -81,7 +84,7 @@
             this.ErrorLabel.AutoSize = true;
             this.ErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ErrorLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ErrorLabel.Location = new System.Drawing.Point(96, 19);
+            this.ErrorLabel.Location = new System.Drawing.Point(114, 19);
             this.ErrorLabel.Margin = new System.Windows.Forms.Padding(20);
             this.ErrorLabel.Name = "ErrorLabel";
             this.ErrorLabel.Size = new System.Drawing.Size(612, 33);
@@ -90,8 +93,11 @@
             // 
             // HeaderPanel
             // 
+            this.HeaderPanel.Controls.Add(this.VoorgerechtBtn);
             this.HeaderPanel.Controls.Add(this.HoofdmenuBtn);
             this.HeaderPanel.Controls.Add(this.NagerechtBtn);
+            this.HeaderPanel.Controls.Add(this.DrankBtn);
+            this.HeaderPanel.Controls.Add(this.WijnBtn);
             this.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.HeaderPanel.Location = new System.Drawing.Point(0, 0);
             this.HeaderPanel.Name = "HeaderPanel";
@@ -107,7 +113,7 @@
             this.HoofdmenuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HoofdmenuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HoofdmenuBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.HoofdmenuBtn.Location = new System.Drawing.Point(0, 0);
+            this.HoofdmenuBtn.Location = new System.Drawing.Point(149, 0);
             this.HoofdmenuBtn.Margin = new System.Windows.Forms.Padding(0);
             this.HoofdmenuBtn.Name = "HoofdmenuBtn";
             this.HoofdmenuBtn.Size = new System.Drawing.Size(143, 57);
@@ -125,7 +131,7 @@
             this.NagerechtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NagerechtBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NagerechtBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.NagerechtBtn.Location = new System.Drawing.Point(143, 0);
+            this.NagerechtBtn.Location = new System.Drawing.Point(292, 0);
             this.NagerechtBtn.Margin = new System.Windows.Forms.Padding(0);
             this.NagerechtBtn.Name = "NagerechtBtn";
             this.NagerechtBtn.Size = new System.Drawing.Size(135, 57);
@@ -133,6 +139,60 @@
             this.NagerechtBtn.Text = "Nagerecht";
             this.NagerechtBtn.UseVisualStyleBackColor = true;
             this.NagerechtBtn.Click += new System.EventHandler(this.NagerechtBtn_Click);
+            // 
+            // VoorgerechtBtn
+            // 
+            this.VoorgerechtBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.VoorgerechtBtn.FlatAppearance.BorderSize = 0;
+            this.VoorgerechtBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.VoorgerechtBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.VoorgerechtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VoorgerechtBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VoorgerechtBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.VoorgerechtBtn.Location = new System.Drawing.Point(0, 0);
+            this.VoorgerechtBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.VoorgerechtBtn.Name = "VoorgerechtBtn";
+            this.VoorgerechtBtn.Size = new System.Drawing.Size(149, 57);
+            this.VoorgerechtBtn.TabIndex = 2;
+            this.VoorgerechtBtn.Text = "Voorgerecht";
+            this.VoorgerechtBtn.UseVisualStyleBackColor = true;
+            this.VoorgerechtBtn.Click += new System.EventHandler(this.VoorgerechtBtn_Click);
+            // 
+            // DrankBtn
+            // 
+            this.DrankBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.DrankBtn.FlatAppearance.BorderSize = 0;
+            this.DrankBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.DrankBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.DrankBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DrankBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrankBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.DrankBtn.Location = new System.Drawing.Point(427, 0);
+            this.DrankBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.DrankBtn.Name = "DrankBtn";
+            this.DrankBtn.Size = new System.Drawing.Size(135, 57);
+            this.DrankBtn.TabIndex = 3;
+            this.DrankBtn.Text = "Dranken";
+            this.DrankBtn.UseVisualStyleBackColor = true;
+            this.DrankBtn.Click += new System.EventHandler(this.DrankBtn_Click);
+            // 
+            // WijnBtn
+            // 
+            this.WijnBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.WijnBtn.FlatAppearance.BorderSize = 0;
+            this.WijnBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.WijnBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.WijnBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.WijnBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WijnBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.WijnBtn.Location = new System.Drawing.Point(562, 0);
+            this.WijnBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.WijnBtn.Name = "WijnBtn";
+            this.WijnBtn.Size = new System.Drawing.Size(135, 57);
+            this.WijnBtn.TabIndex = 4;
+            this.WijnBtn.Text = "Wijnen";
+            this.WijnBtn.UseVisualStyleBackColor = true;
+            this.WijnBtn.Click += new System.EventHandler(this.WijnBtn_Click);
             // 
             // MenuSpecial
             // 
@@ -161,5 +221,8 @@
         private System.Windows.Forms.FlowLayoutPanel GerechtenPanel;
         private System.Windows.Forms.Panel GerechtItemPanel;
         private System.Windows.Forms.Label ErrorLabel;
+        private System.Windows.Forms.Button VoorgerechtBtn;
+        private System.Windows.Forms.Button DrankBtn;
+        private System.Windows.Forms.Button WijnBtn;
     }
 }

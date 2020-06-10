@@ -20,6 +20,7 @@ namespace Luxefoods_WindowsForms
             {
                 this.LoginBtn.Text = "Logout";
             }
+            HomeBtn.BackColor = Color.FromArgb(150, Color.Black);
             Header.BackColor = Color.FromArgb(100, Color.Black);
         }
 

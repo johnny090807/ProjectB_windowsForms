@@ -20,6 +20,7 @@ namespace Luxefoods_WindowsForms
             {
                 this.LoginBtn.Text = "Logout";
             }
+            CheckReservationsBtn.BackColor = Color.FromArgb(100, Color.Black);
         }
 
         private void AvailabilityTable_Paint(object sender, PaintEventArgs e)

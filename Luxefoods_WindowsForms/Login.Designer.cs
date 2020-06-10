@@ -64,6 +64,7 @@
             this.RegisterBtn.BackColor = System.Drawing.Color.Transparent;
             this.RegisterBtn.FlatAppearance.BorderSize = 0;
             this.RegisterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegisterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegisterBtn.ForeColor = System.Drawing.SystemColors.Highlight;
             this.RegisterBtn.Location = new System.Drawing.Point(12, 457);
             this.RegisterBtn.Name = "RegisterBtn";
@@ -97,7 +98,7 @@
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(154, 37);
-            this.bunifuCustomLabel1.TabIndex = 14;
+            this.bunifuCustomLabel1.TabIndex = 5;
             this.bunifuCustomLabel1.Text = "LuxeFoods";
             // 
             // exitBtn

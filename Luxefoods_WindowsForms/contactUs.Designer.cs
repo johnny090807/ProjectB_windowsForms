@@ -185,6 +185,7 @@
             this.ReservationsBtn.TabIndex = 28;
             this.ReservationsBtn.Text = "Place a reservation";
             this.ReservationsBtn.UseVisualStyleBackColor = false;
+            this.ReservationsBtn.Click += new System.EventHandler(this.ReservationsBtn_Click);
             // 
             // AboutBtn
             // 

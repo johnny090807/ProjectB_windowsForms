@@ -20,8 +20,9 @@ namespace Luxefoods_WindowsForms
             {
                 this.LoginBtn.Text = "Logout";
             }
+            ContactBtn.BackColor = Color.FromArgb(100, Color.Black);
         }
-        
+
         private void AvailabilityTable_Paint(object sender, PaintEventArgs e)
         {
 
@@ -108,6 +109,20 @@ namespace Luxefoods_WindowsForms
             {
                 FullscreenBtn.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.compress;
                 WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void ReservationsBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Reservation reservationForm = new Reservation(Login.person.id);
+                this.Hide();
+                reservationForm.Show();
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show("Je moet eerst ingelogd zijn.");
             }
         }
     }
