@@ -55,7 +55,7 @@
             // 
             // editMenuButton
             // 
-            this.editMenuButton.Location = new System.Drawing.Point(1253, 146);
+            this.editMenuButton.Location = new System.Drawing.Point(1266, 146);
             this.editMenuButton.Name = "editMenuButton";
             this.editMenuButton.Size = new System.Drawing.Size(212, 78);
             this.editMenuButton.TabIndex = 2;

@@ -343,5 +343,12 @@ namespace Luxefoods_WindowsForms
             MenuDashboard menuDashboard = new MenuDashboard(globalAdminID, "dashboard");
             menuDashboard.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RestaurantenDashboard restaurantenDashboard = new RestaurantenDashboard(globalAdminID, "dashboard");
+            restaurantenDashboard.Show();
+        }
     }
 }

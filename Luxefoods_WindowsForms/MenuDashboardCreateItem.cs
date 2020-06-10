@@ -8,11 +8,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Luxefoods_WindowsForms
 {
     public partial class MenuDashboardCreateItem : Form
     {
+        // Allows the user to drag the window
+        // This piece of code was taken from StackOverFlow https://stackoverflow.com/questions/1592876/make-a-borderless-form-movable
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        private void Form1_MouseDown(object sender,
+        System.Windows.Forms.MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
         int globalMenuId;
         int globalAdminID;
         string globalPrevious;
@@ -22,17 +43,7 @@ namespace Luxefoods_WindowsForms
             globalAdminID = adminID;
             globalPrevious = previous;
             InitializeComponent();
-            /// <summary>
-            /// TODO
-            /// Check if all values are selected
-            /// if yes then create order and send back to the MenuDashboard
-            /// add back button to send back to MenuDashboard aswell
-            /// </summary>
-        }
-
-        private void checkDataChanged(int ID)
-        {
-            
+            CenterToScreen();
         }
 
         // https://stackoverflow.com/questions/463299/how-do-i-make-a-textbox-that-only-accepts-numbers?page=1&tab=votes#tab-top
@@ -72,12 +83,7 @@ namespace Luxefoods_WindowsForms
 
 
                     MessageBox.Show("Reservation has succesfully been submitted");
-                    if (globalPrevious == "menuDashboard")
-                    {
-                        this.Hide();
-                        MenuDashboard menuDashboard = new MenuDashboard(globalAdminID, "dashboard");
-                        menuDashboard.Show();
-                    }
+                    GoBack();
                 }
                 catch (Exception ex)
                 {
@@ -114,6 +120,11 @@ namespace Luxefoods_WindowsForms
         } 
 
         private void goBackButton_Click(object sender, EventArgs e)
+        {
+            GoBack();
+        }
+
+        private void GoBack()
         {
             if (globalPrevious == "menuDashboard")
             {

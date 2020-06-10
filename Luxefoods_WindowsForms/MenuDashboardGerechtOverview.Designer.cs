@@ -271,6 +271,7 @@
             this.Controls.Add(this.gerechtId);
             this.Name = "MenuDashboardGerechtOverview";
             this.Text = "MenuDashboardGerechtOverview";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
