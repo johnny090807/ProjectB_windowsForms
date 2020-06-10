@@ -228,6 +228,24 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservationBackEnd.cs" />
+    <Compile Include="RestaurantDashboardCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestaurantDashboardCreate.Designer.cs">
+      <DependentUpon>RestaurantDashboardCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantenDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestaurantenDashboard.Designer.cs">
+      <DependentUpon>RestaurantenDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantenDashboardReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestaurantenDashboardReview.Designer.cs">
+      <DependentUpon>RestaurantenDashboardReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +271,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestaurantDashboardCreate.resx">
+      <DependentUpon>RestaurantDashboardCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestaurantenDashboard.resx">
+      <DependentUpon>RestaurantenDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestaurantenDashboardReview.resx">
+      <DependentUpon>RestaurantenDashboardReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchPage.resx">
       <DependentUpon>SearchPage.cs</DependentUpon>

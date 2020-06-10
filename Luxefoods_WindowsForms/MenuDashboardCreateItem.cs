@@ -22,17 +22,6 @@ namespace Luxefoods_WindowsForms
             globalAdminID = adminID;
             globalPrevious = previous;
             InitializeComponent();
-            /// <summary>
-            /// TODO
-            /// Check if all values are selected
-            /// if yes then create order and send back to the MenuDashboard
-            /// add back button to send back to MenuDashboard aswell
-            /// </summary>
-        }
-
-        private void checkDataChanged(int ID)
-        {
-            
         }
 
         // https://stackoverflow.com/questions/463299/how-do-i-make-a-textbox-that-only-accepts-numbers?page=1&tab=votes#tab-top
@@ -72,12 +61,7 @@ namespace Luxefoods_WindowsForms
 
 
                     MessageBox.Show("Reservation has succesfully been submitted");
-                    if (globalPrevious == "menuDashboard")
-                    {
-                        this.Hide();
-                        MenuDashboard menuDashboard = new MenuDashboard(globalAdminID, "dashboard");
-                        menuDashboard.Show();
-                    }
+                    GoBack();
                 }
                 catch (Exception ex)
                 {
@@ -114,6 +98,11 @@ namespace Luxefoods_WindowsForms
         } 
 
         private void goBackButton_Click(object sender, EventArgs e)
+        {
+            GoBack();
+        }
+
+        private void GoBack()
         {
             if (globalPrevious == "menuDashboard")
             {

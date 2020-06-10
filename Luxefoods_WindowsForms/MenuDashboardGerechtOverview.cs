@@ -121,6 +121,7 @@ namespace Luxefoods_WindowsForms
             gerechtMelkSelector.Enabled = !gerechtMelkSelector.Enabled;
             gerechtNotenSelector.Enabled = !gerechtNotenSelector.Enabled;
             gerechtCategorieSelector.Enabled = !gerechtCategorieSelector.Enabled;
+            goBackButton.Enabled = !goBackButton.Enabled;
             EditButton.Enabled = !EditButton.Enabled;
             DeleteButton.Enabled = !DeleteButton.Enabled;
         }
