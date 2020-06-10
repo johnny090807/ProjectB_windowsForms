@@ -68,10 +68,11 @@
             this.LoginBtn.BackColor = System.Drawing.Color.Transparent;
             this.LoginBtn.FlatAppearance.BorderSize = 0;
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.LoginBtn.Location = new System.Drawing.Point(40, 641);
+            this.LoginBtn.Location = new System.Drawing.Point(36, 641);
             this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(626, 23);
+            this.LoginBtn.Size = new System.Drawing.Size(626, 48);
             this.LoginBtn.TabIndex = 7;
             this.LoginBtn.Text = "Already have an account? Click here...";
             this.LoginBtn.UseVisualStyleBackColor = false;
@@ -90,7 +91,7 @@
             this.exitBtn.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(37, 35);
-            this.exitBtn.TabIndex = 13;
+            this.exitBtn.TabIndex = 8;
             this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
@@ -119,7 +120,7 @@
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(154, 37);
-            this.bunifuCustomLabel1.TabIndex = 14;
+            this.bunifuCustomLabel1.TabIndex = 9;
             this.bunifuCustomLabel1.Text = "LuxeFoods";
             // 
             // ErrorMessageLabel
@@ -258,7 +259,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.Register_background;
-            this.ClientSize = new System.Drawing.Size(701, 676);
+            this.ClientSize = new System.Drawing.Size(701, 696);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.VerifyPasswordTxtBox);

@@ -19,7 +19,6 @@ namespace Luxefoods_WindowsForms
             this.clickedButton = clickedButton;
             InitializeComponent();
             CenterToScreen();
-            makeMenu();
         }
         public void makeMenu(string Menu = "")
         {
@@ -37,12 +36,19 @@ namespace Luxefoods_WindowsForms
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
+                    int i = 0;
+                    if (i == 0)
+                    {
+                        this.GerechtenPanel.Controls.Clear();
+                        this.GerechtenPanel.Controls.Add(ErrorLabel);
+                        ErrorLabel.Text = "Hier is nog niks aan toegevoegd";
+                    }
                     foreach (DataRow dr in dt.Rows)
                     {
-
                         q = $"SELECT * FROM gerecht where menuId = '{(int)dr["menuId"]}' and categorie = '{Menu}'";
                         try
                         {
+                            i++;
                             con = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
                             con.Open();
                             if (con.State == System.Data.ConnectionState.Open)
@@ -61,7 +67,6 @@ namespace Luxefoods_WindowsForms
                                 }
                                 foreach (DataRow dr2 in dt.Rows)
                                 {
-                                    Console.WriteLine(dr2["naam"].ToString());
                                     Panel naamPanel = new Panel();
                                     Label naamLabel = new Label();
 
@@ -157,6 +162,7 @@ namespace Luxefoods_WindowsForms
                                     newPanel.TabIndex = 2;
                                     GerechtenPanel.Controls.Add(newPanel);
                                     j++;
+
                                 }
                             }
                         }
@@ -193,5 +199,22 @@ namespace Luxefoods_WindowsForms
             sender.BackColor = Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
         }
 
+        private void VoorgerechtBtn_Click(object sender, EventArgs e)
+        {
+            clearAllControls((Button)sender);
+            makeMenu("Voorgerecht");
+        }
+
+        private void DrankBtn_Click(object sender, EventArgs e)
+        {
+            clearAllControls((Button)sender);
+            makeMenu("Dranken");
+        }
+
+        private void WijnBtn_Click(object sender, EventArgs e)
+        {
+            clearAllControls((Button)sender);
+            makeMenu("Wijnen");
+        }
     }
 }

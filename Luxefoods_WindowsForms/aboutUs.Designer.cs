@@ -287,7 +287,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1285, 958);
+            this.panel1.Size = new System.Drawing.Size(1285, 817);
             this.panel1.TabIndex = 47;
             // 
             // aboutUs
@@ -296,7 +296,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
-            this.ClientSize = new System.Drawing.Size(1285, 1038);
+            this.ClientSize = new System.Drawing.Size(1285, 897);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Header);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

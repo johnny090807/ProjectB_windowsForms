@@ -54,9 +54,10 @@ namespace Luxefoods_WindowsForms
                 this.LoginBTN.Text = "Logout";
             }
             this.addButtonsToPanel();
-            
+            MenuBTN.BackColor = Color.FromArgb(100, Color.Black);
+
         }
-       
+
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             Login.previousPage = "Menu";
@@ -119,7 +120,16 @@ namespace Luxefoods_WindowsForms
 
         private void ExitBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (System.Windows.Forms.Application.MessageLoop)
+            {
+                // WinForms app
+                System.Windows.Forms.Application.Exit();
+            }
+            else
+            {
+                // Console app
+                System.Environment.Exit(1);
+            }
         }
 
         private void FullscreenBtn_Click(object sender, EventArgs e)

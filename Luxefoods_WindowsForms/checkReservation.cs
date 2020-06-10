@@ -42,6 +42,7 @@ namespace Luxefoods_WindowsForms
             {
                 this.LoginBtn.Text = "Logout";
             }
+            CheckReservationsBtn.BackColor = Color.FromArgb(100, Color.Black);
             searchReservationById(Login.person.id);
         }
 
