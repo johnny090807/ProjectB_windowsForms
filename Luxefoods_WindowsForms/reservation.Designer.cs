@@ -68,6 +68,13 @@ namespace Luxefoods_WindowsForms
     /// </summary>
     private void InitializeComponent()
         {
+
+            this.SuspendLayout();
+            // 
+            // Reservation
+            // 
+            this.ClientSize = new System.Drawing.Size(298, 280);
+            this.Name = "Reservation";
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reservation));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -853,7 +860,6 @@ namespace Luxefoods_WindowsForms
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

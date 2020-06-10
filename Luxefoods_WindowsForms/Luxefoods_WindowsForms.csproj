@@ -89,6 +89,15 @@
     <EmbeddedResource Include="homePage.resx">
       <DependentUpon>homePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuDashboard.resx">
+      <DependentUpon>MenuDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDashboardCreateItem.resx">
+      <DependentUpon>MenuDashboardCreateItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDashboardGerechtOverview.resx">
+      <DependentUpon>MenuDashboardGerechtOverview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +166,24 @@
       <DependentUpon>homePage.cs</DependentUpon>
     </Compile>
     <Compile Include="LuxeFoodsDataSet.Designer.cs" />
+    <Compile Include="MenuDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDashboard.Designer.cs">
+      <DependentUpon>MenuDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDashboardCreateItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDashboardCreateItem.Designer.cs">
+      <DependentUpon>MenuDashboardCreateItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDashboardGerechtOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDashboardGerechtOverview.Designer.cs">
+      <DependentUpon>MenuDashboardGerechtOverview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +227,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationBackEnd.cs" />
     <Compile Include="SearchPage.cs">
       <SubType>Form</SubType>
     </Compile>

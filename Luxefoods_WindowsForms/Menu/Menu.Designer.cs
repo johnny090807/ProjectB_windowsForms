@@ -491,6 +491,7 @@
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.Navbar.ResumeLayout(false);
             this.Navbar.PerformLayout();
             this.SideBar.ResumeLayout(false);

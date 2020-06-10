@@ -15,6 +15,8 @@ namespace Luxefoods_WindowsForms
 {
     public partial class Dashboard : Form
     {
+        // Allows the user to drag the window
+        // This piece of code was taken from StackOverFlow https://stackoverflow.com/questions/1592876/make-a-borderless-form-movable
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -22,6 +24,18 @@ namespace Luxefoods_WindowsForms
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
+
+        private void Form1_MouseDown(object sender,
+        System.Windows.Forms.MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+
         private int globalAdminID;
         public Dashboard(int adminID)
         {
@@ -53,16 +67,6 @@ namespace Luxefoods_WindowsForms
             }
         }
 
-        private void Form1_MouseDown(object sender,
-        System.Windows.Forms.MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-        }
-
         private void fillChart(DateTime date, int restaurantId = 1)
         {
             List<DateTime> Datums = new List<DateTime>();
@@ -82,8 +86,10 @@ namespace Luxefoods_WindowsForms
 
             chart1.Series["Customers"].Points.Clear();
 
+
+            int openTime = 7;
             int time = 16;
-            for (var i = 0; i < 7; i++)
+            for (var i = 0; i < openTime; i++)
             {
                 int count = 0;
                 foreach (var x in Datums) {
@@ -329,6 +335,13 @@ namespace Luxefoods_WindowsForms
                 Login form1 = new Login();
                 form1.Show();
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuDashboard menuDashboard = new MenuDashboard(globalAdminID, "dashboard");
+            menuDashboard.Show();
         }
     }
 }

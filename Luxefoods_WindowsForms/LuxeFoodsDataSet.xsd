@@ -335,11 +335,8 @@ SELECT id, voornaam, achternaam, email, telefoonnummer, password FROM [user] WHE
   <xs:element name="LuxeFoodsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LuxeFoodsDataSet" msprop:Generator_UserDSName="LuxeFoodsDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-<<<<<<< HEAD
         <xs:element name="gerecht" msprop:Generator_TableClassName="gerechtDataTable" msprop:Generator_TableVarName="tablegerecht" msprop:Generator_RowChangedName="gerechtRowChanged" msprop:Generator_TablePropName="gerecht" msprop:Generator_RowDeletingName="gerechtRowDeleting" msprop:Generator_RowChangingName="gerechtRowChanging" msprop:Generator_RowEvHandlerName="gerechtRowChangeEventHandler" msprop:Generator_RowDeletedName="gerechtRowDeleted" msprop:Generator_RowClassName="gerechtRow" msprop:Generator_UserTableName="gerecht" msprop:Generator_RowEvArgName="gerechtRowChangeEvent">
-=======
         <xs:element name="gerecht" msprop:Generator_TableClassName="gerechtDataTable" msprop:Generator_TableVarName="tablegerecht" msprop:Generator_TablePropName="gerecht" msprop:Generator_RowDeletingName="gerechtRowDeleting" msprop:Generator_RowChangingName="gerechtRowChanging" msprop:Generator_RowEvHandlerName="gerechtRowChangeEventHandler" msprop:Generator_RowDeletedName="gerechtRowDeleted" msprop:Generator_UserTableName="gerecht" msprop:Generator_RowChangedName="gerechtRowChanged" msprop:Generator_RowEvArgName="gerechtRowChangeEvent" msprop:Generator_RowClassName="gerechtRow">
->>>>>>> 7ab0aedcbaf7bd5b4ee221a459dc2ae9d84e369d
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -348,11 +345,11 @@ SELECT id, voornaam, achternaam, email, telefoonnummer, password FROM [user] WHE
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-<<<<<<< HEAD
+
         <xs:element name="ingredient" msprop:Generator_TableClassName="ingredientDataTable" msprop:Generator_TableVarName="tableingredient" msprop:Generator_RowChangedName="ingredientRowChanged" msprop:Generator_TablePropName="ingredient" msprop:Generator_RowDeletingName="ingredientRowDeleting" msprop:Generator_RowChangingName="ingredientRowChanging" msprop:Generator_RowEvHandlerName="ingredientRowChangeEventHandler" msprop:Generator_RowDeletedName="ingredientRowDeleted" msprop:Generator_RowClassName="ingredientRow" msprop:Generator_UserTableName="ingredient" msprop:Generator_RowEvArgName="ingredientRowChangeEvent">
-=======
+
         <xs:element name="ingredient" msprop:Generator_TableClassName="ingredientDataTable" msprop:Generator_TableVarName="tableingredient" msprop:Generator_TablePropName="ingredient" msprop:Generator_RowDeletingName="ingredientRowDeleting" msprop:Generator_RowChangingName="ingredientRowChanging" msprop:Generator_RowEvHandlerName="ingredientRowChangeEventHandler" msprop:Generator_RowDeletedName="ingredientRowDeleted" msprop:Generator_UserTableName="ingredient" msprop:Generator_RowChangedName="ingredientRowChanged" msprop:Generator_RowEvArgName="ingredientRowChangeEvent" msprop:Generator_RowClassName="ingredientRow">
->>>>>>> 7ab0aedcbaf7bd5b4ee221a459dc2ae9d84e369d
+
           <xs:complexType>
             <xs:sequence>
               <xs:element name="gerechtId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columngerechtId" msprop:Generator_ColumnPropNameInRow="gerechtId" msprop:Generator_ColumnPropNameInTable="gerechtIdColumn" msprop:Generator_UserColumnName="gerechtId" type="xs:int" />
@@ -366,11 +363,11 @@ SELECT id, voornaam, achternaam, email, telefoonnummer, password FROM [user] WHE
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-<<<<<<< HEAD
+
         <xs:element name="menu" msprop:Generator_TableClassName="menuDataTable" msprop:Generator_TableVarName="tablemenu" msprop:Generator_RowChangedName="menuRowChanged" msprop:Generator_TablePropName="menu" msprop:Generator_RowDeletingName="menuRowDeleting" msprop:Generator_RowChangingName="menuRowChanging" msprop:Generator_RowEvHandlerName="menuRowChangeEventHandler" msprop:Generator_RowDeletedName="menuRowDeleted" msprop:Generator_RowClassName="menuRow" msprop:Generator_UserTableName="menu" msprop:Generator_RowEvArgName="menuRowChangeEvent">
-=======
+
         <xs:element name="menu" msprop:Generator_TableClassName="menuDataTable" msprop:Generator_TableVarName="tablemenu" msprop:Generator_TablePropName="menu" msprop:Generator_RowDeletingName="menuRowDeleting" msprop:Generator_RowChangingName="menuRowChanging" msprop:Generator_RowEvHandlerName="menuRowChangeEventHandler" msprop:Generator_RowDeletedName="menuRowDeleted" msprop:Generator_UserTableName="menu" msprop:Generator_RowChangedName="menuRowChanged" msprop:Generator_RowEvArgName="menuRowChangeEvent" msprop:Generator_RowClassName="menuRow">
->>>>>>> 7ab0aedcbaf7bd5b4ee221a459dc2ae9d84e369d
+
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -379,11 +376,11 @@ SELECT id, voornaam, achternaam, email, telefoonnummer, password FROM [user] WHE
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-<<<<<<< HEAD
+
         <xs:element name="reservering" msprop:Generator_TableClassName="reserveringDataTable" msprop:Generator_TableVarName="tablereservering" msprop:Generator_RowChangedName="reserveringRowChanged" msprop:Generator_TablePropName="reservering" msprop:Generator_RowDeletingName="reserveringRowDeleting" msprop:Generator_RowChangingName="reserveringRowChanging" msprop:Generator_RowEvHandlerName="reserveringRowChangeEventHandler" msprop:Generator_RowDeletedName="reserveringRowDeleted" msprop:Generator_RowClassName="reserveringRow" msprop:Generator_UserTableName="reservering" msprop:Generator_RowEvArgName="reserveringRowChangeEvent">
-=======
+
         <xs:element name="reservering" msprop:Generator_TableClassName="reserveringDataTable" msprop:Generator_TableVarName="tablereservering" msprop:Generator_TablePropName="reservering" msprop:Generator_RowDeletingName="reserveringRowDeleting" msprop:Generator_RowChangingName="reserveringRowChanging" msprop:Generator_RowEvHandlerName="reserveringRowChangeEventHandler" msprop:Generator_RowDeletedName="reserveringRowDeleted" msprop:Generator_UserTableName="reservering" msprop:Generator_RowChangedName="reserveringRowChanged" msprop:Generator_RowEvArgName="reserveringRowChangeEvent" msprop:Generator_RowClassName="reserveringRow">
->>>>>>> 7ab0aedcbaf7bd5b4ee221a459dc2ae9d84e369d
+
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -394,11 +391,11 @@ SELECT id, voornaam, achternaam, email, telefoonnummer, password FROM [user] WHE
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-<<<<<<< HEAD
+
         <xs:element name="restaurant" msprop:Generator_TableClassName="restaurantDataTable" msprop:Generator_TableVarName="tablerestaurant" msprop:Generator_RowChangedName="restaurantRowChanged" msprop:Generator_TablePropName="restaurant" msprop:Generator_RowDeletingName="restaurantRowDeleting" msprop:Generator_RowChangingName="restaurantRowChanging" msprop:Generator_RowEvHandlerName="restaurantRowChangeEventHandler" msprop:Generator_RowDeletedName="restaurantRowDeleted" msprop:Generator_RowClassName="restaurantRow" msprop:Generator_UserTableName="restaurant" msprop:Generator_RowEvArgName="restaurantRowChangeEvent">
-=======
+
         <xs:element name="restaurant" msprop:Generator_TableClassName="restaurantDataTable" msprop:Generator_TableVarName="tablerestaurant" msprop:Generator_TablePropName="restaurant" msprop:Generator_RowDeletingName="restaurantRowDeleting" msprop:Generator_RowChangingName="restaurantRowChanging" msprop:Generator_RowEvHandlerName="restaurantRowChangeEventHandler" msprop:Generator_RowDeletedName="restaurantRowDeleted" msprop:Generator_UserTableName="restaurant" msprop:Generator_RowChangedName="restaurantRowChanged" msprop:Generator_RowEvArgName="restaurantRowChangeEvent" msprop:Generator_RowClassName="restaurantRow">
->>>>>>> 7ab0aedcbaf7bd5b4ee221a459dc2ae9d84e369d
+
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -414,11 +411,11 @@ SELECT id, voornaam, achternaam, email, telefoonnummer, password FROM [user] WHE
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-<<<<<<< HEAD
+
         <xs:element name="user" msprop:Generator_TableClassName="userDataTable" msprop:Generator_TableVarName="tableuser" msprop:Generator_RowChangedName="userRowChanged" msprop:Generator_TablePropName="user" msprop:Generator_RowDeletingName="userRowDeleting" msprop:Generator_RowChangingName="userRowChanging" msprop:Generator_RowEvHandlerName="userRowChangeEventHandler" msprop:Generator_RowDeletedName="userRowDeleted" msprop:Generator_RowClassName="userRow" msprop:Generator_UserTableName="user" msprop:Generator_RowEvArgName="userRowChangeEvent">
-=======
+
         <xs:element name="user" msprop:Generator_TableClassName="userDataTable" msprop:Generator_TableVarName="tableuser" msprop:Generator_TablePropName="user" msprop:Generator_RowDeletingName="userRowDeleting" msprop:Generator_RowChangingName="userRowChanging" msprop:Generator_RowEvHandlerName="userRowChangeEventHandler" msprop:Generator_RowDeletedName="userRowDeleted" msprop:Generator_UserTableName="user" msprop:Generator_RowChangedName="userRowChanged" msprop:Generator_RowEvArgName="userRowChangeEvent" msprop:Generator_RowClassName="userRow">
->>>>>>> 7ab0aedcbaf7bd5b4ee221a459dc2ae9d84e369d
+
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
