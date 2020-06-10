@@ -41,6 +41,7 @@ namespace Luxefoods_WindowsForms
             globalPrevious = previous;
             globalAdminID = adminID;
             InitializeComponent();
+            CenterToScreen();
             fillListBox();
             fillMenuItemsListBox(1);
             editMenuButton.Hide();

@@ -174,6 +174,7 @@
             this.Controls.Add(this.label1);
             this.Name = "RestaurantenDashboardReview";
             this.Text = "RestaurantenDashboardReview";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

@@ -89,6 +89,7 @@
             this.Controls.Add(this.goBackButton);
             this.Name = "RestaurantDashboardCreate";
             this.Text = "RestaurantDashboardCreate";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

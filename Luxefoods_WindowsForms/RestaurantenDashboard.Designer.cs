@@ -88,6 +88,7 @@
             this.Controls.Add(this.restaurantListBox);
             this.Name = "RestaurantenDashboard";
             this.Text = "RestaurantenDashboard";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.ResumeLayout(false);
 
         }
