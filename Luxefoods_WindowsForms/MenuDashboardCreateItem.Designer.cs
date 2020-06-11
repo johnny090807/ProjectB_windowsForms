@@ -50,7 +50,7 @@
             this.goBackButton.ForeColor = System.Drawing.Color.White;
             this.goBackButton.Location = new System.Drawing.Point(50, 12);
             this.goBackButton.Name = "goBackButton";
-            this.goBackButton.Size = new System.Drawing.Size(160, 52);
+            this.goBackButton.Size = new System.Drawing.Size(240, 80);
             this.goBackButton.TabIndex = 30;
             this.goBackButton.Text = "Go Back";
             this.goBackButton.UseVisualStyleBackColor = false;
@@ -195,11 +195,11 @@
             // 
             // MenuDashboardCreateItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1301, 794);
+            this.ClientSize = new System.Drawing.Size(1952, 1222);
             this.Controls.Add(this.CreateItem);
             this.Controls.Add(this.goBackButton);
             this.Controls.Add(this.gerechtCategorieSelector);
@@ -213,6 +213,7 @@
             this.Controls.Add(this.gerechtPrijs);
             this.Controls.Add(this.gerechtNaam);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MenuDashboardCreateItem";
             this.Text = "/;.";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);

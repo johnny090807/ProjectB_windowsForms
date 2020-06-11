@@ -87,9 +87,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(427, 469);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 29);
+            this.label1.Size = new System.Drawing.Size(305, 39);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Een straat 13";
+            this.label1.Text = "Rijksstraatweg 149";
             // 
             // label2
             // 
@@ -100,7 +100,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(427, 521);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 26);
+            this.label2.Size = new System.Drawing.Size(305, 37);
             this.label2.TabIndex = 36;
             this.label2.Text = "info@luxefoods.com";
             // 
@@ -113,9 +113,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(427, 576);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 26);
+            this.label3.Size = new System.Drawing.Size(193, 37);
             this.label3.TabIndex = 36;
-            this.label3.Text = "06-12345678";
+            this.label3.Text = "0181324605";
             // 
             // Header
             // 
@@ -324,7 +324,7 @@
             // 
             // contactUs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
