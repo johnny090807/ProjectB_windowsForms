@@ -33,9 +33,9 @@
             this.GerechtItemPanel = new System.Windows.Forms.Panel();
             this.ErrorLabel = new System.Windows.Forms.Label();
             this.HeaderPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.VoorgerechtBtn = new System.Windows.Forms.Button();
             this.HoofdmenuBtn = new System.Windows.Forms.Button();
             this.NagerechtBtn = new System.Windows.Forms.Button();
-            this.VoorgerechtBtn = new System.Windows.Forms.Button();
             this.DrankBtn = new System.Windows.Forms.Button();
             this.WijnBtn = new System.Windows.Forms.Button();
             this.FullscreenPanel.SuspendLayout();
@@ -84,12 +84,12 @@
             this.ErrorLabel.AutoSize = true;
             this.ErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ErrorLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ErrorLabel.Location = new System.Drawing.Point(114, 19);
+            this.ErrorLabel.Location = new System.Drawing.Point(124, 20);
             this.ErrorLabel.Margin = new System.Windows.Forms.Padding(20);
             this.ErrorLabel.Name = "ErrorLabel";
-            this.ErrorLabel.Size = new System.Drawing.Size(612, 33);
+            this.ErrorLabel.Size = new System.Drawing.Size(581, 33);
             this.ErrorLabel.TabIndex = 0;
-            this.ErrorLabel.Text = "Klik boven in het menu voor een van de opties";
+            this.ErrorLabel.Text = "Click above to see the contents of the menu";
             // 
             // HeaderPanel
             // 
@@ -103,42 +103,6 @@
             this.HeaderPanel.Name = "HeaderPanel";
             this.HeaderPanel.Size = new System.Drawing.Size(845, 57);
             this.HeaderPanel.TabIndex = 0;
-            // 
-            // HoofdmenuBtn
-            // 
-            this.HoofdmenuBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.HoofdmenuBtn.FlatAppearance.BorderSize = 0;
-            this.HoofdmenuBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
-            this.HoofdmenuBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
-            this.HoofdmenuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HoofdmenuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HoofdmenuBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.HoofdmenuBtn.Location = new System.Drawing.Point(149, 0);
-            this.HoofdmenuBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.HoofdmenuBtn.Name = "HoofdmenuBtn";
-            this.HoofdmenuBtn.Size = new System.Drawing.Size(143, 57);
-            this.HoofdmenuBtn.TabIndex = 0;
-            this.HoofdmenuBtn.Text = "Hoofdmenu";
-            this.HoofdmenuBtn.UseVisualStyleBackColor = true;
-            this.HoofdmenuBtn.Click += new System.EventHandler(this.HoofdmenuBtn_Click);
-            // 
-            // NagerechtBtn
-            // 
-            this.NagerechtBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.NagerechtBtn.FlatAppearance.BorderSize = 0;
-            this.NagerechtBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
-            this.NagerechtBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
-            this.NagerechtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NagerechtBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NagerechtBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.NagerechtBtn.Location = new System.Drawing.Point(292, 0);
-            this.NagerechtBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.NagerechtBtn.Name = "NagerechtBtn";
-            this.NagerechtBtn.Size = new System.Drawing.Size(135, 57);
-            this.NagerechtBtn.TabIndex = 1;
-            this.NagerechtBtn.Text = "Nagerecht";
-            this.NagerechtBtn.UseVisualStyleBackColor = true;
-            this.NagerechtBtn.Click += new System.EventHandler(this.NagerechtBtn_Click);
             // 
             // VoorgerechtBtn
             // 
@@ -154,9 +118,45 @@
             this.VoorgerechtBtn.Name = "VoorgerechtBtn";
             this.VoorgerechtBtn.Size = new System.Drawing.Size(149, 57);
             this.VoorgerechtBtn.TabIndex = 2;
-            this.VoorgerechtBtn.Text = "Voorgerecht";
+            this.VoorgerechtBtn.Text = "Appetizer";
             this.VoorgerechtBtn.UseVisualStyleBackColor = true;
             this.VoorgerechtBtn.Click += new System.EventHandler(this.VoorgerechtBtn_Click);
+            // 
+            // HoofdmenuBtn
+            // 
+            this.HoofdmenuBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.HoofdmenuBtn.FlatAppearance.BorderSize = 0;
+            this.HoofdmenuBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.HoofdmenuBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.HoofdmenuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HoofdmenuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HoofdmenuBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.HoofdmenuBtn.Location = new System.Drawing.Point(149, 0);
+            this.HoofdmenuBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.HoofdmenuBtn.Name = "HoofdmenuBtn";
+            this.HoofdmenuBtn.Size = new System.Drawing.Size(150, 57);
+            this.HoofdmenuBtn.TabIndex = 0;
+            this.HoofdmenuBtn.Text = "Main menu";
+            this.HoofdmenuBtn.UseVisualStyleBackColor = true;
+            this.HoofdmenuBtn.Click += new System.EventHandler(this.HoofdmenuBtn_Click);
+            // 
+            // NagerechtBtn
+            // 
+            this.NagerechtBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.NagerechtBtn.FlatAppearance.BorderSize = 0;
+            this.NagerechtBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.NagerechtBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.NagerechtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NagerechtBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NagerechtBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.NagerechtBtn.Location = new System.Drawing.Point(299, 0);
+            this.NagerechtBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.NagerechtBtn.Name = "NagerechtBtn";
+            this.NagerechtBtn.Size = new System.Drawing.Size(135, 57);
+            this.NagerechtBtn.TabIndex = 1;
+            this.NagerechtBtn.Text = "Dessert";
+            this.NagerechtBtn.UseVisualStyleBackColor = true;
+            this.NagerechtBtn.Click += new System.EventHandler(this.NagerechtBtn_Click);
             // 
             // DrankBtn
             // 
@@ -167,12 +167,12 @@
             this.DrankBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DrankBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DrankBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.DrankBtn.Location = new System.Drawing.Point(427, 0);
+            this.DrankBtn.Location = new System.Drawing.Point(434, 0);
             this.DrankBtn.Margin = new System.Windows.Forms.Padding(0);
             this.DrankBtn.Name = "DrankBtn";
             this.DrankBtn.Size = new System.Drawing.Size(135, 57);
             this.DrankBtn.TabIndex = 3;
-            this.DrankBtn.Text = "Dranken";
+            this.DrankBtn.Text = "Drinks";
             this.DrankBtn.UseVisualStyleBackColor = true;
             this.DrankBtn.Click += new System.EventHandler(this.DrankBtn_Click);
             // 
@@ -185,12 +185,12 @@
             this.WijnBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.WijnBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WijnBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.WijnBtn.Location = new System.Drawing.Point(562, 0);
+            this.WijnBtn.Location = new System.Drawing.Point(569, 0);
             this.WijnBtn.Margin = new System.Windows.Forms.Padding(0);
             this.WijnBtn.Name = "WijnBtn";
             this.WijnBtn.Size = new System.Drawing.Size(135, 57);
             this.WijnBtn.TabIndex = 4;
-            this.WijnBtn.Text = "Wijnen";
+            this.WijnBtn.Text = "Wines";
             this.WijnBtn.UseVisualStyleBackColor = true;
             this.WijnBtn.Click += new System.EventHandler(this.WijnBtn_Click);
             // 

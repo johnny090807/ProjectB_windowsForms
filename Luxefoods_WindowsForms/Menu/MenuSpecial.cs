@@ -41,7 +41,7 @@ namespace Luxefoods_WindowsForms
                     {
                         this.GerechtenPanel.Controls.Clear();
                         this.GerechtenPanel.Controls.Add(ErrorLabel);
-                        ErrorLabel.Text = "Hier is nog niks aan toegevoegd";
+                        ErrorLabel.Text = "Nothing has been added here yet.";
                     }
                     foreach (DataRow dr in dt.Rows)
                     {
@@ -80,9 +80,10 @@ namespace Luxefoods_WindowsForms
                                     naamLabel.AutoSize = true;
                                     naamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                                     naamLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-                                    naamLabel.Location = new System.Drawing.Point(20, 27);
+                                    naamLabel.Location = new System.Drawing.Point(20, 7);
                                     naamLabel.Margin = new System.Windows.Forms.Padding(20);
                                     naamLabel.Name = $"naamLabel + {j}";
+                                    naamLabel.MaximumSize = new System.Drawing.Size(540, 0);
                                     naamLabel.Size = new System.Drawing.Size(60, 24);
                                     naamLabel.Text = $"{dr2["naam"].ToString()}";
 

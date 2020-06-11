@@ -44,6 +44,7 @@ namespace Luxefoods_WindowsForms
             this.LuxeFoodsLogoLabel = new System.Windows.Forms.Button();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -79,15 +80,16 @@ namespace Luxefoods_WindowsForms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.CheckReservationsBtn);
             this.panel1.Controls.Add(this.ReservationsBtn);
-            this.panel1.Controls.Add(this.AboutBtn);
-            this.panel1.Controls.Add(this.ContactBtn);
             this.panel1.Controls.Add(this.FullscreenBtn);
             this.panel1.Controls.Add(this.MinimizeBtn);
             this.panel1.Controls.Add(this.ExitBtn);
             this.panel1.Controls.Add(this.LuxeFoodsLogoLabel);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.CheckReservationsBtn);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.AboutBtn);
+            this.panel1.Controls.Add(this.ContactBtn);
             this.panel1.Controls.Add(this.LoginBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -103,7 +105,7 @@ namespace Luxefoods_WindowsForms
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(659, 0);
+            this.button1.Location = new System.Drawing.Point(641, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 79);
             this.button1.TabIndex = 26;
@@ -120,12 +122,19 @@ namespace Luxefoods_WindowsForms
             this.CheckReservationsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CheckReservationsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckReservationsBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.CheckReservationsBtn.Location = new System.Drawing.Point(793, 0);
+            this.CheckReservationsBtn.Location = new System.Drawing.Point(775, 0);
             this.CheckReservationsBtn.Name = "CheckReservationsBtn";
             this.CheckReservationsBtn.Size = new System.Drawing.Size(193, 79);
             this.CheckReservationsBtn.TabIndex = 27;
             this.CheckReservationsBtn.Text = "My reservations";
             this.CheckReservationsBtn.UseVisualStyleBackColor = true;
+            // 
+            // ReservationsBtn
+            // 
+            this.ReservationsBtn.Location = new System.Drawing.Point(0, 0);
+            this.ReservationsBtn.Name = "ReservationsBtn";
+            this.ReservationsBtn.Size = new System.Drawing.Size(75, 23);
+            this.ReservationsBtn.TabIndex = 28;
             // 
             // AboutBtn
             // 
@@ -259,6 +268,23 @@ namespace Luxefoods_WindowsForms
             this.panel2.Size = new System.Drawing.Size(1603, 803);
             this.panel2.TabIndex = 33;
             // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(968, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(239, 79);
+            this.button2.TabIndex = 35;
+            this.button2.Text = "Place a reservation";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.reservationsButton_LinkClicked);
+            // 
             // checkReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -295,5 +321,6 @@ namespace Luxefoods_WindowsForms
         private System.Windows.Forms.Button LuxeFoodsLogoLabel;
         private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button2;
     }
 }

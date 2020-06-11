@@ -23,7 +23,7 @@ namespace Luxefoods_WindowsForms
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-
+        
         private void Form1_MouseDown(object sender,
         System.Windows.Forms.MouseEventArgs e)
         {
@@ -222,22 +222,22 @@ namespace Luxefoods_WindowsForms
             }
         }
         /*
-         * ----- CHECK AVAILABILITY BUTTON -----
-         * People = seats.value
-         * Date = dateTimePicker1.value
-         * TableSize = 4
-         * TablesNeeded = People // TableSize
-         * ShowAvailableTables(TablesNeeded)
-         * 
-         * 
-         * 
-         * ----- ShowShowAvailableTables(int amountOfTables) -----
-         * fetch data from the database
-         * look for amounrOfTables in the same zone for the same time
-         * 
-         *
-         * 
-         * 
-         */
+* ----- CHECK AVAILABILITY BUTTON -----
+* People = seats.value
+* Date = dateTimePicker1.value
+* TableSize = 4
+* TablesNeeded = People // TableSize
+* ShowAvailableTables(TablesNeeded)
+* 
+* 
+* 
+* ----- ShowShowAvailableTables(int amountOfTables) -----
+* fetch data from the database
+* look for amounrOfTables in the same zone for the same time
+* 
+*
+* 
+* 
+*/
     }
 }

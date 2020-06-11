@@ -44,9 +44,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(252, 40);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(194, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.Size = new System.Drawing.Size(198, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Restaurant ID: ";
             // 
@@ -66,9 +69,12 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 131);
+            this.textBox1.BackColor = System.Drawing.Color.Black;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(29, 142);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 20);
+            this.textBox1.Size = new System.Drawing.Size(393, 38);
             this.textBox1.TabIndex = 20;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -78,7 +84,7 @@
             this.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditButton.ForeColor = System.Drawing.Color.White;
-            this.EditButton.Location = new System.Drawing.Point(436, 102);
+            this.EditButton.Location = new System.Drawing.Point(445, 142);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(279, 115);
             this.EditButton.TabIndex = 21;
@@ -92,7 +98,7 @@
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
-            this.DeleteButton.Location = new System.Drawing.Point(436, 246);
+            this.DeleteButton.Location = new System.Drawing.Point(445, 273);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(279, 115);
             this.DeleteButton.TabIndex = 22;
@@ -107,7 +113,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.panelNoButton);
             this.panel2.Controls.Add(this.panelYesButton);
-            this.panel2.Location = new System.Drawing.Point(12, 157);
+            this.panel2.Location = new System.Drawing.Point(22, 173);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(805, 179);
             this.panel2.TabIndex = 23;
@@ -154,9 +160,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 115);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(30, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 13);
+            this.label3.Size = new System.Drawing.Size(193, 31);
             this.label3.TabIndex = 24;
             this.label3.Text = "Huidige Naam:";
             // 
@@ -164,7 +173,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
+            this.ClientSize = new System.Drawing.Size(839, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.DeleteButton);
@@ -172,6 +182,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.goBackButton);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RestaurantenDashboardReview";
             this.Text = "RestaurantenDashboardReview";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);

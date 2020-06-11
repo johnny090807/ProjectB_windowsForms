@@ -54,7 +54,7 @@
             this.CreateItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateItem.ForeColor = System.Drawing.Color.White;
-            this.CreateItem.Location = new System.Drawing.Point(475, 31);
+            this.CreateItem.Location = new System.Drawing.Point(509, 323);
             this.CreateItem.Name = "CreateItem";
             this.CreateItem.Size = new System.Drawing.Size(279, 115);
             this.CreateItem.TabIndex = 32;
@@ -64,17 +64,23 @@
             // 
             // restaurantNaamInput
             // 
-            this.restaurantNaamInput.Location = new System.Drawing.Point(121, 190);
+            this.restaurantNaamInput.BackColor = System.Drawing.SystemColors.MenuText;
+            this.restaurantNaamInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restaurantNaamInput.ForeColor = System.Drawing.Color.White;
+            this.restaurantNaamInput.Location = new System.Drawing.Point(18, 130);
             this.restaurantNaamInput.Name = "restaurantNaamInput";
-            this.restaurantNaamInput.Size = new System.Drawing.Size(258, 20);
+            this.restaurantNaamInput.Size = new System.Drawing.Size(401, 38);
             this.restaurantNaamInput.TabIndex = 34;
             // 
             // restaurantNaam
             // 
             this.restaurantNaam.AutoSize = true;
-            this.restaurantNaam.Location = new System.Drawing.Point(125, 162);
+            this.restaurantNaam.BackColor = System.Drawing.Color.Transparent;
+            this.restaurantNaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restaurantNaam.ForeColor = System.Drawing.Color.White;
+            this.restaurantNaam.Location = new System.Drawing.Point(12, 96);
             this.restaurantNaam.Name = "restaurantNaam";
-            this.restaurantNaam.Size = new System.Drawing.Size(96, 13);
+            this.restaurantNaam.Size = new System.Drawing.Size(242, 31);
             this.restaurantNaam.TabIndex = 33;
             this.restaurantNaam.Text = "Restaurant Naam: ";
             // 
@@ -82,11 +88,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.restaurantNaamInput);
             this.Controls.Add(this.restaurantNaam);
             this.Controls.Add(this.CreateItem);
             this.Controls.Add(this.goBackButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RestaurantDashboardCreate";
             this.Text = "RestaurantDashboardCreate";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
