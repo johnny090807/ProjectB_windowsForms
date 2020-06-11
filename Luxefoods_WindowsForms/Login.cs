@@ -88,7 +88,7 @@ namespace Luxefoods_WindowsForms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (EmailCheck.Text == "Voornaam" || PasswordCheck.Text == "Wachtwoord")
+            if (EmailCheck.Text == "" || PasswordCheck.Text == "")
             {
                 ErrorMessageLabel.Text = "Fill everything in.";
             }
@@ -131,7 +131,7 @@ namespace Luxefoods_WindowsForms
                         else
                         {
                             person = null;
-                            MessageBox.Show("deze gebruiker bestaat niet, of het wachtwoord is verkeerd ingevuld.");
+                            MessageBox.Show("This user does not exist, or you filled in the wrong password.");
                         }
                     }
                 }
@@ -201,24 +201,6 @@ namespace Luxefoods_WindowsForms
                 this.Hide();
                 Register registerForm = new Register();
                 registerForm.Show();
-            }
-
-        }
-
-        private void EnterTxtBox(object sender, EventArgs e)
-        {
-            TextBox clickedTextbox = (TextBox)sender;
-            if (clickedTextbox.Text == "Email")
-            {
-                clickedTextbox.Text = "";
-            }
-        }
-        private void LeaveTxtBox(object sender, EventArgs e)
-        {
-            TextBox clickedTextbox = (TextBox)sender;
-            if (clickedTextbox.TabIndex == 0 && clickedTextbox.Text == "")
-            {
-                clickedTextbox.Text = "Email";
             }
 
         }

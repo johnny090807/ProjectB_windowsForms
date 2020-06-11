@@ -68,13 +68,6 @@ namespace Luxefoods_WindowsForms
         /// </summary>
         private void InitializeComponent()
         {
-
-            this.SuspendLayout();
-            // 
-            // Reservation
-            // 
-            this.ClientSize = new System.Drawing.Size(298, 280);
-            this.Name = "Reservation";
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reservation));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -126,7 +119,7 @@ namespace Luxefoods_WindowsForms
             this.dateTimePicker1.Location = new System.Drawing.Point(19, 550);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(428, 39);
+            this.dateTimePicker1.Size = new System.Drawing.Size(428, 29);
             this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.Value = new System.DateTime(2020, 5, 20, 10, 56, 39, 0);
             // 
@@ -145,7 +138,7 @@ namespace Luxefoods_WindowsForms
             this.SeatsComboBox.Location = new System.Drawing.Point(576, 327);
             this.SeatsComboBox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.SeatsComboBox.Name = "SeatsComboBox";
-            this.SeatsComboBox.Size = new System.Drawing.Size(406, 40);
+            this.SeatsComboBox.Size = new System.Drawing.Size(406, 32);
             this.SeatsComboBox.TabIndex = 1;
             this.SeatsComboBox.Text = "Select amount of seats";
             this.SeatsComboBox.SelectedIndexChanged += new System.EventHandler(this.SeatsComboBox_SelectedIndexChanged);
@@ -171,7 +164,7 @@ namespace Luxefoods_WindowsForms
             this.availabilityButton.Location = new System.Drawing.Point(76, 708);
             this.availabilityButton.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.availabilityButton.Name = "availabilityButton";
-            this.availabilityButton.Size = new System.Drawing.Size(311, 52);
+            this.availabilityButton.Size = new System.Drawing.Size(212, 41);
             this.availabilityButton.TabIndex = 2;
             this.availabilityButton.Text = "Check Availability";
             this.availabilityButton.UseVisualStyleBackColor = false;
@@ -195,7 +188,7 @@ namespace Luxefoods_WindowsForms
             this.PeopleLabel.ForeColor = System.Drawing.Color.White;
             this.PeopleLabel.Location = new System.Drawing.Point(15, 327);
             this.PeopleLabel.Name = "PeopleLabel";
-            this.PeopleLabel.Size = new System.Drawing.Size(463, 40);
+            this.PeopleLabel.Size = new System.Drawing.Size(314, 29);
             this.PeopleLabel.TabIndex = 8;
             this.PeopleLabel.Text = "How many people will dine?";
             // 
@@ -209,7 +202,7 @@ namespace Luxefoods_WindowsForms
             this.PlaceReservationButton.ForeColor = System.Drawing.Color.White;
             this.PlaceReservationButton.Location = new System.Drawing.Point(1518, 978);
             this.PlaceReservationButton.Name = "PlaceReservationButton";
-            this.PlaceReservationButton.Size = new System.Drawing.Size(321, 52);
+            this.PlaceReservationButton.Size = new System.Drawing.Size(220, 41);
             this.PlaceReservationButton.TabIndex = 13;
             this.PlaceReservationButton.Text = "Place Reservation";
             this.PlaceReservationButton.UseVisualStyleBackColor = false;
@@ -224,7 +217,7 @@ namespace Luxefoods_WindowsForms
             this.AvailableLabel.ForeColor = System.Drawing.Color.White;
             this.AvailableLabel.Location = new System.Drawing.Point(699, 581);
             this.AvailableLabel.Name = "AvailableLabel";
-            this.AvailableLabel.Size = new System.Drawing.Size(283, 42);
+            this.AvailableLabel.Size = new System.Drawing.Size(194, 31);
             this.AvailableLabel.TabIndex = 20;
             this.AvailableLabel.Text = "Available Tables";
             // 
@@ -236,7 +229,7 @@ namespace Luxefoods_WindowsForms
             this.LocationLabel.ForeColor = System.Drawing.Color.White;
             this.LocationLabel.Location = new System.Drawing.Point(14, 276);
             this.LocationLabel.Name = "LocationLabel";
-            this.LocationLabel.Size = new System.Drawing.Size(271, 40);
+            this.LocationLabel.Size = new System.Drawing.Size(181, 29);
             this.LocationLabel.TabIndex = 8;
             this.LocationLabel.Text = "Which location?";
             // 
@@ -251,7 +244,7 @@ namespace Luxefoods_WindowsForms
             this.restaurantComboCox.Location = new System.Drawing.Point(576, 268);
             this.restaurantComboCox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.restaurantComboCox.Name = "restaurantComboCox";
-            this.restaurantComboCox.Size = new System.Drawing.Size(406, 40);
+            this.restaurantComboCox.Size = new System.Drawing.Size(406, 32);
             this.restaurantComboCox.TabIndex = 1;
             this.restaurantComboCox.SelectedIndexChanged += new System.EventHandler(this.restaurantComboCox_SelectedIndexChanged);
             // 
@@ -281,7 +274,7 @@ namespace Luxefoods_WindowsForms
             this.AreaLabel.ForeColor = System.Drawing.Color.White;
             this.AreaLabel.Location = new System.Drawing.Point(12, 384);
             this.AreaLabel.Name = "AreaLabel";
-            this.AreaLabel.Size = new System.Drawing.Size(441, 40);
+            this.AreaLabel.Size = new System.Drawing.Size(293, 29);
             this.AreaLabel.TabIndex = 8;
             this.AreaLabel.Text = "Which area do you prefer?";
             // 
@@ -300,7 +293,7 @@ namespace Luxefoods_WindowsForms
             "Area 6"});
             this.AreaComboBox.Location = new System.Drawing.Point(576, 384);
             this.AreaComboBox.Name = "AreaComboBox";
-            this.AreaComboBox.Size = new System.Drawing.Size(406, 40);
+            this.AreaComboBox.Size = new System.Drawing.Size(406, 32);
             this.AreaComboBox.TabIndex = 21;
             this.AreaComboBox.Text = "Select area";
             this.AreaComboBox.SelectedIndexChanged += new System.EventHandler(this.AreaComboBox_SelectedIndexChanged);
@@ -313,7 +306,7 @@ namespace Luxefoods_WindowsForms
             this.Reservation_page_title.ForeColor = System.Drawing.Color.White;
             this.Reservation_page_title.Location = new System.Drawing.Point(648, 130);
             this.Reservation_page_title.Name = "Reservation_page_title";
-            this.Reservation_page_title.Size = new System.Drawing.Size(751, 82);
+            this.Reservation_page_title.Size = new System.Drawing.Size(502, 55);
             this.Reservation_page_title.TabIndex = 22;
             this.Reservation_page_title.Text = "Place your reservation";
             // 
@@ -324,11 +317,11 @@ namespace Luxefoods_WindowsForms
             this.GenerallistBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.GenerallistBox.ForeColor = System.Drawing.Color.White;
             this.GenerallistBox.FormattingEnabled = true;
-            this.GenerallistBox.ItemHeight = 29;
+            this.GenerallistBox.ItemHeight = 20;
             this.GenerallistBox.Location = new System.Drawing.Point(699, 624);
             this.GenerallistBox.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.GenerallistBox.Name = "GenerallistBox";
-            this.GenerallistBox.Size = new System.Drawing.Size(283, 348);
+            this.GenerallistBox.Size = new System.Drawing.Size(283, 340);
             this.GenerallistBox.TabIndex = 0;
             // 
             // reservationBindingSource
@@ -352,7 +345,7 @@ namespace Luxefoods_WindowsForms
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1920, 117);
+            this.panel1.Size = new System.Drawing.Size(2102, 79);
             this.panel1.TabIndex = 24;
             // 
             // MenuButton
@@ -363,10 +356,10 @@ namespace Luxefoods_WindowsForms
             this.MenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.MenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenuButton.ForeColor = System.Drawing.Color.Transparent;
-            this.MenuButton.Location = new System.Drawing.Point(503, 0);
+            this.MenuButton.Location = new System.Drawing.Point(685, 0);
             this.MenuButton.Margin = new System.Windows.Forms.Padding(4);
             this.MenuButton.Name = "MenuButton";
-            this.MenuButton.Size = new System.Drawing.Size(201, 117);
+            this.MenuButton.Size = new System.Drawing.Size(201, 79);
             this.MenuButton.TabIndex = 26;
             this.MenuButton.Text = "Menu";
             this.MenuButton.UseVisualStyleBackColor = true;
@@ -381,10 +374,10 @@ namespace Luxefoods_WindowsForms
             this.CheckReservationsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CheckReservationsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckReservationsBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.CheckReservationsBtn.Location = new System.Drawing.Point(704, 0);
+            this.CheckReservationsBtn.Location = new System.Drawing.Point(886, 0);
             this.CheckReservationsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.CheckReservationsBtn.Name = "CheckReservationsBtn";
-            this.CheckReservationsBtn.Size = new System.Drawing.Size(290, 117);
+            this.CheckReservationsBtn.Size = new System.Drawing.Size(290, 79);
             this.CheckReservationsBtn.TabIndex = 27;
             this.CheckReservationsBtn.Text = "My reservations";
             this.CheckReservationsBtn.UseVisualStyleBackColor = true;
@@ -400,10 +393,10 @@ namespace Luxefoods_WindowsForms
             this.ReservationsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReservationsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReservationsBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.ReservationsBtn.Location = new System.Drawing.Point(994, 0);
+            this.ReservationsBtn.Location = new System.Drawing.Point(1176, 0);
             this.ReservationsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ReservationsBtn.Name = "ReservationsBtn";
-            this.ReservationsBtn.Size = new System.Drawing.Size(332, 117);
+            this.ReservationsBtn.Size = new System.Drawing.Size(332, 79);
             this.ReservationsBtn.TabIndex = 28;
             this.ReservationsBtn.Text = "Place a reservation";
             this.ReservationsBtn.UseVisualStyleBackColor = false;
@@ -417,10 +410,10 @@ namespace Luxefoods_WindowsForms
             this.AboutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AboutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.AboutBtn.Location = new System.Drawing.Point(1326, 0);
+            this.AboutBtn.Location = new System.Drawing.Point(1508, 0);
             this.AboutBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AboutBtn.Name = "AboutBtn";
-            this.AboutBtn.Size = new System.Drawing.Size(198, 117);
+            this.AboutBtn.Size = new System.Drawing.Size(198, 79);
             this.AboutBtn.TabIndex = 29;
             this.AboutBtn.Text = "About us";
             this.AboutBtn.UseVisualStyleBackColor = true;
@@ -435,10 +428,10 @@ namespace Luxefoods_WindowsForms
             this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContactBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.ContactBtn.Location = new System.Drawing.Point(1524, 0);
+            this.ContactBtn.Location = new System.Drawing.Point(1706, 0);
             this.ContactBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ContactBtn.Name = "ContactBtn";
-            this.ContactBtn.Size = new System.Drawing.Size(198, 117);
+            this.ContactBtn.Size = new System.Drawing.Size(198, 79);
             this.ContactBtn.TabIndex = 30;
             this.ContactBtn.Text = "Contact us";
             this.ContactBtn.UseVisualStyleBackColor = true;
@@ -455,10 +448,10 @@ namespace Luxefoods_WindowsForms
             this.FullscreenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FullscreenBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FullscreenBtn.ForeColor = System.Drawing.Color.White;
-            this.FullscreenBtn.Location = new System.Drawing.Point(1838, 0);
+            this.FullscreenBtn.Location = new System.Drawing.Point(2045, 0);
             this.FullscreenBtn.Margin = new System.Windows.Forms.Padding(4);
             this.FullscreenBtn.Name = "FullscreenBtn";
-            this.FullscreenBtn.Size = new System.Drawing.Size(42, 39);
+            this.FullscreenBtn.Size = new System.Drawing.Size(28, 28);
             this.FullscreenBtn.TabIndex = 34;
             this.FullscreenBtn.UseVisualStyleBackColor = true;
             this.FullscreenBtn.Click += new System.EventHandler(this.FullscreenBtn_Click);
@@ -474,10 +467,10 @@ namespace Luxefoods_WindowsForms
             this.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MinimizeBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimizeBtn.ForeColor = System.Drawing.Color.White;
-            this.MinimizeBtn.Location = new System.Drawing.Point(1797, 0);
+            this.MinimizeBtn.Location = new System.Drawing.Point(2017, 0);
             this.MinimizeBtn.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBtn.Name = "MinimizeBtn";
-            this.MinimizeBtn.Size = new System.Drawing.Size(42, 39);
+            this.MinimizeBtn.Size = new System.Drawing.Size(28, 28);
             this.MinimizeBtn.TabIndex = 33;
             this.MinimizeBtn.UseVisualStyleBackColor = true;
             this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeButton_Click);
@@ -493,10 +486,10 @@ namespace Luxefoods_WindowsForms
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.Color.White;
-            this.ExitBtn.Location = new System.Drawing.Point(1878, 0);
+            this.ExitBtn.Location = new System.Drawing.Point(2074, 0);
             this.ExitBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(42, 39);
+            this.ExitBtn.Size = new System.Drawing.Size(28, 28);
             this.ExitBtn.TabIndex = 32;
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitButton_Click);
@@ -513,7 +506,7 @@ namespace Luxefoods_WindowsForms
             this.LuxeFoodsLogoLabel.Location = new System.Drawing.Point(0, 0);
             this.LuxeFoodsLogoLabel.Margin = new System.Windows.Forms.Padding(4);
             this.LuxeFoodsLogoLabel.Name = "LuxeFoodsLogoLabel";
-            this.LuxeFoodsLogoLabel.Size = new System.Drawing.Size(387, 117);
+            this.LuxeFoodsLogoLabel.Size = new System.Drawing.Size(387, 79);
             this.LuxeFoodsLogoLabel.TabIndex = 25;
             this.LuxeFoodsLogoLabel.Text = "LuxeFoods";
             this.LuxeFoodsLogoLabel.UseVisualStyleBackColor = true;
@@ -528,10 +521,10 @@ namespace Luxefoods_WindowsForms
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.LoginBtn.Location = new System.Drawing.Point(1722, 0);
+            this.LoginBtn.Location = new System.Drawing.Point(1904, 0);
             this.LoginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(198, 117);
+            this.LoginBtn.Size = new System.Drawing.Size(198, 79);
             this.LoginBtn.TabIndex = 31;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = true;
@@ -545,7 +538,7 @@ namespace Luxefoods_WindowsForms
             this.hourLabel.ForeColor = System.Drawing.Color.White;
             this.hourLabel.Location = new System.Drawing.Point(15, 445);
             this.hourLabel.Name = "hourLabel";
-            this.hourLabel.Size = new System.Drawing.Size(239, 40);
+            this.hourLabel.Size = new System.Drawing.Size(156, 29);
             this.hourLabel.TabIndex = 8;
             this.hourLabel.Text = "At what hour?";
             // 
@@ -567,20 +560,20 @@ namespace Luxefoods_WindowsForms
             this.hourCombobox.Location = new System.Drawing.Point(576, 445);
             this.hourCombobox.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.hourCombobox.Name = "hourCombobox";
-            this.hourCombobox.Size = new System.Drawing.Size(406, 40);
+            this.hourCombobox.Size = new System.Drawing.Size(406, 32);
             this.hourCombobox.TabIndex = 1;
             this.hourCombobox.Text = "Select time";
             this.hourCombobox.SelectedIndexChanged += new System.EventHandler(this.hourCombobox_SelectedIndexChanged);
             // 
             // Reservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(2102, 1080);
             this.Controls.Add(this.Reservation_page_title);
             this.Controls.Add(this.AreaComboBox);
             this.Controls.Add(this.AvailableLabel);
@@ -597,11 +590,11 @@ namespace Luxefoods_WindowsForms
             this.Controls.Add(this.SeatsComboBox);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(1918, 1038);
+            this.MinimumSize = new System.Drawing.Size(0, 1038);
             this.Name = "Reservation";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -615,6 +608,7 @@ namespace Luxefoods_WindowsForms
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

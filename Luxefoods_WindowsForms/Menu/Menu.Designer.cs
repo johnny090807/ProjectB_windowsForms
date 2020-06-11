@@ -77,7 +77,7 @@
             this.Navbar.Location = new System.Drawing.Point(0, 0);
             this.Navbar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Navbar.Name = "Navbar";
-            this.Navbar.Size = new System.Drawing.Size(1209, 77);
+            this.Navbar.Size = new System.Drawing.Size(1209, 78);
             this.Navbar.TabIndex = 0;
             // 
             // MenuBTN
@@ -94,7 +94,7 @@
             this.MenuBTN.ForeColor = System.Drawing.Color.Transparent;
             this.MenuBTN.Location = new System.Drawing.Point(399, 0);
             this.MenuBTN.Name = "MenuBTN";
-            this.MenuBTN.Size = new System.Drawing.Size(133, 75);
+            this.MenuBTN.Size = new System.Drawing.Size(133, 76);
             this.MenuBTN.TabIndex = 3;
             this.MenuBTN.Text = "Menu";
             this.MenuBTN.UseVisualStyleBackColor = false;
@@ -113,7 +113,7 @@
             this.MyReservation.ForeColor = System.Drawing.Color.Transparent;
             this.MyReservation.Location = new System.Drawing.Point(532, 0);
             this.MyReservation.Name = "MyReservation";
-            this.MyReservation.Size = new System.Drawing.Size(151, 75);
+            this.MyReservation.Size = new System.Drawing.Size(151, 76);
             this.MyReservation.TabIndex = 12;
             this.MyReservation.Text = "My reservations";
             this.MyReservation.UseVisualStyleBackColor = false;
@@ -134,7 +134,7 @@
             this.makeReservation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.makeReservation.Location = new System.Drawing.Point(683, 0);
             this.makeReservation.Name = "makeReservation";
-            this.makeReservation.Size = new System.Drawing.Size(163, 75);
+            this.makeReservation.Size = new System.Drawing.Size(163, 76);
             this.makeReservation.TabIndex = 4;
             this.makeReservation.Text = "Make reservation";
             this.makeReservation.UseVisualStyleBackColor = false;
@@ -154,7 +154,7 @@
             this.AboutBTN.ForeColor = System.Drawing.Color.Transparent;
             this.AboutBTN.Location = new System.Drawing.Point(846, 0);
             this.AboutBTN.Name = "AboutBTN";
-            this.AboutBTN.Size = new System.Drawing.Size(122, 75);
+            this.AboutBTN.Size = new System.Drawing.Size(122, 76);
             this.AboutBTN.TabIndex = 5;
             this.AboutBTN.Text = "About us";
             this.AboutBTN.UseVisualStyleBackColor = false;
@@ -174,7 +174,7 @@
             this.ContactBTN.ForeColor = System.Drawing.Color.Transparent;
             this.ContactBTN.Location = new System.Drawing.Point(968, 0);
             this.ContactBTN.Name = "ContactBTN";
-            this.ContactBTN.Size = new System.Drawing.Size(120, 75);
+            this.ContactBTN.Size = new System.Drawing.Size(120, 76);
             this.ContactBTN.TabIndex = 2;
             this.ContactBTN.Text = "Contact us";
             this.ContactBTN.UseVisualStyleBackColor = false;
@@ -242,7 +242,7 @@
             this.LoginBTN.ForeColor = System.Drawing.Color.Transparent;
             this.LoginBTN.Location = new System.Drawing.Point(1088, 0);
             this.LoginBTN.Name = "LoginBTN";
-            this.LoginBTN.Size = new System.Drawing.Size(119, 75);
+            this.LoginBTN.Size = new System.Drawing.Size(119, 76);
             this.LoginBTN.TabIndex = 1;
             this.LoginBTN.Text = "Login";
             this.LoginBTN.UseVisualStyleBackColor = false;
@@ -262,7 +262,7 @@
             this.HomeBTN.Location = new System.Drawing.Point(0, 0);
             this.HomeBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomeBTN.Name = "HomeBTN";
-            this.HomeBTN.Size = new System.Drawing.Size(250, 75);
+            this.HomeBTN.Size = new System.Drawing.Size(250, 76);
             this.HomeBTN.TabIndex = 0;
             this.HomeBTN.Text = "LuxeFoods";
             this.HomeBTN.UseVisualStyleBackColor = false;
@@ -275,9 +275,9 @@
             this.SideBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SideBar.Controls.Add(this.MenuPanel);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SideBar.Location = new System.Drawing.Point(0, 77);
+            this.SideBar.Location = new System.Drawing.Point(0, 78);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(259, 617);
+            this.SideBar.Size = new System.Drawing.Size(259, 616);
             this.SideBar.TabIndex = 1;
             // 
             // MenuPanel
@@ -290,17 +290,15 @@
             // 
             // ContainerPanel
             // 
-            this.ContainerPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.ContainerPanel.AutoScroll = true;
             this.ContainerPanel.AutoSize = true;
             this.ContainerPanel.BackColor = System.Drawing.Color.Transparent;
             this.ContainerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ContainerPanel.Controls.Add(this.FAQPanel);
-            this.ContainerPanel.Location = new System.Drawing.Point(259, 89);
+            this.ContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContainerPanel.Location = new System.Drawing.Point(259, 78);
             this.ContainerPanel.Name = "ContainerPanel";
-            this.ContainerPanel.Size = new System.Drawing.Size(950, 605);
+            this.ContainerPanel.Size = new System.Drawing.Size(950, 616);
             this.ContainerPanel.TabIndex = 3;
             // 
             // FAQPanel
@@ -316,7 +314,7 @@
             this.FAQPanel.Controls.Add(this.faqBTN1);
             this.FAQPanel.Controls.Add(this.faqLBL);
             this.FAQPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.FAQPanel.Location = new System.Drawing.Point(0, 449);
+            this.FAQPanel.Location = new System.Drawing.Point(0, 460);
             this.FAQPanel.Name = "FAQPanel";
             this.FAQPanel.Size = new System.Drawing.Size(950, 156);
             this.FAQPanel.TabIndex = 8;
@@ -476,8 +474,7 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;

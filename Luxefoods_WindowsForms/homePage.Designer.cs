@@ -296,8 +296,7 @@
             // 
             // homePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.ballentine;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

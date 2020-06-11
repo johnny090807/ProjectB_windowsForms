@@ -96,7 +96,7 @@ namespace Luxefoods_WindowsForms
             }
             catch
             {
-                MessageBox.Show("Je moet eerst ingelogd zijn.");
+                MessageBox.Show("You have to be logged in order to see this page. eerst ingelogd zijn.");
             }
         }
 
@@ -110,7 +110,7 @@ namespace Luxefoods_WindowsForms
             }
             catch
             {
-                MessageBox.Show("Je moet eerst ingelogd zijn.");
+                MessageBox.Show("You have to be logged in order to see this page. eerst ingelogd zijn.");
             }
         }
 

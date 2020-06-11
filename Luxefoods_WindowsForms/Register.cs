@@ -58,12 +58,12 @@ namespace Luxefoods_WindowsForms
         {
             string EmailPattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
             
-            if (VoornaamTxtBox.Text == "Voornaam" || AchternaamTxtBox.Text == "Achternaam" || TelefoonTxtBox.Text == "Telefoon nummer" || EmailTxtBox.Text == "Email" || PasswordTxtBox.Text == "Wachtwoord" || VerifyPasswordTxtBox.Text == "Vul nog een keer het wachtwoord in")
+            if (VoornaamTxtBox.Text == "" || AchternaamTxtBox.Text == "" || TelefoonTxtBox.Text == "" || EmailTxtBox.Text == "" || PasswordTxtBox.Text == "" || VerifyPasswordTxtBox.Text == "")
             {
                 ErrorMessageLabel.Text = "Fill everything in.";
                 return;
             }
-            if(PasswordTxtBox.Text.Length < 8 || PasswordTxtBox.Text == "Password")
+            if(PasswordTxtBox.Text.Length < 8)
             {
                 ErrorMessageLabel.Text = "Password needs to be longer";
                 return;
@@ -123,46 +123,6 @@ namespace Luxefoods_WindowsForms
         {
             ControlPaint.DrawBorder(e.Graphics, this.panel1.ClientRectangle, Color.Black, ButtonBorderStyle.Solid);
         }
-        private void EnterTxtBox(object sender, EventArgs e)
-        {
-            TextBox clickedTextbox = (TextBox)sender;
-            if (clickedTextbox.Text == "Voornaam")
-            {
-                clickedTextbox.Text = "";
-            }
-            else if (clickedTextbox.Text == "Achternaam")
-            {
-                clickedTextbox.Text = "";
-            }
-            else if (clickedTextbox.Text == "Email")
-            {
-                clickedTextbox.Text = "";
-            }
-            else if (clickedTextbox.Text == "Telefoon nummer")
-            {
-                clickedTextbox.Text = "";
-            }
-        }
-        private void LeaveTxtBox(object sender, EventArgs e)
-        {
-            TextBox clickedTextbox = (TextBox)sender;
-            if (clickedTextbox.TabIndex == 0 && clickedTextbox.Text == "")
-            {
-                clickedTextbox.Text = "Voornaam";
-            }
-            else if (clickedTextbox.TabIndex == 1 && clickedTextbox.Text == "")
-            {
-                clickedTextbox.Text = "Achternaam";
-            }
-            else if (clickedTextbox.TabIndex == 2 && clickedTextbox.Text == "")
-            {
-                clickedTextbox.Text = "Email";
-            }
-            else if (clickedTextbox.TabIndex == 3 && clickedTextbox.Text == "")
-            {
-                clickedTextbox.Text = "Telefoon nummer";
-            }
-        }
         public void CheckWhichFormWasOpened()
         {
             string previousPage = Login.previousPage;
@@ -211,8 +171,8 @@ namespace Luxefoods_WindowsForms
             else
             {
                 this.Hide();
-                Register registerForm = new Register();
-                registerForm.Show();
+                homePage Homepage = new homePage();
+                Homepage.Show();
             }
 
             }
