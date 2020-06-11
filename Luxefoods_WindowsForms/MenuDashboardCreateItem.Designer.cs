@@ -60,15 +60,12 @@
             // 
             this.gerechtCategorieSelector.FormattingEnabled = true;
             this.gerechtCategorieSelector.Items.AddRange(new object[] {
-            "Voorgerecht",
             "Hoofdmenu",
-            "Nagerecht",
-            "Dranken",
-            "Wijnen"});
+            "Nagerecht"});
             this.gerechtCategorieSelector.Location = new System.Drawing.Point(269, 494);
             this.gerechtCategorieSelector.Name = "gerechtCategorieSelector";
             this.gerechtCategorieSelector.Size = new System.Drawing.Size(121, 21);
-            this.gerechtCategorieSelector.TabIndex = 4;
+            this.gerechtCategorieSelector.TabIndex = 29;
             this.gerechtCategorieSelector.Text = "Select The Category";
             this.gerechtCategorieSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
             // 
@@ -81,7 +78,7 @@
             this.gerechtNotenSelector.Location = new System.Drawing.Point(269, 391);
             this.gerechtNotenSelector.Name = "gerechtNotenSelector";
             this.gerechtNotenSelector.Size = new System.Drawing.Size(121, 21);
-            this.gerechtNotenSelector.TabIndex = 3;
+            this.gerechtNotenSelector.TabIndex = 28;
             this.gerechtNotenSelector.Text = "Select True Or False";
             this.gerechtNotenSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
             // 
@@ -94,7 +91,7 @@
             this.gerechtMelkSelector.Location = new System.Drawing.Point(269, 326);
             this.gerechtMelkSelector.Name = "gerechtMelkSelector";
             this.gerechtMelkSelector.Size = new System.Drawing.Size(121, 21);
-            this.gerechtMelkSelector.TabIndex = 2;
+            this.gerechtMelkSelector.TabIndex = 27;
             this.gerechtMelkSelector.Text = "Select True Or False";
             this.gerechtMelkSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
             // 
@@ -104,7 +101,7 @@
             this.gerechtPrijsInput.MaxLength = 10;
             this.gerechtPrijsInput.Name = "gerechtPrijsInput";
             this.gerechtPrijsInput.Size = new System.Drawing.Size(258, 20);
-            this.gerechtPrijsInput.TabIndex = 1;
+            this.gerechtPrijsInput.TabIndex = 25;
             this.gerechtPrijsInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gerechtPrijsInput_KeyPress);
             // 
             // gerechtNaamInput
@@ -112,7 +109,7 @@
             this.gerechtNaamInput.Location = new System.Drawing.Point(262, 167);
             this.gerechtNaamInput.Name = "gerechtNaamInput";
             this.gerechtNaamInput.Size = new System.Drawing.Size(258, 20);
-            this.gerechtNaamInput.TabIndex = 0;
+            this.gerechtNaamInput.TabIndex = 26;
             // 
             // gerechtCategorie
             // 
@@ -168,14 +165,13 @@
             this.CreateItem.Location = new System.Drawing.Point(847, 120);
             this.CreateItem.Name = "CreateItem";
             this.CreateItem.Size = new System.Drawing.Size(279, 115);
-            this.CreateItem.TabIndex = 5;
+            this.CreateItem.TabIndex = 31;
             this.CreateItem.Text = "CreateItem";
             this.CreateItem.UseVisualStyleBackColor = false;
             this.CreateItem.Click += new System.EventHandler(this.CreateItem_Click);
             // 
             // MenuDashboardCreateItem
             // 
-            this.AcceptButton = this.CreateItem;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;

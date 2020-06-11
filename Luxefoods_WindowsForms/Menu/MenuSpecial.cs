@@ -80,10 +80,9 @@ namespace Luxefoods_WindowsForms
                                     naamLabel.AutoSize = true;
                                     naamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                                     naamLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-                                    naamLabel.Location = new System.Drawing.Point(20, 7);
+                                    naamLabel.Location = new System.Drawing.Point(20, 27);
                                     naamLabel.Margin = new System.Windows.Forms.Padding(20);
                                     naamLabel.Name = $"naamLabel + {j}";
-                                    naamLabel.MaximumSize = new System.Drawing.Size(500, 0);
                                     naamLabel.Size = new System.Drawing.Size(60, 24);
                                     naamLabel.Text = $"{dr2["naam"].ToString()}";
 
@@ -191,6 +190,14 @@ namespace Luxefoods_WindowsForms
             clearAllControls((Button)sender);
             makeMenu("Nagerecht");
         }
+        private void clearAllControls(Button sender)
+        {
+            foreach (Control control in HeaderPanel.Controls)
+            {
+                control.BackColor = Color.Transparent;
+            }
+            sender.BackColor = Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+        }
 
         private void VoorgerechtBtn_Click(object sender, EventArgs e)
         {
@@ -208,14 +215,6 @@ namespace Luxefoods_WindowsForms
         {
             clearAllControls((Button)sender);
             makeMenu("Wijnen");
-        }
-        private void clearAllControls(Button sender)
-        {
-            foreach (Control control in HeaderPanel.Controls)
-            {
-                control.BackColor = Color.Transparent;
-            }
-            sender.BackColor = Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
         }
     }
 }

@@ -161,6 +161,7 @@ namespace Luxefoods_WindowsForms
 
                 // Connectie met database beindigen
                 connection.Close();
+                MessageBox.Show("The Order Has Been Successfully Deleted");
                 panel2.Visible = false;
 
                 gerechtNaamInput.Enabled = !gerechtNaamInput.Enabled;
@@ -263,6 +264,7 @@ namespace Luxefoods_WindowsForms
                         // Connectie met database beindigen
                         connection.Close();
 
+                        MessageBox.Show("Succesfully Edited The Order!");
                         FillDashboard();
                         checkDataChanged(globalMenuId);
                     }
@@ -278,6 +280,7 @@ namespace Luxefoods_WindowsForms
                         // Connectie met database beindigen
                         connection.Close();
 
+                        MessageBox.Show("Succesfully Edited The Order!");
                         FillDashboard();
                         checkDataChanged(globalMenuId);
                     }
@@ -305,6 +308,7 @@ namespace Luxefoods_WindowsForms
                         // Connectie met database beindigen
                         connection.Close();
 
+                        MessageBox.Show("Succesfully Edited The Order!");
                         FillDashboard();
                         checkDataChanged(globalMenuId);
                     } else
@@ -319,6 +323,7 @@ namespace Luxefoods_WindowsForms
                         // Connectie met database beindigen
                         connection.Close();
 
+                        MessageBox.Show("Succesfully Edited The Order!");
                         FillDashboard();
                         checkDataChanged(globalMenuId);
                     }

@@ -51,9 +51,10 @@
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LoginBtn.Location = new System.Drawing.Point(88, 366);
+            this.LoginBtn.Location = new System.Drawing.Point(132, 563);
+            this.LoginBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(477, 69);
+            this.LoginBtn.Size = new System.Drawing.Size(716, 106);
             this.LoginBtn.TabIndex = 2;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
@@ -66,9 +67,10 @@
             this.RegisterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RegisterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegisterBtn.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.RegisterBtn.Location = new System.Drawing.Point(12, 457);
+            this.RegisterBtn.Location = new System.Drawing.Point(18, 703);
+            this.RegisterBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.RegisterBtn.Name = "RegisterBtn";
-            this.RegisterBtn.Size = new System.Drawing.Size(614, 38);
+            this.RegisterBtn.Size = new System.Drawing.Size(921, 58);
             this.RegisterBtn.TabIndex = 3;
             this.RegisterBtn.TabStop = false;
             this.RegisterBtn.Text = "Not registered yet? Click here...";
@@ -83,8 +85,9 @@
             this.panel1.Controls.Add(this.exitBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(638, 37);
+            this.panel1.Size = new System.Drawing.Size(957, 56);
             this.panel1.TabIndex = 15;
             // 
             // bunifuCustomLabel1
@@ -96,8 +99,8 @@
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(152, 35);
+            this.bunifuCustomLabel1.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(154, 37);
             this.bunifuCustomLabel1.TabIndex = 5;
             this.bunifuCustomLabel1.Text = "LuxeFoods";
             // 
@@ -110,10 +113,10 @@
             this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.exitBtn.Image = global::Luxefoods_WindowsForms.Properties.Resources.logout;
-            this.exitBtn.Location = new System.Drawing.Point(599, 0);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
+            this.exitBtn.Location = new System.Drawing.Point(899, 0);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 31);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(37, 35);
+            this.exitBtn.Size = new System.Drawing.Size(56, 54);
             this.exitBtn.TabIndex = 4;
             this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
@@ -122,9 +125,10 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.ErrorMessageLabel);
-            this.panel2.Location = new System.Drawing.Point(204, 302);
+            this.panel2.Location = new System.Drawing.Point(306, 465);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(361, 31);
+            this.panel2.Size = new System.Drawing.Size(542, 48);
             this.panel2.TabIndex = 17;
             // 
             // ErrorMessageLabel
@@ -134,8 +138,9 @@
             this.ErrorMessageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ErrorMessageLabel.ForeColor = System.Drawing.Color.Red;
             this.ErrorMessageLabel.Location = new System.Drawing.Point(0, 0);
+            this.ErrorMessageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ErrorMessageLabel.Name = "ErrorMessageLabel";
-            this.ErrorMessageLabel.Size = new System.Drawing.Size(0, 29);
+            this.ErrorMessageLabel.Size = new System.Drawing.Size(0, 40);
             this.ErrorMessageLabel.TabIndex = 15;
             // 
             // PasswordCheck
@@ -143,12 +148,12 @@
             this.PasswordCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(46)))), ((int)(((byte)(5)))));
             this.PasswordCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordCheck.ForeColor = System.Drawing.SystemColors.Window;
-            this.PasswordCheck.Location = new System.Drawing.Point(88, 229);
-            this.PasswordCheck.Margin = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.PasswordCheck.Location = new System.Drawing.Point(132, 352);
+            this.PasswordCheck.Margin = new System.Windows.Forms.Padding(30, 31, 30, 31);
             this.PasswordCheck.MinimumSize = new System.Drawing.Size(4, 50);
             this.PasswordCheck.Name = "PasswordCheck";
             this.PasswordCheck.PasswordChar = '*';
-            this.PasswordCheck.Size = new System.Drawing.Size(477, 44);
+            this.PasswordCheck.Size = new System.Drawing.Size(714, 62);
             this.PasswordCheck.TabIndex = 1;
             // 
             // label1
@@ -157,9 +162,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(82, 176);
+            this.label1.Location = new System.Drawing.Point(123, 271);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 33);
+            this.label1.Size = new System.Drawing.Size(266, 52);
             this.label1.TabIndex = 19;
             this.label1.Text = "Wachtwoord";
             // 
@@ -168,11 +174,11 @@
             this.EmailCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(46)))), ((int)(((byte)(5)))));
             this.EmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailCheck.ForeColor = System.Drawing.SystemColors.Window;
-            this.EmailCheck.Location = new System.Drawing.Point(88, 106);
-            this.EmailCheck.Margin = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.EmailCheck.Location = new System.Drawing.Point(132, 163);
+            this.EmailCheck.Margin = new System.Windows.Forms.Padding(30, 31, 30, 31);
             this.EmailCheck.MinimumSize = new System.Drawing.Size(4, 50);
             this.EmailCheck.Name = "EmailCheck";
-            this.EmailCheck.Size = new System.Drawing.Size(477, 44);
+            this.EmailCheck.Size = new System.Drawing.Size(714, 62);
             this.EmailCheck.TabIndex = 0;
             this.EmailCheck.Text = "Email";
             this.EmailCheck.Enter += new System.EventHandler(this.EnterTxtBox);
@@ -180,11 +186,11 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.Register_background;
-            this.ClientSize = new System.Drawing.Size(638, 512);
+            this.ClientSize = new System.Drawing.Size(957, 788);
             this.Controls.Add(this.EmailCheck);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PasswordCheck);
@@ -193,6 +199,7 @@
             this.Controls.Add(this.RegisterBtn);
             this.Controls.Add(this.LoginBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.Text = "Form2";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
