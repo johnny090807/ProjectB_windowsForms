@@ -132,6 +132,26 @@ namespace Luxefoods_WindowsForms
         }
 
 
+
+        /*
+     * ----- CHECK AVAILABILITY BUTTON -----
+     * People = seats.value
+     * Date = dateTimePicker1.value
+     * TableSize = 4
+     * TablesNeeded = People // TableSize
+     * ShowAvailableTables(TablesNeeded)
+     * 
+     * 
+     * 
+     * ----- ShowShowAvailableTables(int amountOfTables) -----
+     * fetch data from the database
+     * look for amounrOfTables in the same zone for the same time
+     * 
+     *
+     * 
+     * 
+     */
+
         private void aboutUsButton_LinkClicked(object sender, EventArgs e)
         {
             this.Hide();
@@ -166,6 +186,22 @@ namespace Luxefoods_WindowsForms
         }
 
 
+        /*  ! Er zit een fout in deze code kacper, als je het zo doet en je komt met 5 mensen, krijg je 1 tafel. 
+         * ----- CHECK AVAILABILITY BUTTON -----
+         * People = seats.value
+         * Date = dateTimePicker1.value
+         * TableSize = 4
+         * TablesNeeded = People // TableSize
+         * ShowAvailableTables(TablesNeeded)
+         * 
+         * 
+         * 
+         * ----- ShowShowAvailableTables(int amountOfTables) -----
+         * fetch data from the database
+         * look for amounrOfTables in the same zone for the same time
+         */
+
+        //showAvailableTables(int amountOfTables);
 
         private void availabilityButton_Click(object sender, EventArgs e)
         {
@@ -219,13 +255,15 @@ namespace Luxefoods_WindowsForms
             }
 
             //RBL: Vragen aan Kacper:
+            // - Klopt het dat takenseats de list is waar de tafels in gedisplayed worden? Zie line 232
+            // - 
             // Request naar Databse sturen om alle gereserveerde tijden op de eerder gegeven datum te krijgen en in takenTimesWithTables List te zetten
             SqlCommand readCommand = new SqlCommand("select datum, tafelNummer, restaurantId from reservering where datum between '" + date.Month + "/" + date.Day + "/" + date.Year + "' and '" + date.Month + "/" + date.Day + "/" + date.Year + " 23:59:59'", connection);
             connection.Open();
             using (SqlDataReader reader = readCommand.ExecuteReader())
             {
 
-                
+                //(RBL: Weergeven in table vanuit list, of direct vanuit DB in table zetten?)
                 //(RBL: Oplossing voor weergave: Maak een clickable box, filter deze op tijd (bijv. 16:00-17:00) en op tafelnummer bijv area 1 is 1-20 en geef deze weer in het eerste vakje, maak deze voor alle vakjes)
                 //De ontvangen data in eigen TakenSeats class zetten om die dan in een list te zetten zodat het makkelijker terug te vinden           while (reader.Read())
                 while (reader.Read())
@@ -648,6 +686,7 @@ namespace Luxefoods_WindowsForms
                     GenerallistBox.DataSource = LA6C22;
                 }
             }
+            //showAvailableTables(tablesNeeded);
         }
 
         void makeReservation(int userId)
@@ -702,13 +741,16 @@ namespace Luxefoods_WindowsForms
                 }
             }
 
-            //RBL:
+            //RBL: Vragen aan Kacper:
+            // - Klopt het dat takenseats de list is waar de tafels in gedisplayed worden? Zie line 232
+            // - 
             // Request naar Databse sturen om alle gereserveerde tijden op de eerder gegeven datum te krijgen en in takenTimesWithTables List te zetten
             SqlCommand readCommand = new SqlCommand("select datum, tafelNummer, restaurantId from reservering where datum between '" + date.Month + "/" + date.Day + "/" + date.Year + "' and '" + date.Month + "/" + date.Day + "/" + date.Year + " 23:59:59'", connection);
             connection.Open();
             using (SqlDataReader reader = readCommand.ExecuteReader())
             {
 
+                //(RBL: Weergeven in table vanuit list, of direct vanuit DB in table zetten?)
                 //(RBL: Oplossing voor weergave: Maak een clickable box, filter deze op tijd (bijv. 16:00-17:00) en op tafelnummer bijv area 1 is 1-20 en geef deze weer in het eerste vakje, maak deze voor alle vakjes)
                 //De ontvangen data in eigen TakenSeats class zetten om die dan in een list te zetten zodat het makkelijker terug te vinden           while (reader.Read())
                 while (reader.Read())
@@ -740,6 +782,14 @@ namespace Luxefoods_WindowsForms
                         availableTimesWithTables.Remove(i);
                     }
                 }
+            }
+
+            //(RBL: Aanpassen naar winform ipv consolewriteline)
+            //Alleen de overgebleven werkelijke availableTimesWithTables laten zien
+            Console.WriteLine("Those are all the available times for " + date.Year + "-" + date.Month + "-" + date.Day + ": ");
+            foreach (TakenSeats x in availableTimesWithTables)
+            {
+                Console.WriteLine(x.takenTime + " and seat nr. " + x.takenSeat);
             }
 
             // RBL: dateParse is aangepast naar date, hierdoor botst het met eerder vermelde date van kacper hier. variable naam correct aanpassen
