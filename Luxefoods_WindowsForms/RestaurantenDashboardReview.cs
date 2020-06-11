@@ -149,6 +149,14 @@ namespace Luxefoods_WindowsForms
                 // Execute de SQL UPDATE Request
                 Command.ExecuteNonQuery();
 
+                Command = new SqlCommand($"DELETE FROM [gerecht] WHERE menuId='{globalRestaurantId}'", connection);
+
+                Command.ExecuteNonQuery();
+
+                Command = new SqlCommand($"DELETE FROM [reservering] WHERE restaurantId='{globalRestaurantId}'", connection);
+
+                Command.ExecuteNonQuery();
+
                 // Connectie met database beindigen
                 connection.Close();
                 MessageBox.Show("The Order Has Been Successfully Deleted");
