@@ -30,6 +30,7 @@ namespace Luxefoods_WindowsForms
         /// </summary>
         private void InitializeComponent()
         {
+            this.button2 = new System.Windows.Forms.Button();
             this.Title = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -47,6 +48,18 @@ namespace Luxefoods_WindowsForms
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 817);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(1603, 65);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Place Reservation";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // Title
             // 
@@ -285,6 +298,7 @@ namespace Luxefoods_WindowsForms
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
             this.ClientSize = new System.Drawing.Size(1603, 882);
             this.Controls.Add(this.Title);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -299,6 +313,7 @@ namespace Luxefoods_WindowsForms
         }
 
         #endregion
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Panel panel1;

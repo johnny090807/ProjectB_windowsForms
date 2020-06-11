@@ -48,7 +48,6 @@ namespace Luxefoods_WindowsForms
 
         private void searchReservationById(int Id, DateTime date = new DateTime())
         {
-            listBox1.Items.Clear();
             SqlConnection con = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             DataSet ds = new DataSet();
             con.Open();
