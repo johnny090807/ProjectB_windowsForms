@@ -48,9 +48,10 @@
             this.goBackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
             this.goBackButton.ForeColor = System.Drawing.Color.White;
-            this.goBackButton.Location = new System.Drawing.Point(57, 50);
+            this.goBackButton.Location = new System.Drawing.Point(86, 77);
+            this.goBackButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.goBackButton.Name = "goBackButton";
-            this.goBackButton.Size = new System.Drawing.Size(160, 52);
+            this.goBackButton.Size = new System.Drawing.Size(240, 80);
             this.goBackButton.TabIndex = 30;
             this.goBackButton.Text = "Go Back";
             this.goBackButton.UseVisualStyleBackColor = false;
@@ -60,11 +61,15 @@
             // 
             this.gerechtCategorieSelector.FormattingEnabled = true;
             this.gerechtCategorieSelector.Items.AddRange(new object[] {
+            "Voorgerecht",
             "Hoofdmenu",
-            "Nagerecht"});
-            this.gerechtCategorieSelector.Location = new System.Drawing.Point(269, 494);
+            "Nagerecht",
+            "Dranken",
+            "Wijnen"});
+            this.gerechtCategorieSelector.Location = new System.Drawing.Point(404, 760);
+            this.gerechtCategorieSelector.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gerechtCategorieSelector.Name = "gerechtCategorieSelector";
-            this.gerechtCategorieSelector.Size = new System.Drawing.Size(121, 21);
+            this.gerechtCategorieSelector.Size = new System.Drawing.Size(180, 28);
             this.gerechtCategorieSelector.TabIndex = 29;
             this.gerechtCategorieSelector.Text = "Select The Category";
             this.gerechtCategorieSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
@@ -75,9 +80,10 @@
             this.gerechtNotenSelector.Items.AddRange(new object[] {
             "True",
             "False"});
-            this.gerechtNotenSelector.Location = new System.Drawing.Point(269, 391);
+            this.gerechtNotenSelector.Location = new System.Drawing.Point(404, 602);
+            this.gerechtNotenSelector.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gerechtNotenSelector.Name = "gerechtNotenSelector";
-            this.gerechtNotenSelector.Size = new System.Drawing.Size(121, 21);
+            this.gerechtNotenSelector.Size = new System.Drawing.Size(180, 28);
             this.gerechtNotenSelector.TabIndex = 28;
             this.gerechtNotenSelector.Text = "Select True Or False";
             this.gerechtNotenSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
@@ -88,71 +94,79 @@
             this.gerechtMelkSelector.Items.AddRange(new object[] {
             "True",
             "False"});
-            this.gerechtMelkSelector.Location = new System.Drawing.Point(269, 326);
+            this.gerechtMelkSelector.Location = new System.Drawing.Point(404, 502);
+            this.gerechtMelkSelector.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gerechtMelkSelector.Name = "gerechtMelkSelector";
-            this.gerechtMelkSelector.Size = new System.Drawing.Size(121, 21);
+            this.gerechtMelkSelector.Size = new System.Drawing.Size(180, 28);
             this.gerechtMelkSelector.TabIndex = 27;
             this.gerechtMelkSelector.Text = "Select True Or False";
             this.gerechtMelkSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
             // 
             // gerechtPrijsInput
             // 
-            this.gerechtPrijsInput.Location = new System.Drawing.Point(269, 259);
+            this.gerechtPrijsInput.Location = new System.Drawing.Point(404, 398);
+            this.gerechtPrijsInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gerechtPrijsInput.MaxLength = 10;
             this.gerechtPrijsInput.Name = "gerechtPrijsInput";
-            this.gerechtPrijsInput.Size = new System.Drawing.Size(258, 20);
+            this.gerechtPrijsInput.Size = new System.Drawing.Size(385, 26);
             this.gerechtPrijsInput.TabIndex = 25;
             this.gerechtPrijsInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gerechtPrijsInput_KeyPress);
             // 
             // gerechtNaamInput
             // 
-            this.gerechtNaamInput.Location = new System.Drawing.Point(262, 167);
+            this.gerechtNaamInput.Location = new System.Drawing.Point(393, 257);
+            this.gerechtNaamInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gerechtNaamInput.Name = "gerechtNaamInput";
-            this.gerechtNaamInput.Size = new System.Drawing.Size(258, 20);
+            this.gerechtNaamInput.Size = new System.Drawing.Size(385, 26);
             this.gerechtNaamInput.TabIndex = 26;
             // 
             // gerechtCategorie
             // 
             this.gerechtCategorie.AutoSize = true;
-            this.gerechtCategorie.Location = new System.Drawing.Point(266, 463);
+            this.gerechtCategorie.Location = new System.Drawing.Point(399, 712);
+            this.gerechtCategorie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gerechtCategorie.Name = "gerechtCategorie";
-            this.gerechtCategorie.Size = new System.Drawing.Size(222, 13);
+            this.gerechtCategorie.Size = new System.Drawing.Size(329, 20);
             this.gerechtCategorie.TabIndex = 24;
             this.gerechtCategorie.Text = "In welke categorie hoort deze gerecht te zijn?";
             // 
             // gerechtNoten
             // 
             this.gerechtNoten.AutoSize = true;
-            this.gerechtNoten.Location = new System.Drawing.Point(266, 375);
+            this.gerechtNoten.Location = new System.Drawing.Point(399, 577);
+            this.gerechtNoten.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gerechtNoten.Name = "gerechtNoten";
-            this.gerechtNoten.Size = new System.Drawing.Size(159, 13);
+            this.gerechtNoten.Size = new System.Drawing.Size(238, 20);
             this.gerechtNoten.TabIndex = 23;
             this.gerechtNoten.Text = "Heeft Gerecht Noten Alergieen?";
             // 
             // gerechtMelk
             // 
             this.gerechtMelk.AutoSize = true;
-            this.gerechtMelk.Location = new System.Drawing.Point(266, 310);
+            this.gerechtMelk.Location = new System.Drawing.Point(399, 477);
+            this.gerechtMelk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gerechtMelk.Name = "gerechtMelk";
-            this.gerechtMelk.Size = new System.Drawing.Size(153, 13);
+            this.gerechtMelk.Size = new System.Drawing.Size(228, 20);
             this.gerechtMelk.TabIndex = 22;
             this.gerechtMelk.Text = "Heeft Gerecht Melk Alergieen?";
             // 
             // gerechtPrijs
             // 
             this.gerechtPrijs.AutoSize = true;
-            this.gerechtPrijs.Location = new System.Drawing.Point(266, 231);
+            this.gerechtPrijs.Location = new System.Drawing.Point(399, 355);
+            this.gerechtPrijs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gerechtPrijs.Name = "gerechtPrijs";
-            this.gerechtPrijs.Size = new System.Drawing.Size(70, 13);
+            this.gerechtPrijs.Size = new System.Drawing.Size(104, 20);
             this.gerechtPrijs.TabIndex = 21;
             this.gerechtPrijs.Text = "Gerecht Prijs:";
             // 
             // gerechtNaam
             // 
             this.gerechtNaam.AutoSize = true;
-            this.gerechtNaam.Location = new System.Drawing.Point(266, 139);
+            this.gerechtNaam.Location = new System.Drawing.Point(399, 214);
+            this.gerechtNaam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gerechtNaam.Name = "gerechtNaam";
-            this.gerechtNaam.Size = new System.Drawing.Size(79, 13);
+            this.gerechtNaam.Size = new System.Drawing.Size(117, 20);
             this.gerechtNaam.TabIndex = 20;
             this.gerechtNaam.Text = "Gerecht Naam:";
             // 
@@ -162,9 +176,10 @@
             this.CreateItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateItem.ForeColor = System.Drawing.Color.White;
-            this.CreateItem.Location = new System.Drawing.Point(847, 120);
+            this.CreateItem.Location = new System.Drawing.Point(1270, 185);
+            this.CreateItem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CreateItem.Name = "CreateItem";
-            this.CreateItem.Size = new System.Drawing.Size(279, 115);
+            this.CreateItem.Size = new System.Drawing.Size(418, 177);
             this.CreateItem.TabIndex = 31;
             this.CreateItem.Text = "CreateItem";
             this.CreateItem.UseVisualStyleBackColor = false;
@@ -172,10 +187,10 @@
             // 
             // MenuDashboardCreateItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1301, 794);
+            this.ClientSize = new System.Drawing.Size(1952, 1222);
             this.Controls.Add(this.CreateItem);
             this.Controls.Add(this.goBackButton);
             this.Controls.Add(this.gerechtCategorieSelector);
@@ -189,6 +204,7 @@
             this.Controls.Add(this.gerechtPrijs);
             this.Controls.Add(this.gerechtNaam);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MenuDashboardCreateItem";
             this.Text = "/;.";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
