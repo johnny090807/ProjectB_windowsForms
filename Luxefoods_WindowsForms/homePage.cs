@@ -102,9 +102,16 @@ namespace Luxefoods_WindowsForms
 
         private void CheckReservation(object sender, EventArgs e)
         {
-            this.Hide();
-            checkReservation checkReservationForm = new checkReservation();
-            checkReservationForm.Show();
+            try
+            {
+                checkReservation reservationForm = new checkReservation();
+                this.Hide();
+                reservationForm.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Je moet eerst ingelogd zijn.");
+            }
         }
 
         private void LoginClick(object sender, EventArgs e)

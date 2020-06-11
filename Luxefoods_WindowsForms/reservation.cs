@@ -136,23 +136,29 @@ namespace Luxefoods_WindowsForms
         {
             this.Hide();
             aboutUs f1 = new aboutUs();
-            f1.ShowDialog();
+            f1.Show();
             this.Close();
         }
 
         private void reservationsButton_LinkClicked(object sender, EventArgs e)
         {
-            this.Hide();
-            checkReservation f2 = new checkReservation();
-            f2.ShowDialog();
-            this.Close();
+            try
+            {
+                checkReservation reservationForm = new checkReservation();
+                this.Hide();
+                reservationForm.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Je moet eerst ingelogd zijn.");
+            }
         }
 
         private void contactUsButton_LinkClicked(object sender, EventArgs e)
         {
             this.Hide();
             contactUs f1 = new contactUs();
-            f1.ShowDialog();
+            f1.Show();
             this.Close();
         }
         

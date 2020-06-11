@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.Navbar = new System.Windows.Forms.Panel();
+            this.MenuBTN = new System.Windows.Forms.Button();
+            this.MakeReservationBtn = new System.Windows.Forms.Button();
+            this.ReservationsBTN = new System.Windows.Forms.Button();
+            this.AboutBTN = new System.Windows.Forms.Button();
+            this.ContactBTN = new System.Windows.Forms.Button();
             this.FullscreenBtn = new System.Windows.Forms.Button();
             this.MinimizeBtn = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
-            this.AboutBTN = new System.Windows.Forms.Button();
-            this.ReservationsBTN = new System.Windows.Forms.Button();
-            this.MenuBTN = new System.Windows.Forms.Button();
-            this.ContactBTN = new System.Windows.Forms.Button();
             this.LoginBTN = new System.Windows.Forms.Button();
             this.HomeBTN = new System.Windows.Forms.Button();
             this.SideBar = new System.Windows.Forms.Panel();
@@ -51,7 +52,6 @@
             this.faqBTN2 = new System.Windows.Forms.Button();
             this.faqBTN1 = new System.Windows.Forms.Button();
             this.faqLBL = new System.Windows.Forms.Label();
-            this.MakeReservationBtn = new System.Windows.Forms.Button();
             this.Navbar.SuspendLayout();
             this.SideBar.SuspendLayout();
             this.ContainerPanel.SuspendLayout();
@@ -77,8 +77,108 @@
             this.Navbar.Location = new System.Drawing.Point(0, 0);
             this.Navbar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Navbar.Name = "Navbar";
-            this.Navbar.Size = new System.Drawing.Size(1209, 88);
+            this.Navbar.Size = new System.Drawing.Size(1209, 77);
             this.Navbar.TabIndex = 0;
+            // 
+            // MenuBTN
+            // 
+            this.MenuBTN.AutoSize = true;
+            this.MenuBTN.BackColor = System.Drawing.Color.Transparent;
+            this.MenuBTN.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MenuBTN.FlatAppearance.BorderSize = 0;
+            this.MenuBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.MenuBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.MenuBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.MenuBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuBTN.ForeColor = System.Drawing.Color.Transparent;
+            this.MenuBTN.Location = new System.Drawing.Point(399, 0);
+            this.MenuBTN.Name = "MenuBTN";
+            this.MenuBTN.Size = new System.Drawing.Size(133, 75);
+            this.MenuBTN.TabIndex = 3;
+            this.MenuBTN.Text = "Menu";
+            this.MenuBTN.UseVisualStyleBackColor = false;
+            // 
+            // MakeReservationBtn
+            // 
+            this.MakeReservationBtn.AutoSize = true;
+            this.MakeReservationBtn.BackColor = System.Drawing.Color.Transparent;
+            this.MakeReservationBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MakeReservationBtn.FlatAppearance.BorderSize = 0;
+            this.MakeReservationBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.MakeReservationBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.MakeReservationBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.MakeReservationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MakeReservationBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MakeReservationBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.MakeReservationBtn.Location = new System.Drawing.Point(532, 0);
+            this.MakeReservationBtn.Name = "MakeReservationBtn";
+            this.MakeReservationBtn.Size = new System.Drawing.Size(151, 75);
+            this.MakeReservationBtn.TabIndex = 12;
+            this.MakeReservationBtn.Text = "My reservations";
+            this.MakeReservationBtn.UseVisualStyleBackColor = false;
+            this.MakeReservationBtn.Click += new System.EventHandler(this.MakeReservationBtn_Click);
+            // 
+            // ReservationsBTN
+            // 
+            this.ReservationsBTN.AutoSize = true;
+            this.ReservationsBTN.BackColor = System.Drawing.Color.Transparent;
+            this.ReservationsBTN.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ReservationsBTN.FlatAppearance.BorderSize = 0;
+            this.ReservationsBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ReservationsBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.ReservationsBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.ReservationsBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReservationsBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReservationsBTN.ForeColor = System.Drawing.Color.Transparent;
+            this.ReservationsBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ReservationsBTN.Location = new System.Drawing.Point(683, 0);
+            this.ReservationsBTN.Name = "ReservationsBTN";
+            this.ReservationsBTN.Size = new System.Drawing.Size(163, 75);
+            this.ReservationsBTN.TabIndex = 4;
+            this.ReservationsBTN.Text = "Make reservation";
+            this.ReservationsBTN.UseVisualStyleBackColor = false;
+            this.ReservationsBTN.Click += new System.EventHandler(this.ReservationsBTN_Click);
+            // 
+            // AboutBTN
+            // 
+            this.AboutBTN.AutoSize = true;
+            this.AboutBTN.BackColor = System.Drawing.Color.Transparent;
+            this.AboutBTN.Dock = System.Windows.Forms.DockStyle.Right;
+            this.AboutBTN.FlatAppearance.BorderSize = 0;
+            this.AboutBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.AboutBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.AboutBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.AboutBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AboutBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AboutBTN.ForeColor = System.Drawing.Color.Transparent;
+            this.AboutBTN.Location = new System.Drawing.Point(846, 0);
+            this.AboutBTN.Name = "AboutBTN";
+            this.AboutBTN.Size = new System.Drawing.Size(122, 75);
+            this.AboutBTN.TabIndex = 5;
+            this.AboutBTN.Text = "About us";
+            this.AboutBTN.UseVisualStyleBackColor = false;
+            this.AboutBTN.Click += new System.EventHandler(this.AboutBTN_Click);
+            // 
+            // ContactBTN
+            // 
+            this.ContactBTN.AutoSize = true;
+            this.ContactBTN.BackColor = System.Drawing.Color.Transparent;
+            this.ContactBTN.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ContactBTN.FlatAppearance.BorderSize = 0;
+            this.ContactBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ContactBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.ContactBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.ContactBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContactBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactBTN.ForeColor = System.Drawing.Color.Transparent;
+            this.ContactBTN.Location = new System.Drawing.Point(968, 0);
+            this.ContactBTN.Name = "ContactBTN";
+            this.ContactBTN.Size = new System.Drawing.Size(120, 75);
+            this.ContactBTN.TabIndex = 2;
+            this.ContactBTN.Text = "Contact us";
+            this.ContactBTN.UseVisualStyleBackColor = false;
+            this.ContactBTN.Click += new System.EventHandler(this.ContactBTN_Click);
             // 
             // FullscreenBtn
             // 
@@ -128,86 +228,6 @@
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
-            // AboutBTN
-            // 
-            this.AboutBTN.AutoSize = true;
-            this.AboutBTN.BackColor = System.Drawing.Color.Transparent;
-            this.AboutBTN.Dock = System.Windows.Forms.DockStyle.Right;
-            this.AboutBTN.FlatAppearance.BorderSize = 0;
-            this.AboutBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.AboutBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
-            this.AboutBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
-            this.AboutBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AboutBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AboutBTN.ForeColor = System.Drawing.Color.Transparent;
-            this.AboutBTN.Location = new System.Drawing.Point(846, 0);
-            this.AboutBTN.Name = "AboutBTN";
-            this.AboutBTN.Size = new System.Drawing.Size(122, 86);
-            this.AboutBTN.TabIndex = 5;
-            this.AboutBTN.Text = "About us";
-            this.AboutBTN.UseVisualStyleBackColor = false;
-            this.AboutBTN.Click += new System.EventHandler(this.AboutBTN_Click);
-            // 
-            // ReservationsBTN
-            // 
-            this.ReservationsBTN.AutoSize = true;
-            this.ReservationsBTN.BackColor = System.Drawing.Color.Transparent;
-            this.ReservationsBTN.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ReservationsBTN.FlatAppearance.BorderSize = 0;
-            this.ReservationsBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.ReservationsBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
-            this.ReservationsBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
-            this.ReservationsBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ReservationsBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReservationsBTN.ForeColor = System.Drawing.Color.Transparent;
-            this.ReservationsBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ReservationsBTN.Location = new System.Drawing.Point(683, 0);
-            this.ReservationsBTN.Name = "ReservationsBTN";
-            this.ReservationsBTN.Size = new System.Drawing.Size(163, 86);
-            this.ReservationsBTN.TabIndex = 4;
-            this.ReservationsBTN.Text = "Make reservation";
-            this.ReservationsBTN.UseVisualStyleBackColor = false;
-            this.ReservationsBTN.Click += new System.EventHandler(this.ReservationsBTN_Click);
-            // 
-            // MenuBTN
-            // 
-            this.MenuBTN.AutoSize = true;
-            this.MenuBTN.BackColor = System.Drawing.Color.Transparent;
-            this.MenuBTN.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MenuBTN.FlatAppearance.BorderSize = 0;
-            this.MenuBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.MenuBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
-            this.MenuBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
-            this.MenuBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MenuBTN.ForeColor = System.Drawing.Color.Transparent;
-            this.MenuBTN.Location = new System.Drawing.Point(399, 0);
-            this.MenuBTN.Name = "MenuBTN";
-            this.MenuBTN.Size = new System.Drawing.Size(133, 86);
-            this.MenuBTN.TabIndex = 3;
-            this.MenuBTN.Text = "Menu";
-            this.MenuBTN.UseVisualStyleBackColor = false;
-            // 
-            // ContactBTN
-            // 
-            this.ContactBTN.AutoSize = true;
-            this.ContactBTN.BackColor = System.Drawing.Color.Transparent;
-            this.ContactBTN.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ContactBTN.FlatAppearance.BorderSize = 0;
-            this.ContactBTN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.ContactBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
-            this.ContactBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
-            this.ContactBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ContactBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContactBTN.ForeColor = System.Drawing.Color.Transparent;
-            this.ContactBTN.Location = new System.Drawing.Point(968, 0);
-            this.ContactBTN.Name = "ContactBTN";
-            this.ContactBTN.Size = new System.Drawing.Size(120, 86);
-            this.ContactBTN.TabIndex = 2;
-            this.ContactBTN.Text = "Contact us";
-            this.ContactBTN.UseVisualStyleBackColor = false;
-            this.ContactBTN.Click += new System.EventHandler(this.ContactBTN_Click);
-            // 
             // LoginBTN
             // 
             this.LoginBTN.AutoSize = true;
@@ -222,7 +242,7 @@
             this.LoginBTN.ForeColor = System.Drawing.Color.Transparent;
             this.LoginBTN.Location = new System.Drawing.Point(1088, 0);
             this.LoginBTN.Name = "LoginBTN";
-            this.LoginBTN.Size = new System.Drawing.Size(119, 86);
+            this.LoginBTN.Size = new System.Drawing.Size(119, 75);
             this.LoginBTN.TabIndex = 1;
             this.LoginBTN.Text = "Login";
             this.LoginBTN.UseVisualStyleBackColor = false;
@@ -242,7 +262,7 @@
             this.HomeBTN.Location = new System.Drawing.Point(0, 0);
             this.HomeBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomeBTN.Name = "HomeBTN";
-            this.HomeBTN.Size = new System.Drawing.Size(250, 86);
+            this.HomeBTN.Size = new System.Drawing.Size(250, 75);
             this.HomeBTN.TabIndex = 0;
             this.HomeBTN.Text = "LuxeFoods";
             this.HomeBTN.UseVisualStyleBackColor = false;
@@ -255,9 +275,9 @@
             this.SideBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SideBar.Controls.Add(this.MenuPanel);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SideBar.Location = new System.Drawing.Point(0, 88);
+            this.SideBar.Location = new System.Drawing.Point(0, 77);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(259, 606);
+            this.SideBar.Size = new System.Drawing.Size(259, 617);
             this.SideBar.TabIndex = 1;
             // 
             // MenuPanel
@@ -454,37 +474,18 @@
             this.faqLBL.TabIndex = 7;
             this.faqLBL.Text = "Frequently Asked Questions";
             // 
-            // MakeReservationBtn
-            // 
-            this.MakeReservationBtn.AutoSize = true;
-            this.MakeReservationBtn.BackColor = System.Drawing.Color.Transparent;
-            this.MakeReservationBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MakeReservationBtn.FlatAppearance.BorderSize = 0;
-            this.MakeReservationBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.MakeReservationBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
-            this.MakeReservationBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
-            this.MakeReservationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MakeReservationBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MakeReservationBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.MakeReservationBtn.Location = new System.Drawing.Point(532, 0);
-            this.MakeReservationBtn.Name = "MakeReservationBtn";
-            this.MakeReservationBtn.Size = new System.Drawing.Size(151, 86);
-            this.MakeReservationBtn.TabIndex = 12;
-            this.MakeReservationBtn.Text = "My reservations";
-            this.MakeReservationBtn.UseVisualStyleBackColor = false;
-            this.MakeReservationBtn.Click += new System.EventHandler(this.MakeReservationBtn_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.Register_background;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1209, 694);
             this.Controls.Add(this.ContainerPanel);
             this.Controls.Add(this.SideBar);
             this.Controls.Add(this.Navbar);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);

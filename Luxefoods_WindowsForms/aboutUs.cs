@@ -86,9 +86,16 @@ namespace Luxefoods_WindowsForms
 
         private void linkLabel1_LinkClicked(object sender, EventArgs e)
         {
-            this.Hide();
-            checkReservation reservationForm = new checkReservation();
-            reservationForm.Show();
+            try
+            {
+                checkReservation reservationForm = new checkReservation();
+                this.Hide();
+                reservationForm.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Je moet eerst ingelogd zijn.");
+            }
         }
 
         private void reservationsButton_LinkClicked(object sender, EventArgs e)

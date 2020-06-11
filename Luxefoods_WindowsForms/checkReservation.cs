@@ -43,13 +43,7 @@ namespace Luxefoods_WindowsForms
                 this.LoginBtn.Text = "Logout";
             }
             CheckReservationsBtn.BackColor = Color.FromArgb(100, Color.Black);
-            try
-            {
-                searchReservationById(Login.person.id);
-            }
-            catch (Exception)
-            {
-            }
+            searchReservationById(Login.person.id);
         }
 
         private void searchReservationById(int Id, DateTime date = new DateTime())
@@ -68,10 +62,8 @@ namespace Luxefoods_WindowsForms
 
             DataRow[] row = tblUsers.Select();
 
-            listBox1.Items.Add("Je moet eerst ingelogd zijn.");
-
             listBox1.Items.Clear();
-            
+
             foreach (var y in row)
             {
                 int userId = (int)y.ItemArray[0];

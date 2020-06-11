@@ -240,9 +240,16 @@ namespace Luxefoods_WindowsForms
 
         private void MakeReservationBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            checkReservation reservationForm= new checkReservation();
-            reservationForm.Show();
+            try
+            {
+                checkReservation reservationForm = new checkReservation();
+                this.Hide();
+                reservationForm.Show();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Je moet ingelogd zijn.");
+            }
         }
     }
 }
