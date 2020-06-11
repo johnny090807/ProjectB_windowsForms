@@ -96,7 +96,7 @@
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuCustomLabel1.Padding = new System.Windows.Forms.Padding(2);
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(152, 35);
             this.bunifuCustomLabel1.TabIndex = 5;
             this.bunifuCustomLabel1.Text = "LuxeFoods";
@@ -144,7 +144,7 @@
             this.PasswordCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordCheck.ForeColor = System.Drawing.SystemColors.Window;
             this.PasswordCheck.Location = new System.Drawing.Point(88, 229);
-            this.PasswordCheck.Margin = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.PasswordCheck.Margin = new System.Windows.Forms.Padding(20);
             this.PasswordCheck.MinimumSize = new System.Drawing.Size(4, 50);
             this.PasswordCheck.Name = "PasswordCheck";
             this.PasswordCheck.PasswordChar = '*';
@@ -169,7 +169,7 @@
             this.EmailCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailCheck.ForeColor = System.Drawing.SystemColors.Window;
             this.EmailCheck.Location = new System.Drawing.Point(88, 106);
-            this.EmailCheck.Margin = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.EmailCheck.Margin = new System.Windows.Forms.Padding(20);
             this.EmailCheck.MinimumSize = new System.Drawing.Size(4, 50);
             this.EmailCheck.Name = "EmailCheck";
             this.EmailCheck.Size = new System.Drawing.Size(477, 44);
