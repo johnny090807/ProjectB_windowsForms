@@ -108,7 +108,7 @@
             this.gerechtNaamInput.Location = new System.Drawing.Point(257, 145);
             this.gerechtNaamInput.Name = "gerechtNaamInput";
             this.gerechtNaamInput.Size = new System.Drawing.Size(258, 20);
-            this.gerechtNaamInput.TabIndex = 6;
+            this.gerechtNaamInput.TabIndex = 0;
             this.gerechtNaamInput.TextChanged += new System.EventHandler(this.gerechtNaamInput_TextChanged);
             // 
             // gerechtMelkSelector
@@ -120,7 +120,7 @@
             this.gerechtMelkSelector.Location = new System.Drawing.Point(264, 304);
             this.gerechtMelkSelector.Name = "gerechtMelkSelector";
             this.gerechtMelkSelector.Size = new System.Drawing.Size(121, 21);
-            this.gerechtMelkSelector.TabIndex = 8;
+            this.gerechtMelkSelector.TabIndex = 2;
             this.gerechtMelkSelector.SelectedIndexChanged += new System.EventHandler(this.gerechtMelkSelector_SelectedIndexChanged);
             // 
             // gerechtNotenSelector
@@ -132,19 +132,22 @@
             this.gerechtNotenSelector.Location = new System.Drawing.Point(264, 369);
             this.gerechtNotenSelector.Name = "gerechtNotenSelector";
             this.gerechtNotenSelector.Size = new System.Drawing.Size(121, 21);
-            this.gerechtNotenSelector.TabIndex = 9;
+            this.gerechtNotenSelector.TabIndex = 3;
             this.gerechtNotenSelector.SelectedIndexChanged += new System.EventHandler(this.gerechtNotenSelector_SelectedIndexChanged);
             // 
             // gerechtCategorieSelector
             // 
             this.gerechtCategorieSelector.FormattingEnabled = true;
             this.gerechtCategorieSelector.Items.AddRange(new object[] {
+            "Voorgerecht",
             "Hoofdmenu",
-            "Nagerecht"});
+            "Nagerecht",
+            "Dranken",
+            "Wijnen"});
             this.gerechtCategorieSelector.Location = new System.Drawing.Point(264, 472);
             this.gerechtCategorieSelector.Name = "gerechtCategorieSelector";
             this.gerechtCategorieSelector.Size = new System.Drawing.Size(121, 21);
-            this.gerechtCategorieSelector.TabIndex = 10;
+            this.gerechtCategorieSelector.TabIndex = 4;
             this.gerechtCategorieSelector.SelectedIndexChanged += new System.EventHandler(this.gerechtCategorieSelector_SelectedIndexChanged);
             // 
             // gerechtPrijsInput
@@ -152,7 +155,7 @@
             this.gerechtPrijsInput.Location = new System.Drawing.Point(264, 237);
             this.gerechtPrijsInput.Name = "gerechtPrijsInput";
             this.gerechtPrijsInput.Size = new System.Drawing.Size(258, 20);
-            this.gerechtPrijsInput.TabIndex = 6;
+            this.gerechtPrijsInput.TabIndex = 1;
             this.gerechtPrijsInput.TextChanged += new System.EventHandler(this.gerechtPrijsInput_TextChanged);
             this.gerechtPrijsInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gerechtPrijsInput_KeyPress);
             // 
@@ -165,7 +168,7 @@
             this.EditButton.Location = new System.Drawing.Point(857, 145);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(279, 115);
-            this.EditButton.TabIndex = 11;
+            this.EditButton.TabIndex = 5;
             this.EditButton.Text = "Edit Order";
             this.EditButton.UseVisualStyleBackColor = false;
             this.EditButton.Click += new System.EventHandler(this.EditButton_Click);

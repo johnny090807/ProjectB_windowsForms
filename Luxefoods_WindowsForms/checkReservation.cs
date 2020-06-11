@@ -43,11 +43,18 @@ namespace Luxefoods_WindowsForms
                 this.LoginBtn.Text = "Logout";
             }
             CheckReservationsBtn.BackColor = Color.FromArgb(100, Color.Black);
-            searchReservationById(Login.person.id);
+            try
+            {
+                searchReservationById(Login.person.id);
+            }
+            catch (Exception)
+            {
+            }
         }
 
         private void searchReservationById(int Id, DateTime date = new DateTime())
         {
+            listBox1.Items.Clear();
             SqlConnection con = new SqlConnection("Data Source=luxefood.database.windows.net;Initial Catalog=LuxeFoods;User ID=Klees;Password=Johnny69;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             DataSet ds = new DataSet();
             con.Open();
@@ -61,8 +68,10 @@ namespace Luxefoods_WindowsForms
 
             DataRow[] row = tblUsers.Select();
 
-            listBox1.Items.Clear();
+            listBox1.Items.Add("Je moet eerst ingelogd zijn.");
 
+            listBox1.Items.Clear();
+            
             foreach (var y in row)
             {
                 int userId = (int)y.ItemArray[0];

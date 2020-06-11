@@ -47,6 +47,7 @@
             // menuItemsList
             // 
             this.menuItemsList.FormattingEnabled = true;
+            this.menuItemsList.HorizontalScrollbar = true;
             this.menuItemsList.Location = new System.Drawing.Point(445, 146);
             this.menuItemsList.Name = "menuItemsList";
             this.menuItemsList.Size = new System.Drawing.Size(697, 602);
