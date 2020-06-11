@@ -44,11 +44,6 @@ namespace Luxefoods_WindowsForms
             AboutBtn.BackColor = Color.FromArgb(100, Color.Black);
         }
 
-        private void AvailabilityTable_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void ExitButton_Click(object sender, EventArgs e)
         {
             if (System.Windows.Forms.Application.MessageLoop)
@@ -151,23 +146,4 @@ namespace Luxefoods_WindowsForms
             }
         }
     }
-
-    /*
-     * ----- CHECK AVAILABILITY BUTTON -----
-     * People = seats.value
-     * Date = dateTimePicker1.value
-     * TableSize = 4
-     * TablesNeeded = People // TableSize
-     * ShowAvailableTables(TablesNeeded)
-     * 
-     * 
-     * 
-     * ----- ShowShowAvailableTables(int amountOfTables) -----
-     * fetch data from the database
-     * look for amounrOfTables in the same zone for the same time
-     * 
-     *
-     * 
-     * 
-     */
 }
