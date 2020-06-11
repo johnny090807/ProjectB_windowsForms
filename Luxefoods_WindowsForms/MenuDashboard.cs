@@ -109,7 +109,7 @@ namespace Luxefoods_WindowsForms
                     string gerechtMelkalergieen = x["melkalergieen"].ToString();
                     string gerechtNotenalergieen = x["notenalergieen"].ToString();
                     string gerechtCategorie = x["categorie"].ToString();
-                    menuItemsList.Items.Add("Gerecht ID: " + gerechtId + "   Naam: " + gerechtNaam + "   Prijs: " + gerechtPrijs + "    Heeft Melk Alergieen? " + gerechtMelkalergieen + "   Heeft Noten Alergieen? " + gerechtNotenalergieen + "   Categorie" + gerechtCategorie);
+                    menuItemsList.Items.Add("Gerecht ID: " + gerechtId + "\n   Naam: " + gerechtNaam + "   Prijs: " + gerechtPrijs + "    Heeft Melk Alergieen? " + gerechtMelkalergieen + "   Heeft Noten Alergieen? " + gerechtNotenalergieen + "   Categorie" + gerechtCategorie);
                 }
             }
         }

@@ -33,9 +33,9 @@
             this.GerechtItemPanel = new System.Windows.Forms.Panel();
             this.ErrorLabel = new System.Windows.Forms.Label();
             this.HeaderPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.VoorgerechtBtn = new System.Windows.Forms.Button();
             this.HoofdmenuBtn = new System.Windows.Forms.Button();
             this.NagerechtBtn = new System.Windows.Forms.Button();
-            this.VoorgerechtBtn = new System.Windows.Forms.Button();
             this.DrankBtn = new System.Windows.Forms.Button();
             this.WijnBtn = new System.Windows.Forms.Button();
             this.FullscreenPanel.SuspendLayout();
@@ -86,6 +86,7 @@
             this.ErrorLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ErrorLabel.Location = new System.Drawing.Point(114, 19);
             this.ErrorLabel.Margin = new System.Windows.Forms.Padding(20);
+            this.ErrorLabel.MaximumSize = new System.Drawing.Size(1000, 0);
             this.ErrorLabel.Name = "ErrorLabel";
             this.ErrorLabel.Size = new System.Drawing.Size(612, 33);
             this.ErrorLabel.TabIndex = 0;
@@ -103,6 +104,24 @@
             this.HeaderPanel.Name = "HeaderPanel";
             this.HeaderPanel.Size = new System.Drawing.Size(845, 57);
             this.HeaderPanel.TabIndex = 0;
+            // 
+            // VoorgerechtBtn
+            // 
+            this.VoorgerechtBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.VoorgerechtBtn.FlatAppearance.BorderSize = 0;
+            this.VoorgerechtBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
+            this.VoorgerechtBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
+            this.VoorgerechtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VoorgerechtBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VoorgerechtBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.VoorgerechtBtn.Location = new System.Drawing.Point(0, 0);
+            this.VoorgerechtBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.VoorgerechtBtn.Name = "VoorgerechtBtn";
+            this.VoorgerechtBtn.Size = new System.Drawing.Size(149, 57);
+            this.VoorgerechtBtn.TabIndex = 2;
+            this.VoorgerechtBtn.Text = "Voorgerecht";
+            this.VoorgerechtBtn.UseVisualStyleBackColor = true;
+            this.VoorgerechtBtn.Click += new System.EventHandler(this.VoorgerechtBtn_Click);
             // 
             // HoofdmenuBtn
             // 
@@ -140,24 +159,6 @@
             this.NagerechtBtn.UseVisualStyleBackColor = true;
             this.NagerechtBtn.Click += new System.EventHandler(this.NagerechtBtn_Click);
             // 
-            // VoorgerechtBtn
-            // 
-            this.VoorgerechtBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.VoorgerechtBtn.FlatAppearance.BorderSize = 0;
-            this.VoorgerechtBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(0)))));
-            this.VoorgerechtBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(19)))), ((int)(((byte)(3)))));
-            this.VoorgerechtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VoorgerechtBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VoorgerechtBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.VoorgerechtBtn.Location = new System.Drawing.Point(0, 0);
-            this.VoorgerechtBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.VoorgerechtBtn.Name = "VoorgerechtBtn";
-            this.VoorgerechtBtn.Size = new System.Drawing.Size(149, 57);
-            this.VoorgerechtBtn.TabIndex = 2;
-            this.VoorgerechtBtn.Text = "Voorgerecht";
-            this.VoorgerechtBtn.UseVisualStyleBackColor = true;
-            this.VoorgerechtBtn.Click += new System.EventHandler(this.VoorgerechtBtn_Click);
-            // 
             // DrankBtn
             // 
             this.DrankBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -188,7 +189,7 @@
             this.WijnBtn.Location = new System.Drawing.Point(562, 0);
             this.WijnBtn.Margin = new System.Windows.Forms.Padding(0);
             this.WijnBtn.Name = "WijnBtn";
-            this.WijnBtn.Size = new System.Drawing.Size(135, 57);
+            this.WijnBtn.Size = new System.Drawing.Size(102, 57);
             this.WijnBtn.TabIndex = 4;
             this.WijnBtn.Text = "Wijnen";
             this.WijnBtn.UseVisualStyleBackColor = true;
