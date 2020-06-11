@@ -34,7 +34,7 @@ namespace Luxefoods_WindowsForms
             }
         }
 
-        public checkReservation()
+        public checkReservation(int id)
         {
             InitializeComponent();
             CenterToScreen();
@@ -43,7 +43,7 @@ namespace Luxefoods_WindowsForms
                 this.LoginBtn.Text = "Logout";
             }
             CheckReservationsBtn.BackColor = Color.FromArgb(100, Color.Black);
-            searchReservationById(Login.person.id);
+            searchReservationById(id);
         }
 
         private void searchReservationById(int Id, DateTime date = new DateTime())

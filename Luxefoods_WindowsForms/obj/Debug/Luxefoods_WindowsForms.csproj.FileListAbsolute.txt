@@ -77,3 +77,6 @@ C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj
 C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.RestaurantDashboardCreate.resources
 C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.RestaurantenDashboard.resources
 C:\Users\Kacper\Desktop\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.RestaurantenDashboardReview.resources
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.RestaurantDashboardCreate.resources
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.RestaurantenDashboard.resources
+C:\Users\pappa\Documents\GitHub\ProjectB_windowsForms\Luxefoods_WindowsForms\obj\Debug\Luxefoods_WindowsForms.RestaurantenDashboardReview.resources

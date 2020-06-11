@@ -57,7 +57,7 @@ namespace Luxefoods_WindowsForms
         {
             try
             {
-                checkReservation reservationForm = new checkReservation();
+                checkReservation reservationForm = new checkReservation(Login.person.id);
                 this.Hide();
                 reservationForm.Show();
             }

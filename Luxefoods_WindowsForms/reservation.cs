@@ -164,7 +164,7 @@ namespace Luxefoods_WindowsForms
         {
             try
             {
-                checkReservation reservationForm = new checkReservation();
+                checkReservation reservationForm = new checkReservation(Login.person.id);
                 this.Hide();
                 reservationForm.Show();
             }
@@ -940,7 +940,7 @@ namespace Luxefoods_WindowsForms
         private void linkLabel1_LinkClicked(object sender, EventArgs e)
         {
             this.Hide();
-            checkReservation reservationForm = new checkReservation();
+            checkReservation reservationForm = new checkReservation(Login.person.id);
             reservationForm.Show();
         }
 

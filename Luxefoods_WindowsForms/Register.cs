@@ -187,7 +187,7 @@ namespace Luxefoods_WindowsForms
             else if (previousPage == "checkReservations")
             {
                 this.Hide();
-                checkReservation checkReservationForm = new checkReservation();
+                checkReservation checkReservationForm = new checkReservation(Login.person.id);
                 checkReservationForm.Show();
             }
             else if (previousPage == "ContactUs")
