@@ -48,9 +48,10 @@
             this.goBackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
             this.goBackButton.ForeColor = System.Drawing.Color.White;
-            this.goBackButton.Location = new System.Drawing.Point(50, 12);
+            this.goBackButton.Location = new System.Drawing.Point(33, 8);
+            this.goBackButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.goBackButton.Name = "goBackButton";
-            this.goBackButton.Size = new System.Drawing.Size(240, 80);
+            this.goBackButton.Size = new System.Drawing.Size(160, 52);
             this.goBackButton.TabIndex = 30;
             this.goBackButton.Text = "Go Back";
             this.goBackButton.UseVisualStyleBackColor = false;
@@ -66,9 +67,10 @@
             "Nagerecht",
             "Dranken",
             "Wijnen"});
-            this.gerechtCategorieSelector.Location = new System.Drawing.Point(54, 468);
+            this.gerechtCategorieSelector.Location = new System.Drawing.Point(36, 437);
+            this.gerechtCategorieSelector.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gerechtCategorieSelector.Name = "gerechtCategorieSelector";
-            this.gerechtCategorieSelector.Size = new System.Drawing.Size(838, 39);
+            this.gerechtCategorieSelector.Size = new System.Drawing.Size(739, 39);
             this.gerechtCategorieSelector.TabIndex = 29;
             this.gerechtCategorieSelector.Text = "Select The Category";
             this.gerechtCategorieSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
@@ -80,9 +82,10 @@
             this.gerechtNotenSelector.Items.AddRange(new object[] {
             "True",
             "False"});
-            this.gerechtNotenSelector.Location = new System.Drawing.Point(54, 386);
+            this.gerechtNotenSelector.Location = new System.Drawing.Point(36, 357);
+            this.gerechtNotenSelector.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gerechtNotenSelector.Name = "gerechtNotenSelector";
-            this.gerechtNotenSelector.Size = new System.Drawing.Size(838, 39);
+            this.gerechtNotenSelector.Size = new System.Drawing.Size(739, 39);
             this.gerechtNotenSelector.TabIndex = 28;
             this.gerechtNotenSelector.Text = "Select True Or False";
             this.gerechtNotenSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
@@ -94,9 +97,10 @@
             this.gerechtMelkSelector.Items.AddRange(new object[] {
             "True",
             "False"});
-            this.gerechtMelkSelector.Location = new System.Drawing.Point(54, 304);
+            this.gerechtMelkSelector.Location = new System.Drawing.Point(36, 277);
+            this.gerechtMelkSelector.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gerechtMelkSelector.Name = "gerechtMelkSelector";
-            this.gerechtMelkSelector.Size = new System.Drawing.Size(838, 39);
+            this.gerechtMelkSelector.Size = new System.Drawing.Size(739, 39);
             this.gerechtMelkSelector.TabIndex = 27;
             this.gerechtMelkSelector.Text = "Select True Or False";
             this.gerechtMelkSelector.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SearchComboBoxKeyPress);
@@ -104,19 +108,21 @@
             // gerechtPrijsInput
             // 
             this.gerechtPrijsInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gerechtPrijsInput.Location = new System.Drawing.Point(54, 223);
+            this.gerechtPrijsInput.Location = new System.Drawing.Point(36, 198);
+            this.gerechtPrijsInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gerechtPrijsInput.MaxLength = 10;
             this.gerechtPrijsInput.Name = "gerechtPrijsInput";
-            this.gerechtPrijsInput.Size = new System.Drawing.Size(838, 38);
+            this.gerechtPrijsInput.Size = new System.Drawing.Size(739, 38);
             this.gerechtPrijsInput.TabIndex = 25;
             this.gerechtPrijsInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gerechtPrijsInput_KeyPress);
             // 
             // gerechtNaamInput
             // 
             this.gerechtNaamInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gerechtNaamInput.Location = new System.Drawing.Point(54, 142);
+            this.gerechtNaamInput.Location = new System.Drawing.Point(36, 119);
+            this.gerechtNaamInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gerechtNaamInput.Name = "gerechtNaamInput";
-            this.gerechtNaamInput.Size = new System.Drawing.Size(838, 38);
+            this.gerechtNaamInput.Size = new System.Drawing.Size(739, 38);
             this.gerechtNaamInput.TabIndex = 26;
             // 
             // gerechtCategorie
@@ -125,7 +131,8 @@
             this.gerechtCategorie.BackColor = System.Drawing.Color.Transparent;
             this.gerechtCategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gerechtCategorie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gerechtCategorie.Location = new System.Drawing.Point(47, 428);
+            this.gerechtCategorie.Location = new System.Drawing.Point(26, 398);
+            this.gerechtCategorie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gerechtCategorie.Name = "gerechtCategorie";
             this.gerechtCategorie.Size = new System.Drawing.Size(656, 37);
             this.gerechtCategorie.TabIndex = 24;
@@ -137,7 +144,8 @@
             this.gerechtNoten.BackColor = System.Drawing.Color.Transparent;
             this.gerechtNoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gerechtNoten.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gerechtNoten.Location = new System.Drawing.Point(47, 346);
+            this.gerechtNoten.Location = new System.Drawing.Point(26, 318);
+            this.gerechtNoten.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gerechtNoten.Name = "gerechtNoten";
             this.gerechtNoten.Size = new System.Drawing.Size(505, 37);
             this.gerechtNoten.TabIndex = 23;
@@ -149,7 +157,8 @@
             this.gerechtMelk.BackColor = System.Drawing.Color.Transparent;
             this.gerechtMelk.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gerechtMelk.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gerechtMelk.Location = new System.Drawing.Point(47, 264);
+            this.gerechtMelk.Location = new System.Drawing.Point(26, 238);
+            this.gerechtMelk.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gerechtMelk.Name = "gerechtMelk";
             this.gerechtMelk.Size = new System.Drawing.Size(492, 37);
             this.gerechtMelk.TabIndex = 22;
@@ -161,7 +170,8 @@
             this.gerechtPrijs.BackColor = System.Drawing.Color.Transparent;
             this.gerechtPrijs.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gerechtPrijs.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gerechtPrijs.Location = new System.Drawing.Point(47, 183);
+            this.gerechtPrijs.Location = new System.Drawing.Point(26, 159);
+            this.gerechtPrijs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gerechtPrijs.Name = "gerechtPrijs";
             this.gerechtPrijs.Size = new System.Drawing.Size(210, 37);
             this.gerechtPrijs.TabIndex = 21;
@@ -173,7 +183,8 @@
             this.gerechtNaam.BackColor = System.Drawing.Color.Transparent;
             this.gerechtNaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gerechtNaam.ForeColor = System.Drawing.Color.White;
-            this.gerechtNaam.Location = new System.Drawing.Point(47, 102);
+            this.gerechtNaam.Location = new System.Drawing.Point(26, 80);
+            this.gerechtNaam.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gerechtNaam.Name = "gerechtNaam";
             this.gerechtNaam.Size = new System.Drawing.Size(235, 37);
             this.gerechtNaam.TabIndex = 20;
@@ -185,9 +196,10 @@
             this.CreateItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateItem.ForeColor = System.Drawing.Color.White;
-            this.CreateItem.Location = new System.Drawing.Point(54, 531);
+            this.CreateItem.Location = new System.Drawing.Point(36, 534);
+            this.CreateItem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CreateItem.Name = "CreateItem";
-            this.CreateItem.Size = new System.Drawing.Size(1154, 115);
+            this.CreateItem.Size = new System.Drawing.Size(985, 75);
             this.CreateItem.TabIndex = 31;
             this.CreateItem.Text = "CreateItem";
             this.CreateItem.UseVisualStyleBackColor = false;
@@ -195,11 +207,11 @@
             // 
             // MenuDashboardCreateItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Luxefoods_WindowsForms.Properties.Resources.pictureBox2_BackgroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1952, 1222);
+            this.ClientSize = new System.Drawing.Size(1049, 627);
             this.Controls.Add(this.CreateItem);
             this.Controls.Add(this.goBackButton);
             this.Controls.Add(this.gerechtCategorieSelector);
@@ -213,7 +225,6 @@
             this.Controls.Add(this.gerechtPrijs);
             this.Controls.Add(this.gerechtNaam);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MenuDashboardCreateItem";
             this.Text = "/;.";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
